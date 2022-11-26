@@ -1,0 +1,1945 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./img/favicon.png">
+  <link rel="preload" href="./fonts/Roboto-Bold.woff" as="font">
+  <link rel="preload" href="./fonts/Roboto-Bold.woff2" as="font">
+  <link rel="preload" href="./fonts/Roboto-Medium.woff" as="font">
+  <link rel="preload" href="./fonts/Roboto-Medium.woff2" as="font">
+  <link rel="preload" href="./fonts/Roboto-Regular.woff" as="font">
+  <link rel="preload" href="./fonts/Roboto-Regular.woff2" as="font">
+  <link rel="preload" href="./fonts/SpaceGrotesk-Bold.woff" as="font">
+  <link rel="preload" href="./fonts/SpaceGrotesk-Bold.woff2" as="font">
+  <link rel="stylesheet" href="./resources/custom-scroll/simplebar.css">
+  <link rel="stylesheet" href="./css/main-min.css">
+  <title>AKB - интернет магазин</title>
+</head>
+
+<body>
+  <header class="header header-main">
+    <div class="header__top">
+      <div class="header__container container header-top-container">
+        <div class="header__geo-wrapper">
+          <p class="header__geo-text">
+            <svg width="16" height="16">
+              <use xlink:href="./img/svg/sprites.svg#geo"></use>
+            </svg>
+            Санкт-Петербург
+          </p>
+        </div>
+        <p class="header__orders">
+          Приём заказов по телефону с 8:00 до 22:00.
+        </p>
+      </div>
+    </div>
+    <div class="header__middle">
+      <div class="header__container container header-container-middle">
+        <div class="header__middle-left">
+          <div class="header__wrapper-logo">
+            <a class="header__logo" href="index.html">
+              <img src="./img/svg/logo.svg" alt="Логотип">
+            </a>
+          </div>
+          <div class="header__wrapper-menu header-wrapper-menu">
+            <div class="header-wrapper-menu__top-black"></div>
+            <div class="header-wrapper-menu__top">
+              <div class="header-wrapper-menu__wrapper-logo">
+                <a class="header-wrapper-menu__logo" href="index.html">
+                  <img src="./img/svg/logo.svg" alt="">
+                </a>
+              </div>
+              <button class="header-wrapper-menu__exit"></button>
+              <button class="header-wrapper-menu__call popup-init-call">
+                <svg width="20" height="20">
+                  <use xlink:href="./img/svg/sprites.svg#phone-header_2"></use>
+                </svg>
+              </button>
+            </div>
+            <nav class="header-wrapper-menu__nav nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a class="nav__link nav-link-active" href="index.html">
+                    Главная
+                  </a>
+                </li>
+                <li class="nav__item nav-hidden-item">
+                  <a class="nav__link" href="catalog.html">
+                    Каталог товаров
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="assortment.html">
+                    Подбор по Авто
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="offer.html">
+                    Коммерческое предложение
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="contacts.html">
+                    Контакты
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header-wrapper-menu__links">
+              <button class="header-wrapper-menu__order">
+                Заказать звонок
+              </button>
+              <a class="header-wrapper-menu__whats-app" href="#">Whatsapp</a>
+            </div>
+            <div class="header-wrapper-menu__bottom">
+              <div class="header-wrapper-menu__info">
+                <p class="header-wrapper-menu__geo">
+                  <svg width="16" height="16">
+                    <use xlink:href="./img/svg/sprites.svg#geo"></use>
+                  </svg>
+                  Санкт-Петербург
+                </p>
+                <div class="header-wrapper-menu__wrapper-phone">
+                  <a class="header-wrapper-menu__phone" href="tel:+79657501317">
+                    <svg width="24" height="24">
+                      <use xlink:href="./img/svg/sprites.svg#phone-header"></use>
+                    </svg>
+                    +7 (965) 750-13-17
+                  </a>
+                </div>
+                <div class="header-wrapper-menu__wrapper-mail">
+                  <a class="header-wrapper-menu__mail" href="mailto:shjfkmfbsnlfdknl@mail.ru">
+                    <svg width="24" height="24">
+                      <use xlink:href="./img/svg/sprites.svg#mail"></use>
+                    </svg>
+                    shjfkmfbsnlfdknl@mail.ru
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="header-wrapper-menu__footer">
+              <p class="header-wrapper-menu__footer-text">
+                <span>Z</span>amena-<span>Akb</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <button class="header__search-init">
+          <svg width="20" height="21">
+            <use xlink:href="./img/svg/sprites.svg#loup"></use>
+          </svg>
+        </button>
+        <button class="header__call popup-init-call" data-da=".header__bottom-right, 767, 1">
+          <svg width="24" height="24">
+            <use xlink:href="./img/svg/sprites.svg#phone-header"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="header__bottom">
+      <div class="header__container container">
+        <div class="header__catalog-wrapper">
+          <a class="header__catalog-link" href="catalog.html">
+            Каталог товаров
+          </a>
+        </div>
+        <div class="header__bottom-middle">
+          <button class="header__burger burger">
+            <span class="burger__line"></span>
+          </button>
+          <div class="header__search search">
+            <form class="search__form" action="#">
+              <div class="search__label">
+                <input class="search__input" type="text" placeholder="Автомобильные аккумуляторы">
+                <button class="search__button">
+                  <svg width="20" height="21">
+                    <use xlink:href="./img/svg/sprites.svg#loup"></use>
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="header__bottom-right">
+          <div class="header__wrapper-tel" data-da=".header-top-container, 1110, 2">
+            <a class="header__tel" href="tel:+79657501317">
+              +7 (965) 750-13-17
+            </a>
+          </div>
+          <button class="header__order popup-init-call">
+            Заказать звонок
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="selection">
+      <div class="selection__container container">
+        <div class="selection__left selection-left">
+          <div class="selection-left__wrapper-form">
+            <h3 class="selection-left__title">
+              Оставьте заявку!
+            </h3>
+            <p class="selection-left__text">
+              Мы подберем подходящий аккумулятор под Ваш бюджет
+            </p>
+            <form action="#" class="selection-left__form">
+              <div class="selection-left__wrapper-input">
+                <input class="selection-left__input" type="text" placeholder="Имя" required>
+              </div>
+              <div class="selection-left__wrapper-input">
+                <input class="selection-left__input" type="tel" placeholder="Номер телефона" data-tel-input required>
+              </div>
+              <div class="selection-left__wrapper-button">
+                <button class="selection-left__button">
+                  Отправить
+                </button>
+              </div>
+            </form>
+            <p class="selection-left__warning">
+              Нажимая на кнопку “Отправить”, вы даете <span>согласие на обработку персональных данных</span>
+            </p>
+          </div>
+        </div>
+      <div class="selection__filters">
+        <h3 class="selection__title">
+          Быстрый подбор по авто
+        </h3>
+       <form class="selection__form" action="#">
+<div class="selection__form-body">
+  <div class="selection__filter filter filter-brand">
+    <div class="filter__dropdown">
+      <button class="filter__current brand-current">Марка</button>
+      <div class="filter__list list-brand">
+        <div class="filter__simplebar" data-simplebar>
+          <label class="filter__list-item brand-item">
+            <input type="radio" name="brand-1">
+            <span>Acura</span>
+          </label>
+          <label class="filter__list-item brand-item">
+            <input type="radio" name="brand-2">
+            <span>Alfa Romeo</span>
+          </label>
+          <label class="filter__list-item brand-item">
+            <input type="radio" name="brand-3">
+            <span>Aston Martin</span>
+          </label>
+          <label class="filter__list-item brand-item">
+            <input type="radio" name="brand-4">
+            <span>Audi</span>
+          </label>
+          <label class="filter__list-item brand-item">
+            <input type="radio" name="brand-5">
+            <span>Bentley</span>
+          </label>
+            <label class="filter__list-item brand-item">
+            <input type="radio" name="brand-6">
+            <span>BMW</span>
+          </label>  
+          <label class="filter__list-item brand-item">
+            <input type="radio" name="brand-7">
+            <span>Brilliance</span>
+          </label>
+          <label class="filter__list-item brand-item">
+            <input type="radio" name="brand-8">
+            <span>BYD</span>
+          </label>
+          <label class="filter__list-item brand-item">
+            <input type="radio" name="brand-9">
+            <span>Cadillac</span>
+          </label>
+          <label class="filter__list-item brand-item">
+            <input type="radio" name="brand-10">
+            <span>Changan</span>
+          </label>
+          <label class="filter__list-item brand-item">
+            <input type="radio" name="brand-11">
+            <span>Chery</span>
+          </label>
+          <label class="filter__list-item brand-item">
+            <input type="radio" name="brand-12">
+            <span>Chevrolet</span>
+          </label>
+          <label class="filter__list-item brand-item">
+            <input type="radio" name="brand-13">
+            <span>Chrysler</span>
+          </label>
+          <label class="filter__list-item brand-item">
+            <input type="radio" name="brand-14">
+            <span>Citroen</span>
+          </label>
+          <label class="filter__list-item brand-item">
+            <input type="radio" name="brand-15">
+            <span>Daewoo</span>
+          </label>
+          <label class="filter__list-item brand-item">
+            <input type="radio" name="brand-16">
+            <span>Daihatsu</span>
+          </label>
+          <label class="filter__list-item brand-item">
+            <input type="radio" name="brand-17">
+            <span>Datsun</span>
+          </label>   
+          <label class="filter__list-item brand-item">
+            <input type="radio" name="brand-18">
+            <span>Dodge</span>
+          </label>
+        <label class="filter__list-item brand-item">
+          <input type="radio" name="brand-19">
+          <span>Dongfeng</span>
+        </label>
+        <label class="filter__list-item brand-item">
+          <input type="radio" name="brand-20">
+          <span>FAW</span>
+        </label>
+        <label class="filter__list-item brand-item">
+          <input type="radio" name="brand-21">
+          <span>Zotye</span>
+        </label>
+        <label class="filter__list-item brand-item">
+          <input type="radio" name="brand-22">
+          <span>Fiat</span>
+        </label>
+        <label class="filter__list-item brand-item">
+          <input type="radio" name="brand-23">
+          <span>Ford</span>
+        </label>
+        <label class="filter__list-item brand-item">
+          <input type="radio" name="brand-24">
+          <span>Ford America</span>
+        </label>
+        <label class="filter__list-item brand-item">
+          <input type="radio" name="brand-25">
+          <span>Gaz</span>
+        </label>
+        <label class="filter__list-item brand-item">
+          <input type="radio" name="brand-26">
+          <span>Geely</span>
+        </label>
+        <label class="filter__list-item brand-item">
+          <input type="radio" name="brand-27">
+          <span>Genesis</span>
+        </label>
+        <label class="filter__list-item brand-item">
+          <input type="radio" name="brand-28">
+          <span>GM</span>
+        </label>
+        <label class="filter__list-item brand-item">
+          <input type="radio" name="brand-29">
+          <span> Great Wall</span>
+        </label>
+        <label class="filter__list-item brand-item">
+          <input type="radio" name="brand-30">
+          <span>Hafei</span>
+        </label>
+        <label class="filter__list-item brand-item">
+          <input type="radio" name="brand-31">
+          <span>Haval</span>
+        </label>
+        <label class="filter__list-item brand-item">
+          <input type="radio" name="brand-32">
+          <span>Hawtai</span>
+        </label>
+        <label class="filter__list-item brand-item">
+          <input type="radio" name="brand-33">
+          <span>Honda</span>
+        </label>
+        <label class="filter__list-item brand-item">
+          <input type="radio" name="brand-34">
+          <span>Hummer</span>
+        </label>
+        <label class="filter__list-item brand-item">
+          <input type="radio" name="brand-35">
+          <span>Hyundai</span>
+        </label>
+        <label class="filter__list-item brand-item">
+          <input type="radio" name="brand-36">
+          <span>Infiniti</span>
+        </label>
+        <label class="filter__list-item brand-item">
+          <input type="radio" name="brand-37">
+          <span>Iran Khodro</span>
+        </label>
+        <label class="filter__list-item brand-item">
+          <input type="radio" name="brand-38">
+          <span>Isuzu</span>
+        </label>
+        <label class="filter__list-item brand-item">
+          <input type="radio" name="brand-39">
+          <span>Iveco</span>
+        </label>
+        <label class="filter__list-item brand-item">
+          <input type="radio" name="brand-41">
+          <span>Jaguar</span>
+        </label>
+        <label class="filter__list-item brand-item">
+          <input type="radio" name="brand-42">
+          <span>Jeep</span>
+        </label>
+        <label class="filter__list-item brand-item">
+          <input type="radio" name="brand-43">
+          <span>Kia</span>
+        </label>
+        <label class="filter__list-item brand-item">
+          <input type="radio" name="brand-44">
+          <span>Lamborghini</span>
+        </label>
+        <label class="filter__list-item brand-item">
+          <input type="radio" name="brand-45">
+          <span>Lancia</span>
+        </label>
+        <label class="filter__list-item brand-item">
+          <input type="radio" name="brand-46">
+          <span>Land Rover</span>
+        </label>  
+        <label class="filter__list-item brand-item">
+          <input type="radio" name="brand-47">
+          <span>Landwind</span>
+        </label>
+        <label class="filter__list-item brand-item">
+          <input type="radio" name="brand-48">
+          <span>LDV</span>
+        </label>
+        <label class="filter__list-item brand-item">
+          <input type="radio" name="brand-49">
+          <span>Lexus</span>
+        </label>
+        <label class="filter__list-item brand-item">
+          <input type="radio" name="brand-50">
+          <span>Lifan</span>
+        </label>
+        <label class="filter__list-item brand-item">
+          <input type="radio" name="brand-51">
+          <span>LuxGen</span>
+        </label>
+        <label class="filter__list-item brand-item">
+          <input type="radio" name="brand-52">
+          <span>Maserati</span>
+        </label>
+        <label class="filter__list-item brand-item">
+          <input type="radio" name="brand-53">
+          <span>Maybach</span>
+        </label>
+        <label class="filter__list-item brand-item">
+          <input type="radio" name="brand-54">
+          <span>Mazda</span>
+        </label>
+        <label class="filter__list-item brand-item">
+          <input type="radio" name="brand-55">
+          <span>Mercedes Benz</span>
+        </label>
+        <label class="filter__list-item brand-item">
+          <input type="radio" name="brand-56">
+          <span>Mini</span>
+        </label>
+        <label class="filter__list-item brand-item">
+          <input type="radio" name="brand-57">
+          <span>Mitsubishi</span>
+        </label>
+        <label class="filter__list-item brand-item">
+          <input type="radio" name="brand-58">
+          <span>Nissan</span>
+        </label>
+        <label class="filter__list-item brand-item">
+          <input type="radio" name="brand-59">
+          <span>Opel</span>
+        </label>
+        <label class="filter__list-item brand-item">
+          <input type="radio" name="brand-60">
+          <span>Peugeot</span>
+        </label> 
+        <label class="filter__list-item brand-item">
+          <input type="radio" name="brand-61">
+          <span>Piaggio</span>
+        </label>
+         <label class="filter__list-item brand-item">
+          <input type="radio" name="brand-62">
+          <span>Porsche</span>
+        </label>
+        <label class="filter__list-item brand-item">
+          <input type="radio" name="brand-63">
+          <span>Ravon</span>
+        </label>
+        <label class="filter__list-item brand-item">
+          <input type="radio" name="brand-64">
+          <span>Renault</span>
+        </label>
+        <label class="filter__list-item brand-item">
+          <input type="radio" name="brand-65">
+          <span>Rolls-Royce</span>
+        </label>
+        <label class="filter__list-item brand-item">
+          <input type="radio" name="brand-66">
+          <span>Rover</span>
+        </label>
+        <label class="filter__list-item brand-item">
+          <input type="radio" name="brand-66">
+          <span>SAAB</span>
+        </label>
+        <label class="filter__list-item brand-item">
+          <input type="radio" name="brand-67">
+          <span>Scion</span>
+        </label>
+        <label class="filter__list-item brand-item">
+          <input type="radio" name="brand-68">
+          <span>Seat</span>
+        </label>
+        <label class="filter__list-item brand-item">
+          <input type="radio" name="brand-69">
+          <span>Smart</span>
+        </label>
+        <label class="filter__list-item brand-item">
+          <input type="radio" name="brand-70">
+          <span>Ssang Yong</span>
+        </label>
+        <label class="filter__list-item brand-item">
+          <input type="radio" name="brand-71">
+          <span>Subaru</span>
+        </label>
+        <label class="filter__list-item brand-item">
+          <input type="radio" name="brand-72">
+          <span>Suzuki</span>
+        </label>
+        <label class="filter__list-item brand-item">
+          <input type="radio" name="brand-73">
+          <span>Tagaz</span>
+        </label>
+        <label class="filter__list-item brand-item">
+          <input type="radio" name="brand-74">
+          <span>Tesla</span>
+        </label>
+        <label class="filter__list-item brand-item">
+          <input type="radio" name="brand-75">
+          <span>Toyota</span>
+        </label>
+        <label class="filter__list-item brand-item">
+          <input type="radio" name="brand-76">
+          <span>UAZ</span>
+        </label>
+        <label class="filter__list-item brand-item">
+          <input type="radio" name="brand-77">
+          <span>Vaz</span>
+        </label>
+        <label class="filter__list-item brand-item">
+          <input type="radio" name="brand-78">
+          <span>Volvo</span>
+        </label>
+        <label class="filter__list-item brand-item">
+          <input type="radio" name="brand-79">
+          <span>VW</span>
+        </label>
+        <label class="filter__list-item brand-item">
+          <input type="radio" name="brand-80">
+          <span>ZAZ</span>
+        </label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="selection__filter filter filter-model">
+    <div class="filter__dropdown">
+      <button class="filter__current model-current">Модель</button>
+      <div class="filter__list">
+        <div class="filter__simplebar" data-simplebar>
+          <label class="filter__list-item model-item">
+            <input type="radio" name="model-1">
+            <span>Ac</span>
+          </label>
+          <label class="filter__list-item model-item">
+            <input type="radio" name="model-2">
+            <span>FL</span>
+          </label>
+          <label class="filter__list-item model-item">
+            <input type="radio" name="model-3">
+            <span>MR</span>
+          </label>
+          <label class="filter__list-item model-item">
+            <input type="radio" name="model-4">
+            <span>MDI</span>
+          </label> 
+          <label class="filter__list-item model-item">
+            <input type="radio" name="model-5">
+            <span>RDO</span>
+          </label>
+          <label class="filter__list-item model-item">
+            <input type="radio" name="model-6">
+            <span>RDW</span>
+          </label>
+          <label class="filter__list-item model-item">
+            <input type="radio" name="model-7">
+            <span>Модель</span>
+          </label>
+          <label class="filter__list-item model-item">
+            <input type="radio" name="model-8">
+            <span>Модель</span>
+          </label>
+          <label class="filter__list-item model-item">
+            <input type="radio" name="model-9">
+            <span>Модель</span>
+          </label>
+          <label class="filter__list-item model-item">
+            <input type="radio" name="model-10">
+            <span>Модель</span>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="selection__filter filter filer-generation">
+    <div class="filter__dropdown">
+      <button class="filter__current generation-current">Поколение</button>
+      <div class="filter__list">
+        <div class="filter__simplebar" data-simplebar>
+          <label class="filter__list-item generation-item">
+            <input type="radio" name="generation-1">
+            <span>Поколение</span>
+          </label>
+          <label class="filter__list-item generation-item">
+            <input type="radio" name="generation-2">
+            <span>Поколение</span>
+          </label>
+          <label class="filter__list-item generation-item">
+            <input type="radio" name="generation-3">
+            <span>Поколение</span>
+          </label>
+          <label class="filter__list-item generation-item">
+            <input type="radio" name="generation-4">
+            <span>Поколение</span>
+          </label>
+          <label class="filter__list-item generation-item">
+            <input type="radio" name="generation-5">
+            <span>Поколение</span>
+          </label>
+          <label class="filter__list-item generation-item">
+            <input type="radio" name="generation-6">
+            <span>Поколение</span>
+          </label>
+          <label class="filter__list-item generation-item">
+            <input type="radio" name="generation-7">
+            <span>Поколение</span>
+          </label>
+          <label class="filter__list-item generation-item">
+            <input type="radio" name="generation-8">
+            <span>Поколение</span>
+          </label>
+          <label class="filter__list-item generation-item">
+            <input type="radio" name="generation-9">
+            <span>Поколение</span>
+          </label>
+          <label class="filter__list-item generation-item">
+            <input type="radio" name="generation-10">
+            <span>Поколение</span>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="selection__filter filter filter-engine-capacity">
+    <div class="filter__dropdown">
+      <button class="filter__current engine-current">Объем двигателя</button>
+      <div class="filter__list">
+        <div class="filter__simplebar" data-simplebar>
+          <label class="filter__list-item engine-item">
+            <input type="radio" name="engine-capacity-1">
+            <span>Объем</span>
+          </label>
+          <label class="filter__list-item engine-item">
+            <input type="radio" name="engine-capacity-2">
+            <span>Объем</span>
+          </label>
+          <label class="filter__list-item engine-item">
+            <input type="radio" name="engine-capacity-3">
+            <span>Объем</span>
+          </label>
+          <label class="filter__list-item engine-item">
+            <input type="radio" name="engine-capacity-4">
+            <span>Объем</span>
+          </label>
+          <label class="filter__list-item engine-item">
+            <input type="radio" name="engine-capacity-5">
+            <span>Объем</span>
+          </label>
+          <label class="filter__list-item engine-item">
+            <input type="radio" name="engine-capacity-6">
+            <span>Объем</span>
+          </label>
+          <label class="filter__list-item engine-item">
+            <input type="radio" name="engine-capacity-7">
+            <span>Объем</span>
+          </label>
+          <label class="filter__list-item engine-item">
+            <input type="radio" name="engine-capacity-8">
+            <span>Объем</span>
+          </label>
+          <label class="filter__list-item engine-item">
+            <input type="radio" name="engine-capacity-9">
+            <span>Объем</span>
+          </label>
+          <label class="filter__list-item engine-item">
+            <input type="radio" name="engine-capacity-10">
+            <span>Объем</span>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="selection__wrapper-button" data-da=".selection__form, 1400, 1">
+    <button class="selection__button">Подобрать</button>
+  </div>
+</div>
+       </form>
+       <div class="selection__akb">
+        <span>Z</span>amena-<span>Akb</span>
+       </div>
+      </div>
+      <ul class="selection__benefits benefits" data-da=".benefits-block__container, 1185, 1">
+        <li class="benefits__item border-1">
+          <div class="benefits__icon">
+            <img class="benefits__img-auto" src="./img/main-page/auto-black.png" alt="Авто">
+            <img class="benefits__img-auto benefits__img-auto_white" src="./img/main-page/auto-white.png" alt="Авто">
+          </div>
+          <p class="benefits__text">
+            Быстрая доставка
+          </p>
+        </li>
+        <li class="benefits__item border-2">
+          <div class="benefits__icon">
+           <img class="benefits__img-instruments" src="./img/main-page/instruments-black.png" alt="Инструменты">
+           <img class="benefits__img-instruments benefits__img-instruments_white" src="./img/main-page/instruments-white.png" alt="Инструменты">
+          </div>
+          <p class="benefits__text">
+            Установка
+          </p>
+        </li>
+        <li class="benefits__item border-3">
+          <div class="benefits__icon">
+              <img class="benefits__img-akkum" src="./img/main-page/akkum-black.png" alt="Аккумулятор">
+              <img class="benefits__img-akkum benefits__img-akkum_white" src="./img/main-page/akkum-white.png" alt="Аккумулятор">
+          </div>
+          <p class="benefits__text">
+            Выкуп старых аккумуляторов
+          </p>
+        </li>
+        <li class="benefits__item border-4">
+          <div class="benefits__icon">
+            <img class="benefits__img-doroga" src="./img/main-page/doroga-black.png" alt="дорога">
+            <img class="benefits__img-doroga benefits__img-doroga_white" src="./img/main-page/doroga-white.png" alt="дорога">
+          </div>
+          <p class="benefits__text">
+            Помощь на дорогах
+          </p>
+        </li>
+      </ul>
+      </div>
+    </section>
+    <section class="hit">
+      <div class="hit__container container">
+        <h2 class="hit__title">
+          Хит продаж
+        </h2>
+        <div class="hit__body product">
+          <ul class="product__list">
+            <li class="product__item">
+              <article class="product__acrticle">
+                <div class="product__image">
+                  <img src="./img/product/product.png" alt="Аккумулятор">
+                </div>
+                <div class="product__body">
+                  <p class="product__availability">
+                    в наличии <span class="product__num-8">8</span> <span class="product__num-1">1</span> шт.
+                  </p>
+                  <p class="product__purpose">
+                    Аккумулятор автомобильный
+                  </p>
+                  <div class="product__wrapper-name">
+                    <a class="product__name" href="product.html">
+                      MUTLU Mega Calcium 60L 540 А прям. пол. 60 Ач (L2.60.054.B)
+                    </a>
+                  </div>
+                  <div class="product__info">
+                    <p class="product__capacity">
+                      Ёмкость, A/h: <span>40</span>
+                    </p>
+                    <p class="product__starter">
+                      Cтартовый ток, А: <span>40</span>
+                    </p>
+                    <p class="product__polarity">
+                      Полярность: <span>Обратная (-/+)</span>
+                    </p>
+                  </div>
+                  <div class="product__prices">
+                    <p class="product__price-old">
+                      4000 ₽
+                    </p>
+                    <p class="product__price-new">
+                      <span class="product__span">3500 ₽</span> <span class="product__span product__span_subspan">при
+                        обмене</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="product__hit">
+                  <div class="product__hit-image">
+                    <img src="./img/product/hit.png" alt="Хит">
+                  </div>
+                  <p class="product__hit-text">
+                    Хит
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li class="product__item">
+              <article class="product__acrticle">
+                <div class="product__image">
+                  <img src="./img/product/product.png" alt="Аккумулятор">
+                </div>
+                <div class="product__body">
+                  <p class="product__availability">
+                    в наличии <span class="product__num-8">8</span> <span class="product__num-1">1</span> шт.
+                  </p>
+                  <p class="product__purpose">
+                    Аккумулятор автомобильный
+                  </p>
+                  <div class="product__wrapper-name">
+                    <a class="product__name" href="#">
+                      MUTLU Mega Calcium 60L 540 А прям. пол. 60 Ач (L2.60.054.B)
+                    </a>
+                  </div>
+                  <div class="product__info">
+                    <p class="product__capacity">
+                      Ёмкость, A/h: <span>40</span>
+                    </p>
+                    <p class="product__starter">
+                      Cтартовый ток, А: <span>40</span>
+                    </p>
+                    <p class="product__polarity">
+                      Полярность: <span>Обратная (-/+)</span>
+                    </p>
+                  </div>
+                  <div class="product__prices">
+                    <p class="product__price-old">
+                      4000 ₽
+                    </p>
+                    <p class="product__price-new">
+                      <span class="product__span">3500 ₽</span> <span class="product__span product__span_subspan">при
+                        обмене</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="product__hit">
+                  <div class="product__hit-image">
+                    <img src="./img/product/hit.png" alt="Хит">
+                  </div>
+                  <p class="product__hit-text">
+                    Хит
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li class="product__item">
+              <article class="product__acrticle">
+                <div class="product__image">
+                  <img src="./img/product/product.png" alt="Аккумулятор">
+                </div>
+                <div class="product__body">
+                  <p class="product__availability">
+                    в наличии <span class="product__num-8">8</span> <span class="product__num-1">1</span> шт.
+                  </p>
+                  <p class="product__purpose">
+                    Аккумулятор автомобильный
+                  </p>
+                  <div class="product__wrapper-name">
+                    <a class="product__name" href="#">
+                      MUTLU Mega Calcium 60L 540 А прям. пол. 60 Ач (L2.60.054.B)
+                    </a>
+                  </div>
+                  <div class="product__info">
+                    <p class="product__capacity">
+                      Ёмкость, A/h: <span>40</span>
+                    </p>
+                    <p class="product__starter">
+                      Cтартовый ток, А: <span>40</span>
+                    </p>
+                    <p class="product__polarity">
+                      Полярность: <span>Обратная (-/+)</span>
+                    </p>
+                  </div>
+                  <div class="product__prices">
+                    <p class="product__price-old">
+                      4000 ₽
+                    </p>
+                    <p class="product__price-new">
+                      <span class="product__span">3500 ₽</span> <span class="product__span product__span_subspan">при
+                        обмене</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="product__hit">
+                  <div class="product__hit-image">
+                    <img src="./img/product/hit.png" alt="Хит">
+                  </div>
+                  <p class="product__hit-text">
+                    Хит
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li class="product__item">
+              <article class="product__acrticle">
+                <div class="product__image">
+                  <img src="./img/product/product.png" alt="Аккумулятор">
+                </div>
+                <div class="product__body">
+                  <p class="product__availability">
+                    в наличии <span class="product__num-8">8</span> <span class="product__num-1">1</span> шт.
+                  </p>
+                  <p class="product__purpose">
+                    Аккумулятор автомобильный
+                  </p>
+                  <div class="product__wrapper-name">
+                    <a class="product__name" href="#">
+                      MUTLU Mega Calcium 60L 540 А прям. пол. 60 Ач (L2.60.054.B)
+                    </a>
+                  </div>
+                  <div class="product__info">
+                    <p class="product__capacity">
+                      Ёмкость, A/h: <span>40</span>
+                    </p>
+                    <p class="product__starter">
+                      Cтартовый ток, А: <span>40</span>
+                    </p>
+                    <p class="product__polarity">
+                      Полярность: <span>Обратная (-/+)</span>
+                    </p>
+                  </div>
+                  <div class="product__prices">
+                    <p class="product__price-old">
+                      4000 ₽
+                    </p>
+                    <p class="product__price-new">
+                      <span class="product__span">3500 ₽</span> <span class="product__span product__span_subspan">при
+                        обмене</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="product__hit">
+                  <div class="product__hit-image">
+                    <img src="./img/product/hit.png" alt="Хит">
+                  </div>
+                  <p class="product__hit-text">
+                    Хит
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li class="product__item">
+              <article class="product__acrticle">
+                <div class="product__image">
+                  <img src="./img/product/product.png" alt="Аккумулятор">
+                </div>
+                <div class="product__body">
+                  <p class="product__availability">
+                    в наличии <span class="product__num-8">8</span> <span class="product__num-1">1</span> шт.
+                  </p>
+                  <p class="product__purpose">
+                    Аккумулятор автомобильный
+                  </p>
+                  <div class="product__wrapper-name">
+                    <a class="product__name" href="#">
+                      MUTLU Mega Calcium 60L 540 А прям. пол. 60 Ач (L2.60.054.B)
+                    </a>
+                  </div>
+                  <div class="product__info">
+                    <p class="product__capacity">
+                      Ёмкость, A/h: <span>40</span>
+                    </p>
+                    <p class="product__starter">
+                      Cтартовый ток, А: <span>40</span>
+                    </p>
+                    <p class="product__polarity">
+                      Полярность: <span>Обратная (-/+)</span>
+                    </p>
+                  </div>
+                  <div class="product__prices">
+                    <p class="product__price-old">
+                      4000 ₽
+                    </p>
+                    <p class="product__price-new">
+                      <span class="product__span">3500 ₽</span> <span class="product__span product__span_subspan">при
+                        обмене</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="product__hit">
+                  <div class="product__hit-image">
+                    <img src="./img/product/hit.png" alt="Хит">
+                  </div>
+                  <p class="product__hit-text">
+                    Хит
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li class="product__item">
+              <article class="product__acrticle">
+                <div class="product__image">
+                  <img src="./img/product/product.png" alt="Аккумулятор">
+                </div>
+                <div class="product__body">
+                  <p class="product__availability">
+                    в наличии <span class="product__num-8">8</span> <span class="product__num-1">1</span> шт.
+                  </p>
+                  <p class="product__purpose">
+                    Аккумулятор автомобильный
+                  </p>
+                  <div class="product__wrapper-name">
+                    <a class="product__name" href="#">
+                      MUTLU Mega Calcium 60L 540 А прям. пол. 60 Ач (L2.60.054.B)
+                    </a>
+                  </div>
+                  <div class="product__info">
+                    <p class="product__capacity">
+                      Ёмкость, A/h: <span>40</span>
+                    </p>
+                    <p class="product__starter">
+                      Cтартовый ток, А: <span>40</span>
+                    </p>
+                    <p class="product__polarity">
+                      Полярность: <span>Обратная (-/+)</span>
+                    </p>
+                  </div>
+                  <div class="product__prices">
+                    <p class="product__price-old">
+                      4000 ₽
+                    </p>
+                    <p class="product__price-new">
+                      <span class="product__span">3500 ₽</span> <span class="product__span product__span_subspan">при
+                        обмене</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="product__hit">
+                  <div class="product__hit-image">
+                    <img src="./img/product/hit.png" alt="Хит">
+                  </div>
+                  <p class="product__hit-text">
+                    Хит
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li class="product__item product-item-hidden">
+              <article class="product__acrticle">
+                <div class="product__image">
+                  <img src="./img/product/product.png" alt="Аккумулятор">
+                </div>
+                <div class="product__body">
+                  <p class="product__availability">
+                    в наличии <span class="product__num-8">8</span> <span class="product__num-1">1</span> шт.
+                  </p>
+                  <p class="product__purpose">
+                    Аккумулятор автомобильный
+                  </p>
+                  <div class="product__wrapper-name">
+                    <a class="product__name" href="#">
+                      MUTLU Mega Calcium 60L 540 А прям. пол. 60 Ач (L2.60.054.B)
+                    </a>
+                  </div>
+                  <div class="product__info">
+                    <p class="product__capacity">
+                      Ёмкость, A/h: <span>40</span>
+                    </p>
+                    <p class="product__starter">
+                      Cтартовый ток, А: <span>40</span>
+                    </p>
+                    <p class="product__polarity">
+                      Полярность: <span>Обратная (-/+)</span>
+                    </p>
+                  </div>
+                  <div class="product__prices">
+                    <p class="product__price-old">
+                      4000 ₽
+                    </p>
+                    <p class="product__price-new">
+                      <span class="product__span">3500 ₽</span> <span class="product__span product__span_subspan">при
+                        обмене</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="product__hit">
+                  <div class="product__hit-image">
+                    <img src="./img/product/hit.png" alt="Хит">
+                  </div>
+                  <p class="product__hit-text">
+                    Хит
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li class="product__item product-item-hidden">
+              <article class="product__acrticle">
+                <div class="product__image">
+                  <img src="./img/product/product.png" alt="Аккумулятор">
+                </div>
+                <div class="product__body">
+                  <p class="product__availability">
+                    в наличии <span class="product__num-8">8</span> <span class="product__num-1">1</span> шт.
+                  </p>
+                  <p class="product__purpose">
+                    Аккумулятор автомобильный
+                  </p>
+                  <div class="product__wrapper-name">
+                    <a class="product__name" href="#">
+                      MUTLU Mega Calcium 60L 540 А прям. пол. 60 Ач (L2.60.054.B)
+                    </a>
+                  </div>
+                  <div class="product__info">
+                    <p class="product__capacity">
+                      Ёмкость, A/h: <span>40</span>
+                    </p>
+                    <p class="product__starter">
+                      Cтартовый ток, А: <span>40</span>
+                    </p>
+                    <p class="product__polarity">
+                      Полярность: <span>Обратная (-/+)</span>
+                    </p>
+                  </div>
+                  <div class="product__prices">
+                    <p class="product__price-old">
+                      4000 ₽
+                    </p>
+                    <p class="product__price-new">
+                      <span class="product__span">3500 ₽</span> <span class="product__span product__span_subspan">при
+                        обмене</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="product__hit">
+                  <div class="product__hit-image">
+                    <img src="./img/product/hit.png" alt="Хит">
+                  </div>
+                  <p class="product__hit-text">
+                    Хит
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li class="product__item product-item-hidden">
+              <article class="product__acrticle">
+                <div class="product__image">
+                  <img src="./img/product/product.png" alt="Аккумулятор">
+                </div>
+                <div class="product__body">
+                  <p class="product__availability">
+                    в наличии <span class="product__num-8">8</span> <span class="product__num-1">1</span> шт.
+                  </p>
+                  <p class="product__purpose">
+                    Аккумулятор автомобильный
+                  </p>
+                  <div class="product__wrapper-name">
+                    <a class="product__name" href="#">
+                      MUTLU Mega Calcium 60L 540 А прям. пол. 60 Ач (L2.60.054.B)
+                    </a>
+                  </div>
+                  <div class="product__info">
+                    <p class="product__capacity">
+                      Ёмкость, A/h: <span>40</span>
+                    </p>
+                    <p class="product__starter">
+                      Cтартовый ток, А: <span>40</span>
+                    </p>
+                    <p class="product__polarity">
+                      Полярность: <span>Обратная (-/+)</span>
+                    </p>
+                  </div>
+                  <div class="product__prices">
+                    <p class="product__price-old">
+                      4000 ₽
+                    </p>
+                    <p class="product__price-new">
+                      <span class="product__span">3500 ₽</span> <span class="product__span product__span_subspan">при
+                        обмене</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="product__hit">
+                  <div class="product__hit-image">
+                    <img src="./img/product/hit.png" alt="Хит">
+                  </div>
+                  <p class="product__hit-text">
+                    Хит
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li class="product__item product-item-hidden">
+              <article class="product__acrticle">
+                <div class="product__image">
+                  <img src="./img/product/product.png" alt="Аккумулятор">
+                </div>
+                <div class="product__body">
+                  <p class="product__availability">
+                    в наличии <span class="product__num-8">8</span> <span class="product__num-1">1</span> шт.
+                  </p>
+                  <p class="product__purpose">
+                    Аккумулятор автомобильный
+                  </p>
+                  <div class="product__wrapper-name">
+                    <a class="product__name" href="#">
+                      MUTLU Mega Calcium 60L 540 А прям. пол. 60 Ач (L2.60.054.B)
+                    </a>
+                  </div>
+                  <div class="product__info">
+                    <p class="product__capacity">
+                      Ёмкость, A/h: <span>40</span>
+                    </p>
+                    <p class="product__starter">
+                      Cтартовый ток, А: <span>40</span>
+                    </p>
+                    <p class="product__polarity">
+                      Полярность: <span>Обратная (-/+)</span>
+                    </p>
+                  </div>
+                  <div class="product__prices">
+                    <p class="product__price-old">
+                      4000 ₽
+                    </p>
+                    <p class="product__price-new">
+                      <span class="product__span">3500 ₽</span> <span class="product__span product__span_subspan">при
+                        обмене</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="product__hit">
+                  <div class="product__hit-image">
+                    <img src="./img/product/hit.png" alt="Хит">
+                  </div>
+                  <p class="product__hit-text">
+                    Хит
+                  </p>
+                </div>
+              </article>
+            </li>
+          </ul>
+          <div class="product__pagging pagging">
+            <button class="pagging__prev"></button>
+            <div class="pagging__body">
+              <a class="pagging__link pagging-link-active" href="#">
+                01
+              </a>
+              <a class="pagging__link" href="#">
+                02
+              </a>
+              <a class="pagging__link" href="#">
+                ...
+              </a>
+              <a class="pagging__link" href="#">06</a>
+            </div>
+            <button class="pagging__next"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="akkum">
+      <div class="akkum__container container">
+        <h2 class="akkum__title">
+          Аккумуляторы
+        </h2>
+        <ul class="akkum__accumulators akkum-accumulators">
+          <li class="akkum-accumulators__item">
+            <div class="akkum-accumulators__top">
+              <a class="akkum-accumulators__top-link" href="#">Для легковых автомобилей</a>
+              <a class="akkum-accumulators__top-arrow" href="#">
+                <svg class="akkumn__svg-arrow" width="24" height="24">
+                  <use xlink:href="./img/svg/sprites.svg#arrow"></use>
+                </svg>
+                <svg class="akkumn__svg-arrow akkumn__svg-arrow_2" width="20" height="20">
+                  <use xlink:href="./img/svg/sprites.svg#arrow_2"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="akkum-accumulators__bottom">
+              <div class="akkum-accumulators__image">
+                <img class="akkum-accumulators__bmw" src="./img/main-page/bmw.png" alt="Бмв">
+              </div>
+            </div>
+            <a class="akkum-accumulators__pick" href="#">Подобрать</a>
+          </li>
+          <li class="akkum-accumulators__item">
+            <div class="akkum-accumulators__top">
+              <a class="akkum-accumulators__top-link" href="#">Для грузовых автомобилей</a>
+              <a class="akkum-accumulators__top-arrow" href="#">
+                <svg class="akkumn__svg-arrow" width="24" height="24">
+                  <use xlink:href="./img/svg/sprites.svg#arrow"></use>
+                </svg>
+                <svg class="akkumn__svg-arrow akkumn__svg-arrow_2" width="20" height="20">
+                  <use xlink:href="./img/svg/sprites.svg#arrow_2"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="akkum-accumulators__bottom">
+              <div class="akkum-accumulators__image">
+                <img src="./img/main-page/scania.png" alt="Скания">
+              </div>
+            </div>
+            <a class="akkum-accumulators__pick" href="#">Подобрать</a>
+          </li>
+          <li class="akkum-accumulators__item">
+            <div class="akkum-accumulators__top">
+              <a class="akkum-accumulators__top-link" href="#">Для мототехники</a>
+              <a class="akkum-accumulators__top-arrow" href="#">
+                <svg class="akkumn__svg-arrow" width="24" height="24">
+                  <use xlink:href="./img/svg/sprites.svg#arrow"></use>
+                </svg>
+                <svg class="akkumn__svg-arrow akkumn__svg-arrow_2" width="20" height="20">
+                  <use xlink:href="./img/svg/sprites.svg#arrow_2"></use>
+                </svg>
+              </a>
+            </div>
+            <div class=" akkum-accumulators__bottom">
+              <div class="akkum-accumulators__image">
+                <img class="akkum-accumulators__img" src="./img/main-page/kawasaki.png" alt="Кавасаки">
+              </div>
+            </div>
+            <a class="akkum-accumulators__pick" href="#">Подобрать</a>
+          </li>
+          <li class="akkum-accumulators__item">
+            <div class="akkum-accumulators__top">
+              <a class="akkum-accumulators__top-link" href="#">Для лодок</a>
+              <a class="akkum-accumulators__top-arrow" href="#">
+                <svg class="akkumn__svg-arrow" width="24" height="24">
+                  <use xlink:href="./img/svg/sprites.svg#arrow"></use>
+                </svg>
+                <svg class="akkumn__svg-arrow akkumn__svg-arrow_2" width="20" height="20">
+                  <use xlink:href="./img/svg/sprites.svg#arrow_2"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="akkum-accumulators__bottom">
+              <div class="akkum-accumulators__image">
+                <img src="./img/main-page/lodka.png" alt="Лодка">
+              </div>
+            </div>
+            <a class="akkum-accumulators__pick" href="#">Подобрать</a>
+          </li>
+        </ul>
+        <h2 class="akkum__title">
+          Лучшие бренды аккумуляторов
+        </h2>
+        <div class="akkum__bottom akkum-bottom">
+          <ul class="akkum-bottom__top-list">
+            <li class="akkum-bottom__top-item">
+              <a class="akkum-bottom__top-link" href="#">
+                <img src="./img/main-page/varta.png" alt="Varta">
+              </a>
+            </li>
+            <li class="akkum-bottom__top-item">
+              <a class="akkum-bottom__top-link" href="#">
+                <img src="./img/main-page/bosch.png" alt="Bosch">
+              </a>
+            </li>
+            <li class="akkum-bottom__top-item">
+              <a class="akkum-bottom__top-link" href="#">
+                <img src="./img/main-page/akom.png" alt="Akom">
+              </a>
+            </li>
+            <li class="akkum-bottom__top-item">
+              <a class="akkum-bottom__top-link" href="#">
+                <img src="./img/main-page/multu.png" alt="Multu">
+              </a>
+            </li>
+          </ul>
+          <ul class="akkum-bottom__bottom-list">
+            <li class="akkum-bottom__bottom-item akkum-bottom__bottom-item_hidden akkum-bottom__bottom-item_hidden_5">
+              <a class="akkum-bottom__bottom-link" href="#">
+                <img src="./img/main-page/zver.png" alt="Зверь">
+              </a>
+            </li>
+            <li
+              class="akkum-bottom__bottom-item akkum-bottom__bottom-item_hidden akkum-bottom__bottom-item_hidden_4 akkum-bottom__bottom-item_hidden_5">
+              <a class="akkum-bottom__bottom-link" href="#">
+                <img src="./img/main-page/topla.png" alt="Topla">
+              </a>
+            </li>
+            <li
+              class="akkum-bottom__bottom-item akkum-bottom__bottom-item_hidden akkum-bottom__bottom-item_hidden_4 akkum-bottom__bottom-item_hidden_5">
+              <a class="akkum-bottom__bottom-link" href="#">
+                <img src="./img/main-page/tab.png" alt="Tab">
+              </a>
+            </li>
+            <li
+              class="akkum-bottom__bottom-item akkum-bottom__bottom-item_hidden akkum-bottom__bottom-item_hidden_4 akkum-bottom__bottom-item_hidden_5">
+              <a class="akkum-bottom__bottom-link" href="#">
+                <img src="./img/main-page/spark.png" alt="Spark">
+              </a>
+            </li>
+            <li class="akkum-bottom__bottom-item akkum-bottom__bottom-item_hidden_5">
+              <a class="akkum-bottom__bottom-link" href="#">
+                <img src="./img/main-page/standart.png" alt="Стандарт">
+              </a>
+            </li>
+            <li class="akkum-bottom__bottom-item akkum-bottom__bottom-item_hidden_5">
+              <a class="akkum-bottom__bottom-link" href="#">
+                <img src="./img/main-page/unicorn.png" alt="Unicorn">
+              </a>
+            </li>
+            <li class="akkum-bottom__bottom-item akkum-bottom__bottom-item_hidden-2">
+              <a class="akkum-bottom__bottom-link" href="#">
+                <img src="./img/main-page/unicorn.png" alt="Unicorn">
+              </a>
+            </li>
+            <li class="akkum-bottom__bottom-item akkum-bottom__bottom-item_hidden-2">
+              <a class="akkum-bottom__bottom-link" href="#">
+                <img src="./img/main-page/unicorn.png" alt="Unicorn">
+              </a>
+            </li>
+            <li class="akkum-bottom__bottom-item akkum-bottom__bottom-item_hidden-3">
+              <a class="akkum-bottom__bottom-link" href="#">
+                <img src="./img/main-page/zver.png" alt="Зверь">
+              </a>
+            </li>
+            <li class="akkum-bottom__bottom-item akkum-bottom__bottom-item_hidden-3">
+              <a class="akkum-bottom__bottom-link" href="#">
+                <img src="./img/main-page/topla.png" alt="Topla">
+              </a>
+            </li>
+            <li class="akkum-bottom__bottom-item akkum-bottom__bottom-item_hidden-3">
+              <a class="akkum-bottom__bottom-link" href="#">
+                <img src="./img/main-page/topla.png" alt="Topla">
+              </a>
+            </li>
+            <li class="akkum-bottom__bottom-item akkum-bottom__bottom-item_hidden-1">
+              <a class="akkum-bottom__bottom-link" href="#">
+                <img src="./img/main-page/rusbat.png" alt="Rusbat">
+              </a>
+            </li>
+            <li class="akkum-bottom__bottom-item akkum-bottom__bottom-item_hidden-1">
+              <a class="akkum-bottom__bottom-link" href="#">
+                <img src="./img/main-page/moll-batterier.png" alt="Moll-batterier">
+              </a>
+            </li>
+            <li class="akkum-bottom__bottom-item akkum-bottom__bottom-item_hidden-1">
+              <a class="akkum-bottom__bottom-link" href="#">
+                <img src="./img/main-page/solite.png" alt="Solite">
+              </a>
+            </li>
+            <li class="akkum-bottom__bottom-item akkum-bottom__bottom-item_hidden-1">
+              <a class="akkum-bottom__bottom-link" href="#">
+                <img src="./img/main-page/forse.png" alt="Forse">
+              </a>
+            </li>
+            <li class="akkum-bottom__bottom-item akkum-bottom__bottom-item_hidden-1">
+              <a class="akkum-bottom__bottom-link" href="#">
+                <img src="./img/main-page/exide.png" alt="Exide">
+              </a>
+            </li>
+            <li class="akkum-bottom__bottom-item akkum-bottom__bottom-item_hidden-1">
+              <a class="akkum-bottom__bottom-link" href="#">
+                <img src="./img/main-page/delkor.png" alt="Delkor">
+              </a>
+            </li>
+            <li class="akkum-bottom__bottom-item akkum-bottom__bottom-item_hidden-1">
+              <a class="akkum-bottom__bottom-link" href="#">
+                <img src="./img/main-page/deka.png" alt="Deka">
+              </a>
+            </li>
+            <li class="akkum-bottom__bottom-item akkum-bottom__bottom-item_hidden-1">
+              <a class="akkum-bottom__bottom-link" href="#">
+                <img src="./img/main-page/black-horse.png" alt="Black-horse">
+              </a>
+            </li>
+            <li class="akkum-bottom__bottom-item akkum-bottom__bottom-item_hidden">
+              <a class="akkum-bottom__bottom-link" href="#">
+                <img src="./img/main-page/zver.png" alt="Зверь">
+              </a>
+            </li>
+            <li class="akkum-bottom__bottom-item akkum-bottom__bottom-item_hidden akkum-bottom__bottom-item_hidden_4">
+              <a class="akkum-bottom__bottom-link" href="#">
+                <img src="./img/main-page/topla.png" alt="Topla">
+              </a>
+            </li>
+            <li class="akkum-bottom__bottom-item akkum-bottom__bottom-item_hidden akkum-bottom__bottom-item_hidden_4">
+              <a class="akkum-bottom__bottom-link" href="#">
+                <img src="./img/main-page/tab.png" alt="Tab">
+              </a>
+            </li>
+            <li class="akkum-bottom__bottom-item akkum-bottom__bottom-item_hidden akkum-bottom__bottom-item_hidden_4">
+              <a class="akkum-bottom__bottom-link" href="#">
+                <img src="./img/main-page/spark.png" alt="Spark">
+              </a>
+            </li>
+            <li class="akkum-bottom__bottom-item">
+              <a class="akkum-bottom__bottom-link" href="#">
+                <img src="./img/main-page/standart.png" alt="Стандарт">
+              </a>
+            </li>
+            <li class="akkum-bottom__bottom-item">
+              <a class="akkum-bottom__bottom-link" href="#">
+                <img src="./img/main-page/unicorn.png" alt="Unicorn">
+              </a>
+            </li>
+            <li class="akkum-bottom__bottom-item akkum-bottom__bottom-item_hidden-2">
+              <a class="akkum-bottom__bottom-link" href="#">
+                <img src="./img/main-page/unicorn.png" alt="Unicorn">
+              </a>
+            </li>
+            <li class="akkum-bottom__bottom-item akkum-bottom__bottom-item_hidden-2">
+              <a class="akkum-bottom__bottom-link" href="#">
+                <img src="./img/main-page/unicorn.png" alt="Unicorn">
+              </a>
+            </li>
+            <li class="akkum-bottom__bottom-item akkum-bottom__bottom-item_hidden-3">
+              <a class="akkum-bottom__bottom-link" href="#">
+                <img src="./img/main-page/zver.png" alt="Зверь">
+              </a>
+            </li>
+            <li class="akkum-bottom__bottom-item akkum-bottom__bottom-item_hidden-3">
+              <a class="akkum-bottom__bottom-link" href="#">
+                <img src="./img/main-page/topla.png" alt="Topla">
+              </a>
+            </li>
+            <li class="akkum-bottom__bottom-item akkum-bottom__bottom-item_hidden-3">
+              <a class="akkum-bottom__bottom-link" href="#">
+                <img src="./img/main-page/topla.png" alt="Topla">
+              </a>
+            </li>
+            <li class="akkum-bottom__bottom-item akkum-bottom__bottom-item_hidden-1">
+              <a class="akkum-bottom__bottom-link" href="#">
+                <img src="./img/main-page/rusbat.png" alt="Rusbat">
+              </a>
+            </li>
+            <li class="akkum-bottom__bottom-item akkum-bottom__bottom-item_hidden-1">
+              <a class="akkum-bottom__bottom-link" href="#">
+                <img src="./img/main-page/moll-batterier.png" alt="Moll-batterier">
+              </a>
+            </li>
+            <li class="akkum-bottom__bottom-item akkum-bottom__bottom-item_hidden-1">
+              <a class="akkum-bottom__bottom-link" href="#">
+                <img src="./img/main-page/solite.png" alt="Solite">
+              </a>
+            </li>
+            <li class="akkum-bottom__bottom-item akkum-bottom__bottom-item_hidden-1">
+              <a class="akkum-bottom__bottom-link" href="#">
+                <img src="./img/main-page/forse.png" alt="Forse">
+              </a>
+            </li>
+            <li class="akkum-bottom__bottom-item akkum-bottom__bottom-item_hidden-1">
+              <a class="akkum-bottom__bottom-link" href="#">
+                <img src="./img/main-page/exide.png" alt="Exide">
+              </a>
+            </li>
+            <li class="akkum-bottom__bottom-item akkum-bottom__bottom-item_hidden-1">
+              <a class="akkum-bottom__bottom-link" href="#">
+                <img src="./img/main-page/delkor.png" alt="Delkor">
+              </a>
+            </li>
+            <li class="akkum-bottom__bottom-item akkum-bottom__bottom-item_hidden-1">
+              <a class="akkum-bottom__bottom-link" href="#">
+                <img src="./img/main-page/deka.png" alt="Deka">
+              </a>
+            </li>
+            <li class="akkum-bottom__bottom-item akkum-bottom__bottom-item_hidden-1">
+              <a class="akkum-bottom__bottom-link" href="#">
+                <img src="./img/main-page/black-horse.png" alt="Black-horse">
+              </a>
+            </li>
+            <li class="akkum-bottom__bottom-item akkum-bottom__bottom-item_hidden">
+              <a class="akkum-bottom__bottom-link" href="#">
+                <img src="./img/main-page/zver.png" alt="Зверь">
+              </a>
+            </li>
+            <li class="akkum-bottom__bottom-item akkum-bottom__bottom-item_hidden akkum-bottom__bottom-item_hidden_4">
+              <a class="akkum-bottom__bottom-link" href="#">
+                <img src="./img/main-page/topla.png" alt="Topla">
+              </a>
+            </li>
+            <li class="akkum-bottom__bottom-item akkum-bottom__bottom-item_hidden akkum-bottom__bottom-item_hidden_4">
+              <a class="akkum-bottom__bottom-link" href="#">
+                <img src="./img/main-page/tab.png" alt="Tab">
+              </a>
+            </li>
+            <li class="akkum-bottom__bottom-item akkum-bottom__bottom-item_hidden akkum-bottom__bottom-item_hidden_4">
+              <a class="akkum-bottom__bottom-link" href="#">
+                <img src="./img/main-page/spark.png" alt="Spark">
+              </a>
+            </li>
+            <li class="akkum-bottom__bottom-item">
+              <a class="akkum-bottom__bottom-link" href="#">
+                <img src="./img/main-page/standart.png" alt="Стандарт">
+              </a>
+            </li>
+            <li class="akkum-bottom__bottom-item">
+              <a class="akkum-bottom__bottom-link" href="#">
+                <img src="./img/main-page/unicorn.png" alt="Unicorn">
+              </a>
+            </li>
+            <li class="akkum-bottom__bottom-item akkum-bottom__bottom-item_hidden-2">
+              <a class="akkum-bottom__bottom-link" href="#">
+                <img src="./img/main-page/unicorn.png" alt="Unicorn">
+              </a>
+            </li>
+            <li class="akkum-bottom__bottom-item akkum-bottom__bottom-item_hidden-2">
+              <a class="akkum-bottom__bottom-link" href="#">
+                <img src="./img/main-page/unicorn.png" alt="Unicorn">
+              </a>
+            </li>
+            <li class="akkum-bottom__bottom-item akkum-bottom__bottom-item_hidden-3">
+              <a class="akkum-bottom__bottom-link" href="#">
+                <img src="./img/main-page/zver.png" alt="Зверь">
+              </a>
+            </li>
+            <li class="akkum-bottom__bottom-item akkum-bottom__bottom-item_hidden-3">
+              <a class="akkum-bottom__bottom-link" href="#">
+                <img src="./img/main-page/topla.png" alt="Topla">
+              </a>
+            </li>
+            <li class="akkum-bottom__bottom-item akkum-bottom__bottom-item_hidden-3">
+              <a class="akkum-bottom__bottom-link" href="#">
+                <img src="./img/main-page/topla.png" alt="Topla">
+              </a>
+            </li>
+            <li class="akkum-bottom__bottom-item akkum-bottom__bottom-item_hidden-1">
+              <a class="akkum-bottom__bottom-link" href="#">
+                <img src="./img/main-page/rusbat.png" alt="Rusbat">
+              </a>
+            </li>
+            <li class="akkum-bottom__bottom-item akkum-bottom__bottom-item_hidden-1">
+              <a class="akkum-bottom__bottom-link" href="#">
+                <img src="./img/main-page/moll-batterier.png" alt="Moll-batterier">
+              </a>
+            </li>
+            <li class="akkum-bottom__bottom-item akkum-bottom__bottom-item_hidden-1">
+              <a class="akkum-bottom__bottom-link" href="#">
+                <img src="./img/main-page/solite.png" alt="Solite">
+              </a>
+            </li>
+            <li class="akkum-bottom__bottom-item akkum-bottom__bottom-item_hidden-1">
+              <a class="akkum-bottom__bottom-link" href="#">
+                <img src="./img/main-page/forse.png" alt="Forse">
+              </a>
+            </li>
+            <li class="akkum-bottom__bottom-item akkum-bottom__bottom-item_hidden-1">
+              <a class="akkum-bottom__bottom-link" href="#">
+                <img src="./img/main-page/exide.png" alt="Exide">
+              </a>
+            </li>
+            <li class="akkum-bottom__bottom-item akkum-bottom__bottom-item_hidden-1">
+              <a class="akkum-bottom__bottom-link" href="#">
+                <img src="./img/main-page/delkor.png" alt="Delkor">
+              </a>
+            </li>
+            <li class="akkum-bottom__bottom-item akkum-bottom__bottom-item_hidden-1">
+              <a class="akkum-bottom__bottom-link" href="#">
+                <img src="./img/main-page/deka.png" alt="Deka">
+              </a>
+            </li>
+            <li class="akkum-bottom__bottom-item akkum-bottom__bottom-item_hidden-1">
+              <a class="akkum-bottom__bottom-link" href="#">
+                <img src="./img/main-page/black-horse.png" alt="Black-horse">
+              </a>
+            </li>
+          </ul>
+          <div class="akkum-bottom__wrapper-more">
+            <a class="akkum-bottom__more" href="#">
+              Посмотреть ещё
+              <span>
+                <img class="akkum-bottom__more-load" src="./img/main-page/loading-blue.png" alt="Загрузка">
+                <img class="akkum-bottom__more-load akkum-bottom__more-load_display"
+                  src="./img/main-page/loading-white.png" alt="Загрузка">
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="benefits-block">
+      <div class="benefits-block__container container">
+
+      </div>
+    </section>
+    <section class="call">
+      <div class="call__container container">
+        <div class="call__content"> 
+        <div class="call__left"> 
+           <div class="call__left-image">
+            <img src="./img/main-page/podderjka.png" alt="Иконка">
+          </div> 
+           <div class="call__body">
+            <h3 class="call__title">
+              30% водителей сдают ещё хорошие аккумуляторы
+              <span>Не торопитесь менять аккумулятор! </span>
+            </h3>
+            <p class="call__text">
+              <span>Запишитесь</span> на бесплатную диагностику
+            </p>
+            <div class="call__wrapper-form">
+              <form class="call__form" action="#">
+                <input class="call__input" type="text" placeholder="Введите номер телефона">
+                <button class="call__button">
+                  <span>Отправить</span>
+                  <img src="./img/svg/send.svg" alt="Иконка">
+                </button>
+              </form>
+            </div>
+          </div> 
+         </div> 
+         <div class="call__right-image">
+          <img src="./img/main-page/man.png" alt="Мужчина">
+        </div>
+         </div>
+       <!-- <div class="call__content-okay">
+        <div class="call__okay">
+          <div class="call__icon-okay">
+            <img src="./img/main-page/okay.png" alt="Okay">
+          </div>
+          <h3 class="call__okay-thanks">
+            Спасибо
+          </h3>
+          <p class="call__okay-text call__okay-text_bold">
+            Ваша заявка принята!
+          </p>
+          <p class="call__okay-text">
+            В ближайшее время наш менеджер свяжется с вами 
+          </p>
+        </div>
+        <div class="call__okay-image">
+          <img src="./img/main-page/man.png" alt="Мужчина">
+        </div>
+       </div> -->
+
+      </div>
+    </section>
+  </main>
+  <div class="popup-call">
+  <div class="popup-call__close"></div>
+  <div class="popup-call__body">
+    <div class="popup-call__body-left">
+      <div class="popup-call__image">
+        <img src="./img/popup/popup-zvonok.png" alt="Картинка">
+      </div>
+    </div>
+    <div class="popup-call__body-right">
+    <div class="popup-call__item-form">
+        <h3 class="popup-call__title">
+          Заказать звонок
+        </h3>
+        <form action="#" class="popup-call__form">
+          <div class="popup-call__wrapper-input">
+            <input class="popup-call__input" type="text" placeholder="Имя" required>
+          </div>
+          <div class="popup-call__wrapper-input">
+            <input class="popup-call__input error" type="tel" placeholder="Номер телефона" data-tel-input required>
+          </div>
+          <div class="popup-call__wrapper-button">
+            <button class="popup-call__button">
+              Отправить
+            </button>
+          </div>
+        </form>
+        <p class="popup-call__warning">
+          Нажимая на кнопку “Отправить”, вы даете <span>согласие на обработку персональных данных</span>
+      </p>
+      <p class="popup-call__error">
+        Введены неверные данные
+      </p>
+    </div>
+    <div class="popup-call__okay">
+      <div class="popup-call__icon">
+        <img src="./img/popup/popup-okay.png" alt="Картинка">
+      </div>
+      <p class="popup-call__thanks">
+        Спасибо!
+      </p>
+      <p class="popup-call__text">
+        Ваша заявка принята!
+      </p>
+      <p class="popup-call__text popup-call__text_light">
+        В ближайшее время наш менеджер свяжется с вами 
+      </p>
+    </div>
+  </div>
+  <button class="popup-call__exit"></button>
+  </div>
+  </div>
+  <button class="button-fixed popup-init-call">
+    <img src="./img/popup/button-call.png" alt="Картинка">
+  </button>
+  <footer class="footer">
+    <div class="footer__container container">
+      <div class="footer__wrapper-logo">
+        <a class="footer__logo" href="index.html">
+          <img src="./img/svg/footer-logo.svg" alt="Логотип">
+        </a>
+      </div>
+      <div class="footer__middle">
+        <div class="footer__middle-left">
+          <nav class="footer__nav">
+            <ul class="footer__lst">
+              <li class="footer__itm">
+                <a class="footer__link footer-link-active" href="index.html">
+                  Главная
+                </a>
+              </li>
+              <li class="footer__itm">
+                <a class="footer__link" href="catalog.html">
+                  Каталог товаров
+                </a>
+              </li>
+              <li class="footer__itm">
+                <a class="footer__link" href="assortment.html">
+                  Подбор по автомобилю
+                </a>
+              </li>
+              <li class="footer__itm">
+                <a class="footer__link" href="offer.html">
+                  Коммерческое предложение
+                </a>
+              </li>
+              <li class="footer__itm">
+                <a class="footer__link" href="contacts.html">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <button class="footer__order footer__order_fade popup-init-call">
+            Заказать звонок
+          </button>
+        </div>
+        <div class="footer__middle-column">
+          <h3 class="footer__column-title" data-spoller>
+            Категории аккумуляторов
+          </h3>
+          <ul class="footer__column-list">
+            <li class="footer__column-item">
+              <a class="footer__column-link" href="#">
+                <svg class="footer__svg" width="24" height="24">
+                  <use xlink:href="./img/svg/sprites.svg#arrow-right"></use>
+                </svg>
+                <svg class="footer__svg footer__svg_2" width="20" height="20">
+                  <use xlink:href="./img/svg/sprites.svg#arrow-right_2"></use>
+                </svg>
+                для легковых автомобилей
+              </a>
+            </li>
+            <li class="footer__column-item">
+              <a class="footer__column-link" href="#">
+                <svg class="footer__svg" width="24" height="24">
+                  <use xlink:href="./img/svg/sprites.svg#arrow-right"></use>
+                </svg>
+                <svg class="footer__svg footer__svg_2" width="20" height="20">
+                  <use xlink:href="./img/svg/sprites.svg#arrow-right_2"></use>
+                </svg>
+                для грузовых автомобилей
+              </a>
+            </li>
+            <li class="footer__column-item">
+              <a class="footer__column-link" href="#">
+                <svg class="footer__svg" width="24" height="24">
+                  <use xlink:href="./img/svg/sprites.svg#arrow-right"></use>
+                </svg>
+                <svg class="footer__svg footer__svg_2" width="20" height="20">
+                  <use xlink:href="./img/svg/sprites.svg#arrow-right_2"></use>
+                </svg>
+                для мототехники
+              </a>
+            </li>
+            <li class="footer__column-item">
+              <a class="footer__column-link" href="#">
+                <svg class="footer__svg" width="24" height="24">
+                  <use xlink:href="./img/svg/sprites.svg#arrow-right"></use>
+                </svg>
+                <svg class="footer__svg footer__svg_2" width="20" height="20">
+                  <use xlink:href="./img/svg/sprites.svg#arrow-right_2"></use>
+                </svg>
+                для лодок
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__middle-column contacts-column">
+          <h3 class="footer__column-title" data-spoller>
+            Контакты
+          </h3>
+          <ul class="footer__column-list">
+            <li class="footer__column-item">
+              <p class="footer__geo">
+                <svg class="footer__geo-svg" width="24" height="24">
+                  <use xlink:href="./img/svg/sprites.svg#footer-geo"></use>
+                </svg>
+                <svg class="footer__geo-svg footer__geo-svg_1" width="20" height="21">
+                  <use xlink:href="./img/svg/sprites.svg#footer-geo_2"></use>
+                </svg>
+                Санкт-Петербург
+              </p>
+            </li>
+            <li class="footer__column-item">
+              <a class="footer__column-phone" href="tel:+79657501317">
+                <svg class="footer__phone-svg" width="24" height="24">
+                  <use xlink:href="./img/svg/sprites.svg#phone-header"></use>
+                </svg>
+                <svg class="footer__phone-svg footer__phone-svg_1" width="20" height="20">
+                  <use xlink:href="./img/svg/sprites.svg#phone-header_2"></use>
+                </svg>
+                +7 (965) 750-13-17
+              </a>
+            </li>
+            <li class="footer__column-item">
+              <a class="footer__column-mail" href="mailto:shjfkmfbsnlfdknl@mail.ru">
+                <svg class="footer__mail-svg" width="24" height="24">
+                  <use xlink:href="./img/svg/sprites.svg#mail"></use>
+                </svg>
+                <svg class="footer__mail-svg footer__mail-svg_1" width="20" height="21">
+                  <use xlink:href="./img/svg/sprites.svg#mail_2"></use>
+                </svg>
+                shjfkmfbsnlfdknl@mail.ru
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__middle-right">
+          <div class="footer__wrapper-tel" data-da=".footer__container, 986, last">
+            <a class="footer__tel" href="tel:+79657501317">
+              +7 (965) 750-13-17
+            </a>
+          </div>
+          <button class="footer__order popup-init-call" data-da=".contacts-column, 986, last">
+            Заказать звонок
+          </button>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__bottom-left">
+          <p class="footer__copy">
+            © 2021. Все права защищены
+          </p>
+        </div>
+        <div class="footer__wrapper-policy" data-da=".footer__bottom-left, 700, 1">
+          <a class="footer__policy" href="">
+            Политика конфиденциальности
+          </a>
+        </div>
+        <div class="footer__wrapper-development">
+          <a class="footer__development" href="#">
+            Digital
+            <img class="footer__development-img" src="./img/svg/abi_development.svg" alt="Разработчики сайта">
+            <img class="footer__development-img footer__development-img_2" src="./img/svg/abi-development_2.svg"
+              alt="Разработчики сайта">
+          </a>
+        </div>
+      </div>
+      <button class="footer__call popup-init-call">
+        <svg width="24" height="24">
+          <use xlink:href="./img/svg/sprites.svg#phone-header"></use>
+        </svg>
+      </button>
+    </div>
+  </footer>
+  <script src="./resources/custom-scroll/simplebar.js"></script>
+  <script src="./js/main.min.js"></script>
+</body>
+
+</html>

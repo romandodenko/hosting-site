@@ -1,0 +1,1606 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./img/favicon.png">
+  <link rel="preload" href="./fonts/DaysOne-Regular.woff" as="font">
+  <link rel="preload" href="./fonts/DaysOne-Regular.woff2" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-Bold.woff" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-Bold.woff2" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-SemiBold.woff" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-SemiBold.woff2" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-Regular.woff" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-Regular.woff2" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-Regular-Italic.woff" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-Regular-Italic.woff2" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-Light.woff" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-Light.woff2" as="font">
+  <link rel="stylesheet" href="./resources/swiper/swiper.css">
+  <link rel="stylesheet" href="./css/main-min.css">
+  <title>Лавка олигарха</title>
+</head>
+
+<body>
+  <div class="page">
+    <header class="header">
+      <!-- Если авторизован  -->
+      <!-- <div class="header__container header__container_log container">
+        <button class="header__burger burger burger_log">
+          <span class="burger__line"></span>
+        </button>
+        <div class="header__menu header__menu_log">
+          <nav class="header__nav nav nav_log">
+            <ul class="nav__list">
+              <li class="nav__item nav__item_blue accordion-clicker">
+                <a class="nav__link" href="#!">
+                  О системе
+                  <svg width="10" height="8">
+                    <use xlink:href="./img/svg/sprites.svg#arrow"></use>
+                  </svg>
+                </a>
+                <div class="nav__accordion-content">
+                  <a class="nav__accordion-link" href="#!">
+                    Договоры
+                  </a>
+                  <a class="nav__accordion-link" href="news.html">
+                    Новости
+                  </a>
+                  <a class="nav__accordion-link" href="#!">
+                    Контакты
+                  </a>
+                </div>
+              </li>
+
+              <li class="nav__item nav__item_purple">
+                <a class="nav__link" href="partners.html">
+                  Партнерская программа
+                </a>
+              </li>
+              <li class="nav__item nav__item_green">
+                <a class="nav__link" href="bonuses-and-promotions.html">
+                  Бонусы и акции
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__wrapper-logo header__wrapper-logo_margin header__wrapper-logo_menu header__wrapper-logo_log-none">
+            <img src="./img/background-mini.svg" alt="Задний фон">
+            <a class="header__logo" href="index.html">
+              <img src="./img/svg/logotip.svg" alt="Логотип сайта">
+            </a>
+          </div>
+          <nav class="header__nav nav nav_log">
+            <ul class="nav__list">
+              <li class="nav__item nav__item_grey">
+                <a class="nav__link" href="faq.html">
+                  FAQ / Помощь
+                </a>
+              </li>
+              <li class="nav__item nav__item_gold">
+                <a class="nav__link" href="#!">
+                  Конструктор документов
+                </a>
+              </li>
+            </ul>
+          </nav>
+         <div class="header__help header__help_margin">
+          <a class="header__help-link" href="#!">
+            <span><img src="./img/icon/help.svg" alt="Иконка"></span>
+            Техподдержка
+          </a>
+          <img class="header__help-background" src="./img/background-big.svg" alt="Задний фон">
+         </div>
+        </div>
+        <div class="header__wrapper-logo header__wrapper-logo_margin header__wrapper-logo_log">
+          <img src="./img/background-mini.svg" alt="Задний фон">
+          <a class="header__logo" href="index.html">
+            <img src="./img/svg/logotip.svg" alt="Логотип сайта">
+          </a>
+        </div>
+        <div class="header__profile profile">
+          <div class="profile__items" data-da=".profile-menu, 760, 0">
+            <div class="profile__item">
+              <span class="profile__icon">
+                <a href="#!">
+                  <img src="./img/icon/kybok.svg" alt="Иконка">
+                  <span class="profile__value">
+                    12
+                  </span>
+                </a>
+              </span>
+            </div>
+            <div class="profile__item">
+              <span class="profile__icon">
+                <a href="#!">
+                  <img src="./img/icon/almaz.svg" alt="Иконка">
+                  <span class="profile__value profile__value_left">
+                    17
+                  </span>
+                </a>
+  
+              </span>
+            </div>
+            <div class="profile__item">
+              <span class="profile__icon">
+                <a href="#!">
+                  <img src="./img/icon/kolokolchik.svg" alt="Иконка">
+                </a>
+              </span>
+              <span class="profile__value  profile__value_change profile__value_change-background">
+                14
+              </span>
+            </div>
+            <div class="profile__item">
+              <span class="profile__icon">
+                <a href="#!">
+                  <img src="./img/icon/mail.svg" alt="Иконка">
+                </a>
+              </span>
+              <span class="profile__value profile__value_change">
+                1454
+              </span>
+            </div>
+          </div>
+          <div class="profile__avatar">
+            <button class="profile__btn">
+              <img src="./img/icon/avatar-mini.png" alt="Аватар">
+            </button>
+            <span class="profile__arrow">
+              <img src="./img/icon/arrow-cabinet.svg" alt="Иконка">
+            </span>
+          </div>
+          <a class="profile__exit" href="#!">
+            <img src="./img/icon/log-out.svg" alt="Иконка">
+          </a>
+          <div class="profile__menu profile-menu">
+            <ul class="profile-menu__list">
+              <li class="profile-menu__item">
+                <button class="profile-menu__button profile-menu__button_blue">
+                  Правила и договоры
+                  <svg width="10" height="8">
+                    <use xlink:href="./img/svg/sprites.svg#arrow"></use>
+                  </svg>
+                </button>
+                <div class="profile-menu__accordion-content">
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Оказание информационных услуг
+                  </a>
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Правила пользования Порталом
+                  </a>
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Тарифы
+                  </a>
+                </div>
+              </li>
+              <li class="profile-menu__item">
+                <button class="profile-menu__button profile-menu__button_purple">
+                  Общее
+                  <svg width="10" height="8">
+                    <use xlink:href="./img/svg/sprites.svg#arrow"></use>
+                  </svg>
+                </button>
+                <div class="profile-menu__accordion-content">
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Личные данные
+                  </a>
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Настройки
+                  </a>
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Стоп-лист
+                  </a>
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Мои бонусы
+                  </a>
+                </div>
+              </li>
+              <li class="profile-menu__item">
+                <button class="profile-menu__button profile-menu__button_green">
+                  Для заёмщика
+                  <svg width="10" height="8">
+                    <use xlink:href="./img/svg/sprites.svg#arrow"></use>
+                  </svg>
+                </button>
+                <div class="profile-menu__accordion-content">
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Опубликовать заявку
+                  </a>
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Мои заявки
+                  </a>
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Полученные займы
+                  </a>
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Избранные заявки
+                  </a>
+                     <a class="profile-menu__accordion-link" href="#!">
+                      Заказ документов по сделкам
+                  </a>
+                </div>
+              </li>
+              <li class="profile-menu__item">
+                <button class="profile-menu__button profile-menu__button_gold">
+                  Для кредитора
+                  <svg width="10" height="8">
+                    <use xlink:href="./img/svg/sprites.svg#arrow"></use>
+                  </svg>
+                </button>
+                <div class="profile-menu__accordion-content">
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Опубликовать предложение
+                  </a>
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Мои предложения
+                  </a>
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Выданные займы
+                  </a>
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Избранные заявки
+                  </a>
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Заказ документов по сделкам
+                  </a>
+                </div>
+              </li>
+            </ul>
+            <div class="header__help header__help_margin">
+              <a class="header__help-link" href="#!">
+                <span><img src="./img/icon/help.svg" alt="Иконка"></span>
+                Техподдержка
+              </a>
+              <img class="header__help-background" src="./img/background-big.svg" alt="Задний фон">
+             </div>
+          </div>
+        </div>
+      </div> -->
+      <!-- Если не авторизован  -->
+      <div class="header__container container">
+        <button class="header__burger burger">
+          <span class="burger__line"></span>
+        </button>
+        <div class="header__menu">
+          <nav class="header__nav nav">
+            <ul class="nav__list">
+              <li class="nav__item nav__item_blue accordion-clicker">
+                <a class="nav__link" href="#!">
+                  О системе
+                  <svg width="10" height="8">
+                    <use xlink:href="./img/svg/sprites.svg#arrow"></use>
+                  </svg>
+                </a>
+                <div class="nav__accordion-content">
+                  <a class="nav__accordion-link" href="#!">
+                    Договоры
+                  </a>
+                  <a class="nav__accordion-link" href="news.html">
+                    Новости
+                  </a>
+                  <a class="nav__accordion-link" href="#!">
+                    Контакты
+                  </a>
+                </div>
+              </li>
+
+              <li class="nav__item nav__item_purple">
+                <a class="nav__link" href="partners.html">
+                  Партнерская программа
+                </a>
+              </li>
+              <li class="nav__item nav__item_green">
+                <a class="nav__link" href="bonuses-and-promotions.html">
+                  Бонусы и акции
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__wrapper-logo header__wrapper-logo_menu">
+            <img src="./img/background-mini.svg" alt="Задний фон">
+            <a class="header__logo" href="index.html">
+              <img src="./img/svg/logotip.svg" alt="Логотип сайта">
+            </a>
+          </div>
+          <nav class="header__nav nav">
+            <ul class="nav__list">
+              <li class="nav__item nav__item_grey">
+                <a class="nav__link" href="faq.html">
+                  FAQ / Помощь
+                </a>
+              </li>
+              <li class="nav__item nav__item_gold">
+                <a class="nav__link" href="#!">
+                  Конструктор документов
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__help">
+            <a class="header__help-link" href="#!">
+              <span><img src="./img/icon/help.svg" alt="Иконка"></span>
+              Техподдержка
+            </a>
+            <img class="header__help-background" src="./img/background-big.svg" alt="Задний фон">
+          </div>
+        </div>
+        <div class="header__wrapper-logo">
+          <img src="./img/background-mini.svg" alt="Задний фон">
+          <a class="header__logo" href="index.html">
+            <img src="./img/svg/logotip.svg" alt="Логотип сайта">
+          </a>
+        </div>
+        <a class="header__log" href="#!">
+          Войти
+        </a>
+      </div>
+    </header>
+    <main>
+      <section class="pages">
+        <div class="container">
+          <div class="pages__content">
+            <ul class="pages__list">
+              <li class="pages__item">
+                <a class="pages__link" href="index.html">
+                  Главная
+                </a>
+              </li>
+              <li class="pages__item">
+                <a class="pages__link" href="partners.html">
+                  Партнерская программа
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="partners">
+        <div class="container">
+          <div class="partners__content">
+            <div class="partners__top">
+              <h1 class="partners__title title">
+                Партнерская программа
+              </h1>
+            </div>
+            <ul class="partners__top-list partners-top-list">
+              <li class="partners-top-list__item partners-top-list__item_1">
+                <h2 class="partners__substitle" data-da=".partners__top, 1350, 1">
+                  Почему с нами удобно работать?
+                </h2>
+              </li>
+              <li class="partners-top-list__item partners-top-list__item_2">
+                <span class="partners-top-list__icon partners-top-list__icon_green">
+                  <img src="./img/icon/kowelek-white.svg" alt="Иконка кошелька">
+                </span>
+                <div class="partners-top-list__descr">
+                  <p class="partners-top-list__text">
+                    получайте доход от каждого привлеченного пользователя
+                  </p>
+                  <p class="partners-top-list__text">
+                    выплаты партнеру в виде партнерского вознаграждения производятся 1 раз в месяц
+                  </p>
+                </div>
+              </li>
+              <li class="partners-top-list__item partners-top-list__item_3">
+                <span class="partners-top-list__icon partners-top-list__icon_gold">
+                  <img src="./img/icon/procenti.svg" alt="Иконка процентов">
+                </span>
+                <div class="partners-top-list__descr">
+                  <p class="partners-top-list__text">
+                    Выплата будет осуществляться в размере 25% от дохода портала от каждого привлеченного пользователя.
+                  </p>
+                </div>
+              </li>
+              <li class="partners-top-list__item partners-top-list__item_4">
+                <img class="partners-top-list__item-image" src="./img/partners/image-1.png" alt="Картинка">
+              </li>
+              <li class="partners-top-list__item partners-top-list__item_5">
+                <div class="partners-top-list__body">
+                  <span class="partners-top-list__icon-rybl">
+                    <img src="./img/icon/rybl.svg" alt="Иконка рубля">
+                  </span>
+                  <strong class="partners-top-list__strong">
+                    Начни зарабатывать прямо сейчас
+                  </strong>
+
+                  <div class="partners-top-list__wrapper-link">
+                <a class="partners-top-list__link" href="#!">Присоединиться</a>
+              </div>
+                  <img class="partners-top-list__monets" src="./img/partners/monets.png" alt="Картинка монеток">
+                </div>
+              </li>
+              <li class="partners-top-list__item partners-top-list__item_6">
+                <img class="partners-top-list__item-image" src="./img/partners/image-2.png" alt="Картинка">
+              </li>
+              <li class="partners-top-list__item partners-top-list__item_7 partners-video">
+                <video src="./video/video.mp4" loop preload="metadata" poster="./img/partners/poster.png" muted></video>
+                <span class="partners-top-list__icon-play">
+                  <img src="./img/icon/play-2.svg" alt="Иконка проигрывателя">
+                </span>
+              </li>
+            </ul>
+            <div class="partners__descr partners-descr">
+              <div class="partners-descr__top ">
+                <h2 class="partners-descr__title">
+                  Информация о программе
+                </h2>
+              </div>
+              <div class="partners-descr__middle">
+                <div class="partners-descr__column">
+                    <p class="partners-descr__text">
+                      Спешим сообщить вам, что на сайте появилась возможность загрузить кредитный отчет, полученный в кредитном отчетотчет, полученный в кредитном отчет.Спешим сообщить вам, что на сайте появилась возможность загрузить кредитный отчет, полученный в кредитном отчетотчет, полученный в кредитном отчет.
+                    </p>
+                    <p class="partners-descr__text">
+                      Спешим сообщить вам, что на сайте появилась возможность загрузить кредитный отчет, полученный в кредитном отчетотчет, полученный в кредитном отчет.Спешим сообщить вам, что на сайте появилась возможность загрузить кредитный отчет, полученный в кредитном отчетотчет, полученный в кредитном отчет.
+                    </p>
+                  </div>
+                  <div class="partners-descr__column">
+                    <p class="partners-descr__text">
+                      Спешим сообщить вам, что на сайте появилась возможность загрузить кредитный отчет, полученный в кредитном отчетотчет, полученный в кредитном отчет.Спешим сообщить вам, что на сайте появилась возможность загрузить кредитный отчет, полученный в кредитном отчетотчет, полученный в кредитном отчет.
+                    </p>
+                    <p class="partners-descr__text">
+                      Спешим сообщить вам, что на сайте появилась возможность загрузить кредитный отчет, полученный в кредитном отчетотчет, полученный в кредитном отчет.Спешим сообщить вам, что на сайте появилась возможность загрузить кредитный отчет, полученный в кредитном отчетотчет, полученный в кредитном отчет.
+                    </p>
+                  </div>
+               
+              </div>
+           
+            </div>
+          </div>
+          <!-- Если авторизован -->
+
+          <!-- <div class="partners__content partners__content_log">
+            <div class="partners__top">
+              <h1 class="partners__title title">
+                Партнерская программа
+              </h1>
+            </div>
+            <ul class="partners__top-list partners-top-list">
+              <li class="partners-top-list__item partners-top-list__item_1">
+                <h2 class="partners__substitle" data-da=".partners__top, 1350, 1">
+                  Почему с нами удобно работать?
+                </h2>
+              </li>
+              <li class="partners-top-list__item partners-top-list__item_2">
+                <span class="partners-top-list__icon partners-top-list__icon_green">
+                  <img src="./img/icon/kowelek-white.svg" alt="Иконка кошелька">
+                </span>
+                <div class="partners-top-list__descr">
+                  <p class="partners-top-list__text">
+                    получайте доход от каждого привлеченного пользователя
+                  </p>
+                  <p class="partners-top-list__text">
+                    выплаты партнеру в виде партнерского вознаграждения производятся 1 раз в месяц
+                  </p>
+                </div>
+              </li>
+              <li class="partners-top-list__item partners-top-list__item_3">
+                <span class="partners-top-list__icon partners-top-list__icon_gold">
+                  <img src="./img/icon/procenti.svg" alt="Иконка процентов">
+                </span>
+                <div class="partners-top-list__descr">
+                  <p class="partners-top-list__text">
+                    Выплата будет осуществляться в размере 25% от дохода портала от каждого привлеченного пользователя.
+                  </p>
+                </div>
+              </li>
+              <li class="partners-top-list__item partners-top-list__item_4">
+                <img class="partners-top-list__item-image" src="./img/partners/image-1.png" alt="Картинка">
+                <a class="partners-top-list__download" href="./img/partners/image-1.png" download>
+                  Скачать
+                  <span class="partners-top-list__download-icon">
+                    <img src="./img/icon/download.svg" alt="Иконка скачать">
+                  </span>
+                </a>
+              </li>
+              <li class="partners-top-list__item partners-top-list__item_5">
+                <div class="partners-top-list__body">
+                  <span class="partners-top-list__icon-rybl">
+                    <img src="./img/icon/rybl.svg" alt="Иконка рубля">
+                  </span>
+                  <strong class="partners-top-list__strong">
+                    Начни зарабатывать прямо сейчас
+                  </strong>
+                  <img class="partners-top-list__monets" src="./img/partners/monets.png" alt="Картинка монеток">
+                </div>
+              </li>
+              <li class="partners-top-list__item partners-top-list__item_6">
+                <img class="partners-top-list__item-image" src="./img/partners/image-2.png" alt="Картинка">
+                <a class="partners-top-list__download" href="./img/partners/image-2.png" download>
+                  Скачать
+                  <span class="partners-top-list__download-icon">
+                    <img src="./img/icon/download.svg" alt="Иконка скачать">
+                  </span>
+                </a>
+              </li>
+              <li class="partners-top-list__item partners-top-list__item_7 partners-video">
+                <video src="./video/video.mp4" loop preload="metadata" poster="./img/partners/poster.png" muted></video>
+                <a class="partners-top-list__download" href="./video/video.mp4" download>
+                  Скачать
+                  <span class="partners-top-list__download-icon">
+                    <img src="./img/icon/download.svg" alt="Иконка скачать">
+                  </span>
+                </a>
+                <span class="partners-top-list__icon-play">
+                  <img src="./img/icon/play-2.svg" alt="Иконка проигрывателя">
+                </span>
+              </li>
+            </ul>
+            <div class="partners__descr partners-descr">
+              <div class="partners-descr__top partners-descr__top_log">
+                <h2 class="partners-descr__title">
+                  Информация о программе
+                </h2>
+
+                <button class="partners__button button-arrow clicker-text"><span><img
+                      src="./img/icon/arrow-dropdown-a.svg" alt="Иконка стрелочки"></span></button>
+
+              </div>
+              <div class="partners-descr__middle partners-descr__middle_log">
+                <div class="partners-descr__column partners-descr__column_none">
+                  <p class="partners-descr__text">
+                    Спешим сообщить вам, что на сайте появилась возможность загрузить кредитный отчет, полученный в
+                    кредитном отчетотчет, полученный в кредитном отчет.Спешим сообщить вам, что на сайте появилась
+                    возможность загрузить кредитный отчет, полученный в кредитном отчетотчет, полученный в кредитном
+                    отчет.
+                  </p>
+                  <p class="partners-descr__text">
+                    Спешим сообщить вам, что на сайте появилась возможность загрузить кредитный отчет, полученный в
+                    кредитном отчетотчет, полученный в кредитном отчет.Спешим сообщить вам, что на сайте появилась
+                    возможность загрузить кредитный отчет, полученный в кредитном отчетотчет, полученный в кредитном
+                    отчет.
+                  </p>
+                </div>
+                <div class="partners-descr__column partners-descr__column_none">
+                  <p class="partners-descr__text">
+                    Спешим сообщить вам, что на сайте появилась возможность загрузить кредитный отчет, полученный в
+                    кредитном отчетотчет, полученный в кредитном отчет.Спешим сообщить вам, что на сайте появилась
+                    возможность загрузить кредитный отчет, полученный в кредитном отчетотчет, полученный в кредитном
+                    отчет.
+                  </p>
+                  <p class="partners-descr__text">
+                    Спешим сообщить вам, что на сайте появилась возможность загрузить кредитный отчет, полученный в
+                    кредитном отчетотчет, полученный в кредитном отчет.Спешим сообщить вам, что на сайте появилась
+                    возможность загрузить кредитный отчет, полученный в кредитном отчетотчет, полученный в кредитном
+                    отчет.
+                  </p>
+                </div>
+              </div>
+
+              <div class="partners-descr__bottom">
+                <div class="partners-descr__copy">
+                  <h3 class="partners-descr__copy-title">
+                    Скопируйте вашу партнерскую ссылку
+                  </h3>
+                  <div class="partners-descr__copy-body">
+                    <input class="partners-descr__copy-value copy-value" type="text"
+                      value="https://www.figma.com/files/recent?fuid=904288819424597633">
+                    <button class="partners-descr__copy-button copy-btn">
+                      <img src="./img/icon/copy.svg" alt="Иконка скопировать">
+                    </button>
+                  </div>
+                </div>
+                <div class="partners-descr__identifikator">
+                  <div class="partners-descr__identifikator-body">
+                    <h3 class="partners-descr__identifikator-title">
+                      Ваш партнерский идентификатор
+                    </h3>
+                    <p class="partners-descr__identifikator-value">
+                      121635446541222
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="partners__wrapper-table">
+            <div class="partners__table partners-table">
+              <div class="partners-table__top">
+                <p class="partners-table__text partners-table__text_align-left partners-table__text_weight">
+                  Ник пользователя
+                </p>
+                <p class="partners-table__text partners-table__text_none-3 partners-table__text_weight">
+                  Дата регистрации пользователя
+                </p>
+                <p class="partners-table__text partners-table__text_none-4 partners-table__text_weight">
+                  Сумма дохода портала
+                </p>
+                <p class="partners-table__text partners-table__text_weight">
+                  Сумма партнерского вознаграждения
+                </p>
+                <p class="partners-table__text partners-table__text_none-2 partners-table__text_weight">
+                  Сумма начисленного вознаграждения
+                </p>
+                <p class="partners-table__text partners-table__text_none-1 partners-table__text_weight">
+                  Дата начисления
+                </p>
+                <p
+                  class="partners-table__text partners-table__text_none-1 partners-table__text_align-right partners-table__text_weight">
+                  Дата выплаты
+                </p>
+              </div>
+              <div class="partners-table__rows">
+                <div class="partners-table__row">
+                  <div class="partners-table__row-content">
+                    <div class="partners-table__user">
+                      <span class="partners-table__icon">
+                        <img src="./img/icon/avatar-mini.png" alt="Аватар">
+                      </span>
+                      <a class="partners-table__name" href="#!">
+                        Константин У. 78
+                      </a>
+                    </div>
+                    <p class="partners-table__text row-1-value-1" data-da=".row-1-item-1, 550, 1">
+                      15.01.2022
+                    </p>
+                    <p class="partners-table__text">
+                      30 000 ₽
+                    </p>
+                    <p class="partners-table__text row-1-value-2" data-da=".row-1-item-2, 767, 1">
+                      7 500 ₽
+                    </p>
+                    <p class="partners-table__text row-1-value-3" data-da=".row-1-item-3, 945, 1">
+                      7 500 ₽
+                    </p>
+                    <p class="partners-table__text row-1-value-4" data-da=".row-1-item-4, 1200, 1">
+                      25.01.2022
+                    </p>
+                    <p class="partners-table__text row-1-value-5" data-da=".row-1-item-5, 1200, 1">
+                      30.02.2022
+                    </p>
+                    <button class="partners-table__button tab-button button-arrow" data-path="item1" data-path1="item1"
+                      data-target1="item1"><span><img src="./img/icon/arrow-dropdown-a.svg"
+                          alt="Иконка стрелочки"></span></button>
+                  </div>
+                  <div class="partners-table__row-bottom tab-content" data-target="item1">
+                    <div class="partners-table__row-column partners-table__row-column_1">
+                      <div class="partners-table__row-item partners-table__row-item_display-4 row-1-item-1">
+                        <p class="partners-table__text partners-table__text_weight-2">
+                          Дата регистрации пользователя
+                        </p>
+                      </div>
+                      <div class="partners-table__row-item partners-table__row-item_display-3 row-1-item-2">
+                        <p class="partners-table__text partners-table__text_weight-2">
+                          Сумма дохода портала
+                        </p>
+                      </div>
+                      <div class="partners-table__row-item partners-table__row-item_display-2 row-1-item-3">
+                        <p class="partners-table__text partners-table__text_weight-2">
+                          Сумма начисленного вознаграждения
+                        </p>
+                      </div>
+                    </div>
+                    <div class="partners-table__row-column">
+                      <div class="partners-table__row-item partners-table__row-item_display-1 row-1-item-4">
+                        <p class="partners-table__text partners-table__text_weight-2">
+                          Дата начисления
+                        </p>
+                      </div>
+                      <div class="partners-table__row-item partners-table__row-item_display-1 row-1-item-5">
+                        <p class="partners-table__text partners-table__text_weight-2">
+                          Дата выплаты
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="partners-table__row">
+                  <div class="partners-table__row-content">
+                    <div class="partners-table__user">
+                      <span class="partners-table__icon">
+                        <img src="./img/icon/avatar-mini.png" alt="Аватар">
+                      </span>
+                      <a class="partners-table__name" href="#!">
+                        Константин У. 78
+                      </a>
+                    </div>
+                    <p class="partners-table__text row-2-value-1" data-da=".row-2-item-1, 550, 1">
+                      15.01.2022
+                    </p>
+                    <p class="partners-table__text">
+                      30 000 ₽
+                    </p>
+                    <p class="partners-table__text row-2-value-2" data-da=".row-2-item-2, 767, 1">
+                      7 500 ₽
+                    </p>
+                    <p class="partners-table__text row-2-value-3" data-da=".row-2-item-3, 945, 1">
+                      7 500 ₽
+                    </p>
+                    <p class="partners-table__text row-2-value-4" data-da=".row-2-item-4, 1200, 1">
+                      25.01.2022
+                    </p>
+                    <p class="partners-table__text row-2-value-5" data-da=".row-2-item-5, 1200, 1">
+                      30.02.2022
+                    </p>
+                    <button class="partners-table__button tab-button button-arrow" data-path="item2" data-path1="item2"
+                      data-target1="item2"><span><img src="./img/icon/arrow-dropdown-a.svg"
+                          alt="Иконка стрелочки"></span></button>
+                  </div>
+                  <div class="partners-table__row-bottom tab-content" data-target="item2">
+                    <div class="partners-table__row-column partners-table__row-column_1">
+                      <div class="partners-table__row-item partners-table__row-item_display-4 row-2-item-1">
+                        <p class="partners-table__text partners-table__text_weight-2">
+                          Дата регистрации пользователя
+                        </p>
+                      </div>
+                      <div class="partners-table__row-item partners-table__row-item_display-3 row-2-item-2">
+                        <p class="partners-table__text partners-table__text_weight-2">
+                          Сумма дохода портала
+                        </p>
+                      </div>
+                      <div class="partners-table__row-item partners-table__row-item_display-2 row-2-item-3">
+                        <p class="partners-table__text partners-table__text_weight-2">
+                          Сумма начисленного вознаграждения
+                        </p>
+                      </div>
+                    </div>
+                    <div class="partners-table__row-column">
+                      <div class="partners-table__row-item partners-table__row-item_display-1 row-2-item-4">
+                        <p class="partners-table__text partners-table__text_weight-2">
+                          Дата начисления
+                        </p>
+                      </div>
+                      <div class="partners-table__row-item partners-table__row-item_display-1 row-2-item-5">
+                        <p class="partners-table__text partners-table__text_weight-2">
+                          Дата выплаты
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="partners-table__row">
+                  <div class="partners-table__row-content">
+                    <div class="partners-table__user">
+                      <span class="partners-table__icon">
+                        <img src="./img/icon/avatar-mini.png" alt="Аватар">
+                      </span>
+                      <a class="partners-table__name" href="#!">
+                        Константин У. 78
+                      </a>
+                    </div>
+                    <p class="partners-table__text row-3-value-1" data-da=".row-3-item-1, 550, 1">
+                      15.01.2022
+                    </p>
+                    <p class="partners-table__text">
+                      30 000 ₽
+                    </p>
+                    <p class="partners-table__text row-3-value-2" data-da=".row-3-item-2, 767, 1">
+                      7 500 ₽
+                    </p>
+                    <p class="partners-table__text row-3-value-3" data-da=".row-3-item-3, 945, 1">
+                      7 500 ₽
+                    </p>
+                    <p class="partners-table__text row-3-value-4" data-da=".row-3-item-4, 1200, 1">
+                      25.01.2022
+                    </p>
+                    <p class="partners-table__text row-3-value-5" data-da=".row-3-item-5, 1200, 1">
+                      30.02.2022
+                    </p>
+                    <button class="partners-table__button tab-button button-arrow" data-path="item3" data-path1="item3"
+                      data-target1="item3"><span><img src="./img/icon/arrow-dropdown-a.svg"
+                          alt="Иконка стрелочки"></span></button>
+                  </div>
+                  <div class="partners-table__row-bottom tab-content" data-target="item3">
+                    <div class="partners-table__row-column partners-table__row-column_1">
+                      <div class="partners-table__row-item partners-table__row-item_display-4 row-3-item-1">
+                        <p class="partners-table__text partners-table__text_weight-2">
+                          Дата регистрации пользователя
+                        </p>
+                      </div>
+                      <div class="partners-table__row-item partners-table__row-item_display-3 row-3-item-2">
+                        <p class="partners-table__text partners-table__text_weight-2">
+                          Сумма дохода портала
+                        </p>
+                      </div>
+                      <div class="partners-table__row-item partners-table__row-item_display-2 row-3-item-3">
+                        <p class="partners-table__text partners-table__text_weight-2">
+                          Сумма начисленного вознаграждения
+                        </p>
+                      </div>
+                    </div>
+                    <div class="partners-table__row-column">
+                      <div class="partners-table__row-item partners-table__row-item_display-1 row-3-item-4">
+                        <p class="partners-table__text partners-table__text_weight-2">
+                          Дата начисления
+                        </p>
+                      </div>
+                      <div class="partners-table__row-item partners-table__row-item_display-1 row-3-item-5">
+                        <p class="partners-table__text partners-table__text_weight-2">
+                          Дата выплаты
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="partners-table__row">
+                  <div class="partners-table__row-content">
+                    <div class="partners-table__user">
+                      <span class="partners-table__icon">
+                        <img src="./img/icon/avatar-mini.png" alt="Аватар">
+                      </span>
+                      <a class="partners-table__name" href="#!">
+                        Константин У. 78
+                      </a>
+                    </div>
+                    <p class="partners-table__text row-4-value-1" data-da=".row-4-item-1, 550, 1">
+                      15.01.2022
+                    </p>
+                    <p class="partners-table__text">
+                      30 000 ₽
+                    </p>
+                    <p class="partners-table__text row-4-value-2" data-da=".row-4-item-2, 767, 1">
+                      7 500 ₽
+                    </p>
+                    <p class="partners-table__text row-4-value-3" data-da=".row-4-item-3, 945, 1">
+                      7 500 ₽
+                    </p>
+                    <p class="partners-table__text row-4-value-4" data-da=".row-4-item-4, 1200, 1">
+                      25.01.2022
+                    </p>
+                    <p class="partners-table__text row-4-value-5" data-da=".row-4-item-5, 1200, 1">
+                      30.02.2022
+                    </p>
+                    <button class="partners-table__button tab-button button-arrow" data-path="item4" data-path1="item4"
+                      data-target1="item4"><span><img src="./img/icon/arrow-dropdown-a.svg"
+                          alt="Иконка стрелочки"></span></button>
+                  </div>
+                  <div class="partners-table__row-bottom tab-content" data-target="item4">
+                    <div class="partners-table__row-column partners-table__row-column_1">
+                      <div class="partners-table__row-item partners-table__row-item_display-4 row-4-item-1">
+                        <p class="partners-table__text partners-table__text_weight-2">
+                          Дата регистрации пользователя
+                        </p>
+                      </div>
+                      <div class="partners-table__row-item partners-table__row-item_display-3 row-4-item-2">
+                        <p class="partners-table__text partners-table__text_weight-2">
+                          Сумма дохода портала
+                        </p>
+                      </div>
+                      <div class="partners-table__row-item partners-table__row-item_display-2 row-4-item-3">
+                        <p class="partners-table__text partners-table__text_weight-2">
+                          Сумма начисленного вознаграждения
+                        </p>
+                      </div>
+                    </div>
+                    <div class="partners-table__row-column">
+                      <div class="partners-table__row-item partners-table__row-item_display-1 row-4-item-4">
+                        <p class="partners-table__text partners-table__text_weight-2">
+                          Дата начисления
+                        </p>
+                      </div>
+                      <div class="partners-table__row-item partners-table__row-item_display-1 row-4-item-5">
+                        <p class="partners-table__text partners-table__text_weight-2">
+                          Дата выплаты
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="partners-table__row">
+                  <div class="partners-table__row-content">
+                    <div class="partners-table__user">
+                      <span class="partners-table__icon">
+                        <img src="./img/icon/avatar-mini.png" alt="Аватар">
+                      </span>
+                      <a class="partners-table__name" href="#!">
+                        Константин У. 78
+                      </a>
+                    </div>
+                    <p class="partners-table__text row-5-value-1" data-da=".row-5-item-1, 550, 1">
+                      15.01.2022
+                    </p>
+                    <p class="partners-table__text">
+                      30 000 ₽
+                    </p>
+                    <p class="partners-table__text row-5-value-2" data-da=".row-5-item-2, 767, 1">
+                      7 500 ₽
+                    </p>
+                    <p class="partners-table__text row-5-value-3" data-da=".row-5-item-3, 945, 1">
+                      7 500 ₽
+                    </p>
+                    <p class="partners-table__text row-5-value-4" data-da=".row-5-item-4, 1200, 1">
+                      25.01.2022
+                    </p>
+                    <p class="partners-table__text row-5-value-5" data-da=".row-5-item-5, 1200, 1">
+                      30.02.2022
+                    </p>
+                    <button class="partners-table__button tab-button button-arrow" data-path="item5" data-path1="item5"
+                      data-target1="item5"><span><img src="./img/icon/arrow-dropdown-a.svg"
+                          alt="Иконка стрелочки"></span></button>
+                  </div>
+                  <div class="partners-table__row-bottom tab-content" data-target="item5">
+                    <div class="partners-table__row-column partners-table__row-column_1">
+                      <div class="partners-table__row-item partners-table__row-item_display-4 row-5-item-1">
+                        <p class="partners-table__text partners-table__text_weight-2">
+                          Дата регистрации пользователя
+                        </p>
+                      </div>
+                      <div class="partners-table__row-item partners-table__row-item_display-3 row-5-item-2">
+                        <p class="partners-table__text partners-table__text_weight-2">
+                          Сумма дохода портала
+                        </p>
+                      </div>
+                      <div class="partners-table__row-item partners-table__row-item_display-2 row-5-item-3">
+                        <p class="partners-table__text partners-table__text_weight-2">
+                          Сумма начисленного вознаграждения
+                        </p>
+                      </div>
+                    </div>
+                    <div class="partners-table__row-column">
+                      <div class="partners-table__row-item partners-table__row-item_display-1 row-5-item-4">
+                        <p class="partners-table__text partners-table__text_weight-2">
+                          Дата начисления
+                        </p>
+                      </div>
+                      <div class="partners-table__row-item partners-table__row-item_display-1 row-5-item-5">
+                        <p class="partners-table__text partners-table__text_weight-2">
+                          Дата выплаты
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="partners-table__row">
+                  <div class="partners-table__row-content">
+                    <div class="partners-table__user">
+                      <span class="partners-table__icon">
+                        <img src="./img/icon/avatar-mini.png" alt="Аватар">
+                      </span>
+                      <a class="partners-table__name" href="#!">
+                        Константин У. 78
+                      </a>
+                    </div>
+                    <p class="partners-table__text row-6-value-1" data-da=".row-6-item-1, 550, 1">
+                      15.01.2022
+                    </p>
+                    <p class="partners-table__text">
+                      30 000 ₽
+                    </p>
+                    <p class="partners-table__text row-6-value-2" data-da=".row-6-item-2, 767, 1">
+                      7 500 ₽
+                    </p>
+                    <p class="partners-table__text row-6-value-3" data-da=".row-6-item-3, 945, 1">
+                      7 500 ₽
+                    </p>
+                    <p class="partners-table__text row-6-value-4" data-da=".row-6-item-4, 1200, 1">
+                      25.01.2022
+                    </p>
+                    <p class="partners-table__text row-6-value-5" data-da=".row-6-item-5, 1200, 1">
+                      30.02.2022
+                    </p>
+                    <button class="partners-table__button tab-button button-arrow" data-path="item6" data-path1="item6"
+                      data-target1="item6"><span><img src="./img/icon/arrow-dropdown-a.svg"
+                          alt="Иконка стрелочки"></span></button>
+                  </div>
+                  <div class="partners-table__row-bottom tab-content" data-target="item6">
+                    <div class="partners-table__row-column partners-table__row-column_1">
+                      <div class="partners-table__row-item partners-table__row-item_display-4 row-6-item-1">
+                        <p class="partners-table__text partners-table__text_weight-2">
+                          Дата регистрации пользователя
+                        </p>
+                      </div>
+                      <div class="partners-table__row-item partners-table__row-item_display-3 row-6-item-2">
+                        <p class="partners-table__text partners-table__text_weight-2">
+                          Сумма дохода портала
+                        </p>
+                      </div>
+                      <div class="partners-table__row-item partners-table__row-item_display-2 row-6-item-3">
+                        <p class="partners-table__text partners-table__text_weight-2">
+                          Сумма начисленного вознаграждения
+                        </p>
+                      </div>
+                    </div>
+                    <div class="partners-table__row-column">
+                      <div class="partners-table__row-item partners-table__row-item_display-1 row-6-item-4">
+                        <p class="partners-table__text partners-table__text_weight-2">
+                          Дата начисления
+                        </p>
+                      </div>
+                      <div class="partners-table__row-item partners-table__row-item_display-1 row-6-item-5">
+                        <p class="partners-table__text partners-table__text_weight-2">
+                          Дата выплаты
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="partners-table__row">
+                  <div class="partners-table__row-content">
+                    <div class="partners-table__user">
+                      <span class="partners-table__icon">
+                        <img src="./img/icon/avatar-mini.png" alt="Аватар">
+                      </span>
+                      <a class="partners-table__name" href="#!">
+                        Константин У. 78
+                      </a>
+                    </div>
+                    <p class="partners-table__text row-7-value-1" data-da=".row-7-item-1, 550, 1">
+                      15.01.2022
+                    </p>
+                    <p class="partners-table__text">
+                      30 000 ₽
+                    </p>
+                    <p class="partners-table__text row-7-value-2" data-da=".row-7-item-2, 767, 1">
+                      7 500 ₽
+                    </p>
+                    <p class="partners-table__text row-7-value-3" data-da=".row-7-item-3, 945, 1">
+                      7 500 ₽
+                    </p>
+                    <p class="partners-table__text row-7-value-4" data-da=".row-7-item-4, 1200, 1">
+                      25.01.2022
+                    </p>
+                    <p class="partners-table__text row-7-value-5" data-da=".row-7-item-5, 1200, 1">
+                      30.02.2022
+                    </p>
+                    <button class="partners-table__button tab-button button-arrow" data-path="item7" data-path1="item7"
+                      data-target1="item7"><span><img src="./img/icon/arrow-dropdown-a.svg"
+                          alt="Иконка стрелочки"></span></button>
+                  </div>
+                  <div class="partners-table__row-bottom tab-content" data-target="item7">
+                    <div class="partners-table__row-column partners-table__row-column_1">
+                      <div class="partners-table__row-item partners-table__row-item_display-4 row-7-item-1">
+                        <p class="partners-table__text partners-table__text_weight-2">
+                          Дата регистрации пользователя
+                        </p>
+                      </div>
+                      <div class="partners-table__row-item partners-table__row-item_display-3 row-7-item-2">
+                        <p class="partners-table__text partners-table__text_weight-2">
+                          Сумма дохода портала
+                        </p>
+                      </div>
+                      <div class="partners-table__row-item partners-table__row-item_display-2 row-7-item-3">
+                        <p class="partners-table__text partners-table__text_weight-2">
+                          Сумма начисленного вознаграждения
+                        </p>
+                      </div>
+                    </div>
+                    <div class="partners-table__row-column">
+                      <div class="partners-table__row-item partners-table__row-item_display-1 row-7-item-4">
+                        <p class="partners-table__text partners-table__text_weight-2">
+                          Дата начисления
+                        </p>
+                      </div>
+                      <div class="partners-table__row-item partners-table__row-item_display-1 row-7-item-5">
+                        <p class="partners-table__text partners-table__text_weight-2">
+                          Дата выплаты
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="partners-table__row">
+                  <div class="partners-table__row-content">
+                    <div class="partners-table__user">
+                      <span class="partners-table__icon">
+                        <img src="./img/icon/avatar-mini.png" alt="Аватар">
+                      </span>
+                      <a class="partners-table__name" href="#!">
+                        Константин У. 78
+                      </a>
+                    </div>
+                    <p class="partners-table__text row-8-value-1" data-da=".row-8-item-1, 550, 1">
+                      15.01.2022
+                    </p>
+                    <p class="partners-table__text">
+                      30 000 ₽
+                    </p>
+                    <p class="partners-table__text row-8-value-2" data-da=".row-8-item-2, 767, 1">
+                      7 500 ₽
+                    </p>
+                    <p class="partners-table__text row-8-value-3" data-da=".row-8-item-3, 945, 1">
+                      7 500 ₽
+                    </p>
+                    <p class="partners-table__text row-8-value-4" data-da=".row-8-item-4, 1200, 1">
+                      25.01.2022
+                    </p>
+                    <p class="partners-table__text row-8-value-5" data-da=".row-8-item-5, 1200, 1">
+                      30.02.2022
+                    </p>
+                    <button class="partners-table__button tab-button button-arrow" data-path="item8" data-path1="item8"
+                      data-target1="item8"><span><img src="./img/icon/arrow-dropdown-a.svg"
+                          alt="Иконка стрелочки"></span></button>
+                  </div>
+                  <div class="partners-table__row-bottom tab-content" data-target="item8">
+                    <div class="partners-table__row-column partners-table__row-column_1">
+                      <div class="partners-table__row-item partners-table__row-item_display-4 row-8-item-1">
+                        <p class="partners-table__text partners-table__text_weight-2">
+                          Дата регистрации пользователя
+                        </p>
+                      </div>
+                      <div class="partners-table__row-item partners-table__row-item_display-3 row-8-item-2">
+                        <p class="partners-table__text partners-table__text_weight-2">
+                          Сумма дохода портала
+                        </p>
+                      </div>
+                      <div class="partners-table__row-item partners-table__row-item_display-2 row-8-item-3">
+                        <p class="partners-table__text partners-table__text_weight-2">
+                          Сумма начисленного вознаграждения
+                        </p>
+                      </div>
+                    </div>
+                    <div class="partners-table__row-column">
+                      <div class="partners-table__row-item partners-table__row-item_display-1 row-8-item-4">
+                        <p class="partners-table__text partners-table__text_weight-2">
+                          Дата начисления
+                        </p>
+                      </div>
+                      <div class="partners-table__row-item partners-table__row-item_display-1 row-8-item-5">
+                        <p class="partners-table__text partners-table__text_weight-2">
+                          Дата выплаты
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="partners-table__row">
+                  <div class="partners-table__row-content">
+                    <div class="partners-table__user">
+                      <span class="partners-table__icon">
+                        <img src="./img/icon/avatar-mini.png" alt="Аватар">
+                      </span>
+                      <a class="partners-table__name" href="#!">
+                        Константин У. 78
+                      </a>
+                    </div>
+                    <p class="partners-table__text row-9-value-1" data-da=".row-9-item-1, 550, 1">
+                      15.01.2022
+                    </p>
+                    <p class="partners-table__text">
+                      30 000 ₽
+                    </p>
+                    <p class="partners-table__text row-9-value-2" data-da=".row-9-item-2, 767, 1">
+                      7 500 ₽
+                    </p>
+                    <p class="partners-table__text row-9-value-3" data-da=".row-9-item-3, 945, 1">
+                      7 500 ₽
+                    </p>
+                    <p class="partners-table__text row-9-value-4" data-da=".row-9-item-4, 1200, 1">
+                      25.01.2022
+                    </p>
+                    <p class="partners-table__text row-9-value-5" data-da=".row-9-item-5, 1200, 1">
+                      30.02.2022
+                    </p>
+                    <button class="partners-table__button tab-button button-arrow" data-path="item9" data-path1="item9"
+                      data-target1="item9"><span><img src="./img/icon/arrow-dropdown-a.svg"
+                          alt="Иконка стрелочки"></span></button>
+                  </div>
+                  <div class="partners-table__row-bottom tab-content" data-target="item9">
+                    <div class="partners-table__row-column partners-table__row-column_1">
+                      <div class="partners-table__row-item partners-table__row-item_display-4 row-9-item-1">
+                        <p class="partners-table__text partners-table__text_weight-2">
+                          Дата регистрации пользователя
+                        </p>
+                      </div>
+                      <div class="partners-table__row-item partners-table__row-item_display-3 row-9-item-2">
+                        <p class="partners-table__text partners-table__text_weight-2">
+                          Сумма дохода портала
+                        </p>
+                      </div>
+                      <div class="partners-table__row-item partners-table__row-item_display-2 row-9-item-3">
+                        <p class="partners-table__text partners-table__text_weight-2">
+                          Сумма начисленного вознаграждения
+                        </p>
+                      </div>
+                    </div>
+                    <div class="partners-table__row-column">
+                      <div class="partners-table__row-item partners-table__row-item_display-1 row-9-item-4">
+                        <p class="partners-table__text partners-table__text_weight-2">
+                          Дата начисления
+                        </p>
+                      </div>
+                      <div class="partners-table__row-item partners-table__row-item_display-1 row-9-item-5">
+                        <p class="partners-table__text partners-table__text_weight-2">
+                          Дата выплаты
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="partners-table__row border-bottom">
+                  <div class="partners-table__row-content">
+                    <div class="partners-table__user">
+                      <span class="partners-table__icon">
+                        <img src="./img/icon/avatar-mini.png" alt="Аватар">
+                      </span>
+                      <a class="partners-table__name" href="#!">
+                        Константин У. 78
+                      </a>
+                    </div>
+                    <p class="partners-table__text row-10-value-1" data-da=".row-10-item-1, 550, 1">
+                      15.01.2022
+                    </p>
+                    <p class="partners-table__text">
+                      30 000 ₽
+                    </p>
+                    <p class="partners-table__text row-10-value-2" data-da=".row-10-item-2, 767, 1">
+                      7 500 ₽
+                    </p>
+                    <p class="partners-table__text row-10-value-3" data-da=".row-10-item-3, 945, 1">
+                      7 500 ₽
+                    </p>
+                    <p class="partners-table__text row-10-value-4" data-da=".row-10-item-4, 1200, 1">
+                      25.01.2022
+                    </p>
+                    <p class="partners-table__text row-10-value-5" data-da=".row-10-item-5, 1200, 1">
+                      30.02.2022
+                    </p>
+                    <button class="partners-table__button tab-button button-arrow" data-path="item10" data-path1="item10"
+                      data-target1="item10"><span><img src="./img/icon/arrow-dropdown-a.svg"
+                          alt="Иконка стрелочки"></span></button>
+                  </div>
+                  <div class="partners-table__row-bottom tab-content" data-target="item10">
+                    <div class="partners-table__row-column partners-table__row-column_1">
+                      <div class="partners-table__row-item partners-table__row-item_display-4 row-10-item-1">
+                        <p class="partners-table__text partners-table__text_weight-2">
+                          Дата регистрации пользователя
+                        </p>
+                      </div>
+                      <div class="partners-table__row-item partners-table__row-item_display-3 row-10-item-2">
+                        <p class="partners-table__text partners-table__text_weight-2">
+                          Сумма дохода портала
+                        </p>
+                      </div>
+                      <div class="partners-table__row-item partners-table__row-item_display-2 row-10-item-3">
+                        <p class="partners-table__text partners-table__text_weight-2">
+                          Сумма начисленного вознаграждения
+                        </p>
+                      </div>
+                    </div>
+                    <div class="partners-table__row-column">
+                      <div class="partners-table__row-item partners-table__row-item_display-1 row-10-item-4">
+                        <p class="partners-table__text partners-table__text_weight-2">
+                          Дата начисления
+                        </p>
+                      </div>
+                      <div class="partners-table__row-item partners-table__row-item_display-1 row-10-item-5">
+                        <p class="partners-table__text partners-table__text_weight-2">
+                          Дата выплаты
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="partners-table__row">
+                  <div class="partners-table__row-content">
+                    <div class="partners-table__user">
+                      <span class="partners-table__icon">
+                        <img src="./img/icon/avatar-mini.png" alt="Аватар">
+                      </span>
+                      <a class="partners-table__name" href="#!">
+                        Константин У. 78
+                      </a>
+                    </div>
+                    <p class="partners-table__text row-11-value-1" data-da=".row-11-item-1, 550, 1">
+                      15.01.2022
+                    </p>
+                    <p class="partners-table__text">
+                      30 000 ₽
+                    </p>
+                    <p class="partners-table__text row-11-value-2" data-da=".row-11-item-2, 767, 1">
+                      7 500 ₽
+                    </p>
+                    <p class="partners-table__text row-11-value-3" data-da=".row-11-item-3, 945, 1">
+                      7 500 ₽
+                    </p>
+                    <p class="partners-table__text row-11-value-4" data-da=".row-11-item-4, 1200, 1">
+                      25.01.2022
+                    </p>
+                    <p class="partners-table__text row-11-value-5" data-da=".row-11-item-5, 1200, 1">
+                      30.02.2022
+                    </p>
+                    <button class="partners-table__button tab-button button-arrow" data-path="item11" data-path1="item11"
+                      data-target1="item11"><span><img src="./img/icon/arrow-dropdown-a.svg"
+                          alt="Иконка стрелочки"></span></button>
+                  </div>
+                  <div class="partners-table__row-bottom tab-content" data-target="item11">
+                    <div class="partners-table__row-column partners-table__row-column_1">
+                      <div class="partners-table__row-item partners-table__row-item_display-4 row-11-item-1">
+                        <p class="partners-table__text partners-table__text_weight-2">
+                          Дата регистрации пользователя
+                        </p>
+                      </div>
+                      <div class="partners-table__row-item partners-table__row-item_display-3 row-11-item-2">
+                        <p class="partners-table__text partners-table__text_weight-2">
+                          Сумма дохода портала
+                        </p>
+                      </div>
+                      <div class="partners-table__row-item partners-table__row-item_display-2 row-11-item-3">
+                        <p class="partners-table__text partners-table__text_weight-2">
+                          Сумма начисленного вознаграждения
+                        </p>
+                      </div>
+                    </div>
+                    <div class="partners-table__row-column">
+                      <div class="partners-table__row-item partners-table__row-item_display-1 row-11-item-4">
+                        <p class="partners-table__text partners-table__text_weight-2">
+                          Дата начисления
+                        </p>
+                      </div>
+                      <div class="partners-table__row-item partners-table__row-item_display-1 row-11-item-5">
+                        <p class="partners-table__text partners-table__text_weight-2">
+                          Дата выплаты
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="partners-table__row">
+                  <div class="partners-table__row-content">
+                    <div class="partners-table__user">
+                      <span class="partners-table__icon">
+                        <img src="./img/icon/avatar-mini.png" alt="Аватар">
+                      </span>
+                      <a class="partners-table__name" href="#!">
+                        Константин У. 78
+                      </a>
+                    </div>
+                    <p class="partners-table__text row-12-value-1" data-da=".row-12-item-1, 550, 1">
+                      15.01.2022
+                    </p>
+                    <p class="partners-table__text">
+                      30 000 ₽
+                    </p>
+                    <p class="partners-table__text row-12-value-2" data-da=".row-12-item-2, 767, 1">
+                      7 500 ₽
+                    </p>
+                    <p class="partners-table__text row-12-value-3" data-da=".row-12-item-3, 945, 1">
+                      7 500 ₽
+                    </p>
+                    <p class="partners-table__text row-12-value-4" data-da=".row-12-item-4, 1200, 1">
+                      25.01.2022
+                    </p>
+                    <p class="partners-table__text row-12-value-5" data-da=".row-12-item-5, 1200, 1">
+                      30.02.2022
+                    </p>
+                    <button class="partners-table__button tab-button button-arrow" data-path="item12" data-path1="item12"
+                      data-target1="item12"><span><img src="./img/icon/arrow-dropdown-a.svg"
+                          alt="Иконка стрелочки"></span></button>
+                  </div>
+                  <div class="partners-table__row-bottom tab-content" data-target="item12">
+                    <div class="partners-table__row-column partners-table__row-column_1">
+                      <div class="partners-table__row-item partners-table__row-item_display-4 row-12-item-1">
+                        <p class="partners-table__text partners-table__text_weight-2">
+                          Дата регистрации пользователя
+                        </p>
+                      </div>
+                      <div class="partners-table__row-item partners-table__row-item_display-3 row-12-item-2">
+                        <p class="partners-table__text partners-table__text_weight-2">
+                          Сумма дохода портала
+                        </p>
+                      </div>
+                      <div class="partners-table__row-item partners-table__row-item_display-2 row-12-item-3">
+                        <p class="partners-table__text partners-table__text_weight-2">
+                          Сумма начисленного вознаграждения
+                        </p>
+                      </div>
+                    </div>
+                    <div class="partners-table__row-column">
+                      <div class="partners-table__row-item partners-table__row-item_display-1 row-12-item-4">
+                        <p class="partners-table__text partners-table__text_weight-2">
+                          Дата начисления
+                        </p>
+                      </div>
+                      <div class="partners-table__row-item partners-table__row-item_display-1 row-12-item-5">
+                        <p class="partners-table__text partners-table__text_weight-2">
+                          Дата выплаты
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="partners-table__row">
+                  <div class="partners-table__row-content">
+                    <div class="partners-table__user">
+                      <span class="partners-table__icon">
+                        <img src="./img/icon/avatar-mini.png" alt="Аватар">
+                      </span>
+                      <a class="partners-table__name" href="#!">
+                        Константин У. 78
+                      </a>
+                    </div>
+                    <p class="partners-table__text row-13-value-1" data-da=".row-13-item-1, 550, 1">
+                      15.01.2022
+                    </p>
+                    <p class="partners-table__text">
+                      30 000 ₽
+                    </p>
+                    <p class="partners-table__text row-13-value-2" data-da=".row-13-item-2, 767, 1">
+                      7 500 ₽
+                    </p>
+                    <p class="partners-table__text row-13-value-3" data-da=".row-13-item-3, 945, 1">
+                      7 500 ₽
+                    </p>
+                    <p class="partners-table__text row-13-value-4" data-da=".row-13-item-4, 1200, 1">
+                      25.01.2022
+                    </p>
+                    <p class="partners-table__text row-13-value-5" data-da=".row-13-item-5, 1200, 1">
+                      30.02.2022
+                    </p>
+                    <button class="partners-table__button tab-button button-arrow" data-path="item13" data-path1="item13"
+                      data-target1="item13"><span><img src="./img/icon/arrow-dropdown-a.svg"
+                          alt="Иконка стрелочки"></span></button>
+                  </div>
+                  <div class="partners-table__row-bottom tab-content" data-target="item13">
+                    <div class="partners-table__row-column partners-table__row-column_1">
+                      <div class="partners-table__row-item partners-table__row-item_display-4 row-13-item-1">
+                        <p class="partners-table__text partners-table__text_weight-2">
+                          Дата регистрации пользователя
+                        </p>
+                      </div>
+                      <div class="partners-table__row-item partners-table__row-item_display-3 row-13-item-2">
+                        <p class="partners-table__text partners-table__text_weight-2">
+                          Сумма дохода портала
+                        </p>
+                      </div>
+                      <div class="partners-table__row-item partners-table__row-item_display-2 row-13-item-3">
+                        <p class="partners-table__text partners-table__text_weight-2">
+                          Сумма начисленного вознаграждения
+                        </p>
+                      </div>
+                    </div>
+                    <div class="partners-table__row-column">
+                      <div class="partners-table__row-item partners-table__row-item_display-1 row-13-item-4">
+                        <p class="partners-table__text partners-table__text_weight-2">
+                          Дата начисления
+                        </p>
+                      </div>
+                      <div class="partners-table__row-item partners-table__row-item_display-1 row-13-item-5">
+                        <p class="partners-table__text partners-table__text_weight-2">
+                          Дата выплаты
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="partners-table__wrapper-all">
+                <button class="partners-table__all show-partners-table">
+                  Посмотреть ещё
+                  <span></span>
+                </button>
+                <button class="partners-table__all collapse-partners-table is-hidden">
+                  Свернуть
+                </button>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- Если авторизован -->
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__wrapper-logo">
+          <img src="./img/background-change.svg" alt="Задний фон">
+          <a class="footer__logo" href="index.html">
+            <img src="./img/svg/logotip.svg" alt="Логотип сайта">
+          </a>
+        </div>
+        <div class="footer__top">
+          <div class="footer__lists">
+            <ul class="footer__list">
+              <li class="footer__item footer__item_blue footer-accordion-clicker">
+                <a class="footer__link" href="#!">
+                  О системе
+                  <svg width="10" height="8">
+                    <use xlink:href="./img/svg/sprites.svg#arrow"></use>
+                  </svg>
+                </a>
+                <div class="footer__accordion-content">
+                  <a class="footer__accordion-link footer__accordion-link_blue" href="#!">
+                    Договоры
+                  </a>
+                  <a class="footer__accordion-link footer__accordion-link_purple" href="new.html">
+                    Новости
+                  </a>
+                  <a class="footer__accordion-link footer__accordion-link_green" href="#!">
+                    Контакты
+                  </a>
+                </div>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="partners.html">
+                  Партнерская программа
+                </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="bonuses-and-promotions.html">
+                  Бонусы и акции
+                </a>
+              </li>
+            </ul>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="#!">
+                  Конструктор документов
+                </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="faq.html">
+                  Часто задаваемые вопросы
+                </a>
+              </li>
+            </ul>
+
+          </div>
+          <div class="footer__right">
+            <a class="footer__help" href="#!">
+              <img src="./img/icon/help.svg" alt="Иконка">
+              <span class="footer__help-span">Обратиться в техподдержку</span>
+              <span class="footer__help-span footer__help-span_none">Техподдержка</span>
+            </a>
+          </div>
+        </div>
+        <div class="footer__middle">
+          <div class="footer__info">
+            <address class="footer__address">
+              ИНН 7604354453, КПП 760401001, ОГРН 1197627006060, Юридический адрес 150000 г. Москва, ул. Некрасова, дом
+              41, офис 332
+            </address>
+          </div>
+          <ul class="footer__soclist" data-da=".footer__right, 1380, 1">
+            <li class="footer__soclist-item">
+              <a class="footer__soclist-link" href="#!">
+                <svg width="24" height="24">
+                  <use xlink:href="./img/svg/sprites.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__soclist-item">
+              <a class="footer__soclist-link" href="#!">
+                <svg width="24" height="24">
+                  <use xlink:href="./img/svg/sprites.svg#odnoklassniki"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__soclist-item">
+              <a class="footer__soclist-link" href="#!">
+                <svg width="24" height="24">
+                  <use xlink:href="./img/svg/sprites.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__soclist-item">
+              <a class="footer__soclist-link" href="#!">
+                <svg width="24" height="24">
+                  <use xlink:href="./img/svg/sprites.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__text" data-da=".footer__middle, 1380, 1">
+            Данный сайт может содержать информацию о сайтах третьих лиц. Лавка Олигарха не несет ответственности за
+            точность информации, данных, взглядов, советов или заявлений, сделанных на этих сайтах.
+          </p>
+          <strong class="footer__rechten">
+            © 2022 Лавка Олигарха. Все права защищены.
+          </strong>
+          <div class="footer__bottom-right">
+            <a class="footer__privacy" href="#!">
+              Политика конфиденциальности
+            </a>
+            <a class="footer__developer" href="#!">
+              Digital
+              <img src="./img/icon/developer.svg" alt="Иконка разработчика">
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="./resources/tooltip/popper.min.js"></script>
+  <script src="./resources/tooltip/tippy.js"></script>
+  <script src="./resources/smooth-scroll/smooth-scroll.js"></script>
+  <script src="./resources/swiper/swiper.js"></script>
+  <script src="./js/main.min.js"></script>
+</body>
+
+</html>

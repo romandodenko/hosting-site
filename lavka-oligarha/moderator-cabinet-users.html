@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./img/favicon.png">
+  <link rel="preload" href="./fonts/DaysOne-Regular.woff" as="font">
+  <link rel="preload" href="./fonts/DaysOne-Regular.woff2" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-Bold.woff" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-Bold.woff2" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-SemiBold.woff" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-SemiBold.woff2" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-Regular.woff" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-Regular.woff2" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-Regular-Italic.woff" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-Regular-Italic.woff2" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-Light.woff" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-Light.woff2" as="font">
+  <link rel="stylesheet" href="./resources/swiper/swiper.css">
+  <link rel="stylesheet" href="./resources/custom-scroll/simplebar.css">
+  <link rel="stylesheet" href="./css/main-min.css">
+  <title>Лавка олигарха</title>
+</head>
+
+<body>
+  <div class="page">
+    <header class="header">
+      <div class="header__container header__container_log container">
+        <button class="header__burger burger burger_log">
+          <span class="burger__line"></span>
+        </button>
+        <div class="header__menu header__menu_log">
+          <nav class="header__nav nav nav_log">
+            <ul class="nav__list">
+              <li class="nav__item nav__item_blue accordion-clicker">
+                <a class="nav__link" href="#!">
+                  О системе
+                  <svg width="10" height="8">
+                    <use xlink:href="./img/svg/sprites.svg#arrow"></use>
+                  </svg>
+                </a>
+                <div class="nav__accordion-content">
+                  <a class="nav__accordion-link" href="#!">
+                    Договоры
+                  </a>
+                  <a class="nav__accordion-link" href="news.html">
+                    Новости
+                  </a>
+                  <a class="nav__accordion-link" href="#!">
+                    Контакты
+                  </a>
+                </div>
+              </li>
+
+              <li class="nav__item nav__item_purple">
+                <a class="nav__link" href="partners.html">
+                  Партнерская программа
+                </a>
+              </li>
+              <li class="nav__item nav__item_green">
+                <a class="nav__link" href="bonuses-and-promotions.html">
+                  Бонусы и акции
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__wrapper-logo header__wrapper-logo_margin header__wrapper-logo_menu header__wrapper-logo_log-none">
+            <img src="./img/background-mini.svg" alt="Задний фон">
+            <a class="header__logo" href="index.html">
+              <img src="./img/svg/logotip.svg" alt="Логотип сайта">
+            </a>
+          </div>
+          <nav class="header__nav nav nav_log">
+            <ul class="nav__list">
+              <li class="nav__item nav__item_grey">
+                <a class="nav__link" href="faq.html">
+                  FAQ / Помощь
+                </a>
+              </li>
+              <li class="nav__item nav__item_gold">
+                <a class="nav__link" href="#!">
+                  Конструктор документов
+                </a>
+              </li>
+            </ul>
+          </nav>
+         <div class="header__help header__help_margin">
+          <a class="header__help-link" href="#!">
+            <span><img src="./img/icon/help.svg" alt="Иконка"></span>
+            Техподдержка
+          </a>
+          <img class="header__help-background" src="./img/background-big.svg" alt="Задний фон">
+         </div>
+        </div>
+        <div class="header__wrapper-logo header__wrapper-logo_margin header__wrapper-logo_log">
+          <img src="./img/background-mini.svg" alt="Задний фон">
+          <a class="header__logo" href="index.html">
+            <img src="./img/svg/logotip.svg" alt="Логотип сайта">
+          </a>
+        </div>
+        <div class="header__profile profile">
+          <div class="profile__items" data-da=".profile-menu, 760, 0">
+            <div class="profile__item">
+              <span class="profile__icon">
+                <a href="#!">
+                  <img src="./img/icon/kybok.svg" alt="Иконка">
+                  <span class="profile__value">
+                    12
+                  </span>
+                </a>
+              </span>
+            </div>
+            <div class="profile__item">
+              <span class="profile__icon">
+                <a href="#!">
+                  <img src="./img/icon/almaz.svg" alt="Иконка">
+                  <span class="profile__value profile__value_left">
+                    17
+                  </span>
+                </a>
+  
+              </span>
+            </div>
+            <div class="profile__item">
+              <span class="profile__icon">
+                <a href="#!">
+                  <img src="./img/icon/kolokolchik.svg" alt="Иконка">
+                </a>
+              </span>
+              <span class="profile__value  profile__value_change profile__value_change-background">
+                14
+              </span>
+            </div>
+            <div class="profile__item">
+              <span class="profile__icon">
+                <a href="#!">
+                  <img src="./img/icon/mail.svg" alt="Иконка">
+                </a>
+              </span>
+              <span class="profile__value profile__value_change">
+                1454
+              </span>
+            </div>
+          </div>
+          <div class="profile__avatar">
+            <button class="profile__btn">
+              <img src="./img/icon/avatar-mini.png" alt="Аватар">
+            </button>
+            <span class="profile__arrow">
+              <img src="./img/icon/arrow-cabinet.svg" alt="Иконка">
+            </span>
+          </div>
+          <a class="profile__exit" href="#!">
+            <img src="./img/icon/log-out.svg" alt="Иконка">
+          </a>
+          <div class="profile__menu profile-menu">
+            <ul class="profile-menu__list">
+              <li class="profile-menu__item">
+                <button class="profile-menu__button profile-menu__button_blue">
+                  Правила и договоры
+                  <svg width="10" height="8">
+                    <use xlink:href="./img/svg/sprites.svg#arrow"></use>
+                  </svg>
+                </button>
+                <div class="profile-menu__accordion-content">
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Оказание информационных услуг
+                  </a>
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Правила пользования Порталом
+                  </a>
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Тарифы
+                  </a>
+                </div>
+              </li>
+              <li class="profile-menu__item">
+                <button class="profile-menu__button profile-menu__button_purple">
+                  Общее
+                  <svg width="10" height="8">
+                    <use xlink:href="./img/svg/sprites.svg#arrow"></use>
+                  </svg>
+                </button>
+                <div class="profile-menu__accordion-content">
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Личные данные
+                  </a>
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Настройки
+                  </a>
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Стоп-лист
+                  </a>
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Мои бонусы
+                  </a>
+                </div>
+              </li>
+              <li class="profile-menu__item">
+                <button class="profile-menu__button profile-menu__button_green">
+                  Для заёмщика
+                  <svg width="10" height="8">
+                    <use xlink:href="./img/svg/sprites.svg#arrow"></use>
+                  </svg>
+                </button>
+                <div class="profile-menu__accordion-content">
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Опубликовать заявку
+                  </a>
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Мои заявки
+                  </a>
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Полученные займы
+                  </a>
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Избранные заявки
+                  </a>
+                     <a class="profile-menu__accordion-link" href="#!">
+                      Заказ документов по сделкам
+                  </a>
+                </div>
+              </li>
+              <li class="profile-menu__item">
+                <button class="profile-menu__button profile-menu__button_gold">
+                  Для кредитора
+                  <svg width="10" height="8">
+                    <use xlink:href="./img/svg/sprites.svg#arrow"></use>
+                  </svg>
+                </button>
+                <div class="profile-menu__accordion-content">
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Опубликовать предложение
+                  </a>
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Мои предложения
+                  </a>
+                  <a class="profile-menu__accordion-link" href="user-cabinet-my-trades-issued-loans.html">
+                    Выданные займы
+                  </a>
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Избранные заявки
+                  </a>
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Заказ документов по сделкам
+                  </a>
+                </div>
+              </li>
+            </ul>
+            <div class="header__help header__help_margin">
+              <a class="header__help-link" href="#!">
+                <span><img src="./img/icon/help.svg" alt="Иконка"></span>
+                Техподдержка
+              </a>
+              <img class="header__help-background" src="./img/background-big.svg" alt="Задний фон">
+             </div>
+          </div>
+        </div>
+      </div>
+
+    </header>
+    <main>
+      <section class="pages">
+        <div class="container">
+          <div class="pages__content pages__content_cabinet">
+            <ul class="pages__list">
+              <li class="pages__item">
+                <a class="pages__link" href="index.html">
+                  Главная
+                </a>
+              </li>
+              <li class="pages__item">
+                <a class="pages__link" href="moderator-cabinet.html">
+                  Страница модератора
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="cabinet">
+        <div class="container">
+          <div class="cabinet__content moderator-cabinet">
+            <div class="moderator">
+              <div class="moderator__top">
+                <div class="moderator__top-part">
+                  <div class="moderator__item moderator__item_2">
+                    <p class="moderator__text">
+                      Ульянович
+                    </p>
+                  </div>
+                  <div class="moderator__item moderator__item_2">
+                    <p class="moderator__text">
+                      Константин
+                    </p>
+                  </div>
+                </div>
+                <div class="moderator__item">
+                  <p class="moderator__text">
+                    Ульянович
+                  </p>
+                </div>
+              </div>
+            <div class="moderator__info">
+              <div class="moderator__info-item">
+                <span class="moderator__span">
+                  Логин-почта
+                </span>
+                <a class="moderator__link" href="mailto:khlkhkhsdfgdgggh@mail.ru">khlkhkhsdfgdgggh@mail.ru</a>
+               </div>
+               <div class="moderator__info-item">
+                <span class="moderator__span">
+                  Номер телефона
+                </span>
+                <a class="moderator__link" href="tel:+75654544564">+7(565) 454 4564</a>
+               </div>
+            </div>
+            </div>
+            <div class="cabinet__user-interaction cabinet-interaction moderator-interaction user-interaction">
+              <div class="user-interaction__top user-interaction__top_user">
+                <div class="user-interaction__top-left user-interaction__top-left_user">
+                  <button class="user-interaction__burger user-burger">
+                    <span></span>
+                  </button>
+                  <div class="user-interaction__wrapper-link w169 wrapper-figure-2 wrapper-link-r user-interaction-link-active">
+                    <a class="user-interaction__link" href="moderator-cabinet.html">Пользователи</a>
+                    <div class="fon-img-19">
+                      <img src="./img/112.png" alt="Картинка">
+                      </div>
+                  </div>
+                </div>
+                <div class="user-interaction__wrapper-links wrapper-links moderator-wrapper-links">
+                  <div class="user-interaction__links">
+                    <div class="user-interaction__wrapper-link  d-wrapper-l">
+                      <a class="user-interaction__link" href="moderator-cabinet.html">
+                        Уведомления
+                      </a>
+
+                    </div>
+                    <div class="user-interaction__wrapper-link wrapper-figure-1 user-interaction-link-active-orange">
+                      <a class="user-interaction__link" href="moderator-cabinet-users.html">
+                        Пользователи
+                      </a>
+                      <div class="fon-img-16">
+                        <img src="./img/33.png" alt="">
+                        </div>
+                    </div>
+                    <div class="user-interaction__wrapper-link">
+                      <a class="user-interaction__link" href="#!">
+                        Сообщения
+                      </a>
+                    </div>
+                    <div class="user-interaction__wrapper-link">
+                      <a class="user-interaction__link" href="moderator-cabinet-coupons.html">
+                        Купоны
+                      </a>
+                    </div>
+                    <div class="user-interaction__wrapper-link">
+                      <a class="user-interaction__link" href="moderator-cabinet-rewards.html">
+                        Вознаграждения
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="notifications-link moderator-notifications-link_2">
+                  <a class="notifications-link__link" href="moderator-cabinet.html">
+                  <svg width="20" height="20">
+                  <use xlink:href="./img/svg/sprites.svg#kolokolchik20"></use>
+                  </svg>
+                  </a>
+                  <span class="notifications-link__num">14</span>
+                </div>
+              </div>
+              <div class="user-interaction__inner moderator-inner moderator-inner_2">
+                <div class="user-interaction__inner-body moderator-inner-body moderator-inner-body-2">
+                  <div class="head moderator-head">
+                    <div class="head__wrapper-strong">
+                      <span class="head__strong-figure"></span>
+                      <span class="head__strong-span">Пользователи</span>
+                    </div>
+                  </div>
+                  <select class="moderator-select select-1">
+                    <option value="value1">Новые пользователи</option>
+                    <option value="value2">Ожидают проверки анкеты</option>
+                    <option value="value3">Действующие</option>
+                    <option value="value4">Заблокированные</option>
+                  </select>
+                  <div class="search">
+                  <div class="search__wrapper">
+                    <input class="search__input" type="text" placeholder="Введите номер пользователя или имя пользователя">
+                    <button class="search__search">
+                      <img src="./img/icon/search.svg" alt="Иконка">
+                    </button>
+                  </div>
+                      <button class="search__init">
+                        <img src="./img/icon/search.svg" alt="Иконка">
+                      </button>
+                  </div>
+   
+                  <div class="moderator-users-items">
+                    <div class="moderator-users-items__top">
+                        <p class="moderator-users-items__text">
+                          <span>№ польз.</span>
+                          <span>№</span>
+                        </p>
+                        <p class="moderator-users-items__text">
+                          Пользователь
+                        </p>
+                    </div>
+                    <div data-simplebar class="moderator-users-rows">
+                      <div class="moderator-users-rows__row">
+                    <div class="moderator-users-rows__row-top">
+                      <div class="moderator-users-rows__left">
+                        <p class="moderator-users-rows__num">
+                          1
+                        </p>
+                      <div class="moderator-users-rows__user">
+                        <span class="moderator-users-rows__icon">
+                          <img src="./img/icon/avatar-mini.png" alt="Аватар">
+                        </span>
+                        <a class="moderator-users-rows__link" href="#!">
+                          Иван К. 78
+                        </a>
+                      </div>
+                      </div>
+                      <div class="moderator-users-rows__right">
+                       <div class="moderator-users-rows__right-items" data-da=".row-1-item, 650, 1">
+                        <button class="moderator-users-rows__button link">
+                          Одобрить
+                        </button>
+                        <button class="moderator-users-rows__button moderator-users-rows__button_2 link-2">
+                          <span>Отклонить</span>
+                          <img src="./img/icon/close.svg" alt="Иконка">
+                        </button>
+                        <button class="moderator-users-rows__button moderator-users-rows__button_3">
+                          Заблокировать
+                        </button>
+                       </div>
+                        <button class="moderator-users-rows__button-clicker tab-button button-arrow" data-path="item1"
+                        data-path1="item1" data-target1="item1"><span><img src="./img/icon/arrow-dropdown-a.svg"
+                            alt="Иконка стрелочки"></span></button>
+                      </div>
+                    </div>
+                    <div class="moderator-users-rows__row-bottom tab-content row-1-item" data-target="item1">
+
+                    </div>
+                      </div>
+                      <div class="moderator-users-rows__row">
+                        <div class="moderator-users-rows__row-top">
+                          <div class="moderator-users-rows__left">
+                            <p class="moderator-users-rows__num">
+                             2
+                            </p>
+                          <div class="moderator-users-rows__user">
+                            <span class="moderator-users-rows__icon">
+                              <img src="./img/icon/avatar-mini.png" alt="Аватар">
+                            </span>
+                            <a class="moderator-users-rows__link" href="#!">
+                              Владислав Н. 178
+                            </a>
+                          </div>
+                          </div>
+                          <div class="moderator-users-rows__right">
+                           <div class="moderator-users-rows__right-items" data-da=".row-2-item, 650, 1">
+                            <button class="moderator-users-rows__button link">
+                              Одобрить
+                            </button>
+                            <button class="moderator-users-rows__button moderator-users-rows__button_2 link-2">
+                              <span>Отклонить</span>
+                              <img src="./img/icon/close.svg" alt="Иконка">
+                            </button>
+                            <button class="moderator-users-rows__button moderator-users-rows__button_3">
+                              Заблокировать
+                            </button>
+                           </div>
+                            <button class="moderator-users-rows__button-clicker tab-button button-arrow" data-path="item2"
+                            data-path1="item2" data-target1="item2"><span><img src="./img/icon/arrow-dropdown-a.svg"
+                                alt="Иконка стрелочки"></span></button>
+                          </div>
+                        </div>
+                        <div class="moderator-users-rows__row-bottom tab-content row-2-item" data-target="item2">
+    
+                        </div>
+                          </div>
+                <div class="moderator-users-rows__row">
+                  <div class="moderator-users-rows__row-top">
+                    <div class="moderator-users-rows__left">
+                      <p class="moderator-users-rows__num">
+                        3
+                      </p>
+                    <div class="moderator-users-rows__user">
+                      <span class="moderator-users-rows__icon">
+                        <img src="./img/icon/avatar-mini.png" alt="Аватар">
+                      </span>
+                      <a class="moderator-users-rows__link" href="#!">
+                        Иван К. 78
+                      </a>
+                    </div>
+                    </div>
+                    <div class="moderator-users-rows__right">
+                      <div class="moderator-users-rows__right-items" data-da=".row-3-item, 650, 1">
+                      <button class="moderator-users-rows__button moderator-users-rows__button_4 link">
+                        Заблокировать
+                      </button>
+                      <button class="moderator-users-rows__button moderator-users-rows__button_5">
+                        Разблокировать
+                      </button>
+                      </div>
+                      <button class="moderator-users-rows__button-clicker tab-button button-arrow" data-path="item3"
+                      data-path1="item3" data-target1="item3"><span><img src="./img/icon/arrow-dropdown-a.svg"
+                          alt="Иконка стрелочки"></span></button>
+                    </div>
+                  </div>
+                  <div class="moderator-users-rows__row-bottom row-3-item tab-content" data-target="item3">
+
+                  </div>
+                    </div>
+              <div class="moderator-users-rows__row">
+                <div class="moderator-users-rows__row-top">
+                  <div class="moderator-users-rows__left">
+                    <p class="moderator-users-rows__num">
+                      4
+                    </p>
+                  <div class="moderator-users-rows__user">
+                    <span class="moderator-users-rows__icon">
+                      <img src="./img/icon/avatar-mini.png" alt="Аватар">
+                    </span>
+                    <a class="moderator-users-rows__link" href="#!">
+                      Иван К. 78
+                    </a>
+                  </div>
+                  </div>
+                  <div class="moderator-users-rows__right">
+                    <div class="moderator-users-rows__right-items" data-da=".row-4-item, 650, 1">
+                    <button class="moderator-users-rows__button moderator-users-rows__button_4 link">
+                      Заблокировать
+                    </button>
+                    <button class="moderator-users-rows__button moderator-users-rows__button_5">
+                      Разблокировать
+                    </button>
+                    </div>
+                    <button class="moderator-users-rows__button-clicker tab-button button-arrow" data-path="item4"
+                    data-path1="item4" data-target1="item4"><span><img src="./img/icon/arrow-dropdown-a.svg"
+                        alt="Иконка стрелочки"></span></button>
+                  </div>
+                </div>
+                <div class="moderator-users-rows__row-bottom row-4-item tab-content" data-target="item4">
+
+                </div>
+                  </div>
+                  <div class="moderator-users-rows__row">
+                    <div class="moderator-users-rows__row-top">
+                      <div class="moderator-users-rows__left">
+                        <p class="moderator-users-rows__num">
+                          5
+                        </p>
+                      <div class="moderator-users-rows__user">
+                        <span class="moderator-users-rows__icon">
+                          <img src="./img/icon/avatar-mini.png" alt="Аватар">
+                        </span>
+                        <a class="moderator-users-rows__link" href="#!">
+                          Иван К. 78
+                        </a>
+                      </div>
+                      </div>
+                      <div class="moderator-users-rows__right">
+                        <div class="moderator-users-rows__right-items" data-da=".row-5-item, 650, 1">
+                        <button class="moderator-users-rows__button moderator-users-rows__button_4 link">
+                          Заблокировать
+                        </button>
+                        <button class="moderator-users-rows__button moderator-users-rows__button_5">
+                          Разблокировать
+                        </button>
+                        </div>
+                        <button class="moderator-users-rows__button-clicker tab-button button-arrow" data-path="item5"
+                        data-path1="item5" data-target1="item5"><span><img src="./img/icon/arrow-dropdown-a.svg"
+                            alt="Иконка стрелочки"></span></button>
+                      </div>
+                    </div>
+                    <div class="moderator-users-rows__row-bottom row-5-item tab-content" data-target="item5">
+    
+                    </div>
+                      </div>
+                      <div class="moderator-users-rows__row">
+                        <div class="moderator-users-rows__row-top">
+                          <div class="moderator-users-rows__left">
+                            <p class="moderator-users-rows__num">
+                              6
+                            </p>
+                          <div class="moderator-users-rows__user">
+                            <span class="moderator-users-rows__icon">
+                              <img src="./img/icon/avatar-mini.png" alt="Аватар">
+                            </span>
+                            <a class="moderator-users-rows__link" href="#!">
+                              Иван К. 78
+                            </a>
+                          </div>
+                          </div>
+                          <div class="moderator-users-rows__right">
+                           <div class="moderator-users-rows__right-items" data-da=".row-6-item, 650, 1">
+                            <button class="moderator-users-rows__button link">
+                              Одобрить
+                            </button>
+                            <button class="moderator-users-rows__button moderator-users-rows__button_2 link-2">
+                              <span>Отклонить</span>
+                              <img src="./img/icon/close.svg" alt="Иконка">
+                            </button>
+                            <button class="moderator-users-rows__button moderator-users-rows__button_3">
+                              Заблокировать
+                            </button>
+                           </div>
+                            <button class="moderator-users-rows__button-clicker tab-button button-arrow" data-path="item6"
+                            data-path1="item6" data-target1="item6"><span><img src="./img/icon/arrow-dropdown-a.svg"
+                                alt="Иконка стрелочки"></span></button>
+                          </div>
+                        </div>
+                        <div class="moderator-users-rows__row-bottom tab-content row-6-item" data-target="item6">
+    
+                        </div>
+                          </div>
+                          <div class="moderator-users-rows__row">
+                            <div class="moderator-users-rows__row-top">
+                              <div class="moderator-users-rows__left">
+                                <p class="moderator-users-rows__num">
+                                  7
+                                </p>
+                              <div class="moderator-users-rows__user">
+                                <span class="moderator-users-rows__icon">
+                                  <img src="./img/icon/avatar-mini.png" alt="Аватар">
+                                </span>
+                                <a class="moderator-users-rows__link" href="#!">
+                                  Иван К. 78
+                                </a>
+                              </div>
+                              </div>
+                              <div class="moderator-users-rows__right">
+                                <div class="moderator-users-rows__right-items" data-da=".row-7-item, 650, 1">
+                                <button class="moderator-users-rows__button moderator-users-rows__button_4 link">
+                                  Заблокировать
+                                </button>
+                                <button class="moderator-users-rows__button moderator-users-rows__button_5">
+                                  Разблокировать
+                                </button>
+                                </div>
+                                <button class="moderator-users-rows__button-clicker tab-button button-arrow" data-path="item7"
+                                data-path1="item7" data-target1="item7"><span><img src="./img/icon/arrow-dropdown-a.svg"
+                                    alt="Иконка стрелочки"></span></button>
+                              </div>
+                            </div>
+                            <div class="moderator-users-rows__row-bottom row-7-item tab-content" data-target="item7">
+            
+                            </div>
+                              </div>
+                              <div class="moderator-users-rows__row">
+                                <div class="moderator-users-rows__row-top">
+                                  <div class="moderator-users-rows__left">
+                                    <p class="moderator-users-rows__num">
+                                      8
+                                    </p>
+                                  <div class="moderator-users-rows__user">
+                                    <span class="moderator-users-rows__icon">
+                                      <img src="./img/icon/avatar-mini.png" alt="Аватар">
+                                    </span>
+                                    <a class="moderator-users-rows__link" href="#!">
+                                      Иван К. 78
+                                    </a>
+                                  </div>
+                                  </div>
+                                  <div class="moderator-users-rows__right">
+                                    <div class="moderator-users-rows__right-items" data-da=".row-8-item, 650, 1">
+                                    <button class="moderator-users-rows__button moderator-users-rows__button_4 link">
+                                      Заблокировать
+                                    </button>
+                                    <button class="moderator-users-rows__button moderator-users-rows__button_5">
+                                      Разблокировать
+                                    </button>
+                                    </div>
+                                    <button class="moderator-users-rows__button-clicker tab-button button-arrow" data-path="item8"
+                                    data-path1="item8" data-target1="item8"><span><img src="./img/icon/arrow-dropdown-a.svg"
+                                        alt="Иконка стрелочки"></span></button>
+                                  </div>
+                                </div>
+                                <div class="moderator-users-rows__row-bottom row-8-item tab-content" data-target="item8">
+                
+                                </div>
+                                  </div>
+                                  <div class="moderator-users-rows__row">
+                                    <div class="moderator-users-rows__row-top">
+                                      <div class="moderator-users-rows__left">
+                                        <p class="moderator-users-rows__num">
+                                          9
+                                        </p>
+                                      <div class="moderator-users-rows__user">
+                                        <span class="moderator-users-rows__icon">
+                                          <img src="./img/icon/avatar-mini.png" alt="Аватар">
+                                        </span>
+                                        <a class="moderator-users-rows__link" href="#!">
+                                          Иван К. 78
+                                        </a>
+                                      </div>
+                                      </div>
+                                      <div class="moderator-users-rows__right">
+                                        <div class="moderator-users-rows__right-items" data-da=".row-9-item, 650, 1">
+                                        <button class="moderator-users-rows__button moderator-users-rows__button_4 link">
+                                          Заблокировать
+                                        </button>
+                                        <button class="moderator-users-rows__button moderator-users-rows__button_5">
+                                          Разблокировать
+                                        </button>
+                                        </div>
+                                        <button class="moderator-users-rows__button-clicker tab-button button-arrow" data-path="item9"
+                                        data-path1="item9" data-target1="item9"><span><img src="./img/icon/arrow-dropdown-a.svg"
+                                            alt="Иконка стрелочки"></span></button>
+                                      </div>
+                                    </div>
+                                    <div class="moderator-users-rows__row-bottom row-9-item tab-content" data-target="item9">
+                    
+                                    </div>
+                                      </div>
+                    </div>
+                  </div>
+             
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__wrapper-logo">
+          <img src="./img/background-change.svg" alt="Задний фон">
+          <a class="footer__logo" href="index.html">
+            <img src="./img/svg/logotip.svg" alt="Логотип сайта">
+          </a>
+        </div>
+        <div class="footer__top">
+          <div class="footer__lists">
+            <ul class="footer__list">
+              <li class="footer__item footer__item_blue footer-accordion-clicker">
+                <a class="footer__link" href="#!">
+                  О системе
+                  <svg width="10" height="8">
+                    <use xlink:href="./img/svg/sprites.svg#arrow"></use>
+                  </svg>
+                </a>
+                <div class="footer__accordion-content">
+                  <a class="footer__accordion-link footer__accordion-link_blue" href="#!">
+                    Договоры
+                  </a>
+                  <a class="footer__accordion-link footer__accordion-link_purple" href="new.html">
+                    Новости
+                  </a>
+                  <a class="footer__accordion-link footer__accordion-link_green" href="#!">
+                    Контакты
+                  </a>
+                </div>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="partners.html">
+                  Партнерская программа
+                </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="bonuses-and-promotions.html">
+                  Бонусы и акции
+                </a>
+              </li>
+            </ul>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="#!">
+                  Конструктор документов
+                </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="faq.html">
+                  Часто задаваемые вопросы
+                </a>
+              </li>
+            </ul>
+
+          </div>
+          <div class="footer__right">
+            <a class="footer__help" href="#!">
+              <img src="./img/icon/help.svg" alt="Иконка">
+              <span class="footer__help-span">Обратиться в техподдержку</span>
+              <span class="footer__help-span footer__help-span_none">Техподдержка</span>
+            </a>
+          </div>
+        </div>
+        <div class="footer__middle">
+          <div class="footer__info">
+            <address class="footer__address">
+              ИНН 7604354453, КПП 760401001, ОГРН 1197627006060, Юридический адрес 150000 г. Москва, ул. Некрасова, дом
+              41, офис 332
+            </address>
+          </div>
+          <ul class="footer__soclist" data-da=".footer__right, 1380, 1">
+            <li class="footer__soclist-item">
+              <a class="footer__soclist-link" href="#!">
+                <svg width="24" height="24">
+                  <use xlink:href="./img/svg/sprites.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__soclist-item">
+              <a class="footer__soclist-link" href="#!">
+                <svg width="24" height="24">
+                  <use xlink:href="./img/svg/sprites.svg#odnoklassniki"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__soclist-item">
+              <a class="footer__soclist-link" href="#!">
+                <svg width="24" height="24">
+                  <use xlink:href="./img/svg/sprites.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__soclist-item">
+              <a class="footer__soclist-link" href="#!">
+                <svg width="24" height="24">
+                  <use xlink:href="./img/svg/sprites.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__text" data-da=".footer__middle, 1380, 1">
+            Данный сайт может содержать информацию о сайтах третьих лиц. Лавка Олигарха не несет ответственности за
+            точность информации, данных, взглядов, советов или заявлений, сделанных на этих сайтах.
+          </p>
+          <strong class="footer__rechten">
+            © 2022 Лавка Олигарха. Все права защищены.
+          </strong>
+          <div class="footer__bottom-right">
+            <a class="footer__privacy" href="#!">
+              Политика конфиденциальности
+            </a>
+            <a class="footer__developer" href="#!">
+              Digital
+              <img src="./img/icon/developer.svg" alt="Иконка разработчика">
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="./resources/custom-scroll/simplebar.js"></script>
+  <script src="./resources/tooltip/popper.min.js"></script>
+  <script src="./resources/tooltip/tippy.js"></script>
+  <script src="./resources/choices/choices.js"></script>
+  <script src="./resources/smooth-scroll/smooth-scroll.js"></script>
+  <script src="./resources/swiper/swiper.js"></script>
+  <script src="./js/main.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./img/favicon.png">
+  <link rel="preload" href="./fonts/DaysOne-Regular.woff" as="font">
+  <link rel="preload" href="./fonts/DaysOne-Regular.woff2" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-Bold.woff" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-Bold.woff2" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-SemiBold.woff" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-SemiBold.woff2" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-Regular.woff" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-Regular.woff2" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-Regular-Italic.woff" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-Regular-Italic.woff2" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-Light.woff" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-Light.woff2" as="font">
+  <link rel="stylesheet" href="./resources/swiper/swiper.css">
+  <link rel="stylesheet" href="./css/main-min.css">
+  <title>Лавка олигарха</title>
+</head>
+
+<body>
+  <div class="page">
+    <header class="header">
+      <!-- Если авторизован  -->
+      <!-- <div class="header__container header__container_log container">
+        <button class="header__burger burger burger_log">
+          <span class="burger__line"></span>
+        </button>
+        <div class="header__menu header__menu_log">
+          <nav class="header__nav nav nav_log">
+            <ul class="nav__list">
+              <li class="nav__item nav__item_blue accordion-clicker">
+                <a class="nav__link" href="#!">
+                  О системе
+                  <svg width="10" height="8">
+                    <use xlink:href="./img/svg/sprites.svg#arrow"></use>
+                  </svg>
+                </a>
+                <div class="nav__accordion-content">
+                  <a class="nav__accordion-link" href="#!">
+                    Договоры
+                  </a>
+                  <a class="nav__accordion-link" href="news.html">
+                    Новости
+                  </a>
+                  <a class="nav__accordion-link" href="#!">
+                    Контакты
+                  </a>
+                </div>
+              </li>
+
+              <li class="nav__item nav__item_purple">
+                <a class="nav__link" href="partners.html">
+                  Партнерская программа
+                </a>
+              </li>
+              <li class="nav__item nav__item_green">
+                <a class="nav__link" href="bonuses-and-promotions.html">
+                  Бонусы и акции
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__wrapper-logo header__wrapper-logo_margin header__wrapper-logo_menu header__wrapper-logo_log-none">
+            <img src="./img/background-mini.svg" alt="Задний фон">
+            <a class="header__logo" href="index.html">
+              <img src="./img/svg/logotip.svg" alt="Логотип сайта">
+            </a>
+          </div>
+          <nav class="header__nav nav nav_log">
+            <ul class="nav__list">
+              <li class="nav__item nav__item_grey">
+                <a class="nav__link" href="faq.html">
+                  FAQ / Помощь
+                </a>
+              </li>
+              <li class="nav__item nav__item_gold">
+                <a class="nav__link" href="#!">
+                  Конструктор документов
+                </a>
+              </li>
+            </ul>
+          </nav>
+         <div class="header__help header__help_margin">
+          <a class="header__help-link" href="#!">
+            <span><img src="./img/icon/help.svg" alt="Иконка"></span>
+            Техподдержка
+          </a>
+          <img class="header__help-background" src="./img/background-big.svg" alt="Задний фон">
+         </div>
+        </div>
+        <div class="header__wrapper-logo header__wrapper-logo_margin header__wrapper-logo_log">
+          <img src="./img/background-mini.svg" alt="Задний фон">
+          <a class="header__logo" href="index.html">
+            <img src="./img/svg/logotip.svg" alt="Логотип сайта">
+          </a>
+        </div>
+        <div class="header__profile profile">
+          <div class="profile__items" data-da=".profile-menu, 760, 0">
+            <div class="profile__item">
+              <span class="profile__icon">
+                <a href="#!">
+                  <img src="./img/icon/kybok.svg" alt="Иконка">
+                  <span class="profile__value">
+                    12
+                  </span>
+                </a>
+              </span>
+            </div>
+            <div class="profile__item">
+              <span class="profile__icon">
+                <a href="#!">
+                  <img src="./img/icon/almaz.svg" alt="Иконка">
+                  <span class="profile__value profile__value_left">
+                    17
+                  </span>
+                </a>
+  
+              </span>
+            </div>
+            <div class="profile__item">
+              <span class="profile__icon">
+                <a href="#!">
+                  <img src="./img/icon/kolokolchik.svg" alt="Иконка">
+                </a>
+              </span>
+              <span class="profile__value  profile__value_change profile__value_change-background">
+                14
+              </span>
+            </div>
+            <div class="profile__item">
+              <span class="profile__icon">
+                <a href="#!">
+                  <img src="./img/icon/mail.svg" alt="Иконка">
+                </a>
+              </span>
+              <span class="profile__value profile__value_change">
+                1454
+              </span>
+            </div>
+          </div>
+          <div class="profile__avatar">
+            <button class="profile__btn">
+              <img src="./img/icon/avatar-mini.png" alt="Аватар">
+            </button>
+            <span class="profile__arrow">
+              <img src="./img/icon/arrow-cabinet.svg" alt="Иконка">
+            </span>
+          </div>
+          <a class="profile__exit" href="#!">
+            <img src="./img/icon/log-out.svg" alt="Иконка">
+          </a>
+          <div class="profile__menu profile-menu">
+            <ul class="profile-menu__list">
+              <li class="profile-menu__item">
+                <button class="profile-menu__button profile-menu__button_blue">
+                  Правила и договоры
+                  <svg width="10" height="8">
+                    <use xlink:href="./img/svg/sprites.svg#arrow"></use>
+                  </svg>
+                </button>
+                <div class="profile-menu__accordion-content">
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Оказание информационных услуг
+                  </a>
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Правила пользования Порталом
+                  </a>
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Тарифы
+                  </a>
+                </div>
+              </li>
+              <li class="profile-menu__item">
+                <button class="profile-menu__button profile-menu__button_purple">
+                  Общее
+                  <svg width="10" height="8">
+                    <use xlink:href="./img/svg/sprites.svg#arrow"></use>
+                  </svg>
+                </button>
+                <div class="profile-menu__accordion-content">
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Личные данные
+                  </a>
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Настройки
+                  </a>
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Стоп-лист
+                  </a>
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Мои бонусы
+                  </a>
+                </div>
+              </li>
+              <li class="profile-menu__item">
+                <button class="profile-menu__button profile-menu__button_green">
+                  Для заёмщика
+                  <svg width="10" height="8">
+                    <use xlink:href="./img/svg/sprites.svg#arrow"></use>
+                  </svg>
+                </button>
+                <div class="profile-menu__accordion-content">
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Опубликовать заявку
+                  </a>
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Мои заявки
+                  </a>
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Полученные займы
+                  </a>
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Избранные заявки
+                  </a>
+                     <a class="profile-menu__accordion-link" href="#!">
+                      Заказ документов по сделкам
+                  </a>
+                </div>
+              </li>
+              <li class="profile-menu__item">
+                <button class="profile-menu__button profile-menu__button_gold">
+                  Для кредитора
+                  <svg width="10" height="8">
+                    <use xlink:href="./img/svg/sprites.svg#arrow"></use>
+                  </svg>
+                </button>
+                <div class="profile-menu__accordion-content">
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Опубликовать предложение
+                  </a>
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Мои предложения
+                  </a>
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Выданные займы
+                  </a>
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Избранные заявки
+                  </a>
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Заказ документов по сделкам
+                  </a>
+                </div>
+              </li>
+            </ul>
+            <div class="header__help header__help_margin">
+              <a class="header__help-link" href="#!">
+                <span><img src="./img/icon/help.svg" alt="Иконка"></span>
+                Техподдержка
+              </a>
+              <img class="header__help-background" src="./img/background-big.svg" alt="Задний фон">
+             </div>
+          </div>
+        </div>
+      </div> -->
+      <!-- Если не авторизован  -->
+      <div class="header__container container">
+        <button class="header__burger burger">
+          <span class="burger__line"></span>
+        </button>
+        <div class="header__menu">
+          <nav class="header__nav nav">
+            <ul class="nav__list">
+              <li class="nav__item nav__item_blue accordion-clicker">
+                <a class="nav__link" href="#!">
+                  О системе
+                  <svg width="10" height="8">
+                    <use xlink:href="./img/svg/sprites.svg#arrow"></use>
+                  </svg>
+                </a>
+                <div class="nav__accordion-content">
+                  <a class="nav__accordion-link" href="#!">
+                    Договоры
+                  </a>
+                  <a class="nav__accordion-link" href="news.html">
+                    Новости
+                  </a>
+                  <a class="nav__accordion-link" href="#!">
+                    Контакты
+                  </a>
+                </div>
+              </li>
+
+              <li class="nav__item nav__item_purple">
+                <a class="nav__link" href="partners.html">
+                  Партнерская программа
+                </a>
+              </li>
+              <li class="nav__item nav__item_green">
+                <a class="nav__link" href="bonuses-and-promotions.html">
+                  Бонусы и акции
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__wrapper-logo header__wrapper-logo_menu">
+            <img src="./img/background-mini.svg" alt="Задний фон">
+            <a class="header__logo" href="index.html">
+              <img src="./img/svg/logotip.svg" alt="Логотип сайта">
+            </a>
+          </div>
+          <nav class="header__nav nav">
+            <ul class="nav__list">
+              <li class="nav__item nav__item_grey">
+                <a class="nav__link" href="faq.html">
+                  FAQ / Помощь
+                </a>
+              </li>
+              <li class="nav__item nav__item_gold">
+                <a class="nav__link" href="#!">
+                  Конструктор документов
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__help">
+            <a class="header__help-link" href="#!">
+              <span><img src="./img/icon/help.svg" alt="Иконка"></span>
+              Техподдержка
+            </a>
+            <img class="header__help-background" src="./img/background-big.svg" alt="Задний фон">
+          </div>
+        </div>
+        <div class="header__wrapper-logo">
+          <img src="./img/background-mini.svg" alt="Задний фон">
+          <a class="header__logo" href="index.html">
+            <img src="./img/svg/logotip.svg" alt="Логотип сайта">
+          </a>
+        </div>
+        <a class="header__log" href="#!">
+          Войти
+        </a>
+      </div>
+    </header>
+    <main class="main-error">
+      <section class="error">
+        <div class="container">
+          <div class="error__content">
+            <div class="error__body">
+              <div class="error__found">
+                <p class="error__num">4</p>
+                <img src="./img/icon/rybl-error-icon.svg" alt="Иконка">
+                <p class="error__num">4</p>
+              </div>
+              <p class="error__text">
+                Страница не найдена
+              </p>
+              <div class="error__wrapper-link">
+                <a class="error__link" href="index.html">
+                  Вернуться на главную
+                </a>
+              </div>
+              <div class="error__image">
+                <picture>
+                <source media="(min-width: 992px)" srcset="./img/error-background.png" type="image/png">
+                <source media="(min-width: 401px)" srcset="./img/error-background_2.png" type="image/png">
+                <source media="(max-width: 400px)" srcset="./img/error-background_3.png" type="image/png">
+                <img src="./img/error-background.png" alt="">
+                </picture>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer footer_error">
+        <div class="footer__container footer__container_error container">
+          <p class="footer__error-text">
+            © 2022 Лавка Олигарха. Все права защищены. 
+          </p>
+        </div>
+    </footer>
+  </div>
+  <script src="./resources/tooltip/popper.min.js"></script>
+  <script src="./resources/tooltip/tippy.js"></script>
+  <script src="./resources/smooth-scroll/smooth-scroll.js"></script>
+  <script src="./resources/swiper/swiper.js"></script>
+  <script src="./js/main.min.js"></script>
+</body>
+
+</html>

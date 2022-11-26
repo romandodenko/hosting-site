@@ -1,0 +1,2288 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./img/favicon.png">
+  <link rel="preload" href="./fonts/OpenSans-Italic.woff" as="font">
+  <link rel="preload" href="./fonts/OpenSans-Italic.woff2" as="font">
+  <link rel="preload" href="./fonts/OpenSans-SemiBold.woff" as="font">
+  <link rel="preload" href="./fonts/OpenSans-SemiBold.woff2" as="font">
+  <link rel="preload" href="./fonts/OpenSans-Regular.woff" as="font">
+  <link rel="preload" href="./fonts/OpenSans-Regular.woff2" as="font">
+  <link rel="preload" href="./fonts/OpenSans-Bold.woff" as="font">
+  <link rel="preload" href="./fonts/OpenSans-Bold.woff2" as="font">
+  <link rel="stylesheet" href="./resources/simplebar.css">
+  <link rel="stylesheet" href="./resources/swiper.css">
+  <link rel="stylesheet" href="./resources/choices.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Blanchard - художественная галерея</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__top">
+      <div class="header__container container">
+        <a class="header__logo" href="index.html" aria-label="Перейти на главную страницу">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./img/logo1024.png" type="image/png">
+            <img src="./img/logo.png" alt="Логотип">
+          </picture>
+        </a>
+        <button class="header__burger" aria-label="Скрытое меню">
+          <span class="header__line"></span>
+        </button>
+        <nav class="header__nav" aria-label="Навигация по сайту">
+          <ul class="header__list" aria-label="Список навигации">
+            <li class="header__item">
+              <a class="header__link" href="#about" aria-label="О нас">О нас</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#gallery" aria-label="Галерея">Галерея</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#catalog" aria-label="Каталог">Каталог</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#events" aria-label="События">События</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#editions" aria-label="Издания">Издания</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#projects" aria-label="Проекты">Проекты</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#contacts" aria-label="Контакты">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="header__searchclicker" aria-label="Открыть поиск">
+          <picture>
+            <source media="(min-width: 1024px)" srcset="./img/Search.png" type="image/png">
+            <source media="(max-width: 768px)" srcset="./img/Search-320.png" type="image/png">
+            <img src="./img/Search.png" alt="Поиск">
+          </picture>
+        </button>
+        <a class="header__entrance" href="#" data-da=".header__nav, 1276, last" aria-label="Войти в кабинет">
+          <svg width="13" height="13">
+            <use xlink:href="./img/svg/sprites.svg#vhod"></use>
+          </svg>
+          Войти
+        </a>
+      </div>
+    </div>
+    <div class="header__bottom header-bottom">
+      <div class="header__container container">
+        <ul class="header-bottom__list" aria-label="Выпадающее меню">
+          <li class="header-bottom__item">
+            <button class="header-bottom__btn" data-path="one" aria-label="Реализм">
+              <strong class="header-bottom__heading">Реализм</strong>
+              <span class="header-bottom__icon"></span>
+            </button>
+            <div class="header-bottom__dropdown header-dropdown" data-target="one">
+              <div class="header-dropdown__body" data-simplebar>
+                <ul class="header-dropdown__list" aria-label="Выпадающее меню с художниками">
+                  <li class="header-dropdown__item"><a class="header-dropdown__tintoretto header-link" href="#"
+                      aria-label="Тинторрето">Тинторрето</a></li>
+                  <li class="header-dropdown__item"><a class="header-dropdown__fridrih header-link" href="#"
+                      aria-label="Фридрих">Фридрих</a>
+                  </li>
+                  <li class="header-dropdown__item"><a class="header-dropdown__leonardo header-link" href="#"
+                      aria-label="Леонардо">Леонардо</a></li>
+                  <li class="header-dropdown__item"><a class="header-dropdown__verrokue header-link" href="#"
+                      aria-label="Верроккьо">Верроккьо</a></li>
+                  <li class="header-dropdown__item"><a class="header-dropdown__verrokue header-link" href="#"
+                      aria-label="Не добавлен">Скоро
+                      добавим</a></li>
+                  <li class="header-dropdown__item"><a class="header-dropdown__verrokue header-link" href="#"
+                      aria-label="Не добавлен">Скоро
+                      добавим</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="header-bottom__item">
+            <button class="header-bottom__btn" data-path="two" aria-label="Импрессионизм">
+              <strong class="header-bottom__heading">Импрессионизм</strong>
+              <span class="header-bottom__icon"></span>
+            </button>
+            <div class="header-bottom__dropdown header-dropdown" data-target="two">
+              <div class="header-dropdown__body" data-simplebar>
+                <ul class="header-dropdown__list" aria-label="Выпадающий список с художниками">
+                  <li class="header-dropdown__item"><a class="header-dropdown__mone header-link" href="#"
+                      aria-label="Моне">Моне</a></li>
+                  <li class="header-dropdown__item"><a class="header-dropdown__sisley header-link" href="#"
+                      aria-label="Сислей">Сислей</a>
+                  </li>
+                  <li class="header-dropdown__item"><a class="header-dropdown__mane header-link" href="#"
+                      aria-label="Мане">Мане</a></li>
+                  <li class="header-dropdown__item"><a class="header-dropdown__renyar header-link" href="#"
+                      aria-label="Ренуар">Ренуар</a>
+                  </li>
+                  <li class="header-dropdown__item"><a class="header-dropdown__verrokue header-link" href="#"
+                      aria-label="Не добавлен">Скоро
+                      добавим</a></li>
+                  <li class="header-dropdown__item"><a class="header-dropdown__verrokue header-link" href="#"
+                      aria-label="Не добавлен">Скоро
+                      добавим</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="header-bottom__item">
+            <button class="header-bottom__btn" data-path="third" aria-label="Постимпрессионизм">
+              <strong class="header-bottom__heading">Постимпрессионизм</strong>
+              <span class="header-bottom__icon"></span>
+            </button>
+            <div class="header-bottom__dropdown header-dropdown" data-target="third">
+              <div class="header-dropdown__body" data-simplebar>
+                <ul class="header-dropdown__list" aria-label="Список с художниками">
+                  <li class="header-dropdown__item"><a class="header-dropdown__vangog header-link" href="#"
+                      aria-label="Ван гог">Ван Гог</a>
+                  </li>
+                  <li class="header-dropdown__item"><a class="header-dropdown__sezan header-link" href="#"
+                      aria-label="Сезанн">Сезанн</a>
+                  </li>
+                  <li class="header-dropdown__item"><a class="header-dropdown__gogen header-link" href="#"
+                      aria-label="Гоген">Гоген</a>
+                  </li>
+                  <li class="header-dropdown__item"><a class="header-dropdown__sera header-link" href="#"
+                      aria-label="Сёра">Сёра</a></li>
+                  <li class="header-dropdown__item"><a class="header-dropdown__verrokue header-link" href="#"
+                      aria-label="Не добавлен">Скоро
+                      добавим</a></li>
+                  <li class="header-dropdown__item"><a class="header-dropdown__verrokue header-link" href="#"
+                      aria-label="Не добавлен">Скоро
+                      добавим</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="header-bottom__item">
+            <button class="header-bottom__btn" data-path="four" aria-label="Авангард">
+              <strong class="header-bottom__heading">Авангард</strong>
+              <span class="header-bottom__icon"></span>
+            </button>
+            <div class="header-bottom__dropdown header-dropdown" data-target="four">
+              <div class="header-dropdown__body" data-simplebar>
+                <ul class="header-dropdown__list" aria-label="Список художников">
+                  <li class="header-dropdown__item"><a class="header-dropdown__kardinskiy header-link" href="#"
+                      aria-label="Кардинский">Кардинский</a></li>
+                  <li class="header-dropdown__item"><a class="header-dropdown__marineti header-link" href="#"
+                      aria-label="Маринетти">Маринетти</a></li>
+                  <li class="header-dropdown__item"><a class="header-dropdown__malevich header-link" href="#"
+                      aria-label="Малевич">Малевич</a></li>
+                  <li class="header-dropdown__item"><a class="header-dropdown__pikasso header-link" href="#"
+                      aria-label="Пикассо">Пикассо</a>
+                  </li>
+                  <li class="header-dropdown__item"><a class="header-dropdown__verrokue header-link" href="#"
+                      aria-label="Не добавлен">Скоро
+                      добавим</a></li>
+                  <li class="header-dropdown__item"><a class="header-dropdown__verrokue header-link" href="#"
+                      aria-label="Не добавлен">Скоро
+                      добавим</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="header-bottom__item">
+            <button class="header-bottom__btn" data-path="five" aria-label="Футуризм">
+              <strong class="header-bottom__heading">Футуризм</strong>
+              <span class="header-bottom__icon"></span>
+            </button>
+            <div class="header-bottom__dropdown header-dropdown" data-target="five">
+              <div class="header-dropdown__body" data-simplebar>
+                <ul class="header-dropdown__list" aria-label="Список художников">
+                  <li class="header-dropdown__item"><a class="header-dropdown__kappa header-link" href="#"
+                      aria-label="Карра">Карра</a>
+                  </li>
+                  <li class="header-dropdown__item"><a class="header-dropdown__pratella header-link" href="#"
+                      aria-label="Прателла">Прателла</a></li>
+                  <li class="header-dropdown__item"><a class="header-dropdown__severeni header-link" href="#"
+                      aria-label="Северени">Северени</a></li>
+                  <li class="header-dropdown__item"><a class="header-dropdown__balla header-link" href="#"
+                      aria-label="Балла">Балла</a>
+                  </li>
+                  <li class="header-dropdown__item"><a class="header-dropdown__verrokue header-link" href="#"
+                      aria-label="Не добавлен">Скоро
+                      добавим</a></li>
+                  <li class="header-dropdown__item"><a class="header-dropdown__verrokue header-link" href="#"
+                      aria-label="Не добавлен">Скоро
+                      добавим</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <form class="header-bottom__form" action="#" data-da=".header__top, 1276, last" aria-label="Форма поиска">
+          <button class="header-bottom__searchbtn" aria-label="Начать поиск">
+            <svg width="23" height="22">
+              <use xlink:href="./img/svg/sprites.svg#search"></use>
+            </svg>
+          </button>
+          <input class="header-bottom__input" type="text" placeholder="Поиск по сайту">
+        </form>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero__swiper hero-swiper">
+        <div class="hero-swiperwrapper swiper-wrapper">
+          <div class="hero-swiper__slide hero-slide-one swiper-slide"></div>
+          <div class="hero-swiper__slide hero-slide-two swiper-slide"></div>
+          <div class="hero-swiper__slide hero-slide-third swiper-slide"></div>
+        </div>
+      </div>
+      <div class="hero__container container">
+        <div class="hero__descr">
+          <h1 class="hero__title">
+            Прикоснитесь к прекрасному
+          </h1>
+          <p class="hero__text text">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий
+            создаёт предпосылки для новых предложений.</p>
+          <a class="hero__btn anchor" href="#contacts" aria-label="Подписаться на рассылку">Подписаться на рассылку</a>
+        </div>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="about__container container">
+        <h2 class="about__title title">О нас</h2>
+        <p class="about__text text">Ясность нашей позиции очевидна: семантический разбор внешних противодействий
+          однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения
+          внутренних резервов и ресурсов. Не следует, однако, забывать, что высококачественный прототип будущего проекта
+          влечет за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает, что
+          высокое качество позиционных исследований создаёт необходимость включения в производственный план целого ряда
+          внеочередных мероприятий с учётом комплекса распределения внутренних резервов и ресурсов. В рамках
+          спецификации современных стандартов, действия представителей оппозиции набирают популярность среди
+          определенных слоев населения, а значит, должны быть разоблачены.</p>
+      </div>
+    </section>
+    <section class="gallery" id="gallery">
+      <div class="gallery__container container">
+        <div class="gallery__body">
+          <div class="gallery__left">
+            <h2 class="gallery__title title">Галерея</h2>
+            <div class="gallery__select gallery-select">
+              <h3 class="gallery-select__title">Фильтр:</h3>
+              <select class="gallery-select__select" name="category">
+                <option value="painting" selected>Живопись</option>
+                <option value="drawing">Рисунок</option>
+                <option value="sculpture">Скульптура</option>
+              </select>
+            </div>
+            <p class="gallery__text text" data-da=".gallery__container, 1085, last">
+              Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a
+                class="gallery__link" href="#">авторизуйтесь</a>, либо воспользуйтесь лицензией.
+            </p>
+          </div>
+          <div class="gallery__right">
+            <div class="gallery__control">
+              <button class="gallery__prev" aria-label="Предыдущий слайд">
+                <svg width="30" height="30">
+                  <use xlink:href="./img/svg/sprites.svg#editions-prev"></use>
+                </svg>
+              </button>
+              <div class="gallery__pagination"></div>
+              <button class="gallery__next" aria-label="Следующий слайд">
+                <svg width="30" height="30">
+                  <use xlink:href="./img/svg/sprites.svg#editions-next"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="gallery__swiper gallery-swiper">
+              <ul class="gallery-swiper__wrapper swiper-wrapper" aria-label="Список слайдов">
+                <li class="gallery-swiper__slide swiper-slide">
+                  <button class="gallery-swiper__popup" data-path3="one"
+                    aria-label="Нажмите чтобы прочитать информацию о картине">
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="./img/gallery-oneSwiper-img-1-768.png"
+                        type="image/png">
+                      <source media="(min-width: 500px)" srcset="./img/gallery-oneSwiper-img-1-320.png"
+                        type="image/png">
+                      <img src="./img/gallery-oneSwiper-img-1.png" alt="Картинка">
+                    </picture>
+                  </button>
+                </li>
+                <li class="gallery-swiper__slide swiper-slide">
+                  <button class="gallery-swiper__popup" data-path3="two"
+                    aria-label="Нажмите чтобы прочитать информацию о картине">
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="./img/gallery-oneSwiper-img-2-768.png"
+                        type="image/png">
+                      <source media="(min-width: 500px)" srcset="./img/gallery-oneSwiper-img-2-320.png"
+                        type="image/png">
+                      <img src="./img/gallery-oneSwiper-img-2.png" alt="Картинка">
+                    </picture>
+                  </button>
+                </li>
+                <li class="gallery-swiper__slide swiper-slide">
+                  <button class="gallery-swiper__popup" data-path3="third"
+                    aria-label="Нажмите чтобы прочитать информацию о картине">
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="./img/gallery-oneSwiper-img-3-768.png"
+                        type="image/png">
+                      <source media="(min-width: 500px)" srcset="./img/gallery-oneSwiper-img-3-320.png"
+                        type="image/png">
+                      <img src="./img/gallery-oneSwiper-img-3.png" alt="Картинка">
+                    </picture>
+                  </button>
+                </li>
+                <li class="gallery-swiper__slide swiper-slide">
+                  <button class="gallery-swiper__popup" data-path3="four"
+                    aria-label="Нажмите чтобы прочитать информацию о картине">
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="./img/gallery-oneSwiper-img-4-768.png"
+                        type="image/png">
+                      <source media="(min-width: 500px)" srcset="./img/gallery-oneSwiper-img-4-320.png"
+                        type="image/png">
+                      <img src="./img/gallery-oneSwiper-img-4.png" alt="Картинка">
+                    </picture>
+                  </button>
+                </li>
+                <li class="gallery-swiper__slide swiper-slide">
+                  <button class="gallery-swiper__popup" data-path3="five"
+                    aria-label="Нажмите чтобы прочитать информацию о картине">
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="./img/gallery-oneSwiper-img-5-768.png"
+                        type="image/png">
+                      <source media="(min-width: 500px)" srcset="./img/gallery-oneSwiper-img-5-320.png"
+                        type="image/png">
+                      <img src="./img/gallery-oneSwiper-img-5.png" alt="Картинка">
+                    </picture>
+                  </button>
+                </li>
+                <li class="gallery-swiper__slide swiper-slide">
+                  <button class="gallery-swiper__popup" data-path3="six"
+                    aria-label="Нажмите чтобы прочитать информацию о картине">
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="./img/gallery-oneSwiper-img-6-768.png"
+                        type="image/png">
+                      <source media="(min-width: 500px)" srcset="./img/gallery-oneSwiper-img-6-320.png"
+                        type="image/png">
+                      <img src="./img/gallery-oneSwiper-img-6.png" alt="Картинка">
+                    </picture>
+                  </button>
+                </li>
+                <li class="gallery-swiper__slide swiper-slide">
+                  <button class="gallery-swiper__popup" data-path3="seven"
+                    aria-label="Нажмите чтобы прочитать информацию о картине">
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="./img/gallery-oneSwiper-img-7-768.png"
+                        type="image/png">
+                      <source media="(min-width: 500px)" srcset="./img/gallery-oneSwiper-img-7-320.png"
+                        type="image/png">
+                      <img src="./img/gallery-oneSwiper-img-7.png" alt="Картинка">
+                    </picture>
+                  </button>
+                </li>
+                <li class="gallery-swiper__slide swiper-slide">
+                  <button class="gallery-swiper__popup" data-path3="eight"
+                    aria-label="Нажмите чтобы прочитать информацию о картине">
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="./img/gallery-oneSwiper-img-8-768.png"
+                        type="image/png">
+                      <source media="(min-width: 500px)" srcset="./img/gallery-oneSwiper-img-8-320.png"
+                        type="image/png">
+                      <img src="./img/gallery-oneSwiper-img-8.png" alt="Картинка">
+                    </picture>
+                  </button>
+                </li>
+                <li class="gallery-swiper__slide swiper-slide">
+                  <button class="gallery-swiper__popup" data-path3="nine"
+                    aria-label="Нажмите чтобы прочитать информацию о картине">
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="./img/gallery-oneSwiper-img-9-768.png"
+                        type="image/png">
+                      <source media="(min-width: 500px)" srcset="./img/gallery-oneSwiper-img-9-320.png"
+                        type="image/png">
+                      <img src="./img/gallery-oneSwiper-img-9.png" alt="Картинка">
+                    </picture>
+                  </button>
+                </li>
+                <li class="gallery-swiper__slide swiper-slide">
+                  <button class="gallery-swiper__popup" data-path3="ten"
+                    aria-label="Нажмите чтобы прочитать информацию о картине">
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="./img/gallery-oneSwiper-img-10-768.png"
+                        type="image/png">
+                      <source media="(min-width: 500px)" srcset="./img/gallery-oneSwiper-img-10-320.png"
+                        type="image/png">
+                      <img src="./img/gallery-oneSwiper-img-10.png" alt="Картинка">
+                    </picture>
+                  </button>
+                </li>
+                <li class="gallery-swiper__slide swiper-slide">
+                  <button class="gallery-swiper__popup" data-path3="eleven"
+                    aria-label="Нажмите чтобы прочитать информацию о картине">
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="./img/gallery-oneSwiper-img-11-768.png"
+                        type="image/png">
+                      <source media="(min-width: 500px)" srcset="./img/gallery-oneSwiper-img-11-320.png"
+                        type="image/png">
+                      <img src="./img/gallery-oneSwiper-img-11.png" alt="Картинка">
+                    </picture>
+                  </button>
+                </li>
+                <li class="gallery-swiper__slide swiper-slide">
+                  <button class="gallery-swiper__popup" data-path3="twelve"
+                    aria-label="Нажмите чтобы прочитать информацию о картине">
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="./img/gallery-oneSwiper-img-12-768.png"
+                        type="image/png">
+                      <source media="(min-width: 500px)" srcset="./img/gallery-oneSwiper-img-12-320.png"
+                        type="image/png">
+                      <img src="./img/gallery-oneSwiper-img-12.png" alt="Картинка">
+                    </picture>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="catalog" id="catalog">
+      <div class="catalog__container container">
+        <div class="catalog__top">
+          <h2 class="catalog__title title">Каталог</h2>
+          <ul class="catalog__buttons" aria-label="Список стран художников">
+            <li class="catalog__item">
+              <button class="catalog__france catalog-btn" data-path="france" data-path1="france-btn"
+                data-target1="france-btn" aria-label="Франция">
+                <picture>
+                  <source media="(max-width: 500px)" srcset="./img/france-320.png" type="image/png">
+                  <img src="./img/france.png" alt="Франция">
+                </picture>
+              </button>
+            </li>
+            <li class="catalog__item">
+              <button class="catalog__germany catalog-btn" data-path="germany" data-path1="germany-btn"
+                data-target1="germany-btn" aria-label="Германия">
+                <picture>
+                  <source media="(max-width: 500px)" srcset="./img/germany-320.png" type="image/png">
+                  <img src="./img/germany.png" alt="Германия">
+                </picture>
+              </button>
+            </li>
+            <li class="catalog__item">
+              <button class="catalog__italy catalog-btn btn-active" data-path="italy" data-path1="italy-btn"
+                data-target1="italy-btn" aria-label="Италия">
+                <picture>
+                  <source media="(max-width: 500px)" srcset="./img/italy-320.png" type="image/png">
+                  <img src="./img/italy.png" alt="Италия">
+                </picture>
+              </button>
+            </li>
+            <li class="catalog__item">
+              <button class="catalog__russia catalog-btn" data-path="russia" data-path1="russia-btn"
+                data-target1="russia-btn" aria-label="Россия">
+                <picture>
+                  <source media="(max-width: 500px)" srcset="./img/russia-320.png" type="image/png">
+                  <img src="./img/russia.png" alt="Россия">
+                </picture>
+              </button>
+            </li>
+            <li class="catalog__item">
+              <button class="catalog__belgium catalog-btn" data-path="belgium" data-path1="belgium-btn"
+                data-target1="belgium-btn" aria-label="Бельгия">
+                <picture>
+                  <source media="(max-width: 500px)" srcset="./img/belgium-320.png" type="image/png">
+                  <img src="./img/belgium.png" alt="Бельгия">
+                </picture>
+              </button>
+            </li>
+          </ul>
+        </div>
+        <p class="catalog__text text">
+          Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа
+          политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь
+          частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются
+          уделом либералов, которые жаждут быть функционально разнесены на независимые элементы.
+        </p>
+        <div class="catalog__tabs catalog-tabs">
+          <div class="catalog-tabs__france content-tabs" data-target="france">
+            <div class="catalog-tabs__unknown catalog-unknown">
+              <img src="./img/catalog-unknown-2.png" alt="Неизвестно">
+              <h3 class="catalog-unknown__title">Что мы о нём знаем?</h3>
+              <p class="catalog-unknown__text text">Пока ничего... Зато мы точно знаем, что в галерее есть на что
+                посмотреть!</p>
+              <a class="catalog-unknown__link anchor" href="#gallery" aria-label="В галерею">В галерею</a>
+            </div>
+            <div class="catalog-tabs__accordion catalog-accordion">
+              <div data-spollers data-one-spoller>
+                <div class="catalog-accordion__head">
+                  <button class="catalog-accordion__heading" tabindex="-1" type="button" data-spoller
+                    aria-label="С 1400 по 1499 годы"><span>C 1400 по
+                      1499 гг.</span>
+                    <svg class="catalog__arrow" width="50" height="50">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow"></use>
+                    </svg>
+                    <svg class="catalog__arrow320" width="30" height="30">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow320"></use>
+                    </svg>
+                  </button>
+                  <div class="catalog-accordion__body">
+                    <div class="catalog-accordion__unknown">
+                      <img src="./img/catalog-unknown.png" alt="Не известно">
+                      <div class="catalog-accordion__descr">
+                        <strong class="catalog-accordion__strong">Здесь пока пусто</strong>
+                        <p class="catalog-accordion__text text">А в галерее вы всегда можете найти что-то интересное для
+                          себя</p>
+                        <a class="catalog-accordion__unk anchor" href="#gallery" aria-label="В галерею">В галерею</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog-accordion__head">
+                  <button class="catalog-accordion__heading" tabindex="-1" type="button" data-spoller
+                    aria-label="С 1500 по 1599 годы"><span>C 1500 по
+                      1599 гг.</span>
+                    <svg class="catalog__arrow" width="50" height="50">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow"></use>
+                    </svg>
+                    <svg class="catalog__arrow320" width="30" height="30">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow320"></use>
+                    </svg>
+                  </button>
+                  <div class="catalog-accordion__body">
+                    <div class="catalog-accordion__unknown">
+                      <img src="./img/catalog-unknown.png" alt="Не известно">
+                      <div class="catalog-accordion__descr">
+                        <strong class="catalog-accordion__strong">Здесь пока пусто</strong>
+                        <p class="catalog-accordion__text text">А в галерее вы всегда можете найти что-то интересное для
+                          себя</p>
+                        <a class="catalog-accordion__unk anchor" href="#gallery" aria-label="В галерею">В галерею</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog-accordion__head">
+                  <button class="catalog-accordion__heading" tabindex="-1" type="button" data-spoller
+                    aria-label="С 1600 по 1699 годы"><span>C 1600 по
+                      1699 гг.</span>
+                    <svg class="catalog__arrow" width="50" height="50">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow"></use>
+                    </svg>
+                    <svg class="catalog__arrow320" width="30" height="30">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow320"></use>
+                    </svg>
+                  </button>
+                  <div class="catalog-accordion__body">
+                    <div class="catalog-accordion__unknown">
+                      <img src="./img/catalog-unknown.png" alt="Не известно">
+                      <div class="catalog-accordion__descr">
+                        <strong class="catalog-accordion__strong">Здесь пока пусто</strong>
+                        <p class="catalog-accordion__text text">А в галерее вы всегда можете найти что-то интересное для
+                          себя</p>
+                        <a class="catalog-accordion__unk anchor" href="#gallery" aria-label="В галерею">В галерею</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog-accordion__head">
+                  <button class="catalog-accordion__heading" tabindex="-1" type="button" data-spoller
+                    aria-label="С 1700 по 1799 годы"><span>C 1700 по
+                      1799 гг.</span>
+                    <svg class="catalog__arrow" width="50" height="50">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow"></use>
+                    </svg>
+                    <svg class="catalog__arrow320" width="30" height="30">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow320"></use>
+                    </svg>
+                  </button>
+                  <div class="catalog-accordion__body">
+                    <div class="catalog-accordion__unknown">
+                      <img src="./img/catalog-unknown.png" alt="Не известно">
+                      <div class="catalog-accordion__descr">
+                        <strong class="catalog-accordion__strong">Здесь пока пусто</strong>
+                        <p class="catalog-accordion__text text">А в галерее вы всегда можете найти что-то интересное для
+                          себя</p>
+                        <a class="catalog-accordion__unk anchor" href="#gallery">В галерею</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog-accordion__head">
+                  <button class="catalog-accordion__heading" tabindex="-1" type="button" data-spoller
+                    aria-label="С 1800 по 1899 годы"><span>C 1800 по
+                      1899 гг.</span>
+                    <svg class="catalog__arrow" width="50" height="50">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow"></use>
+                    </svg>
+                    <svg class="catalog__arrow320" width="30" height="30">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow320"></use>
+                    </svg>
+                  </button>
+                  <div class="catalog-accordion__body">
+                    <div class="catalog-accordion__unknown">
+                      <img src="./img/catalog-unknown.png" alt="Не известно">
+                      <div class="catalog-accordion__descr">
+                        <strong class="catalog-accordion__strong">Здесь пока пусто</strong>
+                        <p class="catalog-accordion__text text">А в галерее вы всегда можете найти что-то интересное для
+                          себя</p>
+                        <a class="catalog-accordion__unk anchor" href="#gallery" aria-label="В галерею">В галерею</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog-accordion__head">
+                  <button class="catalog-accordion__heading" tabindex="-1" type="button" data-spoller
+                    aria-label="С 1900 по 1999 годы"><span>C 1900 по
+                      1999 гг.</span>
+                    <svg class="catalog__arrow" width="50" height="50">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow"></use>
+                    </svg>
+                    <svg class="catalog__arrow320" width="30" height="30">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow320"></use>
+                    </svg>
+                  </button>
+                  <div class="catalog-accordion__body">
+                    <div class="catalog-accordion__unknown">
+                      <img src="./img/catalog-unknown.png" alt="Не известно">
+                      <div class="catalog-accordion__descr">
+                        <strong class="catalog-accordion__strong">Здесь пока пусто</strong>
+                        <p class="catalog-accordion__text text">А в галерее вы всегда можете найти что-то интересное для
+                          себя</p>
+                        <a class="catalog-accordion__unk anchor" href="#gallery" aria-label="В галерею">В галерею</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog-accordion__head">
+                  <button class="catalog-accordion__heading heading-last" tabindex="-1" type="button" data-spoller
+                    aria-label="С 2000 года по настоящее время"><span>C 2000 г.</span>
+                    <svg class="catalog__arrow" width="50" height="50">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow"></use>
+                    </svg>
+                    <svg class="catalog__arrow320" width="30" height="30">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow320"></use>
+                    </svg>
+                  </button>
+                  <div class="catalog-accordion__body body-last">
+                    <div class="catalog-accordion__unknown">
+                      <img src="./img/catalog-unknown.png" alt="Не известно">
+                      <div class="catalog-accordion__descr">
+                        <strong class="catalog-accordion__strong">Здесь пока пусто</strong>
+                        <p class="catalog-accordion__text text">А в галерее вы всегда можете найти что-то интересное для
+                          себя</p>
+                        <a class="catalog-accordion__unk anchor" href="#gallery" aria-label="В галерею">В галерею</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="catalog-tabs__germany content-tabs" data-target="germany">
+            <div class="catalog-tabs__unknown catalog-unknown">
+              <img src="./img/catalog-unknown-2.png" alt="Неизвестно">
+              <h3 class="catalog-unknown__title">Что мы о нём знаем?</h3>
+              <p class="catalog-unknown__text text">Пока ничего... Зато мы точно знаем, что в галерее есть на что
+                посмотреть!</p>
+              <a class="catalog-unknown__link anchor" href="#gallery" aria-label="В галерею">В галерею</a>
+            </div>
+            <div class="catalog-tabs__accordion catalog-accordion">
+              <div data-spollers data-one-spoller>
+                <div class="catalog-accordion__head">
+                  <button class="catalog-accordion__heading" tabindex="-1" type="button" data-spoller
+                    aria-label="С 1400 до 1499 годы"><span>C 1400 по
+                      1499 гг.</span>
+                    <svg class="catalog__arrow" width="50" height="50">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow"></use>
+                    </svg>
+                    <svg class="catalog__arrow320" width="30" height="30">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow320"></use>
+                    </svg>
+                  </button>
+                  <div class="catalog-accordion__body">
+                    <div class="catalog-accordion__unknown">
+                      <img src="./img/catalog-unknown.png" alt="Не известно">
+                      <div class="catalog-accordion__descr">
+                        <strong class="catalog-accordion__strong">Здесь пока пусто</strong>
+                        <p class="catalog-accordion__text text">А в галерее вы всегда можете найти что-то интересное для
+                          себя</p>
+                        <a class="catalog-accordion__unk anchor" href="#gallery" aria-label="В галерею">В галерею</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog-accordion__head">
+                  <button class="catalog-accordion__heading" tabindex="-1" type="button" data-spoller
+                    aria-label="С 1500 до 1599 годы"><span>C 1500 по
+                      1599 гг.</span>
+                    <svg class="catalog__arrow" width="50" height="50">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow"></use>
+                    </svg>
+                    <svg class="catalog__arrow320" width="30" height="30">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow320"></use>
+                    </svg>
+                  </button>
+                  <div class="catalog-accordion__body">
+                    <div class="catalog-accordion__unknown">
+                      <img src="./img/catalog-unknown.png" alt="Не известно">
+                      <div class="catalog-accordion__descr">
+                        <strong class="catalog-accordion__strong">Здесь пока пусто</strong>
+                        <p class="catalog-accordion__text text">А в галерее вы всегда можете найти что-то интересное для
+                          себя</p>
+                        <a class="catalog-accordion__unk anchor" href="#gallery" aria-label="В галерею">В галерею</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog-accordion__head">
+                  <button class="catalog-accordion__heading" tabindex="-1" type="button" data-spoller
+                    aria-label="С 1600 до 1699 годы"><span>C 1600 по
+                      1699 гг.</span>
+                    <svg class="catalog__arrow" width="50" height="50">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow"></use>
+                    </svg>
+                    <svg class="catalog__arrow320" width="30" height="30">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow320"></use>
+                    </svg>
+                  </button>
+                  <div class="catalog-accordion__body">
+                    <div class="catalog-accordion__unknown">
+                      <img src="./img/catalog-unknown.png" alt="Не известно">
+                      <div class="catalog-accordion__descr">
+                        <strong class="catalog-accordion__strong">Здесь пока пусто</strong>
+                        <p class="catalog-accordion__text text">А в галерее вы всегда можете найти что-то интересное для
+                          себя</p>
+                        <a class="catalog-accordion__unk anchor" href="#gallery" aria-label="В галерею">В галерею</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog-accordion__head">
+                  <button class="catalog-accordion__heading" tabindex="-1" type="button" data-spoller
+                    aria-label="С 1700 до 1799 годы"><span>C 1700 по
+                      1799 гг.</span>
+                    <svg class="catalog__arrow" width="50" height="50">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow"></use>
+                    </svg>
+                    <svg class="catalog__arrow320" width="30" height="30">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow320"></use>
+                    </svg>
+                  </button>
+                  <div class="catalog-accordion__body">
+                    <div class="catalog-accordion__unknown">
+                      <img src="./img/catalog-unknown.png" alt="Не известно">
+                      <div class="catalog-accordion__descr">
+                        <strong class="catalog-accordion__strong">Здесь пока пусто</strong>
+                        <p class="catalog-accordion__text text">А в галерее вы всегда можете найти что-то интересное для
+                          себя</p>
+                        <a class="catalog-accordion__unk anchor" href="#gallery" aria-label="В галерею">В галерею</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog-accordion__head">
+                  <button class="catalog-accordion__heading" tabindex="-1" type="button" data-spoller
+                    aria-label="С 1800 до 1899 годы"><span>C 1800 по
+                      1899 гг.</span>
+                    <svg class="catalog__arrow" width="50" height="50">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow"></use>
+                    </svg>
+                    <svg class="catalog__arrow320" width="30" height="30">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow320"></use>
+                    </svg>
+                  </button>
+                  <div class="catalog-accordion__body">
+                    <div class="catalog-accordion__unknown">
+                      <img src="./img/catalog-unknown.png" alt="Не известно">
+                      <div class="catalog-accordion__descr">
+                        <strong class="catalog-accordion__strong">Здесь пока пусто</strong>
+                        <p class="catalog-accordion__text text">А в галерее вы всегда можете найти что-то интересное для
+                          себя</p>
+                        <a class="catalog-accordion__unk anchor" href="#gallery" aria-label="В галерею">В галерею</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog-accordion__head">
+                  <button class="catalog-accordion__heading" tabindex="-1" type="button" data-spoller
+                    aria-label="С 1900 до 1999 годы"><span>C 1900 по
+                      1999 гг.</span>
+                    <svg class="catalog__arrow" width="50" height="50">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow"></use>
+                    </svg>
+                    <svg class="catalog__arrow320" width="30" height="30">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow320"></use>
+                    </svg>
+                  </button>
+                  <div class="catalog-accordion__body">
+                    <div class="catalog-accordion__unknown">
+                      <img src="./img/catalog-unknown.png" alt="Не известно">
+                      <div class="catalog-accordion__descr">
+                        <strong class="catalog-accordion__strong">Здесь пока пусто</strong>
+                        <p class="catalog-accordion__text text">А в галерее вы всегда можете найти что-то интересное для
+                          себя</p>
+                        <a class="catalog-accordion__unk anchor" href="#gallery" aria-label="В галерею">В галерею</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog-accordion__head">
+                  <button class="catalog-accordion__heading heading-last" tabindex="-1" type="button" data-spoller
+                    aria-label="С 2000 года по настоящее время"><span>C 2000 г.</span>
+                    <svg class="catalog__arrow" width="50" height="50">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow"></use>
+                    </svg>
+                    <svg class="catalog__arrow320" width="30" height="30">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow320"></use>
+                    </svg>
+                  </button>
+                  <div class="catalog-accordion__body body-last">
+                    <div class="catalog-accordion__unknown">
+                      <img src="./img/catalog-unknown.png" alt="Не известно">
+                      <div class="catalog-accordion__descr">
+                        <strong class="catalog-accordion__strong">Здесь пока пусто</strong>
+                        <p class="catalog-accordion__text text">А в галерее вы всегда можете найти что-то интересное для
+                          себя</p>
+                        <a class="catalog-accordion__unk anchor" href="#gallery" aria-label="В галерею">В галерею</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="catalog-tabs__italy content-tabs content-active" data-target="italy">
+            <div class="catalog-tabs__domeniko catalog-domeniko" id="domeniko">
+              <img src="./img/Domeniko-Girlandaio.png" alt="Доменико">
+              <h3 class="catalog-domeniko__title">Доменико Гирландайо</h3>
+              <span class="catalog-domeniko__data">2 июня 1448 — 11 января 1494.</span>
+              <p class="catalog-domeniko__text text">Один из ведущих флорентийских художников Кватроченто, основатель
+                художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной
+                мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых
+                циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей
+                (в их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+            </div>
+            <div class="catalog-tabs__accordion catalog-accordion">
+              <div data-spollers data-one-spoller>
+                <div class="catalog-accordion__head">
+                  <button class="catalog-accordion__heading _active" tabindex="-1" type="button" data-spoller
+                    aria-label="С 1400 до 1499 годы"><span>C
+                      1400 по 1499 гг.</span>
+                    <svg class="catalog__arrow" width="50" height="50">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow"></use>
+                    </svg>
+                    <svg class="catalog__arrow320" width="30" height="30">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow320"></use>
+                    </svg>
+                  </button>
+                  <div class="catalog-accordion__body">
+                    <div class="catalog-accordion__lists">
+                      <ul class="catalog-accordion__list italy-list-one">
+                        <li class="catalog-accordion__item">
+                          <a class="catalog-accordion__link" href="#" data-path2="benedetto" data-target2="benedetto"
+                            aria-label="Бенедетто ди Биндо">Бенедетто ди Биндо</a>
+                        </li>
+                        <li class="catalog-accordion__item">
+                          <a class="catalog-accordion__link" href="#" data-path2="bergonie" data-target2="bergonie"
+                            aria-label="Бергоньоне Амброджо">Бергоньоне, Амброджо</a>
+                        </li>
+                        <li class="catalog-accordion__item">
+                          <a class="catalog-accordion__link" href="#" data-path2="bisollo" data-target2="bisollo"
+                            aria-label="Биссоло Франческо">Биссоло, Франческо</a>
+                        </li>
+                        <li class="catalog-accordion__item">
+                          <a class="catalog-accordion__link" href="#" data-path2="boltrafio" data-target2="boltrafio"
+                            aria-label="Больтраффио Джованни">Больтраффио, Джованни</a>
+                        </li>
+                        <li class="catalog-accordion__item">
+                          <a class="catalog-accordion__link anchor" href="#" data-path2="bonsiori"
+                            data-target2="bonsiori" aria-label="Бонсиньори Франческо">Бонсиньори, Франческо</a>
+                        </li>
+                        <li class="catalog-accordion__item">
+                          <a class="catalog-accordion__link anchor" href="#" data-path2="pintrykio"
+                            data-target2="pintrykio" aria-label="Пинтуриккьо">Пинтуриккьо</a>
+                        </li>
+                        <li class="catalog-accordion__item">
+                          <a class="catalog-accordion__link anchor" href="#" data-path2="botichi" data-target2="botichi"
+                            aria-label="Боттичини Рафаэлло">Боттичини,
+                            Рафаэлло</a>
+                        </li>
+                        <li class="catalog-accordion__item">
+                          <a class="catalog-accordion__link anchor" href="#" data-path2="bramantino"
+                            data-target2="bramantino" aria-label="Брамантино">Брамантино</a>
+                        </li>
+                        <li class="catalog-accordion__item">
+                          <a class="catalog-accordion__link anchor" href="#" data-path2="brea" data-target2="brea"
+                            aria-label="Бреа Людовико">Бреа, Людовико</a>
+                        </li>
+                        <li class="catalog-accordion__item">
+                          <a class="catalog-accordion__link" href="#" data-path2="byadjo" data-target2="byadjo"
+                            aria-label="Бьяджо Туччи">Бьяджо д'Антонио
+                            Туччи</a>
+                        </li>
+                      </ul>
+                      <ul class="catalog-accordion__list italy-list-two">
+                        <li class="catalog-accordion__item">
+                          <a class="catalog-accordion__link anchor" href="#" data-path2="veketta" data-target2="veketta"
+                            aria-label="Веккьетта">Веккьетта</a>
+                        </li>
+                        <li class="catalog-accordion__item">
+                          <a class="catalog-accordion__link anchor" href="#" data-path2="verrokue"
+                            data-target2="verrokue" aria-label="Андреа Верроккьо">Андреа
+                            Верроккьо</a>
+                        </li>
+                        <li class="catalog-accordion__item">
+                          <a class="catalog-accordion__link anchor link-active" href="#domeniko" data-path2="domeniko"
+                            data-target2="domeniko" aria-label="Доменико Гирландайо">Доменико Гирландайо</a>
+                        </li>
+                        <li class="catalog-accordion__item">
+                          <a class="catalog-accordion__link anchor" href="#" data-path2="benocco" data-target2="benocco"
+                            aria-label="Беноццо Гоццоли">Беноццо Гоццоли</a>
+                        </li>
+                        <li class="catalog-accordion__item">
+                          <a class="catalog-accordion__link anchor" href="#" data-path2="gregorio"
+                            data-target2="gregorio" aria-label="Грегорио ди Чекко">Грегорио ди
+                            Чекко</a>
+                        </li>
+                        <li class="catalog-accordion__item">
+                          <a class="catalog-accordion__link anchor" href="#" data-path2="ydine" data-target2="ydine"
+                            aria-label="Джованни да Удине">Джованни да Удине</a>
+                        </li>
+                        <li class="catalog-accordion__item">
+                          <a class="catalog-accordion__link anchor" href="#" data-path2="paolo" data-target2="paolo"
+                            aria-label="Джованни ди Паоло">Джованни ди Паоло</a>
+                        </li>
+                        <li class="catalog-accordion__item">
+                          <a class="catalog-accordion__link anchor" href="#" data-path2="djordjone"
+                            data-target2="djordjone" aria-label="Джорджоне">Джорджоне</a>
+                        </li>
+                        <li class="catalog-accordion__item"><a class="catalog-accordion__link anchor" href="#"
+                            data-path2="parentino" data-target2="parentino" aria-label="Парентино Бернардо">Парентино,
+                            Бернардо</a>
+                        </li>
+                        <li class="catalog-accordion__item"><a class="catalog-accordion__link anchor" href="#"
+                            data-path2="pezelino" data-target2="pezelino" aria-label="Пезеллино">Пезеллино</a>
+                        </li>
+                      </ul>
+                      <ul class="catalog-accordion__list italy-list-third">
+                        <li class="catalog-accordion__item">
+                          <a class="catalog-accordion__link anchor" href="#" data-path2="perycci" data-target2="perycci"
+                            aria-label="Перуцци Бальдассаре">Перуцци,
+                            Бальдассаре</a>
+                        </li>
+                        <li class="catalog-accordion__item">
+                          <a class="catalog-accordion__link anchor" href="#" data-path2="pizanello"
+                            data-target2="pizanello" aria-label="Пизанелло">Пизанелло</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog-accordion__head">
+                  <button class="catalog-accordion__heading" tabindex="-1" type="button" data-spoller
+                    aria-label="С 1500 до 1599 годы"><span>C 1500 по
+                      1599 гг.</span>
+                    <svg class="catalog__arrow" width="50" height="50">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow"></use>
+                    </svg>
+                    <svg class="catalog__arrow320" width="30" height="30">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow320"></use>
+                    </svg>
+                  </button>
+                  <div class="catalog-accordion__body">
+                    <div class="catalog-accordion__unknown">
+                      <img src="./img/catalog-unknown.png" alt="Не известно">
+                      <div class="catalog-accordion__descr">
+                        <strong class="catalog-accordion__strong">Здесь пока пусто</strong>
+                        <p class="catalog-accordion__text text">А в галерее вы всегда можете найти что-то интересное для
+                          себя</p>
+                        <a class="catalog-accordion__unk anchor" href="#gallery" aria-label="В галерею">В галерею</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog-accordion__head">
+                  <button class="catalog-accordion__heading" tabindex="-1" type="button" data-spoller
+                    aria-label="С 1600 до 1699 годы"><span>C 1600 по
+                      1699 гг.</span>
+                    <svg class="catalog__arrow" width="50" height="50">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow"></use>
+                    </svg>
+                    <svg class="catalog__arrow320" width="30" height="30">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow320"></use>
+                    </svg>
+                  </button>
+                  <div class="catalog-accordion__body">
+                    <div class="catalog-accordion__unknown">
+                      <img src="./img/catalog-unknown.png" alt="Не известно">
+                      <div class="catalog-accordion__descr">
+                        <strong class="catalog-accordion__strong">Здесь пока пусто</strong>
+                        <p class="catalog-accordion__text text">А в галерее вы всегда можете найти что-то интересное для
+                          себя</p>
+                        <a class="catalog-accordion__unk anchor" href="#gallery" aria-label="В галерею">В галерею</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog-accordion__head">
+                  <button class="catalog-accordion__heading" tabindex="-1" type="button" data-spoller
+                    aria-label="С 1700 до 1799 годы"><span>C 1700 по
+                      1799 гг.</span>
+                    <svg class="catalog__arrow" width="50" height="50">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow"></use>
+                    </svg>
+                    <svg class="catalog__arrow320" width="30" height="30">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow320"></use>
+                    </svg>
+                  </button>
+                  <div class="catalog-accordion__body">
+                    <div class="catalog-accordion__unknown">
+                      <img src="./img/catalog-unknown.png" alt="Не известно">
+                      <div class="catalog-accordion__descr">
+                        <strong class="catalog-accordion__strong">Здесь пока пусто</strong>
+                        <p class="catalog-accordion__text text">А в галерее вы всегда можете найти что-то интересное для
+                          себя</p>
+                        <a class="catalog-accordion__unk anchor" href="#gallery" aria-label="В галерею">В галерею</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog-accordion__head">
+                  <button class="catalog-accordion__heading" tabindex="-1" type="button" data-spoller
+                    aria-label="С 1800 до 1899 годы"><span>C 1800 по
+                      1899 гг.</span>
+                    <svg class="catalog__arrow" width="50" height="50">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow"></use>
+                    </svg>
+                    <svg class="catalog__arrow320" width="30" height="30">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow320"></use>
+                    </svg>
+                  </button>
+                  <div class="catalog-accordion__body">
+                    <div class="catalog-accordion__unknown">
+                      <img src="./img/catalog-unknown.png" alt="Не известно">
+                      <div class="catalog-accordion__descr">
+                        <strong class="catalog-accordion__strong">Здесь пока пусто</strong>
+                        <p class="catalog-accordion__text text">А в галерее вы всегда можете найти что-то интересное для
+                          себя</p>
+                        <a class="catalog-accordion__unk anchor" href="#gallery" aria-label="В галерею">В галерею</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog-accordion__head">
+                  <button class="catalog-accordion__heading" tabindex="-1" type="button" data-spoller
+                    aria-label="С 1900 до 1999 годы"><span>C 1900 по
+                      1999 гг.</span>
+                    <svg class="catalog__arrow" width="50" height="50">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow"></use>
+                    </svg>
+                    <svg class="catalog__arrow320" width="30" height="30">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow320"></use>
+                    </svg>
+                  </button>
+                  <div class="catalog-accordion__body">
+                    <div class="catalog-accordion__unknown">
+                      <img src="./img/catalog-unknown.png" alt="Не известно">
+                      <div class="catalog-accordion__descr">
+                        <strong class="catalog-accordion__strong">Здесь пока пусто</strong>
+                        <p class="catalog-accordion__text text">А в галерее вы всегда можете найти что-то интересное для
+                          себя</p>
+                        <a class="catalog-accordion__unk anchor" href="#gallery" aria-label="В галерею">В галерею</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog-accordion__head">
+                  <button class="catalog-accordion__heading heading-last" tabindex="-1" type="button" data-spoller
+                    aria-label="С 2000 года по настоящее время"><span>C 2000 г.</span>
+                    <svg class="catalog__arrow" width="50" height="50">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow"></use>
+                    </svg>
+                    <svg class="catalog__arrow320" width="30" height="30">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow320"></use>
+                    </svg>
+                  </button>
+                  <div class="catalog-accordion__body body-last">
+                    <div class="catalog-accordion__unknown">
+                      <img src="./img/catalog-unknown.png" alt="Не известно">
+                      <div class="catalog-accordion__descr">
+                        <strong class="catalog-accordion__strong">Здесь пока пусто</strong>
+                        <p class="catalog-accordion__text text">А в галерее вы всегда можете найти что-то интересное для
+                          себя</p>
+                        <a class="catalog-accordion__unk anchor" href="#gallery" aria-label="В галерею">В галерею</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="catalog-tabs__russia content-tabs" data-target="russia">
+            <div class="catalog-tabs__unknown catalog-unknown">
+              <img src="./img/catalog-unknown-2.png" alt="Неизвестно">
+              <h3 class="catalog-unknown__title">Что мы о нём знаем?</h3>
+              <p class="catalog-unknown__text text">Пока ничего... Зато мы точно знаем, что в галерее есть на что
+                посмотреть!</p>
+              <a class="catalog-unknown__link anchor" href="#gallery" aria-label="В галерею">В галерею</a>
+            </div>
+            <div class="catalog-tabs__accordion catalog-accordion">
+              <div data-spollers data-one-spoller>
+                <div class="catalog-accordion__head">
+                  <button class="catalog-accordion__heading" tabindex="-1" type="button" data-spoller
+                    aria-label="С 1400 до 1499 годы"><span>C 1400 по
+                      1499 гг.</span>
+                    <svg class="catalog__arrow" width="50" height="50">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow"></use>
+                    </svg>
+                    <svg class="catalog__arrow320" width="30" height="30">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow320"></use>
+                    </svg>
+                  </button>
+                  <div class="catalog-accordion__body">
+                    <div class="catalog-accordion__unknown">
+                      <img src="./img/catalog-unknown.png" alt="Не известно">
+                      <div class="catalog-accordion__descr">
+                        <strong class="catalog-accordion__strong">Здесь пока пусто</strong>
+                        <p class="catalog-accordion__text text">А в галерее вы всегда можете найти что-то интересное для
+                          себя</p>
+                        <a class="catalog-accordion__unk anchor" href="#gallery" aria-label="В галерею">В галерею</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog-accordion__head">
+                  <button class="catalog-accordion__heading" tabindex="-1" type="button" data-spoller
+                    aria-label="С 1500 до 1599 годы"><span>C 1500 по
+                      1599 гг.</span>
+                    <svg class="catalog__arrow" width="50" height="50">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow"></use>
+                    </svg>
+                    <svg class="catalog__arrow320" width="30" height="30">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow320"></use>
+                    </svg>
+                  </button>
+                  <div class="catalog-accordion__body">
+                    <div class="catalog-accordion__unknown">
+                      <img src="./img/catalog-unknown.png" alt="Не известно">
+                      <div class="catalog-accordion__descr">
+                        <strong class="catalog-accordion__strong">Здесь пока пусто</strong>
+                        <p class="catalog-accordion__text text">А в галерее вы всегда можете найти что-то интересное для
+                          себя</p>
+                        <a class="catalog-accordion__unk anchor" href="#gallery" aria-label="В галерею">В галерею</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog-accordion__head">
+                  <button class="catalog-accordion__heading" tabindex="-1" type="button" data-spoller
+                    aria-label="С 1600 до 1699 годы"><span>C 1600 по
+                      1699 гг.</span>
+                    <svg class="catalog__arrow" width="50" height="50">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow"></use>
+                    </svg>
+                    <svg class="catalog__arrow320" width="30" height="30">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow320"></use>
+                    </svg>
+                  </button>
+                  <div class="catalog-accordion__body">
+                    <div class="catalog-accordion__unknown">
+                      <img src="./img/catalog-unknown.png" alt="Не известно">
+                      <div class="catalog-accordion__descr">
+                        <strong class="catalog-accordion__strong">Здесь пока пусто</strong>
+                        <p class="catalog-accordion__text text">А в галерее вы всегда можете найти что-то интересное для
+                          себя</p>
+                        <a class="catalog-accordion__unk anchor" href="#gallery" aria-label="В галерею">В галерею</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog-accordion__head">
+                  <button class="catalog-accordion__heading" tabindex="-1" type="button" data-spoller
+                    aria-label="С 1700 до 1799 годы"><span>C 1700 по
+                      1799 гг.</span>
+                    <svg class="catalog__arrow" width="50" height="50">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow"></use>
+                    </svg>
+                    <svg class="catalog__arrow320" width="30" height="30">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow320"></use>
+                    </svg>
+                  </button>
+                  <div class="catalog-accordion__body">
+                    <div class="catalog-accordion__unknown">
+                      <img src="./img/catalog-unknown.png" alt="Не известно">
+                      <div class="catalog-accordion__descr">
+                        <strong class="catalog-accordion__strong">Здесь пока пусто</strong>
+                        <p class="catalog-accordion__text text">А в галерее вы всегда можете найти что-то интересное для
+                          себя</p>
+                        <a class="catalog-accordion__unk anchor" href="#gallery" aria-label="В галерею">В галерею</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog-accordion__head">
+                  <button class="catalog-accordion__heading" tabindex="-1" type="button" data-spoller
+                    aria-label="С 1800 до 1899 годы"><span>C 1800 по
+                      1899 гг.</span>
+                    <svg class="catalog__arrow" width="50" height="50">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow"></use>
+                    </svg>
+                    <svg class="catalog__arrow320" width="30" height="30">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow320"></use>
+                    </svg>
+                  </button>
+                  <div class="catalog-accordion__body">
+                    <div class="catalog-accordion__unknown">
+                      <img src="./img/catalog-unknown.png" alt="Не известно">
+                      <div class="catalog-accordion__descr">
+                        <strong class="catalog-accordion__strong">Здесь пока пусто</strong>
+                        <p class="catalog-accordion__text text">А в галерее вы всегда можете найти что-то интересное для
+                          себя</p>
+                        <a class="catalog-accordion__unk anchor" href="#gallery" aria-label="В галерею">В галерею</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog-accordion__head">
+                  <button class="catalog-accordion__heading" tabindex="-1" type="button" data-spoller
+                    aria-label="С 1900 с 1999 годы"><span>C 1900 по
+                      1999 гг.</span>
+                    <svg class="catalog__arrow" width="50" height="50">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow"></use>
+                    </svg>
+                    <svg class="catalog__arrow320" width="30" height="30">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow320"></use>
+                    </svg>
+                  </button>
+                  <div class="catalog-accordion__body">
+                    <div class="catalog-accordion__unknown">
+                      <img src="./img/catalog-unknown.png" alt="Не известно">
+                      <div class="catalog-accordion__descr">
+                        <strong class="catalog-accordion__strong">Здесь пока пусто</strong>
+                        <p class="catalog-accordion__text text">А в галерее вы всегда можете найти что-то интересное для
+                          себя</p>
+                        <a class="catalog-accordion__unk anchor" href="#gallery" aria-label="В галерею">В галерею</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog-accordion__head">
+                  <button class="catalog-accordion__heading heading-last" tabindex="-1" type="button" data-spoller
+                    aria-label="С 2000 года до настоящего времени"><span>C 2000 г.</span>
+                    <svg class="catalog__arrow" width="50" height="50">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow"></use>
+                    </svg>
+                    <svg class="catalog__arrow320" width="30" height="30">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow320"></use>
+                    </svg>
+                  </button>
+                  <div class="catalog-accordion__body body-last">
+                    <div class="catalog-accordion__unknown">
+                      <img src="./img/catalog-unknown.png" alt="Не известно">
+                      <div class="catalog-accordion__descr">
+                        <strong class="catalog-accordion__strong">Здесь пока пусто</strong>
+                        <p class="catalog-accordion__text text">А в галерее вы всегда можете найти что-то интересное для
+                          себя</p>
+                        <a class="catalog-accordion__unk anchor" href="#gallery" aria-label="В галерею">В галерею</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="catalog-tabs__belgium content-tabs" data-target="belgium">
+            <div class="catalog-tabs__unknown catalog-unknown">
+              <img src="./img/catalog-unknown-2.png" alt="Неизвестно">
+              <h3 class="catalog-unknown__title">Что мы о нём знаем?</h3>
+              <p class="catalog-unknown__text text">Пока ничего... Зато мы точно знаем, что в галерее есть на что
+                посмотреть!</p>
+              <a class="catalog-unknown__link anchor" href="#gallery" aria-label="В галерею">В галерею</a>
+            </div>
+            <div class="catalog-tabs__accordion catalog-accordion">
+              <div data-spollers data-one-spoller>
+                <div class="catalog-accordion__head">
+                  <button class="catalog-accordion__heading" tabindex="-1" type="button" data-spoller
+                    aria-label="С 1400 до 1499 годы"><span>C 1400 по
+                      1499 гг.</span>
+                    <svg class="catalog__arrow" width="50" height="50">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow"></use>
+                    </svg>
+                    <svg class="catalog__arrow320" width="30" height="30">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow320"></use>
+                    </svg>
+                  </button>
+                  <div class="catalog-accordion__body">
+                    <div class="catalog-accordion__unknown">
+                      <img src="./img/catalog-unknown.png" alt="Не известно">
+                      <div class="catalog-accordion__descr">
+                        <strong class="catalog-accordion__strong">Здесь пока пусто</strong>
+                        <p class="catalog-accordion__text text">А в галерее вы всегда можете найти что-то интересное для
+                          себя</p>
+                        <a class="catalog-accordion__unk anchor" href="#gallery" aria-label="В галерею">В галерею</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog-accordion__head">
+                  <button class="catalog-accordion__heading" tabindex="-1" type="button" data-spoller
+                    aria-label="С 1500 до 1599 годы"><span>C 1500 по
+                      1599 гг.</span>
+                    <svg class="catalog__arrow" width="50" height="50">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow"></use>
+                    </svg>
+                    <svg class="catalog__arrow320" width="30" height="30">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow320"></use>
+                    </svg>
+                  </button>
+                  <div class="catalog-accordion__body">
+                    <div class="catalog-accordion__unknown">
+                      <img src="./img/catalog-unknown.png" alt="Не известно">
+                      <div class="catalog-accordion__descr">
+                        <strong class="catalog-accordion__strong">Здесь пока пусто</strong>
+                        <p class="catalog-accordion__text text">А в галерее вы всегда можете найти что-то интересное для
+                          себя</p>
+                        <a class="catalog-accordion__unk anchor" href="#gallery" aria-label="В галерею">В галерею</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog-accordion__head">
+                  <button class="catalog-accordion__heading" tabindex="-1" type="button" data-spoller
+                    aria-label="С 1600 до 1699 годы"><span>C 1600 по
+                      1699 гг.</span>
+                    <svg class="catalog__arrow" width="50" height="50">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow"></use>
+                    </svg>
+                    <svg class="catalog__arrow320" width="30" height="30">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow320"></use>
+                    </svg>
+                  </button>
+                  <div class="catalog-accordion__body">
+                    <div class="catalog-accordion__unknown">
+                      <img src="./img/catalog-unknown.png" alt="Не известно">
+                      <div class="catalog-accordion__descr">
+                        <strong class="catalog-accordion__strong">Здесь пока пусто</strong>
+                        <p class="catalog-accordion__text text">А в галерее вы всегда можете найти что-то интересное для
+                          себя</p>
+                        <a class="catalog-accordion__unk anchor" href="#gallery" aria-label="В галерею">В галерею</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog-accordion__head">
+                  <button class="catalog-accordion__heading" tabindex="-1" type="button" data-spoller
+                    aria-label="С 1700 до 1799 годы"><span>C 1700 по
+                      1799 гг.</span>
+                    <svg class="catalog__arrow" width="50" height="50">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow"></use>
+                    </svg>
+                    <svg class="catalog__arrow320" width="30" height="30">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow320"></use>
+                    </svg>
+                  </button>
+                  <div class="catalog-accordion__body">
+                    <div class="catalog-accordion__unknown">
+                      <img src="./img/catalog-unknown.png" alt="Не известно">
+                      <div class="catalog-accordion__descr">
+                        <strong class="catalog-accordion__strong">Здесь пока пусто</strong>
+                        <p class="catalog-accordion__text text">А в галерее вы всегда можете найти что-то интересное для
+                          себя</p>
+                        <a class="catalog-accordion__unk anchor" href="#gallery" aria-label="В галерею">В галерею</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog-accordion__head">
+                  <button class="catalog-accordion__heading" tabindex="-1" type="button" data-spoller
+                    aria-label="С 1800 до 1899 годы"><span>C 1800 по
+                      1899 гг.</span>
+                    <svg class="catalog__arrow" width="50" height="50">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow"></use>
+                    </svg>
+                    <svg class="catalog__arrow320" width="30" height="30">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow320"></use>
+                    </svg>
+                  </button>
+                  <div class="catalog-accordion__body">
+                    <div class="catalog-accordion__unknown">
+                      <img src="./img/catalog-unknown.png" alt="Не известно">
+                      <div class="catalog-accordion__descr">
+                        <strong class="catalog-accordion__strong">Здесь пока пусто</strong>
+                        <p class="catalog-accordion__text text">А в галерее вы всегда можете найти что-то интересное для
+                          себя</p>
+                        <a class="catalog-accordion__unk anchor" href="#gallery" aria-label="В галерею">В галерею</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog-accordion__head">
+                  <button class="catalog-accordion__heading" tabindex="-1" type="button" data-spoller
+                    aria-label="С 1900 до 1999 годы"><span>C 1900 по
+                      1999 гг.</span>
+                    <svg class="catalog__arrow" width="50" height="50">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow"></use>
+                    </svg>
+                    <svg class="catalog__arrow320" width="30" height="30">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow320"></use>
+                    </svg>
+                  </button>
+                  <div class="catalog-accordion__body">
+                    <div class="catalog-accordion__unknown">
+                      <img src="./img/catalog-unknown.png" alt="Не известно">
+                      <div class="catalog-accordion__descr">
+                        <strong class="catalog-accordion__strong">Здесь пока пусто</strong>
+                        <p class="catalog-accordion__text text">А в галерее вы всегда можете найти что-то интересное для
+                          себя</p>
+                        <a class="catalog-accordion__unk anchor" href="#gallery" aria-label="В галерею">В галерею</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog-accordion__head">
+                  <button class="catalog-accordion__heading heading-last" tabindex="-1" type="button" data-spoller
+                    aria-label="С 2000 года по настоящее время"><span>C 2000 г.</span>
+                    <svg class="catalog__arrow" width="50" height="50">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow"></use>
+                    </svg>
+                    <svg class="catalog__arrow320" width="30" height="30">
+                      <use xlink:href="./img/svg/sprites.svg#catalog-arrow320"></use>
+                    </svg>
+                  </button>
+                  <div class="catalog-accordion__body body-last">
+                    <div class="catalog-accordion__unknown">
+                      <img src="./img/catalog-unknown.png" alt="Не известно">
+                      <div class="catalog-accordion__descr">
+                        <strong class="catalog-accordion__strong">Здесь пока пусто</strong>
+                        <p class="catalog-accordion__text text">А в галерее вы всегда можете найти что-то интересное для
+                          себя</p>
+                        <a class="catalog-accordion__unk anchor" href="#gallery" aria-label="В галерею">В галерею</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="events" id="events">
+      <div class="events__container container">
+        <h2 class="events__title title">События</h2>
+        <div class="events__swiper events-swiper">
+          <ul class="events-swiper__wrapper swiper-wrapper" aria-label="Список событий">
+            <li class="events-swiper__slide swiper-slide">
+              <div class="events-swiper__descr">
+                <div class="events-swiper__place">
+                  <span class="events-swiper__span">Музей им. Щусевас</span>
+                  <span class="events-swiper__span">20 марта по 30 апреля</span>
+                </div>
+                <h3 class="events-swiper__subtitle">Книжная гравюра в живом восприятии</h3>
+                <p class="events-swiper__text text">Один из ведущих флорентийских художников Кватроченто, основатель
+                  художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
+                <a class="events-swiper__link" href="#" aria-label="Подробнее">Подробнее</a>
+              </div>
+            </li>
+            <li class="events-swiper__slide swiper-slide">
+              <div class="events-swiper__descr">
+                <div class="events-swiper__place">
+                  <span class="events-swiper__span">ММОМА</span>
+                  <span class="events-swiper__span">24 марта 19:00</span>
+                </div>
+                <h3 class="events-swiper__subtitle">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
+                <p class="events-swiper__text text">Высокий уровень вовлечения представителей целевой аудитории является
+                  четким доказательством простого факта.</p>
+                <a class="events-swiper__link" href="#" aria-label="Подробнее">Подробнее</a>
+              </div>
+            </li>
+            <li class="events-swiper__slide swiper-slide hidden-fade">
+              <div class="events-swiper__descr">
+                <div class="events-swiper__place">
+                  <span class="events-swiper__span">Еврейский музей</span>
+                  <span class="events-swiper__span">с 31 марта по 21 апреля</span>
+                </div>
+                <h3 class="events-swiper__subtitle">Выставка «Формация 2020»</h3>
+                <p class="events-swiper__text text">Идейные соображения высшего порядка, а также современная методология
+                  разработки играет важную роль в формировании глубокомысленных рассуждений.</p>
+                <a class="events-swiper__link" href="#" aria-label="Подробнее">Подробнее</a>
+              </div>
+            </li>
+            <li class="events-swiper__slide swiper-slide hidden">
+              <div class="events-swiper__descr">
+                <div class="events-swiper__place">
+                  <span class="events-swiper__span">Третьяковка на Крымском валу</span>
+                  <span class="events-swiper__span">с 30 марта по 30 апреля</span>
+                </div>
+                <h3 class="events-swiper__subtitle">XXIV Международная биеннале молодого искусства</h3>
+                <p class="events-swiper__text text">Внезапно, реплицированные с зарубежных источников, современные
+                  исследования.</p>
+                <a class="events-swiper__link" href="#" aria-label="Подробнее">Подробнее</a>
+              </div>
+            </li>
+            <li class="events-swiper__slide swiper-slide hidden">
+              <div class="events-swiper__descr">
+                <div class="events-swiper__place">
+                  <span class="events-swiper__span">ММАМ</span>
+                  <span class="events-swiper__span">с 8 апреля по 20 мая</span>
+                </div>
+                <h3 class="events-swiper__subtitle">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
+                <p class="events-swiper__text text">Один из ведущих флорентийских художников Кватроченто, основатель
+                  художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
+                <a class="events-swiper__link" href="#" aria-label="Подробнее">Подробнее</a>
+              </div>
+            </li>
+          </ul>
+          <div class="events-swiper__pagination"></div>
+        </div>
+        <div class="events__buttons">
+          <button class="events__all" aria-label="Показать все события">Все события</button>
+          <button class="events__collapse" aria-label="Свернуть события">Свернуть</button>
+        </div>
+      </div>
+    </section>
+    <section class="editions" id="editions">
+      <div class="editions__container container">
+        <div class="editions__body">
+          <div class="editions__left">
+            <h2 class="editions__title title">Издания</h2>
+            <div class="editions__checkboxs checkboxs" data-spollers="600,max" data-one-spoller>
+              <h3 class="checkboxs__title" data-spoller>Категории</h3>
+              <div>
+                <div class="checkboxs__wrapper">
+                  <ul class="checkboxs__list" aria-label="Список категорий">
+                    <li class="checkboxs__item">
+                      <input class="checkboxs__input" type="checkbox" aria-label="Бестселлеры">
+                      <span class="checkboxs__span">Бестселлеры</span>
+                    </li>
+                    <li class="checkboxs__item">
+                      <input class="checkboxs__input" type="checkbox" aria-label="Искусство">
+                      <span class="checkboxs__span">Искусство</span>
+                    </li>
+                    <li class="checkboxs__item">
+                      <input class="checkboxs__input" type="checkbox" aria-label="Архитектура">
+                      <span class="checkboxs__span">Архитектура</span>
+                    </li>
+                    <li class="checkboxs__item">
+                      <input class="checkboxs__input" type="checkbox" checked aria-label="Дизайн">
+                      <span class="checkboxs__span">Дизайн</span>
+                    </li>
+                    <li class="checkboxs__item">
+                      <input class="checkboxs__input" type="checkbox" aria-label="Мода">
+                      <span class="checkboxs__span">Мода</span>
+                    </li>
+                  </ul>
+                  <ul class="checkboxs__list" aria-label="Список категорий">
+                    <li class="checkboxs__item">
+                      <input class="checkboxs__input" type="checkbox" aria-label="Детям">
+                      <span class="checkboxs__span">Детям</span>
+                    </li>
+                    <li class="checkboxs__item">
+                      <input class="checkboxs__input" type="checkbox" aria-label="Художественная литература">
+                      <span class="checkboxs__span">Художественная литература</span>
+                    </li>
+                    <li class="checkboxs__item">
+                      <input class="checkboxs__input" type="checkbox" aria-label="Публицистика">
+                      <span class="checkboxs__span">Публицистика</span>
+                    </li>
+                    <li class="checkboxs__item">
+                      <input class="checkboxs__input" type="checkbox" aria-label="Путеводители">
+                      <span class="checkboxs__span">Путеводители</span>
+                    </li>
+                  </ul>
+                  <ul class="checkboxs__list" aria-label="Список категорий">
+                    <li class="checkboxs__item">
+                      <input class="checkboxs__input" type="checkbox" aria-label="Философия">
+                      <span class="checkboxs__span">Философия</span>
+                    </li>
+                    <li class="checkboxs__item">
+                      <input class="checkboxs__input" type="checkbox" aria-label="Учебная литература">
+                      <span class="checkboxs__span">Учебная литература</span>
+                    </li>
+                    <li class="checkboxs__item">
+                      <input class="checkboxs__input" type="checkbox" aria-label="Журналы и газеты">
+                      <span class="checkboxs__span">Журналы и газеты</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="editions__price editions-price">
+              <h3 class="editions-price__title">Цена</h3>
+              <div class="editions-price__body">
+                <span class="editions-price__span">До</span>
+                <input class="editions-price__input" type="number" placeholder="50" min="50" max="25000" step="1"
+                  aria-label="Цена от">
+                <span class="editions-price__span">от</span>
+                <input class="editions-price__input" type="number" placeholder="25000" min="50" max="25000" step="1"
+                  aria-label="Цена до">
+                <span class="editions-price__span">руб.</span>
+              </div>
+            </div>
+          </div>
+          <div class="editions__right">
+            <div class="editions__control">
+              <button class="editions__prev" aria-label="Предыдущий слайд">
+                <svg width="30" height="30">
+                  <use xlink:href="./img/svg/sprites.svg#editions-prev"></use>
+                </svg>
+              </button>
+              <div class="editions__pagination"></div>
+              <button class="editions__next" aria-label="Следующий слайд">
+                <svg width="30" height="30">
+                  <use xlink:href="./img/svg/sprites.svg#editions-next"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="editions__swiper editions-swiper">
+              <ul class="editions-swiper__wrapper swiper-wrapper" aria-label="Список книг">
+                <li class="editions-swiper__slide swiper-slide">
+                  <div class="editions-swiper__image">
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="./img/editions-img-1-1024.png" type="image/png">
+                      <source media="(min-width: 400px)" srcset="./img/editions-img-1-320.png" type="image/png">
+                      <img src="./img/editions-img-1.png" alt="Книга">
+                    </picture>
+                  </div>
+                  <div class="editions-swiper__descr">
+                    <h3 class="editions-swiper__title">
+                      Искусство цвета
+                    </h3>
+                    <span class="editions-swiper__author">Иттен, Иоханнес</span>
+                    <span class="editions-swiper__price">620 руб</span>
+                    <button class="editions-swiper__btn" aria-label="Заказать">
+                      Заказать
+                    </button>
+                  </div>
+                </li>
+                <li class="editions-swiper__slide swiper-slide">
+                  <div class="editions-swiper__image">
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="./img/editions-img-2-1024.png" type="image/png">
+                      <source media="(min-width: 400px)" srcset="./img/editions-img-2-320.png" type="image/png">
+                      <img src="./img/editions-img-2.png" alt="Книга">
+                    </picture>
+                  </div>
+                  <div class="editions-swiper__descr">
+                    <h3 class="editions-swiper__title">
+                      Типографика
+                    </h3>
+                    <span class="editions-swiper__author">Рудер, Эмиль</span>
+                    <span class="editions-swiper__price">2 450 руб</span>
+                    <button class="editions-swiper__btn" aria-label="Заказать">
+                      Заказать
+                    </button>
+                  </div>
+                </li>
+                <li class="editions-swiper__slide swiper-slide">
+                  <div class="editions-swiper__image">
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="./img/editions-img-3-1024.png" type="image/png">
+                      <source media="(min-width: 400px)" srcset="./img/editions-img-3-320.png" type="image/png">
+                      <img src="./img/editions-img-3.png" alt="Книга">
+                    </picture>
+                  </div>
+                  <div class="editions-swiper__descr">
+                    <h3 class="editions-swiper__title">
+                      Книга про буквы
+                    </h3>
+                    <span class="editions-swiper__author">Гордон, Юрий</span>
+                    <span class="editions-swiper__price">2 200 руб</span>
+                    <button class="editions-swiper__btn" aria-label="Заказать">
+                      Заказать
+                    </button>
+                  </div>
+                </li>
+                <li class="editions-swiper__slide swiper-slide">
+                  <div class="editions-swiper__image">
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="./img/editions-img-4-1024.png" type="image/png">
+                      <source media="(min-width: 400px)" srcset="./img/editions-img-4-320.png" type="image/png">
+                      <img src="./img/editions-img-4.png" alt="Книга">
+                    </picture>
+                  </div>
+                  <div class="editions-swiper__descr">
+                    <h3 class="editions-swiper__title">
+                      Николай Ильин
+                    </h3>
+                    <span class="editions-swiper__author">Кричевский, Владимир</span>
+                    <span class="editions-swiper__price">1 100 руб</span>
+                    <button class="editions-swiper__btn" aria-label="Заказать">
+                      Заказать
+                    </button>
+                  </div>
+                </li>
+                <li class="editions-swiper__slide swiper-slide">
+                  <div class="editions-swiper__image">
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="./img/editions-img-5-1024.png" type="image/png">
+                      <source media="(min-width: 400px)" srcset="./img/editions-img-5-320.png" type="image/png">
+                      <img src="./img/editions-img-5.png" alt="Книга">
+                    </picture>
+                  </div>
+                  <div class="editions-swiper__descr">
+                    <h3 class="editions-swiper__title">
+                      Модульные системы в графическом дизайне
+                    </h3>
+                    <span class="editions-swiper__author">Мюллер-Брокманн, Йозеф</span>
+                    <span class="editions-swiper__price">1 450 руб</span>
+                    <button class="editions-swiper__btn" aria-label="Заказать">
+                      Заказать
+                    </button>
+                  </div>
+                </li>
+                <li class="editions-swiper__slide swiper-slide">
+                  <div class="editions-swiper__image">
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="./img/editions-img-6-1024.png" type="image/png">
+                      <source media="(min-width: 400px)" srcset="./img/editions-img-6-320.png" type="image/png">
+                      <img src="./img/editions-img-6.png" alt="Книга">
+                    </picture>
+                  </div>
+                  <div class="editions-swiper__descr">
+                    <h3 class="editions-swiper__title">
+                      Эволюция графических стилей
+                    </h3>
+                    <span class="editions-swiper__author">Хеллер, Чваст</span>
+                    <span class="editions-swiper__price">3 200 руб</span>
+                    <button class="editions-swiper__btn" aria-label="Заказать">
+                      Заказать
+                    </button>
+                  </div>
+                </li>
+                <li class="editions-swiper__slide swiper-slide">
+                  <div class="editions-swiper__image">
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="./img/editions-img-7-1024.png" type="image/png">
+                      <source media="(min-width: 400px)" srcset="./img/editions-img-7-320.png" type="image/png">
+                      <img src="./img/editions-img-7.png" alt="Книга">
+                    </picture>
+                  </div>
+                  <div class="editions-swiper__descr">
+                    <h3 class="editions-swiper__title">
+                      Искусство и визуальное восприятие
+                    </h3>
+                    <span class="editions-swiper__author">Арнхейм, Рудольф </span>
+                    <span class="editions-swiper__price">2 200 руб</span>
+                    <button class="editions-swiper__btn" aria-label="Заказать">
+                      Заказать
+                    </button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="projects" id="projects">
+      <div class="projects__container container">
+        <h2 class="projects__title title">Проекты</h2>
+        <p class="projects__text text">
+          Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно
+          фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не
+          уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности.
+          Прежде всего, постоянное информационно-пропагандистское <button class="projects__tooltip"
+            aria-label="Кнопка со скрытым текстом пример современных тенденций современная методология разработки"
+            data-tippy-content="Пример современных тенденций -<br> современная методология разработки">
+            <svg width="16" height="16" class="projects__">
+              <use xlink:href="./img/svg/sprites.svg#tooltip"></use>
+            </svg>
+          </button> обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности
+          принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены <button
+            class="projects__tooltip"
+            aria-label="Кнопка со скрытым текстом пример современных тенденций современная методология разработки"
+            data-tippy-content="Приятно, граждане, наблюдать, как<br> сделанные на базе аналитики выводы<br> вызывают у вас эмоции">
+            <svg width="16" height="16" class="projects__">
+              <use xlink:href="./img/svg/sprites.svg#tooltip"></use>
+            </svg>
+          </button> исключительно в разрезе маркетинговых и финансовых <button class="projects__tooltip"
+            aria-label="Кнопка со скрытым текстом пример современных тенденций современная методология разработки"
+            data-tippy-content="В стремлении повысить качество">
+            <svg width="16" height="16" class="projects__">
+              <use xlink:href="./img/svg/sprites.svg#tooltip"></use>
+            </svg>
+          </button> предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных
+          резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными
+          данными до степени совершенной неузнаваемости. Подробнее: <a class="projects__link"
+            href="#">blanchard-art.ru/projects/about</a>
+        </p>
+        <h3 class="projects__subtitle">
+          Партнёры проектов:
+        </h3>
+        <div class="projects__slider">
+          <button class="projects__prev" aria-label="Предыдущий слайд">
+            <svg width="30" height="30">
+              <use xlink:href="./img/svg/sprites.svg#projects-prev"></use>
+            </svg>
+          </button>
+          <button class="projects__next" aria-label="Следующий слайд">
+            <svg width="30" height="30">
+              <use xlink:href="./img/svg/sprites.svg#projects-next"></use>
+            </svg>
+          </button>
+          <div class="projects__swiper projects-swiper">
+            <ul class="projects-swiper__wrapper swiper-wrapper" aria-label="Список партнеров">
+              <li class="projects-swiper__slide swiper-slide">
+                <a class="projects-swiper__link" href="#" aria-label="Партнер">
+                  <img src="./img/project-imgColor-1.png" alt="Freelands Foundation">
+                </a>
+              </li>
+              <li class="projects-swiper__slide swiper-slide">
+                <a class="projects-swiper__link" href="#" aria-label="Партнер">
+                  <img src="./img/project-imgColor-2.png" alt="Institute for contemporary art">
+                </a>
+              </li>
+              <li class="projects-swiper__slide swiper-slide">
+                <a class="projects-swiper__link" href="#" aria-label="Партнер">
+                  <img src="./img/project-imgColor-3.png" alt="Workhouse">
+                </a>
+              </li>
+              <li class="projects-swiper__slide swiper-slide">
+                <a class="projects-swiper__link" href="#" aria-label="Партнер">
+                  <img src="./img/project-imgColor-4.png" alt="1849 studio">
+                </a>
+              </li>
+              <li class="projects-swiper__slide swiper-slide">
+                <a class="projects-swiper__link" href="#" aria-label="Партнер">
+                  <img src="./img/project-imgColor-5.png" alt="Hiscox">
+                </a>
+              </li>
+              <li class="projects-swiper__slide swiper-slide">
+                <a class="projects-swiper__link" href="#" aria-label="Партнер">
+                  <img src="./img/project-imgColor-6.png" alt="Camden art house">
+                </a>
+              </li>
+              <li class="projects-swiper__slide swiper-slide">
+                <a class="projects-swiper__link" href="#" aria-label="Партнер">
+                  <img src="./img/project-imgColor-7.png" alt="Stanen">
+                </a>
+              </li>
+              <li class="projects-swiper__slide swiper-slide">
+                <a class="projects-swiper__link" href="#" aria-label="Партнер">
+                  <img src="./img/project-imgColor-8.png" alt="Watts gallery artists village">
+                </a>
+              </li>
+              <li class="projects-swiper__slide swiper-slide">
+                <a class="projects-swiper__link" href="#" aria-label="Партнер">
+                  <img src="./img/project-imgColor-9.png" alt="Esad">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contacts" id="contacts">
+      <div class="contacts__container container">
+        <h2 class="contacts__title title">Контакты</h2>
+        <div class="contacts__body">
+          <div class="contacts__left">
+            <address class="contacts__address"><span>Шоурум №4</span>
+              Леонтьевский переулок, дом 5/1</address>
+            <h3 class="contacts__subtitle">
+              Заказать обратный звонок
+            </h3>
+            <form action="mail.php" class="contacts__form contacts-form" method="post" enctype="multipart/form-data"
+              aria-label="Форма чтобы связаться с нами">
+              <input type="hidden" name="admin_email[]" value="exigonyashka@yandex.ru">
+              <input type="hidden" name="form_subject" value="Заявка с сайта">
+              <label class="contacts-form__label">
+                <input class="contacts-form__input" type="text" name="name" placeholder="Имя*" required
+                  data-validate-field="name" id="name" aria-label="Введите своё имя">
+              </label>
+              <label class="contacts-form__label">
+                <input class="contacts-form__input" type="tel" name="phone" placeholder="Телефон*" required
+                  data-validate-field="tel" data-validate-rules="phone" id="tel" aria-label="Введите свой телефон">
+              </label>
+              <button class="contacts-form__btn" type="submit">Заказать</button>
+            </form>
+            <h3 class="contacts__subtitle">
+              Связаться в один клик
+            </h3>
+            <ul class="contacts__list" aria-label="Список социальных сетей">
+              <li class="contacts__item">
+                <a class="contacts__link" href="#" aria-label="Ватсап">
+                  <picture>
+                    <source media="(min-width: 500px)" srcset="./img/whatsapp1024.png" type="image/png">
+                    <source media="(max-width: 500px)" srcset="./img/whatsapp320.png" type="image/png">
+                    <img src="./img/whatsapp.png" alt="Whatsapp">
+                  </picture>
+                </a>
+              </li>
+              <li class="contacts__item">
+                <a class="contacts__link" href="#" aria-label="телеграм">
+                  <picture>
+                    <source media="(min-width: 500px)" srcset="./img/telegram1024.png" type="image/png">
+                    <source media="(max-width: 500px)" srcset="./img/telegram320.png" type="image/png">
+                    <img src="./img/telegram.png" alt="Telegramm">
+                  </picture>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="contacts__map" id="map"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div class="popup" data-target3="one">
+    <div class="popup__close"></div>
+    <div class="popup__content">
+      <div class="popup__image">
+        <picture>
+          <source media="(min-width: 768px)" srcset="./img/gallery-oneSwiper-img-1-768.png" type="image/png">
+          <source media="(min-width: 500px)" srcset="./img/gallery-oneSwiper-img-1-320.png" type="image/png">
+          <img src="./img/gallery-oneSwiper-img-1.png" alt="Картинка">
+        </picture>
+      </div>
+      <div class="popup__descr">
+        <h3 class="popup__title">Казимир Малевич</h3>
+        <span class="popup__painting">"Торс фигура с розовым лицом"</span>
+        <span class="popup__data">1928–1929</span>
+        <div class="popup__simplebar" data-simplebar>
+          <p class="popup__text">Эти странные безликие "полуобразы" (так называл подобные работы сам художник),
+            зашифрованные в женских фигурах и торсах, существуют по мысли К.Малевича, в параллельном мире, в пределах
+            вымышленного художником Космоса, в пространстве без времени. Произведение вызывает ассоциации и с пластикой
+            архаической скульптуры, и с деревянной игрушкой, и с модернистским манекеном. Присутствие в фигуре белого
+            цвета, дающего реальное представление о бесконечности, говорит о том, что в данном случае бесконечность
+            заключена в самом человеке, который и становится для Малевича средоточием некоего абсолюта.</p>
+        </div>
+      </div>
+      <button class="popup__btn" aria-label="Закрыть модальное окно"></button>
+    </div>
+  </div>
+  <div class="popup" data-target3="two">
+    <div class="popup__close"></div>
+    <div class="popup__content">
+      <div class="popup__image">
+        <picture>
+          <source media="(min-width: 768px)" srcset="./img/gallery-oneSwiper-img-2-768.png" type="image/png">
+          <source media="(min-width: 500px)" srcset="./img/gallery-oneSwiper-img-2-320.png" type="image/png">
+          <img src="./img/gallery-oneSwiper-img-2.png" alt="Картинка">
+        </picture>
+      </div>
+      <div class="popup__descr">
+        <h3 class="popup__title">Казимир Малевич</h3>
+        <span class="popup__painting">“Женщина с граблями”</span>
+        <span class="popup__data">1931-1932</span>
+        <div class="popup__simplebar" data-simplebar>
+          <p class="popup__text">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся
+            за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской
+            выставок в 1927 году.</p>
+        </div>
+      </div>
+      <button class="popup__btn" aria-label="Закрыть модальное окно"></button>
+    </div>
+  </div>
+  <div class="popup" data-target3="third">
+    <div class="popup__close"></div>
+    <div class="popup__content">
+      <div class="popup__image">
+        <picture>
+          <source media="(min-width: 768px)" srcset="./img/gallery-oneSwiper-img-3-768.png" type="image/png">
+          <source media="(min-width: 500px)" srcset="./img/gallery-oneSwiper-img-3-320.png" type="image/png">
+          <img src="./img/gallery-oneSwiper-img-3.png" alt="Картинка">
+        </picture>
+      </div>
+      <div class="popup__descr">
+        <h3 class="popup__title">Казимир Малевич</h3>
+        <span class="popup__painting">“Уборка ржи”</span>
+        <span class="popup__data">1912</span>
+        <div class="popup__simplebar" data-simplebar>
+          <p class="popup__text">Образы крестьянской жизни, образы сельского труда, воплощенные художником отличаются
+            пронзительной нотой драматизма, о котором Малевичу и в голову не приходило помышлять ранее. Одной из
+            наиболее заметных черт его постсупрематической живописи стала безликость людей; вместо лиц и голов их
+            корпуса увенчаны красными, черными, белыми овалами.</p>
+        </div>
+      </div>
+      <button class="popup__btn" aria-label="Закрыть модальное окно"></button>
+    </div>
+  </div>
+  <div class="popup" data-target3="four">
+    <div class="popup__close"></div>
+    <div class="popup__content">
+      <div class="popup__image">
+        <picture>
+          <source media="(min-width: 768px)" srcset="./img/gallery-oneSwiper-img-4-768.png" type="image/png">
+          <source media="(min-width: 500px)" srcset="./img/gallery-oneSwiper-img-4-320.png" type="image/png">
+          <img src="./img/gallery-oneSwiper-img-4.png" alt="Картинка">
+        </picture>
+      </div>
+      <div class="popup__descr">
+        <h3 class="popup__title">Казимир Малевич</h3>
+        <span class="popup__painting">“Супрематическая композиция”</span>
+        <span class="popup__data">1919—1920</span>
+        <div class="popup__simplebar" data-simplebar>
+          <p class="popup__text">В 1927 году Малевич выставлял картину на выставках в Варшаве, а позже в Берлине. После
+            срочного отъезда Казимира Малевича в СССР в июне 1927 года картина была им передана на хранение немецкому
+            архитектору Гуго Герингу. В целом, после выставки Малевич оставил в Берлине в 1927 году более ста своих
+            полотен. Позднее Геринг вывез эти полотна из нацистской Германии, где они подлежали уничтожению как
+            «дегенеративное искусство».</p>
+        </div>
+      </div>
+      <button class="popup__btn" aria-label="Закрыть модальное окно"></button>
+    </div>
+  </div>
+  <div class="popup" data-target3="five">
+    <div class="popup__close"></div>
+    <div class="popup__content">
+      <div class="popup__image">
+        <picture>
+          <source media="(min-width: 768px)" srcset="./img/gallery-oneSwiper-img-5-768.png" type="image/png">
+          <source media="(min-width: 500px)" srcset="./img/gallery-oneSwiper-img-5-320.png" type="image/png">
+          <img src="./img/gallery-oneSwiper-img-5.png" alt="Картинка">
+        </picture>
+      </div>
+      <div class="popup__descr">
+        <h3 class="popup__title">Казимир Малевич</h3>
+        <span class="popup__painting">“Женщина с вёдрами”</span>
+        <span class="popup__data">1912</span>
+        <div class="popup__simplebar" data-simplebar>
+          <p class="popup__text">"Женщина с вёдрами" Казимира Малевича – яркое произведение авангардного искусства,
+            написанное в 1912 году. Ныне картина хранится в коллекции нью-йоркского Музея современного искусства.</p>
+        </div>
+      </div>
+      <button class="popup__btn" aria-label="Закрыть модальное окно"></button>
+    </div>
+  </div>
+  <div class="popup" data-target3="six">
+    <div class="popup__close"></div>
+    <div class="popup__content">
+      <div class="popup__image">
+        <picture>
+          <source media="(min-width: 768px)" srcset="./img/gallery-oneSwiper-img-6-768.png" type="image/png">
+          <source media="(min-width: 500px)" srcset="./img/gallery-oneSwiper-img-6-320.png" type="image/png">
+          <img src="./img/gallery-oneSwiper-img-6.png" alt="Картинка">
+        </picture>
+      </div>
+      <div class="popup__descr">
+        <h3 class="popup__title">Казимир Малевич</h3>
+        <span class="popup__painting">“Супрематическая композиция”</span>
+        <span class="popup__data">1919—1920</span>
+        <div class="popup__simplebar" data-simplebar>
+          <p class="popup__text">В 1927 году Малевич выставлял картину на выставках в Варшаве, а позже в Берлине. После
+            срочного отъезда Казимира Малевича в СССР в июне 1927 года картина была им передана на хранение немецкому
+            архитектору Гуго Герингу. В целом, после выставки Малевич оставил в Берлине в 1927 году более ста своих
+            полотен. Позднее Геринг вывез эти полотна из нацистской Германии, где они подлежали уничтожению как
+            «дегенеративное искусство».</p>
+        </div>
+      </div>
+      <button class="popup__btn" aria-label="Закрыть модальное окно"></button>
+    </div>
+  </div>
+  <div class="popup" data-target3="seven">
+    <div class="popup__close"></div>
+    <div class="popup__content">
+      <div class="popup__image">
+        <picture>
+          <source media="(min-width: 768px)" srcset="./img/gallery-oneSwiper-img-7-768.png" type="image/png">
+          <source media="(min-width: 500px)" srcset="./img/gallery-oneSwiper-img-7-320.png" type="image/png">
+          <img src="./img/gallery-oneSwiper-img-7.png" alt="Картинка">
+        </picture>
+      </div>
+      <div class="popup__descr">
+        <h3 class="popup__title">Казимир Малевич</h3>
+        <span class="popup__painting">“Крестьянин в поле”</span>
+        <span class="popup__data">1929</span>
+        <div class="popup__simplebar" data-simplebar>
+          <p class="popup__text">Супрематизм полностью завоевал эту картину, сочетаясь с натурализмом. Предметность
+            присутствует на данной картине, так как есть конкретная тема, существует также перспектива в виде полей,
+            изображенных четкими прямоугольниками разного цвета, отличного от натуральных цветов природы – черные,
+            белые, красные, синие, желтые.Фигура крестьянина выполнена из геометрических фигур правильной формы.
+            Условность изображения передает стойкое желание автора объединить выбранные им направления в живописи.</p>
+        </div>
+      </div>
+      <button class="popup__btn" aria-label="Закрыть модальное окно"></button>
+    </div>
+  </div>
+  <div class="popup" data-target3="eight">
+    <div class="popup__close"></div>
+    <div class="popup__content">
+      <div class="popup__image">
+        <picture>
+          <source media="(min-width: 768px)" srcset="./img/gallery-oneSwiper-img-8-768.png" type="image/png">
+          <source media="(min-width: 500px)" srcset="./img/gallery-oneSwiper-img-8-320.png" type="image/png">
+          <img src="./img/gallery-oneSwiper-img-8.png" alt="Картинка">
+        </picture>
+      </div>
+      <div class="popup__descr">
+        <h3 class="popup__title">Казимир Малевич</h3>
+        <span class="popup__painting">“Два крестьянина на фоне полей”</span>
+        <span class="popup__data">1930</span>
+        <div class="popup__simplebar" data-simplebar>
+          <p class="popup__text">Совершенно обезличенные фигуры, различающиеся только цветом туловища, окрашенного у
+            одной фигуры в желтый, у другой – в красный цвет. Лица похожи на белые овалы, обрамленные сверху и снизу
+            черной затушевкой, означающей бороду и волосы. На заднем плане – обширная перспектива – поля, составленные
+            из разноцветных полос, линия горизонта и синее небо. В этом произведении художник объединяет супрематизм и
+            натурализм, пропагандируя новое направление в искусстве.</p>
+        </div>
+      </div>
+      <button class="popup__btn" aria-label="Закрыть модальное окно"></button>
+    </div>
+  </div>
+  <div class="popup" data-target3="nine">
+    <div class="popup__close"></div>
+    <div class="popup__content">
+      <div class="popup__image">
+        <picture>
+          <source media="(min-width: 768px)" srcset="./img/gallery-oneSwiper-img-9-768.png" type="image/png">
+          <source media="(min-width: 500px)" srcset="./img/gallery-oneSwiper-img-9-320.png" type="image/png">
+          <img src="./img/gallery-oneSwiper-img-9.png" alt="Картинка">
+        </picture>
+      </div>
+      <div class="popup__descr">
+        <h3 class="popup__title">Казимир Малевич</h3>
+        <span class="popup__painting">“Супрематическая композиция”</span>
+        <span class="popup__data">1919—1920</span>
+        <div class="popup__simplebar" data-simplebar>
+          <p class="popup__text">В 1927 году Малевич выставлял картину на выставках в Варшаве, а позже в Берлине. После
+            срочного отъезда Казимира Малевича в СССР в июне 1927 года картина была им передана на хранение немецкому
+            архитектору Гуго Герингу. В целом, после выставки Малевич оставил в Берлине в 1927 году более ста своих
+            полотен. Позднее Геринг вывез эти полотна из нацистской Германии, где они подлежали уничтожению как
+            «дегенеративное искусство».</p>
+        </div>
+      </div>
+      <button class="popup__btn" aria-label="Закрыть модальное окно"></button>
+    </div>
+  </div>
+  <div class="popup" data-target3="ten">
+    <div class="popup__close"></div>
+    <div class="popup__content">
+      <div class="popup__image">
+        <picture>
+          <source media="(min-width: 768px)" srcset="./img/gallery-oneSwiper-img-10-768.png" type="image/png">
+          <source media="(min-width: 500px)" srcset="./img/gallery-oneSwiper-img-10-320.png" type="image/png">
+          <img src="./img/gallery-oneSwiper-img-10.png" alt="Картинка">
+        </picture>
+      </div>
+      <div class="popup__descr">
+        <h3 class="popup__title">Казимир Малевич</h3>
+        <span class="popup__painting">“Крестьянин в поле”</span>
+        <span class="popup__data">1929</span>
+        <div class="popup__simplebar" data-simplebar>
+          <p class="popup__text">Супрематизм полностью завоевал эту картину, сочетаясь с натурализмом. Предметность
+            присутствует на данной картине, так как есть конкретная тема, существует также перспектива в виде полей,
+            изображенных четкими прямоугольниками разного цвета, отличного от натуральных цветов природы – черные,
+            белые, красные, синие, желтые.Фигура крестьянина выполнена из геометрических фигур правильной формы.
+            Условность изображения передает стойкое желание автора объединить выбранные им направления в живописи.</p>
+        </div>
+      </div>
+      <button class="popup__btn" aria-label="Закрыть модальное окно"></button>
+    </div>
+  </div>
+  <div class="popup" data-target3="eleven">
+    <div class="popup__close"></div>
+    <div class="popup__content">
+      <div class="popup__image">
+        <picture>
+          <source media="(min-width: 768px)" srcset="./img/gallery-oneSwiper-img-11-768.png" type="image/png">
+          <source media="(min-width: 500px)" srcset="./img/gallery-oneSwiper-img-11-320.png" type="image/png">
+          <img src="./img/gallery-oneSwiper-img-1.png" alt="Картинка">
+        </picture>
+      </div>
+      <div class="popup__descr">
+        <h3 class="popup__title">Казимир Малевич</h3>
+        <span class="popup__painting">“Супрематическая композиция”</span>
+        <span class="popup__data">1919—1920</span>
+        <div class="popup__simplebar" data-simplebar>
+          <p class="popup__text">В 1927 году Малевич выставлял картину на выставках в Варшаве, а позже в Берлине. После
+            срочного отъезда Казимира Малевича в СССР в июне 1927 года картина была им передана на хранение немецкому
+            архитектору Гуго Герингу. В целом, после выставки Малевич оставил в Берлине в 1927 году более ста своих
+            полотен. Позднее Геринг вывез эти полотна из нацистской Германии, где они подлежали уничтожению как
+            «дегенеративное искусство».</p>
+        </div>
+      </div>
+      <button class="popup__btn" aria-label="Закрыть модальное окно"></button>
+    </div>
+  </div>
+  <div class="popup" data-target3="twelve">
+    <div class="popup__close"></div>
+    <div class="popup__content">
+      <div class="popup__image">
+        <picture>
+          <source media="(min-width: 768px)" srcset="./img/gallery-oneSwiper-img-12-768.png" type="image/png">
+          <source media="(min-width: 500px)" srcset="./img/gallery-oneSwiper-img-12-320.png" type="image/png">
+          <img src="./img/gallery-oneSwiper-img-12.png" alt="Картинка">
+        </picture>
+      </div>
+      <div class="popup__descr">
+        <h3 class="popup__title">Казимир Малевич</h3>
+        <span class="popup__painting">“Девушки в поле”</span>
+        <span class="popup__data">1928-1929</span>
+        <div class="popup__simplebar" data-simplebar>
+          <p class="popup__text">Эта картина представляет собой окончательную формулу супрнатурализма, которую вывел
+            Малевич в этот период творчества. Пластика человеческого тела превращена в простые геометрические объемные
+            фигуры, лица отсутствуют, есть только овал головы или половинчатый окрас. Фигуры не создают сюжета картины,
+            они просто присутствуют на ней, как объекты. Задний план насыщен фигурами, в сочетании представляющих собой
+            горизонт с четко расчерченными полями. Цвета приближены к супрематическим и далеки от натуральных.</p>
+        </div>
+      </div>
+      <button class="popup__btn" aria-label="Закрыть модальное окно"></button>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="footer__container container">
+      <div class="footer__body">
+        <a class="footer__logo" href="index.html" aria-label="На главную страницу">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./img/logo1024.png" type="image/png">
+            <source media="(max-width: 500px)" srcset="./img/logo320.png" type="image/png">
+            <img src="./img/logo.png" alt="Логотип">
+          </picture>
+        </a>
+        <ul class="footer__icons" aria-label="Список социальных сетей">
+          <li class="footer__icon">
+            <a class="footer__link" href="#" aria-label="Вконтакте">
+              <svg width="45" height="45" class="footer__vk">
+                <use xlink:href="./img/svg/sprites.svg#vk"></use>
+              </svg>
+              <svg width="60" height="60" class="footer__vk1024">
+                <use xlink:href="./img/svg/sprites.svg#vk1024"></use>
+              </svg>
+              <svg width="50" height="50" class="footer__vk320">
+                <use xlink:href="./img/svg/sprites.svg#vk320"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__icon">
+            <a class="footer__link" href="#" aria-label="Инстаграм">
+              <svg width="45" height="45" class="footer__inst">
+                <use xlink:href="./img/svg/sprites.svg#inst"></use>
+              </svg>
+              <svg width="60" height="60" class="footer__inst1024">
+                <use xlink:href="./img/svg/sprites.svg#inst1024"></use>
+              </svg>
+              <svg width="50" height="50" class="footer__inst320">
+                <use xlink:href="./img/svg/sprites.svg#inst320"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__icon">
+            <a class="footer__link" href="#" aria-label="Фейсбук">
+              <svg width="45" height="45" class="footer__fb">
+                <use xlink:href="./img/svg/sprites.svg#fb"></use>
+              </svg>
+              <svg width="60" height="60" class="footer__fb1024">
+                <use xlink:href="./img/svg/sprites.svg#fb1024"></use>
+              </svg>
+              <svg width="50" height="50" class="footer__fb320">
+                <use xlink:href="./img/svg/sprites.svg#fb320"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=&lang=ru_RU"></script>
+  <script src="./resources/choices.min.js"></script>
+  <script src="./resources/just-validate.min.js"></script>
+  <script src="./resources/inputmask.js"></script>
+  <script src="./resources/popper.js"></script>
+  <script src="./resources/tippy.js"></script>
+  <script src="./resources/simplebar.js"></script>
+  <script src="./resources/swiper.js"></script>
+  <script src="./js/main.min.js"></script>
+</body>
+
+</html>

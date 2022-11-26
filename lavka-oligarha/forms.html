@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./img/favicon.png">
+  <link rel="preload" href="./fonts/DaysOne-Regular.woff" as="font">
+  <link rel="preload" href="./fonts/DaysOne-Regular.woff2" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-Bold.woff" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-Bold.woff2" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-SemiBold.woff" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-SemiBold.woff2" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-Regular.woff" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-Regular.woff2" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-Regular-Italic.woff" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-Regular-Italic.woff2" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-Light.woff" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-Light.woff2" as="font">
+  <link rel="stylesheet" href="./resources/swiper/swiper.css">
+  <link rel="stylesheet" href="./css/main-min.css">
+  <title>Лавка олигарха</title>
+</head>
+
+<body>
+  <div class="page">
+    <header class="header">
+      <div class="header__container container">
+        <button class="header__burger burger">
+          <span class="burger__line"></span>
+        </button>
+        <div class="header__menu">
+          <nav class="header__nav nav">
+            <ul class="nav__list">
+              <li class="nav__item nav__item_blue accordion-clicker">
+                <a class="nav__link" href="#!">
+                  О системе
+                  <svg width="10" height="8">
+                    <use xlink:href="./img/svg/sprites.svg#arrow"></use>
+                  </svg>
+                </a>
+                <div class="nav__accordion-content">
+                  <a class="nav__accordion-link" href="#!">
+                    Договоры
+                  </a>
+                  <a class="nav__accordion-link" href="news.html">
+                    Новости
+                  </a>
+                  <a class="nav__accordion-link" href="#!">
+                    Контакты
+                  </a>
+                </div>
+              </li>
+
+              <li class="nav__item nav__item_purple">
+                <a class="nav__link" href="partners.html">
+                  Партнерская программа
+                </a>
+              </li>
+              <li class="nav__item nav__item_green">
+                <a class="nav__link" href="bonuses-and-promotions.html">
+                  Бонусы и акции
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__wrapper-logo header__wrapper-logo_menu">
+            <img src="./img/background-mini.svg" alt="Задний фон">
+            <a class="header__logo" href="index.html">
+              <img src="./img/svg/logotip.svg" alt="Логотип сайта">
+            </a>
+          </div>
+          <nav class="header__nav nav">
+            <ul class="nav__list">
+              <li class="nav__item nav__item_grey">
+                <a class="nav__link" href="faq.html">
+                  FAQ / Помощь
+                </a>
+              </li>
+              <li class="nav__item nav__item_gold">
+                <a class="nav__link" href="#!">
+                  Конструктор документов
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__help">
+            <a class="header__help-link" href="#!">
+              <span><img src="./img/icon/help.svg" alt="Иконка"></span>
+              Техподдержка
+            </a>
+            <img class="header__help-background" src="./img/background-big.svg" alt="Задний фон">
+          </div>
+        </div>
+        <div class="header__wrapper-logo">
+          <img src="./img/background-mini.svg" alt="Задний фон">
+          <a class="header__logo" href="index.html">
+            <img src="./img/svg/logotip.svg" alt="Логотип сайта">
+          </a>
+        </div>
+        <a class="header__log" href="#!">
+          Войти
+        </a>
+      </div>
+    </header>
+    <main>
+      <section class="forms">
+          <div class="container">
+            <div class="forms__content">
+                <form action="#!" class="forms__form form">
+                  <div class="form__part form__part_w260">
+                    <h1 class="form__title">
+                      Авторизация
+                    </h1>
+                    <label class="form__label" for="login">
+                      <span class="form__span">
+                        Логин
+                      </span>
+                      <input class="form__input" type="text" name="login" id="login" placeholder="Логин">
+                    </label>
+                    <label class="form__label form__label_m15" for="password">
+                      <span class="form__span">
+                        Пароль
+                      </span>
+                      <input class="form__input" type="password" name="password" id="password" placeholder="Пароль">
+                    </label>
+                    <label class="form__wrapper-input checkbox">
+                      <input class="checkbox__checkbox" type="checkbox" name="remember">
+                      <span class="checkbox__span"></span>
+                      <p class="form__text">
+                        запомнить меня
+                      </p>
+                    </label>
+                    <button class="form__button">
+                      Войти 
+                    </button>
+                      <div class="form__links">
+                        <a class="form__link" href="forms.html">
+                          Зарегистрироваться
+                        </a>
+                        <a class="form__link form__link_2" href="forms.html">
+                          Забыли пароль?
+                        </a>
+                      </div>
+                  </div>
+                  <div class="form__part form__part_w260">
+                    <h1 class="form__title form__title_m30">
+                      Код из СМС
+                    </h1>
+                    <p class="form__text form__text_2">
+                      Введите код полученный на номер телефона <span class="form__span-weight">+75645454545</span>. Если вы не получили код верификации в течение 5 минут, обратитесь в <a class="form__link-podderjka" href="#!">Службу технической поддержки</a>
+                    </p>
+                    <div class="form__inputs">
+                      <input class="form__inputs-input input-ok" type="number">
+                      <input class="form__inputs-input input-error" type="number">
+                      <input class="form__inputs-input" type="number">
+                      <input class="form__inputs-input" type="number">
+                    </div>
+                    <p class="form__text-error">
+                      Неверный код
+                    </p>
+                    <p class="form__text form__text_3 timer">
+                      Повторная отправка кода через <span class="timer-value">60</span> сек.
+                    </p>
+                    <a class="form__link-repeat link-repeat" href="#!">
+                      Отправить повторно
+                    </a>
+                    <!-- <button class="form__button form-button-disabled"> -->
+                      <button class="form__button">
+                      Далее 
+                    </button>
+                  </div>
+                  <div class="form__part form__part_w262">
+                    <h1 class="form__title form__title_m30">
+                      Код из письма 
+                    </h1>
+                    <p class="form__text form__text_4">
+                      Введите код полученный на адрес <span class="form__span-weight">lkjlklkllllddl@gmail. com.</span>
+                    </p>
+                    <p class="form__text form__text_4">
+                      Если вы не получили код верификации в течение 5 минут, обратитесь в <a class="form__link-podderjka form__link-podderjka_2" href="#!">Службу технической поддержки</a>
+                    </p>
+                    <!-- <label class="form__label form__label_2 form-label-okay" for="kod"> -->
+                             <!-- <label class="form__label form__label_2 form-label-error" for="kod"> -->
+                              <label class="form__label form__label_2" for="kod">
+                      <input class="form__input form__input_2" type="text" name="kod" id="kod" placeholder="Код">
+                      <span class="form__icon form-icon-okay">
+                        <img src="./img/icon/okay.svg" alt="Иконка">
+                      </span>
+                      <span class="form__icon form-icon-error">
+                        <img src="./img/icon/close.svg" alt="Иконка">
+                      </span>
+                    </label>
+                    <p class="form__text-error">
+                      Введены неверные данные
+                    </p>
+                    <p class="form__text form__text_3 timer">
+                      Повторная отправка кода через <span class="timer-value">60</span> сек.
+                    </p>
+                    <a class="form__link-repeat link-repeat" href="#!">
+                      Отправить повторно
+                    </a>
+                    <!-- <button class="form__button form-button-disabled"> -->
+                      <button class="form__button">
+                      Далее 
+                    </button>
+                  </div>
+                  <div class="form__part form__part_w260">
+                    <h1 class="form__title">
+                      Восстановление пароля
+                    </h1>
+                    <p class="form__text form__text_4">
+                      Для восстановления пароля введите свой номер телефона
+                    </p>
+                    <label class="form__label" for="tel">
+                      <span class="form__span">
+                        Номер телефона
+                      </span>
+                      <input class="form__input" type="tel" name="tel" id="tel" placeholder="Телефон">
+                    </label>
+                      <button class="form__button">
+                      Отправить 
+                    </button>
+                  </div>
+                  <div class="form__part form__part_w260">
+                    <h1 class="form__title">
+                      Пароль восстановлен
+                    </h1>
+                    <label class="form__label" for="login3">
+                      <span class="form__span">
+                        Логин
+                      </span>
+                      <input class="form__input" type="text" name="login3" id="login3" placeholder="Логин">
+                    </label>
+                    <label class="form__label form__label_m15" for="password4">
+                      <span class="form__span">
+                        Пароль
+                      </span>
+                      <input class="form__input" type="password" name="password4" id="password4" placeholder="Пароль">
+                    </label>
+                    <button class="form__button">
+                      Авторизироваться 
+                    </button>
+                  </div>
+                  <div class="form__part form__part_w360">
+                    <h1 class="form__title form__title_m30">
+                      Регистрация
+                    </h1>
+                    <p class="form__text form__text_4">
+                      Все поля являются обязательными для регистрации. После нажатия кнопки “ Зарегистрироваться” вам будут высланы письмо и смс с кодами доступа
+                    </p>
+                    <label class="form__label" for="login1">
+                      <span class="form__span">
+                        ФИО
+                      </span>
+                      <input class="form__input" type="text" name="login1" id="login1" placeholder="ФИО">
+                    </label>
+                    <label class="form__label form__label_m20" for="mail">
+                      <span class="form__span">
+                        Адрес электронной почты
+                      </span>
+                      <input class="form__input" type="text" name="mail" id="mail" placeholder="Почта">
+                    </label>
+                    <label class="form__label form__label_m20" for="tel1">
+                      <span class="form__span">
+                        Номер телефона
+                      </span>
+                      <input class="form__input" type="tel" name="tel1" id="tel1" placeholder="Телефон">
+                    </label>
+                    <label class="form__label form__label_m20 form__label_2 openpass-parent1" for="password1">
+                      <span class="form__span">
+                        Пароль
+                      </span>
+                      <input class="form__input input-see1" type="password" name="password1" id="password1" placeholder="Пароль">
+                      <div class="form__openpass openpass1">
+                        <img src="./img/icon/glaz.svg" alt="Иконка">
+                      </div>
+                      <div class="form__closepass closepass1">
+                        <img src="./img/icon/glaz-.svg" alt="Иконка">
+                      </div>
+                    </label>
+                    <label class="form__label form__label_m20 form__label_2 openpass-parent2" for="password2">
+                      <span class="form__span">
+                        Повторите пароль
+                      </span>
+                      <input class="form__input input-see2" type="password" name="password2" id="password2" placeholder="Повторите пароль">
+                      <div class="form__openpass openpass2">
+                        <img src="./img/icon/glaz.svg" alt="Иконка">
+                      </div>
+                      <div class="form__closepass closepass2">
+                        <img src="./img/icon/glaz-.svg" alt="Иконка">
+                      </div>
+                    </label>
+                    <label class="form__wrapper-input form__wrapper-input_2 checkbox">
+                      <input class="checkbox__checkbox" type="checkbox" name="obrabotka">
+                      <span class="checkbox__span"></span>
+                      <p class="form__text">
+                        Согласен на обработку персональных данных
+                      </p>
+                    </label>
+                    <label class="form__wrapper-input form__wrapper-input_2 form__wrapper-input_align checkbox">
+                      <input class="checkbox__checkbox" type="checkbox" name="dogovor">
+                      <span class="checkbox__span"></span>
+                      <p class="form__text">
+                        Согласен с <a class="form__link form__link_2" href="#!">Договором оказания информационных услуг</a> и <a class="form__link form__link_2" href="#!">Правил пользования порталом</a>
+                      </p>
+                    </label>
+                    <button class="form__button">
+                      Отправить
+                    </button>
+                  </div>
+                  <div class="form__part form__part_w288">
+                      <div class="form__icon-okay">
+                        <img src="./img/icon/okay95.svg" alt="Иконка">
+                      </div>
+                    <h1 class="form__title form__title_center">
+                      Поздравляем!
+                    </h1>
+                    <strong class="form__strong">
+                      Регистрация успешно завершена
+                    </strong>
+                    <p class="form__text form__text_5">
+                      Заполните анкету пользователя и перейдите в свой личный кабинет
+                    </p>
+                    <a class="form__button" href="anketa.html">
+                      Заполнить анкету пользователя
+                    </a>
+                  </div>
+                </form>
+            </div>
+          </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__wrapper-logo">
+          <img src="./img/background-change.svg" alt="Задний фон">
+          <a class="footer__logo" href="index.html">
+            <img src="./img/svg/logotip.svg" alt="Логотип сайта">
+          </a>
+        </div>
+        <div class="footer__top">
+          <div class="footer__lists">
+            <ul class="footer__list">
+              <li class="footer__item footer__item_blue footer-accordion-clicker">
+                <a class="footer__link" href="#!">
+                  О системе
+                  <svg width="10" height="8">
+                    <use xlink:href="./img/svg/sprites.svg#arrow"></use>
+                  </svg>
+                </a>
+                <div class="footer__accordion-content">
+                  <a class="footer__accordion-link footer__accordion-link_blue" href="#!">
+                    Договоры
+                  </a>
+                  <a class="footer__accordion-link footer__accordion-link_purple" href="news.html">
+                    Новости
+                  </a>
+                  <a class="footer__accordion-link footer__accordion-link_green" href="#!">
+                    Контакты
+                  </a>
+                </div>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="partners.html">
+                  Партнерская программа
+                </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="bonuses-and-promotions.html">
+                  Бонусы и акции
+                </a>
+              </li>
+            </ul>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="#!">
+                  Конструктор документов
+                </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="faq.html">
+                  Часто задаваемые вопросы
+                </a>
+              </li>
+            </ul>
+
+          </div>
+          <div class="footer__right">
+            <a class="footer__help" href="#!">
+              <img src="./img/icon/help.svg" alt="Иконка">
+              <span class="footer__help-span">Обратиться в техподдержку</span>
+              <span class="footer__help-span footer__help-span_none">Техподдержка</span>
+            </a>
+          </div>
+        </div>
+        <div class="footer__middle">
+          <div class="footer__info">
+            <address class="footer__address">
+              ИНН 7604354453, КПП 760401001, ОГРН 1197627006060, Юридический адрес 150000 г. Москва, ул. Некрасова, дом
+              41, офис 332
+            </address>
+          </div>
+          <ul class="footer__soclist" data-da=".footer__right, 1380, 1">
+            <li class="footer__soclist-item">
+              <a class="footer__soclist-link" href="#!">
+                <svg width="24" height="24">
+                  <use xlink:href="./img/svg/sprites.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__soclist-item">
+              <a class="footer__soclist-link" href="#!">
+                <svg width="24" height="24">
+                  <use xlink:href="./img/svg/sprites.svg#odnoklassniki"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__soclist-item">
+              <a class="footer__soclist-link" href="#!">
+                <svg width="24" height="24">
+                  <use xlink:href="./img/svg/sprites.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__soclist-item">
+              <a class="footer__soclist-link" href="#!">
+                <svg width="24" height="24">
+                  <use xlink:href="./img/svg/sprites.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__text" data-da=".footer__middle, 1380, 1">
+            Данный сайт может содержать информацию о сайтах третьих лиц. Лавка Олигарха не несет ответственности за
+            точность информации, данных, взглядов, советов или заявлений, сделанных на этих сайтах.
+          </p>
+          <strong class="footer__rechten">
+            © 2022 Лавка Олигарха. Все права защищены.
+          </strong>
+          <div class="footer__bottom-right">
+            <a class="footer__privacy" href="#!">
+              Политика конфиденциальности
+            </a>
+            <a class="footer__developer" href="#!">
+              Digital
+              <img src="./img/icon/developer.svg" alt="Иконка разработчика">
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="./resources/tooltip/popper.min.js"></script>
+  <script src="./resources/tooltip/tippy.js"></script>
+  <script src="./resources/smooth-scroll/smooth-scroll.js"></script>
+  <script src="./resources/swiper/swiper.js"></script>
+  <script src="./js/main.min.js"></script>
+</body>
+
+</html>

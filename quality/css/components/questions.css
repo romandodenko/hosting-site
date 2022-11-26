@@ -1,0 +1,213 @@
+@media (max-width: 650px) {
+  .questions {
+    margin-bottom: 30px;
+  }
+}
+.questions__container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1295px;
+}
+@media (max-width: 650px) {
+  .questions__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+.questions__left {
+  position: relative;
+  z-index: 2;
+  width: 40%;
+}
+@media (max-width: 1110px) {
+  .questions__left {
+    width: 50%;
+  }
+}
+@media (max-width: 800px) {
+  .questions__left {
+    width: 60%;
+  }
+}
+@media (max-width: 650px) {
+  .questions__left {
+    width: 100%;
+  }
+}
+.questions__descr {
+  margin-bottom: 80px;
+}
+@media (max-width: 991px) {
+  .questions__descr {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 600px) {
+  .questions__descr {
+    margin-bottom: 20px;
+  }
+}
+.questions__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 32px;
+  color: var(--main);
+}
+@media (max-width: 600px) {
+  .questions__text {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+.questions__text span {
+  font-weight: 500;
+}
+.questions__text_color {
+  color: #0A63E8;
+}
+.questions__text:not(:last-child) {
+  margin-bottom: 40px;
+}
+@media (max-width: 600px) {
+  .questions__text:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+.questions__button {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: var(--white);
+  width: 90%;
+  background-color: #0A63E8;
+  border-radius: 8px;
+  padding: 17px 5px;
+  -webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  -o-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+@media (max-width: 1110px) {
+  .questions__button {
+    width: 80%;
+  }
+}
+@media (max-width: 991px) {
+  .questions__button {
+    padding: 15px 5px;
+  }
+}
+@media (max-width: 650px) {
+  .questions__button {
+    width: auto;
+    padding: 15px 57px;
+  }
+}
+@media (max-width: 600px) {
+  .questions__button {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+@media (any-hover: hover) {
+  .questions__button:hover {
+    background-color: var(--white);
+    color: var(--hover);
+  }
+}
+.questions__button:active {
+  background-color: var(--white);
+  color: var(--active);
+}
+.questions__images {
+  position: relative;
+  z-index: 2;
+  width: 40%;
+}
+@media (max-width: 1110px) {
+  .questions__images {
+    width: 38%;
+  }
+}
+@media (max-width: 650px) {
+  .questions__images {
+    display: none;
+  }
+}
+.questions__image-1 {
+  width: 320px;
+  height: 533px;
+}
+.questions__image-1 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+}
+.questions__image-2 {
+  position: absolute;
+  top: 60%;
+  right: 0;
+  max-width: 363px;
+  height: 363px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+@media (max-width: 1110px) {
+  .questions__image-2 {
+    width: 200px;
+    height: 200px;
+    top: auto;
+    bottom: 0;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@media (max-width: 900px) {
+  .questions__image-2 {
+    display: none;
+  }
+}
+.questions__image-2 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+  -o-object-position: center;
+  object-position: center;
+}
+.questions__circle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 90%;
+  height: 100%;
+  z-index: 1;
+  background: -o-linear-gradient(8.01deg, rgba(87, 72, 229, 0.3) 42.35%, rgba(52, 85, 228, 0.3) 65.15%, rgba(254, 64, 74, 0.3) 95.74%);
+  background: linear-gradient(81.99deg, rgba(87, 72, 229, 0.3) 42.35%, rgba(52, 85, 228, 0.3) 65.15%, rgba(254, 64, 74, 0.3) 95.74%);
+  -webkit-filter: blur(246px);
+  filter: blur(246px);
+}

@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./img/favicon.png">
+  <link rel="preload" href="./fonts/DaysOne-Regular.woff" as="font">
+  <link rel="preload" href="./fonts/DaysOne-Regular.woff2" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-Bold.woff" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-Bold.woff2" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-SemiBold.woff" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-SemiBold.woff2" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-Regular.woff" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-Regular.woff2" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-Regular-Italic.woff" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-Regular-Italic.woff2" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-Light.woff" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-Light.woff2" as="font">
+  <link rel="stylesheet" href="./resources/swiper/swiper.css">
+  <link rel="stylesheet" href="./resources/custom-scroll/simplebar.css">
+  <link rel="stylesheet" href="./css/main-min.css">
+  <title>Лавка олигарха</title>
+</head>
+
+<body>
+  <div class="page">
+    <header class="header">
+      <!-- Если авторизован  -->
+      <!-- <div class="header__container header__container_log container">
+        <button class="header__burger burger burger_log">
+          <span class="burger__line"></span>
+        </button>
+        <div class="header__menu header__menu_log">
+          <nav class="header__nav nav nav_log">
+            <ul class="nav__list">
+              <li class="nav__item nav__item_blue accordion-clicker">
+                <a class="nav__link" href="#!">
+                  О системе
+                  <svg width="10" height="8">
+                    <use xlink:href="./img/svg/sprites.svg#arrow"></use>
+                  </svg>
+                </a>
+                <div class="nav__accordion-content">
+                  <a class="nav__accordion-link" href="#!">
+                    Договоры
+                  </a>
+                  <a class="nav__accordion-link" href="news.html">
+                    Новости
+                  </a>
+                  <a class="nav__accordion-link" href="#!">
+                    Контакты
+                  </a>
+                </div>
+              </li>
+
+              <li class="nav__item nav__item_purple">
+                <a class="nav__link" href="partners.html">
+                  Партнерская программа
+                </a>
+              </li>
+              <li class="nav__item nav__item_green">
+                <a class="nav__link" href="bonuses-and-promotions.html">
+                  Бонусы и акции
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__wrapper-logo header__wrapper-logo_margin header__wrapper-logo_menu header__wrapper-logo_log-none">
+            <img src="./img/background-mini.svg" alt="Задний фон">
+            <a class="header__logo" href="index.html">
+              <img src="./img/svg/logotip.svg" alt="Логотип сайта">
+            </a>
+          </div>
+          <nav class="header__nav nav nav_log">
+            <ul class="nav__list">
+              <li class="nav__item nav__item_grey">
+                <a class="nav__link" href="faq.html">
+                  FAQ / Помощь
+                </a>
+              </li>
+              <li class="nav__item nav__item_gold">
+                <a class="nav__link" href="#!">
+                  Конструктор документов
+                </a>
+              </li>
+            </ul>
+          </nav>
+         <div class="header__help header__help_margin">
+          <a class="header__help-link" href="#!">
+            <span><img src="./img/icon/help.svg" alt="Иконка"></span>
+            Техподдержка
+          </a>
+          <img class="header__help-background" src="./img/background-big.svg" alt="Задний фон">
+         </div>
+        </div>
+        <div class="header__wrapper-logo header__wrapper-logo_margin header__wrapper-logo_log">
+          <img src="./img/background-mini.svg" alt="Задний фон">
+          <a class="header__logo" href="index.html">
+            <img src="./img/svg/logotip.svg" alt="Логотип сайта">
+          </a>
+        </div>
+        <div class="header__profile profile">
+          <div class="profile__items" data-da=".profile-menu, 760, 0">
+            <div class="profile__item">
+              <span class="profile__icon">
+                <a href="#!">
+                  <img src="./img/icon/kybok.svg" alt="Иконка">
+                  <span class="profile__value">
+                    12
+                  </span>
+                </a>
+              </span>
+            </div>
+            <div class="profile__item">
+              <span class="profile__icon">
+                <a href="#!">
+                  <img src="./img/icon/almaz.svg" alt="Иконка">
+                  <span class="profile__value profile__value_left">
+                    17
+                  </span>
+                </a>
+  
+              </span>
+            </div>
+            <div class="profile__item">
+              <span class="profile__icon">
+                <a href="#!">
+                  <img src="./img/icon/kolokolchik.svg" alt="Иконка">
+                </a>
+              </span>
+              <span class="profile__value  profile__value_change profile__value_change-background">
+                14
+              </span>
+            </div>
+            <div class="profile__item">
+              <span class="profile__icon">
+                <a href="#!">
+                  <img src="./img/icon/mail.svg" alt="Иконка">
+                </a>
+              </span>
+              <span class="profile__value profile__value_change">
+                1454
+              </span>
+            </div>
+          </div>
+          <div class="profile__avatar">
+            <button class="profile__btn">
+              <img src="./img/icon/avatar-mini.png" alt="Аватар">
+            </button>
+            <span class="profile__arrow">
+              <img src="./img/icon/arrow-cabinet.svg" alt="Иконка">
+            </span>
+          </div>
+          <a class="profile__exit" href="#!">
+            <img src="./img/icon/log-out.svg" alt="Иконка">
+          </a>
+          <div class="profile__menu profile-menu">
+            <ul class="profile-menu__list">
+              <li class="profile-menu__item">
+                <button class="profile-menu__button profile-menu__button_blue">
+                  Правила и договоры
+                  <svg width="10" height="8">
+                    <use xlink:href="./img/svg/sprites.svg#arrow"></use>
+                  </svg>
+                </button>
+                <div class="profile-menu__accordion-content">
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Оказание информационных услуг
+                  </a>
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Правила пользования Порталом
+                  </a>
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Тарифы
+                  </a>
+                </div>
+              </li>
+              <li class="profile-menu__item">
+                <button class="profile-menu__button profile-menu__button_purple">
+                  Общее
+                  <svg width="10" height="8">
+                    <use xlink:href="./img/svg/sprites.svg#arrow"></use>
+                  </svg>
+                </button>
+                <div class="profile-menu__accordion-content">
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Личные данные
+                  </a>
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Настройки
+                  </a>
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Стоп-лист
+                  </a>
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Мои бонусы
+                  </a>
+                </div>
+              </li>
+              <li class="profile-menu__item">
+                <button class="profile-menu__button profile-menu__button_green">
+                  Для заёмщика
+                  <svg width="10" height="8">
+                    <use xlink:href="./img/svg/sprites.svg#arrow"></use>
+                  </svg>
+                </button>
+                <div class="profile-menu__accordion-content">
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Опубликовать заявку
+                  </a>
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Мои заявки
+                  </a>
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Полученные займы
+                  </a>
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Избранные заявки
+                  </a>
+                     <a class="profile-menu__accordion-link" href="#!">
+                      Заказ документов по сделкам
+                  </a>
+                </div>
+              </li>
+              <li class="profile-menu__item">
+                <button class="profile-menu__button profile-menu__button_gold">
+                  Для кредитора
+                  <svg width="10" height="8">
+                    <use xlink:href="./img/svg/sprites.svg#arrow"></use>
+                  </svg>
+                </button>
+                <div class="profile-menu__accordion-content">
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Опубликовать предложение
+                  </a>
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Мои предложения
+                  </a>
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Выданные займы
+                  </a>
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Избранные заявки
+                  </a>
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Заказ документов по сделкам
+                  </a>
+                </div>
+              </li>
+            </ul>
+            <div class="header__help header__help_margin">
+              <a class="header__help-link" href="#!">
+                <span><img src="./img/icon/help.svg" alt="Иконка"></span>
+                Техподдержка
+              </a>
+              <img class="header__help-background" src="./img/background-big.svg" alt="Задний фон">
+             </div>
+          </div>
+        </div>
+      </div> -->
+      <!-- Если не авторизован  -->
+      <div class="header__container container">
+        <button class="header__burger burger">
+          <span class="burger__line"></span>
+        </button>
+        <div class="header__menu">
+          <nav class="header__nav nav">
+            <ul class="nav__list">
+              <li class="nav__item nav__item_blue accordion-clicker">
+                <a class="nav__link" href="#!">
+                  О системе
+                  <svg width="10" height="8">
+                    <use xlink:href="./img/svg/sprites.svg#arrow"></use>
+                  </svg>
+                </a>
+                <div class="nav__accordion-content">
+                  <a class="nav__accordion-link" href="#!">
+                    Договоры
+                  </a>
+                  <a class="nav__accordion-link" href="news.html">
+                    Новости
+                  </a>
+                  <a class="nav__accordion-link" href="#!">
+                    Контакты
+                  </a>
+                </div>
+              </li>
+
+              <li class="nav__item nav__item_purple">
+                <a class="nav__link" href="partners.html">
+                  Партнерская программа
+                </a>
+              </li>
+              <li class="nav__item nav__item_green">
+                <a class="nav__link" href="bonuses-and-promotions.html">
+                  Бонусы и акции
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__wrapper-logo header__wrapper-logo_menu">
+            <img src="./img/background-mini.svg" alt="Задний фон">
+            <a class="header__logo" href="index.html">
+              <img src="./img/svg/logotip.svg" alt="Логотип сайта">
+            </a>
+          </div>
+          <nav class="header__nav nav">
+            <ul class="nav__list">
+              <li class="nav__item nav__item_grey">
+                <a class="nav__link" href="faq.html">
+                  FAQ / Помощь
+                </a>
+              </li>
+              <li class="nav__item nav__item_gold">
+                <a class="nav__link" href="#!">
+                  Конструктор документов
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__help">
+            <a class="header__help-link" href="#!">
+              <span><img src="./img/icon/help.svg" alt="Иконка"></span>
+              Техподдержка
+            </a>
+            <img class="header__help-background" src="./img/background-big.svg" alt="Задний фон">
+          </div>
+        </div>
+        <div class="header__wrapper-logo">
+          <img src="./img/background-mini.svg" alt="Задний фон">
+          <a class="header__logo" href="index.html">
+            <img src="./img/svg/logotip.svg" alt="Логотип сайта">
+          </a>
+        </div>
+        <a class="header__log" href="#!">
+          Войти
+        </a>
+      </div>
+    </header>
+    <main>
+      <section class="pages">
+        <div class="container">
+          <div class="pages__content">
+            <ul class="pages__list">
+              <li class="pages__item">
+                <a class="pages__link" href="index.html">
+                  Главная
+                </a>
+              </li>
+              <li class="pages__item">
+                <a class="pages__link" href="document-designer.html">
+                  Конструктор документов
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+     <div class="document-designer">
+      <div class="container">
+        <div class="document-designer__content">
+          <div class="document-designer__head">
+            <h1 class="document-designer__title title">
+              Конструктор документов
+            </h1>
+           <div class="document-designer__head-right">
+            <a class="document-designer__link link" href="order-documents.html">
+              Заказать документы для взыскания у юриста
+            </a>
+           </div>
+          </div>
+          <div class="document-designer__body">
+            <div class="document-designer__column document-designer__column_1">
+              <form class="document-designer__form" action="#!">
+                <div class="document-designer__row document-row">
+                  <div class="document-row__top">
+                    <strong class="document-row__strong">
+                      Наименование суда<span>*</span>
+                    </strong>
+                    <div class="document-row__tooltip document-row-tooltip" data-tippy-content="Укажите наименование суда, в который будет подано исковое заявление">
+                      <img src="./img/icon/warning-green.svg" alt="Иконка">
+                    </div>
+                  </div>
+                   <div class="document-row__bottom">
+                    <input class="document-row__input" type="text" >
+                    <p class="document-row__text">
+                      Укажите наименование суда, в который будет подано исковое заявление
+                    </p>
+                   </div>
+                </div>
+                <div class="document-designer__row document-row">
+                  <div class="document-row__top">
+                    <strong class="document-row__strong">
+                      Адрес суда<span>*</span>
+                    </strong>
+                    <div class="document-row__tooltip document-row-tooltip" data-tippy-content="Укажите почтовый адрес суда, в который будет подано исковое заявление (почтовый индекс, регион (область, край, республика и т.д.), район, населенный пункт, город, улица, дом)">
+                      <img src="./img/icon/warning-green.svg" alt="Иконка">
+                    </div>
+                  </div>
+                   <div class="document-row__bottom">
+                    <input class="document-row__input" type="text" >
+                    <p class="document-row__text">
+                      Укажите почтовый адрес суда, в который будет подано исковое заявление (почтовый индекс, регион (область, край, республика и т.д.), район, населенный пункт, город, улица, дом)
+                    </p>
+                   </div>
+                </div>
+                <div class="document-designer__row document-row">
+                  <div class="document-row__top">
+                    <strong class="document-row__strong">
+                      Ф.И.О. истца<span>*</span>
+                    </strong>
+                    <div class="document-row__tooltip document-row-tooltip" data-tippy-content="Укажите место жительства истца или, если истцом является организация, ее место нахождения, а также адрес представителя, если заявление подается представителем">
+                      <img src="./img/icon/warning-green.svg" alt="Иконка">
+                    </div>
+                  </div>
+                   <div class="document-row__bottom">
+                    <input class="document-row__input" type="text" >
+                    <p class="document-row__text">
+                      Укажите место жительства истца или, если истцом является организация, ее место нахождения, а также адрес представителя, если заявление подается представителем
+                    </p>
+                   </div>
+                </div>
+                <div class="document-designer__row document-row">
+                  <div class="document-row__top">
+                    <strong class="document-row__strong">
+                      Номер телефона
+                    </strong>
+                    <div class="document-row__tooltip document-row-tooltip" data-tippy-content="Укажите Ваш номер телефона (при желании)">
+                      <img src="./img/icon/warning-green.svg" alt="Иконка">
+                    </div>
+                  </div>
+                   <div class="document-row__bottom">
+                    <input class="document-row__input" type="tel" >
+                    <p class="document-row__text">
+                      Укажите Ваш номер телефона (при желании)
+                    </p>
+                   </div>
+                </div>
+                <div class="document-designer__row document-row">
+                  <div class="document-row__top">
+                    <strong class="document-row__strong">
+                      Электронная почта
+                    </strong>
+                    <div class="document-row__tooltip document-row-tooltip" data-tippy-content="Укажите Ваш адрес электронной почты (при желании)">
+                      <img src="./img/icon/warning-green.svg" alt="Иконка">
+                    </div>
+                  </div>
+                   <div class="document-row__bottom">
+                    <input class="document-row__input" type="text" >
+                    <p class="document-row__text">
+                      Укажите Ваш адрес электронной почты (при желании)
+                    </p>
+                   </div>
+                </div>
+                <div class="document-designer__row document-row">
+                  <div class="document-row__top document-row__top_m">
+                    <div class="document-row__head">
+                      <div class="document-row__tooltip document-row-tooltip" data-tippy-content="Данное поле заполняется в случае если кроме Вас есть еще истцы. Необходимо указать Ф.И.О. последующего истца, его место жительства или место нахождения (организация), номер телефона и адрес электронной почты (при желании)">
+                        <img src="./img/icon/warning-green.svg" alt="Иконка">
+                      </div>
+                      <strong class="document-row__strong">
+                        Последующие истцы
+                      </strong>
+                    </div>
+                    <div class="document-added added1">
+                      <img src="./img/icon/+.svg" alt="Иконка">
+                      Добавить
+                    </div>
+                  </div>
+                   <div class="document-row__bottom">
+                    <div class="document-row__inputs inputs1">
+                     <div class="document-row__wrapper-input document-row__wrapper-input_m">
+                      <span class="document-row__num">1.</span>
+                      <input class="document-row__input" type="text" >
+                     </div>
+                    </div>
+                    <p class="document-row__text">
+                      Данное поле заполняется в случае если кроме Вас есть еще истцы. Необходимо указать Ф.И.О. последующего истца, его место жительства или место нахождения (организация), номер телефона и адрес электронной почты (при желании)
+                    </p>
+                   </div>
+                </div>
+                <div class="document-designer__row document-row">
+                  <div class="document-row__top">
+                    <strong class="document-row__strong">
+                      Ф.И.О. ответчика<span>*</span>
+                    </strong>
+                    <div class="document-row__tooltip document-row-tooltip" data-tippy-content="Укажите Ф.И.О. ответчика (тот к кому предъявляется исковое заявление), если ответчиком является организация, ее наименование (название)">
+                      <img src="./img/icon/warning-green.svg" alt="Иконка">
+                    </div>
+                  </div>
+                   <div class="document-row__bottom">
+                    <input class="document-row__input" type="text" >
+                    <p class="document-row__text">
+                      Укажите Ф.И.О. ответчика (тот к кому предъявляется исковое заявление), если ответчиком является организация, ее наименование (название)
+                    </p>
+                   </div>
+                </div>
+                <div class="document-designer__row document-row">
+                  <div class="document-row__top">
+                    <strong class="document-row__strong">
+                      ID ответчика<span>*</span>
+                    </strong>
+                  </div>
+                   <div class="document-row__bottom">
+                    <input class="document-row__input document-row__input_w" type="text" >
+                   </div>
+                </div>
+                <div class="document-designer__row document-row">
+                  <div class="document-row__top">
+                    <strong class="document-row__strong">
+                      Место жительства ответчика<span>*</span>
+                    </strong>
+                    <div class="document-row__tooltip document-row-tooltip" data-tippy-content="Укажите место жительства ответчика или, если ответчиком является организация, ее место нахождения">
+                      <img src="./img/icon/warning-green.svg" alt="Иконка">
+                    </div>
+                  </div>
+                   <div class="document-row__bottom">
+                    <input class="document-row__input" type="text" >
+                    <p class="document-row__text">
+                      Укажите место жительства ответчика или, если ответчиком является организация, ее место нахождения
+                    </p>
+                   </div>
+                </div>
+                <div class="document-designer__row document-row">
+                  <div class="document-row__top">
+                    <strong class="document-row__strong">
+                      Номер телефона
+                    </strong>
+                    <div class="document-row__tooltip document-row-tooltip" data-tippy-content="Укажите номер телефона (при желании)">
+                      <img src="./img/icon/warning-green.svg" alt="Иконка">
+                    </div>
+                  </div>
+                   <div class="document-row__bottom">
+                    <input class="document-row__input" type="te;" >
+                    <p class="document-row__text">
+                      Укажите номер телефона (при желании)
+                    </p>
+                   </div>
+                </div>
+                <div class="document-designer__row document-row">
+                  <div class="document-row__top">
+                    <strong class="document-row__strong">
+                      Электронная почта 
+                    </strong>
+                    <div class="document-row__tooltip document-row-tooltip" data-tippy-content="Укажите адрес электронной почты (при желании)">
+                      <img src="./img/icon/warning-green.svg" alt="Иконка">
+                    </div>
+                  </div>
+                   <div class="document-row__bottom">
+                    <input class="document-row__input" type="te;" >
+                    <p class="document-row__text">
+                      Укажите адрес электронной почты (при желании)
+                    </p>
+                   </div>
+                </div>
+                <div class="document-designer__row document-row">
+                  <div class="document-row__top document-row__top_m">
+                    <div class="document-row__head">
+                      <div class="document-row__tooltip document-row-tooltip" data-tippy-content="Данное поле заполняется в случае если по делу имеются еще ответчики, помимо основного. Необходимо указать Ф.И.О. соответчика, его место жительства или место нахождения (организация), номер телефона и адрес электронной почты (при желании)">
+                        <img src="./img/icon/warning-green.svg" alt="Иконка">
+                      </div>
+                      <strong class="document-row__strong">
+                        Соответчики
+                      </strong>
+                    </div>
+                    
+                    <div class="document-added added2">
+                      <img src="./img/icon/+.svg" alt="Иконка">
+                      Добавить
+                    </div>
+                  </div>
+                   <div class="document-row__bottom">
+                    <div class="document-row__inputs inputs2">
+                     <div class="document-row__wrapper-input document-row__wrapper-input_m">
+                      <span class="document-row__num">1.</span>
+                      <input class="document-row__input" type="text" >
+                     </div>
+                    </div>
+                    <p class="document-row__text">
+                      Данное поле заполняется в случае если по делу имеются еще ответчики, помимо основного. Необходимо указать Ф.И.О. соответчика, его место жительства или место нахождения (организация), номер телефона и адрес электронной почты (при желании)
+                    </p>
+                   </div>
+                </div>
+                <div class="document-designer__row document-row">
+                  <div class="document-row__top document-row__top_m">
+                   <div class="document-row__head">
+                    <div class="document-row__tooltip document-row-tooltip" data-tippy-content="Данное поле заполняется в случае если к участию в деле, по вашей инициативе привлекаются третьи лица.">
+                      <img src="./img/icon/warning-green.svg" alt="Иконка">
+                    </div>
+                    <strong class="document-row__strong">
+                      Третьи лица
+                    </strong>
+                   </div>
+                    <div class="document-added added3">
+                      <img src="./img/icon/+.svg" alt="Иконка">
+                      Добавить
+                    </div>
+                  </div>
+                   <div class="document-row__bottom">
+                    <div class="document-row__inputs inputs3">
+                     <div class="document-row__wrapper-input document-row__wrapper-input_m">
+                      <span class="document-row__num">1.</span>
+                      <input class="document-row__input" type="text" >
+                     </div>
+                    </div>
+                    <p class="document-row__text">
+                      Данное поле заполняется в случае если к участию в деле, по вашей инициативе привлекаются третьи лица.
+                    </p>
+                   </div>
+                </div>
+                <div class="document-designer__row document-row">
+                  <div class="document-row__top">
+                    <strong class="document-row__strong">
+                      Текст искового заявления<span>*</span>
+                    </strong>
+                    <div class="document-row__tooltip document-row-tooltip" data-tippy-content="В данном разделе необходимо указать, в чем заключается нарушение либо угроза нарушения прав, свобод или законных интересов истца(т.е Ваших прав и интересов) и Ваши требования (т.е. почему Вы обращаетесь в суд). Необходимо изложить суть претензий к ответчику, чем он нарушил Ваши права. Нужно изложить обстоятельства, на которых Вы основываете свои требования, и доказательства, подтверждающие эти обстоятельства. Ваши доводы необходимо излагать последовательно, кратко но содержательно, ни каких эмоций только факты. (на пример 17.05.2018 гражданин Иванов И.И. занял у меня деньги, в сумме 100 т.р., которые обязался вернуть не позднее 17.07.2018, о чем имеется расписка от 17.05.2018(приложена к исковому заявлению), кроме того при передаче ему денег присутствовали двое свидетелей (Ф.И.О. и иные данные о свидетелях), однако до настоящего времени деньги ответчик не вернул, хотя знал, что должен был мне их вернуть. На мои требования вернуть деньги ни как не отреагировал, в связи с чем я вынужден обратиться в суд). В данном разделе также необходимо сослаться на реальные доказательства, которые имеются у Вас на руках, которые подтверждают изложенные доводы. После этого сошлитесь на законодательство, которое регламентирует вопросы, изложенные в исковом заявлении и которое подтверждает Вашу правоту и противоправность деяний ответчика">
+                      <img src="./img/icon/warning-green.svg" alt="Иконка">
+                    </div>
+                  </div>
+                   <div class="document-row__bottom">
+                    <textarea class="document-row__textarea"></textarea>
+                    <p class="document-row__text">
+                      В данном разделе необходимо указать, в чем заключается нарушение либо угроза нарушения прав, свобод или законных интересов истца(т.е Ваших прав и интересов) и Ваши требования (т.е. почему Вы обращаетесь в суд). Необходимо изложить суть претензий к ответчику, чем он нарушил Ваши права. Нужно изложить обстоятельства, на которых Вы основываете свои требования, и доказательства, подтверждающие эти обстоятельства. Ваши доводы необходимо излагать последовательно, кратко но содержательно, ни каких эмоций только факты. (на пример 17.05.2018 гражданин Иванов И.И. занял у меня деньги, в сумме 100 т.р., которые обязался вернуть не позднее 17.07.2018, о чем имеется расписка от 17.05.2018(приложена к исковому заявлению), кроме того при передаче ему денег присутствовали двое свидетелей (Ф.И.О. и иные данные о свидетелях), однако до настоящего времени деньги ответчик не вернул, хотя знал, что должен был мне их вернуть. На мои требования вернуть деньги ни как не отреагировал, в связи с чем я вынужден обратиться в суд). В данном разделе также необходимо сослаться на реальные доказательства, которые имеются у Вас на руках, которые подтверждают изложенные доводы. После этого сошлитесь на законодательство, которое регламентирует вопросы, изложенные в исковом заявлении и которое подтверждает Вашу правоту и противоправность деяний ответчика
+                    </p>
+                   </div>
+                </div>
+                <div class="document-designer__row document-row">
+                  <div class="document-row__top">
+                    <strong class="document-row__strong">
+                      Цена иска<span>*</span>
+                    </strong>
+                    <div class="document-row__tooltip document-row-tooltip" data-tippy-content="Укажите цену иска (если предметом иска является взыскание денежных средств необходимо указать сумму которую Вы хотите взыскать с ответчика, а также приложить расчет взыскиваемых или оспариваемых денежных сумм. Расчет делается на отдельном листе и представляет собой на пример: 10000 р. - основной долг+3000 р. - проценты по основному долгу за 5 месяцев просрочки + 400 р. госпошлина = 13400 р – цена иска)">
+                      <img src="./img/icon/warning-green.svg" alt="Иконка">
+                    </div>
+                  </div>
+                   <div class="document-row__bottom">
+                    <input class="document-row__input" type="text" >
+                    <p class="document-row__text">
+                      Укажите цену иска (если предметом иска является взыскание денежных средств необходимо указать сумму которую Вы хотите взыскать с ответчика, а также приложить расчет взыскиваемых или оспариваемых денежных сумм. Расчет делается на отдельном листе и представляет собой на пример: 10000 р. - основной долг+3000 р. - проценты по основному долгу за 5 месяцев просрочки + 400 р. госпошлина = 13400 р – цена иска)
+                    </p>
+                   </div>
+                </div>
+                <div class="document-designer__row document-row">
+                  <div class="document-row__top document-row__top_m">
+                    <div class="document-row__head">
+                      <div class="document-row__tooltip document-row-tooltip" data-tippy-content="Укажите исковые требования (в данном разделе необходимо указать, что Вы просите у суда по результатам рассмотрения данного гражданского дела, на пример взыскать с ответчика денежную сумму по договору займа в размере 13400 рублей в пользу истца) исковых требований может быть несколько)">
+                        <img src="./img/icon/warning-green.svg" alt="Иконка">
+                      </div>
+                      <strong class="document-row__strong">
+                        Исковые требования<span>*</span>
+                      </strong>
+                    </div>
+                    <div class="document-added added4">
+                      <img src="./img/icon/+.svg" alt="Иконка">
+                      Добавить
+                    </div>
+                  </div>
+                   <div class="document-row__bottom">
+                    <div class="document-row__inputs inputs4">
+                     <div class="document-row__wrapper-input document-row__wrapper-input_m">
+                      <span class="document-row__num">1.</span>
+                      <input class="document-row__input" type="text" >
+                     </div>
+                    </div>
+                    <p class="document-row__text">
+                      Укажите исковые требования (в данном разделе необходимо указать, что Вы просите у суда по результатам рассмотрения данного гражданского дела, на пример взыскать с ответчика денежную сумму по договору займа в размере 13400 рублей в пользу истца) исковых требований может быть несколько)
+                    </p>
+                   </div>
+                </div>
+                <div class="document-designer__row document-row">
+                  <div class="document-row__top document-row__top_m">
+                   <div class="document-row__head">
+                    <div class="document-row__tooltip document-row-tooltip" data-tippy-content="Укажите меры по обеспечению иска (заполняется при необходимости). Данное поле заполняется в случае если вы желаете применить к ответчику меры по обеспечению иска, которые установлены ст. 140 ГПК РФ.">
+                      <img src="./img/icon/warning-green.svg" alt="Иконка">
+                    </div>
+                    <strong class="document-row__strong">
+                      Меры по обеспечению иска
+                    </strong>
+                   </div>
+                    <div class="document-added added5">
+                      <img src="./img/icon/+.svg" alt="Иконка">
+                      Добавить
+                    </div>
+                  </div>
+                   <div class="document-row__bottom">
+                    <div class="document-row__inputs inputs5">
+                     <div class="document-row__wrapper-input document-row__wrapper-input_m">
+                      <span class="document-row__num">1.</span>
+                      <input class="document-row__input" type="text" >
+                     </div>
+                    </div>
+                    <p class="document-row__text">
+                      Укажите меры по обеспечению иска (заполняется при необходимости). Данное поле заполняется в случае если вы желаете применить к ответчику меры по обеспечению иска, которые установлены ст. 140 ГПК РФ.
+                    </p>
+                   </div>
+                </div>
+                <div class="document-designer__row document-row">
+                  <div class="document-row__top document-row__top_m">
+                    <div class="document-row__head">
+                      <div class="document-row__tooltip document-row-tooltip" data-tippy-content="Укажите меры по обеспечению иска (заполняется при необходимости). Данное поле заполняется в случае если вы желаете применить к ответчику меры по обеспечению иска, которые установлены ст. 140 ГПК РФ.">
+                        <img src="./img/icon/warning-green.svg" alt="Иконка">
+                      </div>
+                      <strong class="document-row__strong">
+                        Приложения<span>*</span>
+                      </strong>
+                    </div>
+                    <div class="document-added added6">
+                      <img src="./img/icon/+.svg" alt="Иконка">
+                      Добавить
+                    </div>
+                  </div>
+                   <div class="document-row__bottom">
+                    <div class="document-row__inputs inputs6">
+                     <div class="document-row__wrapper-input document-row__wrapper-input_m">
+                      <span class="document-row__num">1.</span>
+                      <input class="document-row__input" type="text" >
+                     </div>
+                    </div>
+                    <p class="document-row__text">
+                      Укажите меры по обеспечению иска (заполняется при необходимости). Данное поле заполняется в случае если вы желаете применить к ответчику меры по обеспечению иска, которые установлены ст. 140 ГПК РФ.
+                    </p>
+                   </div>
+                </div>
+                <div class="document-designer__links">
+                  <a class="document-designer__link link" href="pay-for-documents.html">
+                    Оплатить
+                  </a>
+                  <a class="document-designer__link link-2" href="index.html">
+                    Отменить
+                  </a>
+                </div>
+              </form>
+            </div>
+            <div class="document-designer__column document-designer__column_2">
+                <div class="document-right">
+                    <h2 class="document-right__title" data-da=".document-designer__head-right, 991, 1">
+                      Составить исковое заявление онлайн очень просто!
+                    </h2>
+                    <ul class="document-right__list">
+                      <li class="document-right__item">
+                        <a class="document-right__link" href="#!">
+                          Взыскание денежных средств по расписке
+                        </a>
+                      </li>
+                      <li class="document-right__item">
+                        <a class="document-right__link" href="#!">
+                          Взыскание денежных средств по расписке с наложением ареста на имущество должника
+                        </a>
+                      </li>
+                      <li class="document-right__item">
+                        <a class="document-right__link" href="#!">
+                          Взыскание денежных средств по нотариально удостоверенному договору займа
+                        </a>
+                      </li>
+                      <li class="document-right__item">
+                        <a class="document-right__link" href="#!">
+                          Взыскание денежных средств по нотариально удостоверенному договору займа с наложением ареста на имущество должника
+                        </a>
+                      </li>
+                      <li class="document-right__item">
+                        <a class="document-right__link" href="#!">
+                          Взыскание денежных средств по договору займа
+                        </a>
+                      </li>
+                      <li class="document-right__item">
+                        <a class="document-right__link" href="#!">
+                          Взыскание денежных средств по договору займа с наложением ареста на имущество должника
+                        </a>
+                      </li>
+                    </ul>
+                </div>
+                <div class="memo">
+                  <h2 class="memo__title">
+                    Памятка о порядке действий для взыскания задолженности
+                  </h2>
+                  <p class="memo__text">
+                    Спешим сообщить вам, что на сайте появилась возможность загрузить кредитный отчет, полученный в кредитном отчетотчет, полученный в кредитном отчет.Спешим сообщить вам, что на сайте появилась возможность загрузить кредитный отчет, полученный в кредитном отчетотчет, полученный в кредитном отчет.
+                  </p>
+                  <p class="memo__text">
+                    Спешим сообщить вам, что на сайте появилась возможность загрузить кредитный отчет, полученный в кредитном отчетотчет, полученный в кредитном отчет.Спешим сообщить вам, что на сайте появилась возможность загрузить кредитный отчет, полученный в кредитном отчетотчет, полученный в кредитном отчет.Спешим сообщить вам, что на сайте появилась возможность загрузить кредитный отчет, полученный в кредитном отчетотчет, полученный в кредитном отчет.Спешим сообщить вам, что на сайте появилась возможность загрузить кредитный отчет, полученный в кредитном отчетотчет, полученный в кредитном отчет.
+                  </p>
+                  <p class="memo__text">
+                    Спешим сообщить вам, что на сайте появилась возможность загрузить кредитный отчет, полученный в кредитном отчетотчет, полученный в кредитном отчет.Спешим сообщить вам, что на сайте появилась возможность загрузить кредитный отчет, полученный в кредитном отчетотчет, полученный в кредитном отчет.Спешим сообщить вам, что на сайте появилась возможность загрузить кредитный отчет, полученный в кредитном отчетотчет, полученный в кредитном отчет.Спешим сообщить вам, что на сайте появилась возможность загрузить кредитный отчет, полученный в кредитном отчетотчет, полученный в кредитном отчет.
+                  </p>
+                  <p class="memo__text">
+                    Спешим сообщить вам, что на сайте появилась возможность загрузить кредитный отчет, полученный в кредитном отчетотчет, полученный в кредитном отчет.Спешим сообщить вам, что на сайте появилась возможность загрузить кредитный отчет, полученный в кредитном отчетотчет, полученный в кредитном отчет.
+                  </p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+
+    </main>
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__wrapper-logo">
+          <img src="./img/background-change.svg" alt="Задний фон">
+          <a class="footer__logo" href="index.html">
+            <img src="./img/svg/logotip.svg" alt="Логотип сайта">
+          </a>
+        </div>
+        <div class="footer__top">
+          <div class="footer__lists">
+            <ul class="footer__list">
+              <li class="footer__item footer__item_blue footer-accordion-clicker">
+                <a class="footer__link" href="#!">
+                  О системе
+                  <svg width="10" height="8">
+                    <use xlink:href="./img/svg/sprites.svg#arrow"></use>
+                  </svg>
+                </a>
+                <div class="footer__accordion-content">
+                  <a class="footer__accordion-link footer__accordion-link_blue" href="#!">
+                    Договоры
+                  </a>
+                  <a class="footer__accordion-link footer__accordion-link_purple" href="new.html">
+                    Новости
+                  </a>
+                  <a class="footer__accordion-link footer__accordion-link_green" href="#!">
+                    Контакты
+                  </a>
+                </div>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="partners.html">
+                  Партнерская программа
+                </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="bonuses-and-promotions.html">
+                  Бонусы и акции
+                </a>
+              </li>
+            </ul>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="#!">
+                  Конструктор документов
+                </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="faq.html">
+                  Часто задаваемые вопросы
+                </a>
+              </li>
+            </ul>
+
+          </div>
+          <div class="footer__right">
+            <a class="footer__help" href="#!">
+              <img src="./img/icon/help.svg" alt="Иконка">
+              <span class="footer__help-span">Обратиться в техподдержку</span>
+              <span class="footer__help-span footer__help-span_none">Техподдержка</span>
+            </a>
+          </div>
+        </div>
+        <div class="footer__middle">
+          <div class="footer__info">
+            <address class="footer__address">
+              ИНН 7604354453, КПП 760401001, ОГРН 1197627006060, Юридический адрес 150000 г. Москва, ул. Некрасова, дом
+              41, офис 332
+            </address>
+          </div>
+          <ul class="footer__soclist" data-da=".footer__right, 1380, 1">
+            <li class="footer__soclist-item">
+              <a class="footer__soclist-link" href="#!">
+                <svg width="24" height="24">
+                  <use xlink:href="./img/svg/sprites.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__soclist-item">
+              <a class="footer__soclist-link" href="#!">
+                <svg width="24" height="24">
+                  <use xlink:href="./img/svg/sprites.svg#odnoklassniki"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__soclist-item">
+              <a class="footer__soclist-link" href="#!">
+                <svg width="24" height="24">
+                  <use xlink:href="./img/svg/sprites.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__soclist-item">
+              <a class="footer__soclist-link" href="#!">
+                <svg width="24" height="24">
+                  <use xlink:href="./img/svg/sprites.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__text" data-da=".footer__middle, 1380, 1">
+            Данный сайт может содержать информацию о сайтах третьих лиц. Лавка Олигарха не несет ответственности за
+            точность информации, данных, взглядов, советов или заявлений, сделанных на этих сайтах.
+          </p>
+          <strong class="footer__rechten">
+            © 2022 Лавка Олигарха. Все права защищены.
+          </strong>
+          <div class="footer__bottom-right">
+            <a class="footer__privacy" href="#!">
+              Политика конфиденциальности
+            </a>
+            <a class="footer__developer" href="#!">
+              Digital
+              <img src="./img/icon/developer.svg" alt="Иконка разработчика">
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="./resources/custom-scroll/simplebar.js"></script>
+  <script src="./resources/tooltip/popper.min.js"></script>
+  <script src="./resources/tooltip/tippy.js"></script>
+  <script src="./resources/smooth-scroll/smooth-scroll.js"></script>
+  <script src="./resources/swiper/swiper.js"></script>
+  <script src="./js/main.min.js"></script>
+</body>
+
+</html>

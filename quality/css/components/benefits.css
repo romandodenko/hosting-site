@@ -1,0 +1,242 @@
+.benefints {
+  position: relative;
+  padding-bottom: 120px;
+  padding-top: 160px;
+}
+@media (max-width: 991px) {
+  .benefints {
+    padding-bottom: 100px;
+    padding-top: 100px;
+  }
+}
+@media (max-width: 600px) {
+  .benefints {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+}
+.benefints__container {
+  position: relative;
+  z-index: 10;
+}
+.benefints__title {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 47px;
+  text-align: center;
+  color: var(--main);
+  margin-bottom: 180px;
+}
+.benefints__title span {
+  font-weight: 500;
+}
+@media (max-width: 991px) {
+  .benefints__title {
+    font-size: 30px;
+    line-height: 39px;
+  }
+}
+@media (max-width: 600px) {
+  .benefints__title {
+    font-size: 26px;
+    line-height: 32px;
+    margin-bottom: 100px;
+  }
+}
+.benefints__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto;
+  -ms-grid-columns: 1fr 40px 1fr 40px 1fr 40px 1fr;
+  grid-template: auto/repeat(4, 1fr);
+  gap: 100px 40px;
+}
+@media (max-width: 1200px) {
+  .benefints__list {
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .benefints__list {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    row-gap: 80px;
+  }
+}
+.benefints__item {
+  background-color: rgba(255, 255, 255, 0.7);
+  -webkit-backdrop-filter: blur(34px);
+  backdrop-filter: blur(34px);
+  border-radius: 8px;
+  min-height: 400px;
+  padding: 20px;
+}
+@media (max-width: 600px) {
+  .benefints__item {
+    min-height: 300px;
+  }
+}
+.benefints__wrapper-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 112px;
+  height: 112px;
+  background-color: #0A63E8;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: -100px;
+  margin-bottom: 32px;
+}
+@media (max-width: 600px) {
+  .benefints__wrapper-icon {
+    width: 90px;
+    height: 90px;
+    margin-top: -70px;
+    margin-bottom: 20px;
+  }
+}
+.benefints__icon {
+  width: 40px;
+  height: 40px;
+}
+.benefints__icon img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+  -o-object-position: center;
+  object-position: center;
+}
+.benefints__subtitle {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 32px;
+  text-align: center;
+  color: var(--main);
+  margin-bottom: 32px;
+}
+@media (max-width: 991px) {
+  .benefints__subtitle {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+@media (max-width: 600px) {
+  .benefints__subtitle {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 20px;
+  }
+}
+.benefints__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--main);
+}
+.benefints__image-1 {
+  position: absolute;
+  top: -200px;
+  left: 0;
+  max-width: 804px;
+  height: 1201px;
+  z-index: 1;
+}
+@media (max-width: 991px) {
+  .benefints__image-1 {
+    max-width: 604px;
+    height: 1001px;
+    top: -100px;
+  }
+}
+@media (max-width: 600px) {
+  .benefints__image-1 {
+    max-width: 404px;
+    height: 800px;
+    margin-top: -50px;
+  }
+}
+.benefints__image-1 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+}
+.benefints__image-2 {
+  position: absolute;
+  bottom: -30%;
+  right: 0;
+  width: 421px;
+  height: 402px;
+  z-index: 1;
+}
+@media (max-width: 1400px) {
+  .benefints__image-2 {
+    bottom: -25%;
+  }
+}
+@media (max-width: 991px) {
+  .benefints__image-2 {
+    width: 321px;
+    height: 302px;
+    bottom: -20%;
+  }
+}
+@media (max-width: 600px) {
+  .benefints__image-2 {
+    width: 221px;
+    height: 202px;
+    bottom: -10%;
+  }
+}
+.benefints__image-2 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+}
+.benefints__circle {
+  position: absolute;
+  top: -50%;
+  right: 0;
+  width: 600px;
+  /* height: 1200px; */
+  z-index: 1;
+}
+/* @media (max-width: 991px) {
+  .benefints__circle {
+    width: 400px;
+  }
+}
+@media (max-width: 600px) {
+  .benefints__circle {
+    width: 250px;
+  }
+} */
+.benefints__circle img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+}

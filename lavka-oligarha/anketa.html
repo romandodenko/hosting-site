@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./img/favicon.png">
+  <link rel="preload" href="./fonts/DaysOne-Regular.woff" as="font">
+  <link rel="preload" href="./fonts/DaysOne-Regular.woff2" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-Bold.woff" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-Bold.woff2" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-SemiBold.woff" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-SemiBold.woff2" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-Regular.woff" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-Regular.woff2" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-Regular-Italic.woff" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-Regular-Italic.woff2" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-Light.woff" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-Light.woff2" as="font">
+  <link rel="stylesheet" href="./resources/swiper/swiper.css">
+  <link rel="stylesheet" href="./resources/custom-scroll/simplebar.css">
+  <link rel="stylesheet" href="./css/main-min.css">
+  <title>Лавка олигарха</title>
+</head>
+
+<body>
+  <div class="page">
+    <header class="header">
+      <div class="header__container container">
+        <button class="header__burger burger">
+          <span class="burger__line"></span>
+        </button>
+        <div class="header__menu">
+          <nav class="header__nav nav">
+            <ul class="nav__list">
+              <li class="nav__item nav__item_blue accordion-clicker">
+                <a class="nav__link" href="#!">
+                  О системе
+                  <svg width="10" height="8">
+                    <use xlink:href="./img/svg/sprites.svg#arrow"></use>
+                  </svg>
+                </a>
+                <div class="nav__accordion-content">
+                  <a class="nav__accordion-link" href="#!">
+                    Договоры
+                  </a>
+                  <a class="nav__accordion-link" href="news.html">
+                    Новости
+                  </a>
+                  <a class="nav__accordion-link" href="#!">
+                    Контакты
+                  </a>
+                </div>
+              </li>
+
+              <li class="nav__item nav__item_purple">
+                <a class="nav__link" href="partners.html">
+                  Партнерская программа
+                </a>
+              </li>
+              <li class="nav__item nav__item_green">
+                <a class="nav__link" href="bonuses-and-promotions.html">
+                  Бонусы и акции
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__wrapper-logo header__wrapper-logo_menu">
+            <img src="./img/background-mini.svg" alt="Задний фон">
+            <a class="header__logo" href="index.html">
+              <img src="./img/svg/logotip.svg" alt="Логотип сайта">
+            </a>
+          </div>
+          <nav class="header__nav nav">
+            <ul class="nav__list">
+              <li class="nav__item nav__item_grey">
+                <a class="nav__link" href="faq.html">
+                  FAQ / Помощь
+                </a>
+              </li>
+              <li class="nav__item nav__item_gold">
+                <a class="nav__link" href="#!">
+                  Конструктор документов
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__help">
+            <a class="header__help-link" href="#!">
+              <span><img src="./img/icon/help.svg" alt="Иконка"></span>
+              Техподдержка
+            </a>
+            <img class="header__help-background" src="./img/background-big.svg" alt="Задний фон">
+          </div>
+        </div>
+        <div class="header__wrapper-logo">
+          <img src="./img/background-mini.svg" alt="Задний фон">
+          <a class="header__logo" href="index.html">
+            <img src="./img/svg/logotip.svg" alt="Логотип сайта">
+          </a>
+        </div>
+        <a class="header__log" href="#!">
+          Войти
+        </a>
+      </div>
+    </header>
+    <main>
+      <section class="anketa">
+        <div class="container">
+          <div class="anketa__content">
+           <div class="anketa__top">
+            <div class="anketa__top-item">
+              <h1 class="anketa__title">
+                Анкета пользователя
+              </h1>
+              <div class="anketa__num">
+                <div class="anketa__num-item anketa__num-item_active">
+                  <div class="anketa__num-wrapper">
+                    <p class="anketa__num-num">
+                     1
+                    </p>
+                  </div>
+                </div>
+                <div class="anketa__num-item">
+                  <div class="anketa__num-wrapper">
+                    <p class="anketa__num-num">
+                     2
+                    </p>
+                  </div>
+                </div>
+                <div class="anketa__num-item">
+                  <div class="anketa__num-wrapper">
+                    <p class="anketa__num-num">
+                     3
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+           </div>
+          <div class="anketa__wrapper-body">
+            <div class="anketa__body">
+              <form class="anketa__form" action="#!">
+                <div class="anketa__form-item">
+                  <div class="anketa__form-part">
+                    <strong class="anketa__strong">
+                      Основные данные
+                    </strong>
+                    <div class="anketa__row">
+                      <div class="anketa__item">
+                        <span class="anketa__span">
+                          ФИО
+                        </span>
+                        <input class="anketa__input" type="text" name="i" placeholder="ФИО">
+                      </div>
+                      <div class="anketa__item">
+                        <span class="anketa__span">
+                          Электронная почта
+                        </span>
+                        <input class="anketa__input" type="text" name="i" placeholder="khlkhkhsdfgdgggh@mail.ru">
+                      </div>
+                    </div>
+                    <div class="anketa__row">
+                      <div class="anketa__item">
+                        <span class="anketa__span">
+                          Номер телефона
+                        </span>
+                        <input data-tel-input class="anketa__input anketa__input_2" type="tel" name="i" placeholder="+7(565) 454 4564">
+                      </div>
+    
+                      <div class="anketa__row-right">
+                        <div class="anketa__item anketa__item_2">
+                          <span class="anketa__span">
+                            Домашний телефон
+                          </span>
+                          <input data-tel-input class="anketa__input anketa__input_3" type="tel" name="i" placeholder="+7(565) 454 4564">
+                        </div>
+                        <div class="anketa__item anketa__item_2">
+                          <span class="anketa__span">
+                            Дата рождения
+                          </span>
+                          <input class="anketa__input anketa__input_4" type="number" name="i" placeholder="15.01.1998">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="anketa__row">
+                      <div class="anketa__item">
+                        <span class="anketa__span">
+                          Место рождения
+                        </span>
+                        <input class="anketa__input" type="text" name="i" placeholder="г. Москва">
+                      </div>
+                      <div class="anketa__row-right anketa__row-right_2">
+                        <div class="anketa__item anketa__item_2 anketa__item">
+                          <span class="anketa__span">
+                            Пол
+                          </span>
+                            <select class="anketa__select select-2" name="i">
+                              <option value="i">
+                                  Женский
+                              </option>
+                              <option value="i">
+                                Мужской
+                              </option>
+                            </select>
+                            <select class="anketa__select select-9" name="i">
+                              <option value="i">
+                                  Женский
+                              </option>
+                              <option value="i">
+                                Мужской
+                              </option>
+                            </select>
+                            <select class="anketa__select select-10" name="i">
+                              <option value="i">
+                                  Женский
+                              </option>
+                              <option value="i">
+                                Мужской
+                              </option>
+                            </select>
+                        </div>
+                        <div class="anketa__item anketa__item_2">
+                          <span class="anketa__span">
+                            <span>Количество иждевенцев</span>
+                            <span>Кол-во иждевенцев</span>
+                          </span>
+                          <select class="anketa__select select-3" name="i">
+                            <option value="i">
+                                0
+                            </option>
+                            <option value="i">
+                              1
+                            </option>
+                            <option value="i">
+                              3
+                            </option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="anketa__row">
+                        <div class="anketa__item">
+                          <span class="anketa__span">
+                            Образование
+                          </span>
+                            <select class="anketa__select select-4" name="i">
+                              <option value="i">
+                                Высшее профессиональное
+                              </option>
+                              <option value="i">
+                                Высшее профессиональное
+                              </option>
+                            </select>
+                        </div>
+                        <div class="anketa__item">
+                          <span class="anketa__span">
+                            Семейное положение
+                          </span>
+                          <select class="anketa__select select-5" name="i">
+                            <option value="i">
+                              Замужем
+                            </option>
+                            <option value="i">
+                              Холост
+                            </option>
+                          </select>
+                        </div>
+            
+                    </div>
+                  </div>
+                  <div class="anketa__form-part">
+                    <strong class="anketa__strong">
+                      Паспорт
+                    </strong>
+                    <div class="anketa__row">
+                    <div class="anketa__row-l">
+                      <div class="anketa__item">
+                        <span class="anketa__span">
+                          Серия паспорта
+                        </span>
+                        <input class="anketa__input anketa-input-a" type="number" name="i" placeholder="00">
+                      </div>
+                      <div class="anketa__item">
+                        <span class="anketa__span">
+                          Номер паспорта
+                        </span>
+                        <input class="anketa__input anketa-input-s" type="number" name="i" placeholder="00">
+                      </div>
+                    </div>
+                    <div class="anketa__row-r">
+                      <div class="anketa__item">
+                        <span class="anketa__span">
+                          Код подразделения
+                        </span>
+                        <input class="anketa__input anketa-input-d" type="number" name="i" placeholder="00">
+                      </div>
+                    </div>
+                    </div>
+                    <div class="anketa__row">
+                      <div class="anketa__item" data-da=".anketa__row-r, 726, last">
+                        <span class="anketa__span">
+                          Дата выдачи
+                        </span>
+                        <input class="anketa__input anketa-input-q" type="number" name="i" placeholder="00">
+                      </div>
+                      <div class="anketa__item">
+                        <span class="anketa__span">
+                          Кем выдан
+                        </span>
+                        <input class="anketa__input anketa-input-w" type="number" name="i" placeholder="00">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="anketa__links">
+                    <a class="anketa__link" href="#!">
+                      Далее
+                    </a>
+                    <a class="anketa__link anketa__link_2" href="#!">
+                      Отменить
+                    </a>
+                  </div>
+                </div>
+                <div class="anketa__form-item">
+                  <div class="anketa__form-part">
+                    <strong class="anketa__strong">
+                      Заграничный паспорт 
+                    </strong>
+                    <div class="anketa__row">
+                      <div class="anketa-l">
+                        <div class="anketa__item">
+                          <span class="anketa__span">
+                            Серия паспорта
+                          </span>
+                          <input class="anketa__input input1" type="number" name="i" placeholder="00">
+                        </div>
+                        <div class="anketa__item">
+                          <span class="anketa__span">
+                            Номер паспорта
+                          </span>
+                          <input class="anketa__input input2" type="number" name="i" placeholder="00">
+                        </div>
+                      </div>
+                      <div class="anketa__item">
+                        <span class="anketa__span">
+                          Дата выдачи
+                        </span>
+                        <input class="anketa__input input3" type="text" name="i" placeholder="15.01.1998">
+                      </div>
+                    </div>
+                    <div class="anketa__row">
+                      <div class="anketa__item item4">
+                        <span class="anketa__span">
+                          Кем выдан
+                        </span>
+                        <input class="anketa__input input4" type="text" name="i" placeholder="Кем выдан">
+                      </div>
+                    </div>
+
+
+                  </div>
+                  <div class="anketa__form-part">
+                    <strong class="anketa__strong">
+                      Адрес регистрации
+                    </strong>
+                    <div class="anketa__row">
+                      <div class="anketa__item">
+                        <span class="anketa__span">
+                          Индекс
+                        </span>
+                        <input class="anketa__input input5" type="number" name="i" placeholder="00">
+                      </div>
+                      <div class="anketa__item">
+                        <span class="anketa__span">
+                          Область
+                        </span>
+                        <input class="anketa__input input6" type="text" name="i" placeholder="Область">
+                      </div>
+                    </div>
+                    <div class="anketa__row">
+                      <div class="anketa__item">
+                        <span class="anketa__span">
+                          Город/ Населенный пункт/ Деревня
+                        </span>
+                        <input class="anketa__input" type="text" name="i" placeholder="Москва">
+                      </div>
+                      <div class="anketa__item">
+                        <span class="anketa__span">
+                          Улица
+                        </span>
+                        <input class="anketa__input" type="text" name="i" placeholder="Советская">
+                      </div>
+                    </div>
+                    <div class="anketa__row row-dynamic">
+                      <div class="anketa__item anketa__item_2">
+                        <span class="anketa__span">
+                          Номер дома
+                        </span>
+                        <input class="anketa__input input7" type="number" name="i" placeholder="00">
+                      </div>
+                      <div class="anketa__item anketa__item_2">
+                        <span class="anketa__span">
+                          Корпус
+                        </span>
+                        <input class="anketa__input input7" type="number" name="i" placeholder="00">
+                      </div>
+                      <div class="anketa__item anketa__item_2">
+                        <span class="anketa__span">
+                          Квартира
+                        </span>
+                        <input class="anketa__input input7" type="number" name="i" placeholder="00">
+                      </div>
+                      <div class="anketa__item anketa__item_2" data-da=".select-wrapper, 991, first">
+                        <span class="anketa__span">
+                          Частный дом
+                        </span>
+                        <select class="anketa__select select-6" name="i">
+                          <option value="i">
+                              Нет
+                          </option>
+                          <option value="i">
+                            Да
+                          </option>
+                          <option value="i">
+                            Секр
+                          </option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="anketa__row">
+                      <div class="anketa__item select-wrapper" data-da=".row-dynamic, 600, last"></div>
+                      <div class="anketa__item">
+                        <span class="anketa__span">
+                          Период регистрации
+                        </span>
+                        <select class="anketa__select select-7" name="i">
+                          <option value="i">
+                            Свыше 5 лет
+                          </option>
+                          <option value="i">
+                            Свыше 4 лет
+                          </option>
+                          <option value="i">
+                            Свыше 3 лет
+                          </option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="anketa__row anketa__row_2">
+                      <strong class="anketa__strong anketa__strong_2">
+                        Адрес фактического проживания
+                      </strong>
+                    <div class="anketa__inner-checkbox">
+                      <p class="anketa__inner-text">Совпадает с адресом регистрации</p>
+                      <div class="anketa__wrapper-checkbox">
+                        <input class="anketa__checkbox" type="checkbox" name="i">
+                        <div class="anketa__circle-wrapper">
+                          <span class="anketa__circle"></span>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="anketa__links">
+                    <a class="anketa__link" href="#!">
+                      Далее
+                    </a>
+                    <a class="anketa__link anketa__link_2" href="#!">
+                      Отменить
+                    </a>
+                  </div>
+                </div>
+                <div class="anketa__form-item">
+                  <div class="anketa__form-part">
+                  <div class="anketa__row anketa__row_2 anketa-row-align">
+                    <strong class="anketa__strong anketa__strong_2">
+                      Сведения о работе
+                    </strong>
+                  <div class="anketa__inner-checkbox">
+                    <p class="anketa__inner-text">Временно не трудоустроен</p>
+                    <div class="anketa__wrapper-checkbox">
+                      <input class="anketa__checkbox" type="checkbox" name="i">
+                      <div class="anketa__circle-wrapper">
+                        <span class="anketa__circle"></span>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="anketa__row">
+                    <div class="anketa__item">
+                      <span class="anketa__span">
+                        Вид занятости
+                      </span>
+                      <select class="anketa__select select-8" name="i">
+                        <option value="i">
+                          Полная
+                        </option>
+                        <option value="i">
+                          Полная
+                        </option>
+                        <option value="i">
+                          Полная
+                        </option>
+                      </select>
+                    </div>
+                    <div class="anketa__item">
+                      <span class="anketa__span">
+                        Наименование организации
+                      </span>
+                      <input class="anketa__input" type="text" name="i" placeholder="Организация">
+                    </div>
+                  </div>
+                  <div class="anketa__row">
+                    <div class="anketa__item">
+                      <span class="anketa__span">
+                        Организационно- правовая форма
+                      </span>
+                      <input class="anketa__input" type="text" name="i" placeholder="Организация">
+                    </div>
+                    <div class="anketa__item">
+                      <span class="anketa__span">
+                        Должность
+                      </span>
+                      <input class="anketa__input" type="text" name="i" placeholder="Разработчик">
+                    </div>
+                  </div>
+                  <div class="anketa__row">
+                    <div class="anketa__item">
+                      <span class="anketa__span">
+                        ОГРН
+                      </span>
+                      <input class="anketa__input input5" type="number" name="i" placeholder="00">
+                    </div>
+                    <div class="anketa__item">
+                      <span class="anketa__span">
+                        Адрес
+                      </span>
+                      <input class="anketa__input input6" type="text" name="i" placeholder="Советская">
+                    </div>
+                  </div>
+                  <div class="anketa__row">
+                    <div class="anketa__item">
+                      <span class="anketa__span">
+                        Телефон
+                      </span>
+                      <input class="anketa__input input5" type="tel" name="i" placeholder="+7(565) 454 4564">
+                    </div>
+                    <div class="anketa__item">
+                      <span class="anketa__span">
+                        Среднемесячный доход
+                      </span>
+                      <input class="anketa__input input5" type="number" name="i" placeholder="00">
+                    </div>
+                    <div class="anketa__item">
+                      <span class="anketa__span">
+                        Срок работы в организации
+                      </span>
+                      <input class="anketa__input input5" type="text" name="i" placeholder="Срок">
+                    </div>
+                  </div>
+                  <div class="anketa__row">
+                    <div class="anketa__item anketa__item_3">
+                      <span class="anketa__span">
+                        ФИО директора
+                      </span>
+                      <input class="anketa__input input8" type="text" name="i" placeholder="ФИО директора">
+                    </div>
+                  </div>
+                  </div>
+                  <div class="anketa__form-part">
+                    <strong class="anketa__strong">
+                      Дополнительные сведения
+                    </strong>
+                    <div class="anketa__row anketa__row_3">
+                    <div class="anketa__inner-checkbox">
+                      <p class="anketa__inner-text">Есть автомобиль</p>
+                      <div class="anketa__wrapper-checkbox">
+                        <input class="anketa__checkbox anketa-checkbox-auto" type="checkbox" name="i">
+                        <div class="anketa__circle-wrapper">
+                          <span class="anketa__circle"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="anketa__item">
+                      <span class="anketa__span">
+                        Марка, Модель 
+                      </span>
+                      <input class="anketa__input input6 input-auto" type="text" name="i" placeholder="-">
+                    </div>
+                    </div>
+                    <div class="anketa__row">
+                      <div class="anketa__item">
+                        <span class="anketa__span">
+                          ИНН
+                        </span>
+                        <input class="anketa__input" type="number" name="i" placeholder="00">
+                      </div>
+                      <div class="anketa__item">
+                        <span class="anketa__span">
+                          СНИЛС
+                        </span>
+                        <input class="anketa__input" type="number" name="i" placeholder="00">
+                      </div>
+                      </div>
+                      <div class="anketa__row">
+                        <div class="anketa__item anketa__item_3">
+                          <span class="anketa__span">
+                            Являетесь ли собственником недвижимости ? 
+                          </span>
+                          <textarea class="anketa__textarea" name="i"></textarea>
+                        </div>
+                        </div>
+                  </div>
+                  <div class="anketa__form-part">
+                    <strong class="anketa__strong">
+                      Контактное лицо
+                    </strong>
+                    <div class="anketa__row">
+                      <div class="anketa__item">
+                        <span class="anketa__span">
+                          ФИО
+                        </span>
+                        <input class="anketa__input" type="text" name="i" placeholder="ФИО">
+                      </div>
+                      <div class="anketa__item">
+                        <span class="anketa__span">
+                          Номер телефона
+                        </span>
+                        <input class="anketa__input" type="tel" name="i" placeholder="+7(565) 454 4564">
+                      </div>
+                      </div>
+                  </div>
+                  <div class="anketa__links">
+                    <a class="anketa__link" href="#!">
+                      Сохранить
+                    </a>
+                    <a class="anketa__link anketa__link_2" href="#!">
+                      Отменить
+                    </a>
+                  </div>
+                </div>
+                <div class="anketa__form-item item-okay">
+                  <div class="anketa__okay anketa-okay">
+                    <div class="anketa-okay__body">
+                      <div class="anketa-okay__image">
+                        <picture>
+                          <source media="(min-width: 992px)" srcset="./img/anketa-img.png" type="image/png">
+                          <source media="(min-width: 601px)" srcset="./img/anketa-img_2.png" type="image/png">
+                          <source media="(max-width: 600px)" srcset="./img/anketa-img_3.png" type="image/png">
+                          <img src="./img/anketa-img.png" alt="Картинка">
+                          </picture>
+                      </div>
+                      <div class="anketa-okay__descr">
+                        <strong class="anketa-okay__strong">
+                          Спасибо!
+                        </strong>
+                        <p class="anketa-okay__text">
+                          Ваша анкета отправлена на модерацию
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+             </div>
+          </div>
+          </div>
+        </div>
+      </section>
+ 
+
+    </main>
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__wrapper-logo">
+          <img src="./img/background-change.svg" alt="Задний фон">
+          <a class="footer__logo" href="index.html">
+            <img src="./img/svg/logotip.svg" alt="Логотип сайта">
+          </a>
+        </div>
+        <div class="footer__top">
+          <div class="footer__lists">
+            <ul class="footer__list">
+              <li class="footer__item footer__item_blue footer-accordion-clicker">
+                <a class="footer__link" href="#!">
+                  О системе
+                  <svg width="10" height="8">
+                    <use xlink:href="./img/svg/sprites.svg#arrow"></use>
+                  </svg>
+                </a>
+                <div class="footer__accordion-content">
+                  <a class="footer__accordion-link footer__accordion-link_blue" href="#!">
+                    Договоры
+                  </a>
+                  <a class="footer__accordion-link footer__accordion-link_purple" href="new.html">
+                    Новости
+                  </a>
+                  <a class="footer__accordion-link footer__accordion-link_green" href="#!">
+                    Контакты
+                  </a>
+                </div>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="partners.html">
+                  Партнерская программа
+                </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="bonuses-and-promotions.html">
+                  Бонусы и акции
+                </a>
+              </li>
+            </ul>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="#!">
+                  Конструктор документов
+                </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="faq.html">
+                  Часто задаваемые вопросы
+                </a>
+              </li>
+            </ul>
+
+          </div>
+          <div class="footer__right">
+            <a class="footer__help" href="#!">
+              <img src="./img/icon/help.svg" alt="Иконка">
+              <span class="footer__help-span">Обратиться в техподдержку</span>
+              <span class="footer__help-span footer__help-span_none">Техподдержка</span>
+            </a>
+          </div>
+        </div>
+        <div class="footer__middle">
+          <div class="footer__info">
+            <address class="footer__address">
+              ИНН 7604354453, КПП 760401001, ОГРН 1197627006060, Юридический адрес 150000 г. Москва, ул. Некрасова, дом
+              41, офис 332
+            </address>
+          </div>
+          <ul class="footer__soclist" data-da=".footer__right, 1380, 1">
+            <li class="footer__soclist-item">
+              <a class="footer__soclist-link" href="#!">
+                <svg width="24" height="24">
+                  <use xlink:href="./img/svg/sprites.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__soclist-item">
+              <a class="footer__soclist-link" href="#!">
+                <svg width="24" height="24">
+                  <use xlink:href="./img/svg/sprites.svg#odnoklassniki"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__soclist-item">
+              <a class="footer__soclist-link" href="#!">
+                <svg width="24" height="24">
+                  <use xlink:href="./img/svg/sprites.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__soclist-item">
+              <a class="footer__soclist-link" href="#!">
+                <svg width="24" height="24">
+                  <use xlink:href="./img/svg/sprites.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__text" data-da=".footer__middle, 1380, 1">
+            Данный сайт может содержать информацию о сайтах третьих лиц. Лавка Олигарха не несет ответственности за
+            точность информации, данных, взглядов, советов или заявлений, сделанных на этих сайтах.
+          </p>
+          <strong class="footer__rechten">
+            © 2022 Лавка Олигарха. Все права защищены.
+          </strong>
+          <div class="footer__bottom-right">
+            <a class="footer__privacy" href="#!">
+              Политика конфиденциальности
+            </a>
+            <a class="footer__developer" href="#!">
+              Digital
+              <img src="./img/icon/developer.svg" alt="Иконка разработчика">
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="./resources/custom-scroll/simplebar.js"></script>
+  <script src="./resources/tooltip/popper.min.js"></script>
+  <script src="./resources/tooltip/tippy.js"></script>
+  <script src="./resources/smooth-scroll/smooth-scroll.js"></script>
+  <script src="./resources/swiper/swiper.js"></script>
+  <script src="./resources/choices/choices.js"></script>
+  <script src="./js/main.min.js"></script>
+</body>
+
+</html>

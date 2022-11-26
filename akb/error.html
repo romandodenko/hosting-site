@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./img/favicon.png">
+  <link rel="preload" href="./fonts/Roboto-Bold.woff" as="font">
+  <link rel="preload" href="./fonts/Roboto-Bold.woff2" as="font">
+  <link rel="preload" href="./fonts/Roboto-Medium.woff" as="font">
+  <link rel="preload" href="./fonts/Roboto-Medium.woff2" as="font">
+  <link rel="preload" href="./fonts/Roboto-Regular.woff" as="font">
+  <link rel="preload" href="./fonts/Roboto-Regular.woff2" as="font">
+  <link rel="preload" href="./fonts/SpaceGrotesk-Bold.woff" as="font">
+  <link rel="preload" href="./fonts/SpaceGrotesk-Bold.woff2" as="font">
+  <link rel="stylesheet" href="./resources/custom-scroll/simplebar.css">
+  <link rel="stylesheet" href="./css/main-min.css">
+  <title>AKB - интернет магазин</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__top">
+      <div class="header__container container header-top-container">
+        <div class="header__geo-wrapper">
+          <p class="header__geo-text">
+            <svg width="16" height="16">
+              <use xlink:href="./img/svg/sprites.svg#geo"></use>
+            </svg>
+            Санкт-Петербург
+          </p>
+        </div>
+        <p class="header__orders">
+          Приём заказов по телефону с 8:00 до 22:00.
+        </p>
+      </div>
+    </div>
+    <div class="header__middle">
+      <div class="header__container container header-container-middle header-container-middle-error">
+        <div class="header__middle-left">
+          <div class="header__wrapper-logo">
+            <a class="header__logo" href="index.html">
+              <img src="./img/svg/logo.svg" alt="Логотип">
+            </a>
+          </div>
+          <div class="header__wrapper-menu header-wrapper-menu">
+            <div class="header-wrapper-menu__top-black"></div>
+            <div class="header-wrapper-menu__top">
+              <div class="header-wrapper-menu__wrapper-logo">
+                <a class="header-wrapper-menu__logo" href="index.html">
+                  <img src="./img/svg/logo.svg" alt="">
+                </a>
+              </div>
+              <button class="header-wrapper-menu__exit"></button>
+              <button class="header-wrapper-menu__call popup-init-call">
+                <svg width="20" height="20">
+                  <use xlink:href="./img/svg/sprites.svg#phone-header_2"></use>
+                </svg>
+              </button>
+            </div>
+            <nav class="header-wrapper-menu__nav nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a class="nav__link" href="index.html">
+                    Главная
+                  </a>
+                </li>
+                <li class="nav__item nav-hidden-item">
+                  <a class="nav__link" href="catalog.html">
+                    Каталог товаров
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="assortment.html">
+                    Подбор по Авто
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="offer.html">
+                    Коммерческое предложение
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="contacts.html">
+                    Контакты
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header-wrapper-menu__links">
+              <button class="header-wrapper-menu__order">
+                Заказать звонок
+              </button>
+              <a class="header-wrapper-menu__whats-app" href="#">Whatsapp</a>
+            </div>
+            <div class="header-wrapper-menu__bottom">
+              <div class="header-wrapper-menu__info">
+                <p class="header-wrapper-menu__geo">
+                  <svg width="16" height="16">
+                    <use xlink:href="./img/svg/sprites.svg#geo"></use>
+                  </svg>
+                  Санкт-Петербург
+                </p>
+                <div class="header-wrapper-menu__wrapper-phone">
+                  <a class="header-wrapper-menu__phone" href="tel:+79657501317">
+                    <svg width="24" height="24">
+                      <use xlink:href="./img/svg/sprites.svg#phone-header"></use>
+                    </svg>
+                    +7 (965) 750-13-17
+                  </a>
+                </div>
+                <div class="header-wrapper-menu__wrapper-mail">
+                  <a class="header-wrapper-menu__mail" href="mailto:shjfkmfbsnlfdknl@mail.ru">
+                    <svg width="24" height="24">
+                      <use xlink:href="./img/svg/sprites.svg#mail"></use>
+                    </svg>
+                    shjfkmfbsnlfdknl@mail.ru
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="header-wrapper-menu__footer">
+              <p class="header-wrapper-menu__footer-text">
+                <span>Z</span>amena-<span>Akb</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <button class="header__call popup-init-call" data-da=".header__bottom-right, 767, 1">
+          <svg width="24" height="24">
+            <use xlink:href="./img/svg/sprites.svg#phone-header"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="header__bottom header-error-bottom">
+      <div class="header__container container">
+        <div class="header__catalog-wrapper error-catalog-wrapper">
+          <a class="header__catalog-link" href="catalog.html">
+            Каталог товаров
+          </a>
+        </div>
+        <div class="header__bottom-middle">
+          <button class="header__burger burger">
+            <span class="burger__line"></span>
+          </button>
+          <div class="header__search search">
+            <form class="search__form" action="#">
+              <div class="search__label">
+                <input class="search__input" type="text" placeholder="Автомобильные аккумуляторы">
+                <button class="search__button">
+                  <svg width="20" height="21">
+                    <use xlink:href="./img/svg/sprites.svg#loup"></use>
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="header__bottom-right">
+          <div class="header__wrapper-tel" data-da=".header-top-container, 1110, 2">
+            <a class="header__tel" href="tel:+79657501317">
+              +7 (965) 750-13-17
+            </a>
+          </div>
+          <button class="header__order popup-init-call">
+            Заказать звонок
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="error-page">
+      <div class="error-page__container container">
+          <div class="error-page__image">
+            <img src="./img/error.png" alt="Ошибка">
+          </div>
+          <p class="error-page__page-nofound">
+            Страница не найдена
+          </p>
+          <p class="error-page__text">
+            Страница, на которую вы пытаетесь попасть, не существует или была удалена.
+          </p>
+          <p class="error-page__text">
+            Перейдите на<a href="index.html">Главную страницу</a>
+          </p>
+      </div>
+    </section>
+  </main>
+  <div class="popup-call">
+  <div class="popup-call__close"></div>
+  <div class="popup-call__body">
+    <div class="popup-call__body-left">
+      <div class="popup-call__image">
+        <img src="./img/popup/popup-zvonok.png" alt="Картинка">
+      </div>
+    </div>
+    <div class="popup-call__body-right">
+    <div class="popup-call__item-form">
+        <h3 class="popup-call__title">
+          Заказать звонок
+        </h3>
+        <form action="#" class="popup-call__form">
+          <div class="popup-call__wrapper-input">
+            <input class="popup-call__input" type="text" placeholder="Имя" required>
+          </div>
+          <div class="popup-call__wrapper-input">
+            <input class="popup-call__input" type="tel" placeholder="Номер телефона" data-tel-input required>
+          </div>
+          <div class="popup-call__wrapper-button">
+            <button class="popup-call__button">
+              Отправить
+            </button>
+          </div>
+        </form>
+        <p class="popup-call__warning">
+          Нажимая на кнопку “Отправить”, вы даете <span>согласие на обработку персональных данных</span>
+      </p>
+      <p class="popup-call__error">
+        Введены неверные данные
+      </p>
+    </div>
+    <div class="popup-call__okay">
+      <div class="popup-call__icon">
+        <img src="./img/popup/popup-okay.png" alt="Картинка">
+      </div>
+      <p class="popup-call__thanks">
+        Спасибо!
+      </p>
+      <p class="popup-call__text">
+        Ваша заявка принята!
+      </p>
+      <p class="popup-call__text popup-call__text_light">
+        В ближайшее время наш менеджер свяжется с вами 
+      </p>
+    </div>
+  </div>
+  <button class="popup-call__exit"></button>
+  </div>
+  </div>
+  <button class="button-fixed popup-init-call">
+    <img src="./img/popup/button-call.png" alt="Картинка">
+  </button>
+  <script src="./js/main.min.js"></script>
+</body>
+
+</html>

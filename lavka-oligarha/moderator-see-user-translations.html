@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./img/favicon.png">
+  <link rel="preload" href="./fonts/DaysOne-Regular.woff" as="font">
+  <link rel="preload" href="./fonts/DaysOne-Regular.woff2" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-Bold.woff" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-Bold.woff2" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-SemiBold.woff" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-SemiBold.woff2" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-Regular.woff" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-Regular.woff2" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-Regular-Italic.woff" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-Regular-Italic.woff2" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-Light.woff" as="font">
+  <link rel="preload" href="./fonts/NunitoSans-Light.woff2" as="font">
+  <link rel="stylesheet" href="./resources/swiper/swiper.css">
+  <link rel="stylesheet" href="./resources/custom-scroll/simplebar.css">
+  <link rel="stylesheet" href="./css/main-min.css">
+  <title>Лавка олигарха</title>
+</head>
+
+<body>
+  <div class="page">
+    <header class="header">
+      <div class="header__container header__container_log container">
+        <button class="header__burger burger burger_log">
+          <span class="burger__line"></span>
+        </button>
+        <div class="header__menu header__menu_log">
+          <nav class="header__nav nav nav_log">
+            <ul class="nav__list">
+              <li class="nav__item nav__item_blue accordion-clicker">
+                <a class="nav__link" href="#!">
+                  О системе
+                  <svg width="10" height="8">
+                    <use xlink:href="./img/svg/sprites.svg#arrow"></use>
+                  </svg>
+                </a>
+                <div class="nav__accordion-content">
+                  <a class="nav__accordion-link" href="#!">
+                    Договоры
+                  </a>
+                  <a class="nav__accordion-link" href="news.html">
+                    Новости
+                  </a>
+                  <a class="nav__accordion-link" href="#!">
+                    Контакты
+                  </a>
+                </div>
+              </li>
+
+              <li class="nav__item nav__item_purple">
+                <a class="nav__link" href="partners.html">
+                  Партнерская программа
+                </a>
+              </li>
+              <li class="nav__item nav__item_green">
+                <a class="nav__link" href="bonuses-and-promotions.html">
+                  Бонусы и акции
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__wrapper-logo header__wrapper-logo_margin header__wrapper-logo_menu header__wrapper-logo_log-none">
+            <img src="./img/background-mini.svg" alt="Задний фон">
+            <a class="header__logo" href="index.html">
+              <img src="./img/svg/logotip.svg" alt="Логотип сайта">
+            </a>
+          </div>
+          <nav class="header__nav nav nav_log">
+            <ul class="nav__list">
+              <li class="nav__item nav__item_grey">
+                <a class="nav__link" href="faq.html">
+                  FAQ / Помощь
+                </a>
+              </li>
+              <li class="nav__item nav__item_gold">
+                <a class="nav__link" href="#!">
+                  Конструктор документов
+                </a>
+              </li>
+            </ul>
+          </nav>
+         <div class="header__help header__help_margin">
+          <a class="header__help-link" href="#!">
+            <span><img src="./img/icon/help.svg" alt="Иконка"></span>
+            Техподдержка
+          </a>
+          <img class="header__help-background" src="./img/background-big.svg" alt="Задний фон">
+         </div>
+        </div>
+        <div class="header__wrapper-logo header__wrapper-logo_margin header__wrapper-logo_log">
+          <img src="./img/background-mini.svg" alt="Задний фон">
+          <a class="header__logo" href="index.html">
+            <img src="./img/svg/logotip.svg" alt="Логотип сайта">
+          </a>
+        </div>
+        <div class="header__profile profile">
+          <div class="profile__items" data-da=".profile-menu, 760, 0">
+            <div class="profile__item">
+              <span class="profile__icon">
+                <a href="#!">
+                  <img src="./img/icon/kybok.svg" alt="Иконка">
+                  <span class="profile__value">
+                    12
+                  </span>
+                </a>
+              </span>
+            </div>
+            <div class="profile__item">
+              <span class="profile__icon">
+                <a href="#!">
+                  <img src="./img/icon/almaz.svg" alt="Иконка">
+                  <span class="profile__value profile__value_left">
+                    17
+                  </span>
+                </a>
+  
+              </span>
+            </div>
+            <div class="profile__item">
+              <span class="profile__icon">
+                <a href="#!">
+                  <img src="./img/icon/kolokolchik.svg" alt="Иконка">
+                </a>
+              </span>
+              <span class="profile__value  profile__value_change profile__value_change-background">
+                14
+              </span>
+            </div>
+            <div class="profile__item">
+              <span class="profile__icon">
+                <a href="#!">
+                  <img src="./img/icon/mail.svg" alt="Иконка">
+                </a>
+              </span>
+              <span class="profile__value profile__value_change">
+                1454
+              </span>
+            </div>
+          </div>
+          <div class="profile__avatar">
+            <button class="profile__btn">
+              <img src="./img/icon/avatar-mini.png" alt="Аватар">
+            </button>
+            <span class="profile__arrow">
+              <img src="./img/icon/arrow-cabinet.svg" alt="Иконка">
+            </span>
+          </div>
+          <a class="profile__exit" href="#!">
+            <img src="./img/icon/log-out.svg" alt="Иконка">
+          </a>
+          <div class="profile__menu profile-menu">
+            <ul class="profile-menu__list">
+              <li class="profile-menu__item">
+                <button class="profile-menu__button profile-menu__button_blue">
+                  Правила и договоры
+                  <svg width="10" height="8">
+                    <use xlink:href="./img/svg/sprites.svg#arrow"></use>
+                  </svg>
+                </button>
+                <div class="profile-menu__accordion-content">
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Оказание информационных услуг
+                  </a>
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Правила пользования Порталом
+                  </a>
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Тарифы
+                  </a>
+                </div>
+              </li>
+              <li class="profile-menu__item">
+                <button class="profile-menu__button profile-menu__button_purple">
+                  Общее
+                  <svg width="10" height="8">
+                    <use xlink:href="./img/svg/sprites.svg#arrow"></use>
+                  </svg>
+                </button>
+                <div class="profile-menu__accordion-content">
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Личные данные
+                  </a>
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Настройки
+                  </a>
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Стоп-лист
+                  </a>
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Мои бонусы
+                  </a>
+                </div>
+              </li>
+              <li class="profile-menu__item">
+                <button class="profile-menu__button profile-menu__button_green">
+                  Для заёмщика
+                  <svg width="10" height="8">
+                    <use xlink:href="./img/svg/sprites.svg#arrow"></use>
+                  </svg>
+                </button>
+                <div class="profile-menu__accordion-content">
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Опубликовать заявку
+                  </a>
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Мои заявки
+                  </a>
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Полученные займы
+                  </a>
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Избранные заявки
+                  </a>
+                     <a class="profile-menu__accordion-link" href="#!">
+                      Заказ документов по сделкам
+                  </a>
+                </div>
+              </li>
+              <li class="profile-menu__item">
+                <button class="profile-menu__button profile-menu__button_gold">
+                  Для кредитора
+                  <svg width="10" height="8">
+                    <use xlink:href="./img/svg/sprites.svg#arrow"></use>
+                  </svg>
+                </button>
+                <div class="profile-menu__accordion-content">
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Опубликовать предложение
+                  </a>
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Мои предложения
+                  </a>
+                  <a class="profile-menu__accordion-link" href="user-cabinet-my-trades-issued-loans.html">
+                    Выданные займы
+                  </a>
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Избранные заявки
+                  </a>
+                  <a class="profile-menu__accordion-link" href="#!">
+                    Заказ документов по сделкам
+                  </a>
+                </div>
+              </li>
+            </ul>
+            <div class="header__help header__help_margin">
+              <a class="header__help-link" href="#!">
+                <span><img src="./img/icon/help.svg" alt="Иконка"></span>
+                Техподдержка
+              </a>
+              <img class="header__help-background" src="./img/background-big.svg" alt="Задний фон">
+             </div>
+          </div>
+        </div>
+      </div>
+
+    </header>
+    <main>
+      <section class="pages">
+        <div class="container">
+          <div class="pages__content pages__content_cabinet">
+            <ul class="pages__list">
+              <li class="pages__item">
+                <a class="pages__link" href="index.html">
+                  Главная
+                </a>
+              </li>
+              <li class="pages__item">
+                <a class="pages__link" href="user-cabinet-my-trades.html">
+                  Страница пользователя
+                </a>
+              </li>
+              <li class="pages__item">
+                <a class="pages__link" href="user-cabinet-my-trades.html">
+                  Мои сделки
+                </a>
+              </li>
+              <li class="pages__item">
+                <a class="pages__link" href="user-cabinet-my-trades.html">
+                  Полученные займы
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="cabinet">
+        <div class="container">
+          <div class="cabinet__content cabinet__content_user">
+            <div class="cabinet__user-info user-info user-info_user">
+             <div class="user-info__top user-info__top_user">
+              <div class="user-info__left user-info__left_flex">
+                <div class="user-info__avatar">
+                  <img src="./img/icon/avatar-2.png" alt="Аватар пользователя">
+                </div>
+                <div class="user-info__left-bottom user-info__left-bottom_user">
+                  <div class="user-info__soc user-info-soc-moderator-see user-info__soc_user" data-da=".user-info__right, 1720, last">
+                   <div class="user-info__soc-top">
+                    <p class="user-info__soc-text user-info__soc-text_nomargin">
+                      Я в соцсетях:
+                    </p>
+                   </div>
+                    <ul class="user-info__soc-list user-info__soc-list_user">
+                      <li class="user-info__soc-item">
+                        <a class="user-info__link" href="#!">
+                          <svg width="24" height="24">
+                            <use xlink:href="./img/svg/sprites.svg#instagram"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="user-info__soc-item">
+                        <a class="user-info__link" href="#!">
+                          <svg width="24" height="24">
+                            <use xlink:href="./img/svg/sprites.svg#odnoklassniki"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="user-info__soc-item">
+                        <a class="user-info__link" href="#!">
+                          <svg width="24" height="24">
+                            <use xlink:href="./img/svg/sprites.svg#facebook"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="user-info__soc-item">
+                        <a class="user-info__link" href="#!">
+                          <svg width="24" height="24">
+                            <use xlink:href="./img/svg/sprites.svg#vk"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="oplata-wrapper" data-da=".credit-history, 600, 1"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="user-info__right user-info__right_flex">
+                <div class="user-info__right-top user-info__right-top_margin" data-da=".user-info__left-bottom, 1720, 0">
+                  <div class="user-info__wrapper-name">
+                    <p class="user-info__name">
+                      Константин У.78
+                    </p>
+                    <span class="user-info__icon user-info__icon_z">
+                      <img src="./img/icon/zamochek-o.svg" alt="Иконка замочка">
+                    </span>
+                  </div>
+                  <p class="user-info__registration">Дата регистрации 07 января 2022</p>
+                </div>
+                <div class="user-info__icons user-info__icons_user">
+                  <div class="user-info__wrapper-icon">
+                    <span class="user-info__icon">
+                      <img src="./img/icon/kybok.svg" alt="Иконка рейтинга">
+                      <span class="user-info__value">12</span>
+                    </span>
+                    <p class="user-info__text">
+                      Рейтинг
+                    </p>
+                  </div>
+                  <div class="user-info__wrapper-icon">
+                    <span class="user-info__icon">
+                      <img src="./img/icon/almaz.svg" alt="Иконка доверия">
+                      <span class="user-info__value user-info__value_2">17</span>
+                    </span>
+                    <p class="user-info__text user-info__text_padding">
+                      Уровень доверия
+                    </p>
+                  </div>
+                  <div class="user-info__wrapper-icon">
+                    <span class="user-info__icon">
+                      <img src="./img/icon/kowelek-dark-grey-32.svg" alt="Иконка кошелька">
+                    </span>
+                    <a class="user-info__credit-link" href="credit-history.html">
+                      Кредитная история
+                    </a>
+                  </div>
+                </div>
+              </div>
+             </div>
+            </div>
+            <div class="cabinet__user-interaction cabinet-interaction user-interaction">
+              <div class="user-interaction__top user-interaction__top_user">
+                <div class="user-interaction__top-left user-interaction__top-left_user">
+                  <button class="user-interaction__burger user-burger">
+                    <span></span>
+                  </button>
+                  <div class="user-interaction__wrapper-link w169 wrapper-link-r wrapper-figure-2 user-interaction-link-active">
+                    <a class="user-interaction__link" href="user-cabinet-my-trades.html">Переводы</a>
+                    <div class="fon-img-19">
+                      <img src="./img/112.png" alt="Картинка">
+                      </div>
+                  </div>
+                </div>
+                <div class="user-interaction__wrapper-links wrapper-links user-interaction-wrapper-links-moderator-see">
+                  <div class="user-interaction__links">
+                    <div class="user-interaction__wrapper-link d-wrapper-l">
+                      <a class="user-interaction__link" href="moderator-see-user.html">
+                        Сделки
+                      </a>
+
+                    </div>
+                    <div class="user-interaction__wrapper-link">
+                      <a class="user-interaction__link" href="moderator-see-user.html">
+                        Профиль
+                      </a>
+                    </div>
+                    <div class="user-interaction__wrapper-link">
+                      <a class="user-interaction__link" href="moderator-see-user-messages.html">
+                        Сообщения
+                      </a>
+                    </div>
+                    <div class="user-interaction__wrapper-link">
+                      <a class="user-interaction__link" href="moderator-see-user-document.html">
+                        Документы
+                      </a>
+                    </div>
+                    <div class="user-interaction__wrapper-link wrapper-figure-1 user-interaction-link-active-orange">
+                      <a class="user-interaction__link" href="moderator-see-user-translations.html">
+                        Переводы
+                      </a>
+                      <div class="fon-img-11">
+                        <img src="./img/101.png" alt="">
+                        </div>
+                    </div>
+                    <div class="user-interaction__wrapper-link">
+                      <a class="user-interaction__link" href="moderator-see-user-payment.html">
+                        Оплаты
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="notifications-link notifications-link-moderator-see">
+                  <a class="notifications-link__link" href="notifications.html">
+                  <svg width="20" height="20">
+                  <use xlink:href="./img/svg/sprites.svg#kolokolchik20"></use>
+                  </svg>
+                  </a>
+                  <span class="notifications-link__num">14</span>
+                </div>
+              </div>
+              <div class="user-interaction__inner user-interaction__inner_radius">
+                <div class="user-interaction__inner-body padding">
+                  <div class="user-interaction__credit-history credit-history credit-history-user">
+                    <div class="head moderator-head see-translations margin0">
+                      <div class="head__wrapper-strong">
+                        <span class="head__strong-figure"></span>
+                        <span class="head__strong-span">Переводы</span>
+                      </div>
+                    </div>
+                    <div data-simplebar  class="rows rows_3 margin0">
+                      <div class="rows__top rows__top_4"> 
+                        <p class="rows__text">
+                          Пользователь
+                        </p>
+                        <p class="rows__text rows__text_none-3">
+                          Дата
+                        </p>
+                        <p class="rows__text">
+                          Сумма, руб
+                        </p>
+                        <p class="rows__text rows__text_none-1">
+                          Платежная система
+                        </p>
+                        <p class="rows__text rows__text_none-1">
+                          ID перевода
+                        </p>
+                        <p class="rows__text rows__text_none-2">
+                          Статус
+                        </p>
+                      </div>
+                        <div class="rows__row">
+                          <div class="rows__row-top rows__row-top_4">
+                            <div class="rows__item">
+                              <a class="rows__link"
+                                href="user-cabinet-my-trades-received-loan.html">
+                                Константин У. 78
+                              </a>
+                            </div>
+                            <div class="rows__item rows__item_none-3">
+                              <p class="rows__text rows__text_weight" data-da=".row-1-wrapper-2, 460, 1">
+                                15.01.2022
+                              </p>
+                            </div>
+                            <div class="rows__item">
+                              <p class="rows__text rows__text_weight">
+                                30 000,00
+                              </p>
+                            </div>
+                            <div class="rows__item rows__item_none-1">
+                              <div class="rows__texts" data-da=".row-1-wrapper-1, 991, 1">
+                                <span class="rows__icon">
+                                  <img src="./img/icon/perevod-na-bankovskyu-karty.svg" alt="Иконка">
+                                </span>
+                                <p class="rows__text rows__text_weight">
+                                  Перевод на банковскую карту
+                                </p>
+                              </div>
+                            </div>
+                            <div class="rows__item rows__item_none-1">
+                                <p class="rows__text rows__text_weight" data-da=".row-1-wrapper-3, 991, 1">
+                                  125154465545
+                                </p>
+                            </div>
+                              <div class="rows__item rows__item_flex rows__item_none-2">
+                                <div class="rows__item-buttons" data-da=".row-1-wrapper-4, 650, 1">
+                                <button class="rows__accept link">
+                                  Подтвердить
+                                </button>
+                                <button class="rows__close">
+                                  <img src="./img/icon/close.svg" alt="Иконка">
+                                </button>
+                               </div>
+                            </div>
+                            <button class="rows__button tab-button button-arrow" data-path="item1"
+                              data-path1="item1" data-target1="item1"><span><img src="./img/icon/arrow-dropdown-a.svg"
+                                  alt="Иконка стрелочки"></span></button>
+  
+                          </div>
+                          <!--  -->
+                          <div class="rows__row-bottom tab-content" data-target="item1">
+                            <div class="rows__inner-item rows__inner-item_1">
+                            <div class="rows__wrapper-item rows__wrapper-item_1 row-1-wrapper-1">
+                              <p class="rows__text">Платежная система</p>
+                            </div>
+                            <div class="rows__wrapper-item rows__wrapper-item_width rows__wrapper-item_4 row-1-wrapper-4">
+             
+                            </div>
+                            </div>
+                            <div class="rows__inner-item rows__inner-item_2">
+                              <div class="rows__wrapper-item rows__wrapper-item_2 row-1-wrapper-2">
+                              <p class="rows__text">Дата</p>
+                             </div>
+                             <div class="rows__wrapper-item rows__wrapper-item_3 row-1-wrapper-3">
+                              <p class="rows__text">ID перевода</p>
+                             </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="rows__row">
+                          <div class="rows__row-top rows__row-top_4">
+                            <div class="rows__item">
+                              <a class="rows__link"
+                                href="user-cabinet-my-trades-received-loan.html">
+                                Константин У. 78
+                              </a>
+                            </div>
+                            <div class="rows__item rows__item_none-3">
+                              <p class="rows__text rows__text_weight" data-da=".row-2-wrapper-2, 460, 1">
+                                15.01.2022
+                              </p>
+                            </div>
+                            <div class="rows__item">
+                              <p class="rows__text rows__text_weight">
+                                30 000,00
+                              </p>
+                            </div>
+                            <div class="rows__item rows__item_none-1">
+                              <div class="rows__texts" data-da=".row-2-wrapper-1, 991, 1">
+                                <span class="rows__icon">
+                                  <img src="./img/icon/bankovskiy-schet.svg" alt="Иконка">
+                                </span>
+                                <p class="rows__text rows__text_weight">
+                                  Банковский счет
+                                </p>
+                              </div>
+                            </div>
+                            <div class="rows__item rows__item_none-1">
+                                <p class="rows__text rows__text_weight" data-da=".row-2-wrapper-3, 991, 1">
+                                  125154465545
+                                </p>
+                            </div>
+                            <div class="rows__item rows__item_flex rows__item_none-2">
+                              <div class="rows__item-buttons" data-da=".row-2-wrapper-4, 650, 1">
+                                <button class="rows__accept link">
+                                  Подтвердить
+                                </button>
+                                <button class="rows__close">
+                                  <img src="./img/icon/close.svg" alt="Иконка">
+                                </button>
+                               </div>
+                            </div>
+                            <button class="rows__button tab-button button-arrow" data-path="item2"
+                              data-path1="item2" data-target1="item2"><span><img src="./img/icon/arrow-dropdown-a.svg"
+                                  alt="Иконка стрелочки"></span></button>
+  
+                          </div>
+                          <!--  -->
+                          <div class="rows__row-bottom tab-content" data-target="item2">
+                            <div class="rows__inner-item rows__inner-item_1">
+                            <div class="rows__wrapper-item rows__wrapper-item_1 row-2-wrapper-1">
+                              <p class="rows__text">Платежная система</p>
+                            </div>
+                            <div class="rows__wrapper-item rows__wrapper-item_width rows__wrapper-item_4 row-2-wrapper-4">
+             
+                            </div>
+                            </div>
+                            <div class="rows__inner-item rows__inner-item_2">
+                              <div class="rows__wrapper-item rows__wrapper-item_2 row-2-wrapper-2">
+                              <p class="rows__text">Дата</p>
+                             </div>
+                             <div class="rows__wrapper-item rows__wrapper-item_3 row-2-wrapper-3">
+                              <p class="rows__text">ID перевода</p>
+                             </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__wrapper-logo">
+          <img src="./img/background-change.svg" alt="Задний фон">
+          <a class="footer__logo" href="index.html">
+            <img src="./img/svg/logotip.svg" alt="Логотип сайта">
+          </a>
+        </div>
+        <div class="footer__top">
+          <div class="footer__lists">
+            <ul class="footer__list">
+              <li class="footer__item footer__item_blue footer-accordion-clicker">
+                <a class="footer__link" href="#!">
+                  О системе
+                  <svg width="10" height="8">
+                    <use xlink:href="./img/svg/sprites.svg#arrow"></use>
+                  </svg>
+                </a>
+                <div class="footer__accordion-content">
+                  <a class="footer__accordion-link footer__accordion-link_blue" href="#!">
+                    Договоры
+                  </a>
+                  <a class="footer__accordion-link footer__accordion-link_purple" href="new.html">
+                    Новости
+                  </a>
+                  <a class="footer__accordion-link footer__accordion-link_green" href="#!">
+                    Контакты
+                  </a>
+                </div>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="partners.html">
+                  Партнерская программа
+                </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="bonuses-and-promotions.html">
+                  Бонусы и акции
+                </a>
+              </li>
+            </ul>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="#!">
+                  Конструктор документов
+                </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="faq.html">
+                  Часто задаваемые вопросы
+                </a>
+              </li>
+            </ul>
+
+          </div>
+          <div class="footer__right">
+            <a class="footer__help" href="#!">
+              <img src="./img/icon/help.svg" alt="Иконка">
+              <span class="footer__help-span">Обратиться в техподдержку</span>
+              <span class="footer__help-span footer__help-span_none">Техподдержка</span>
+            </a>
+          </div>
+        </div>
+        <div class="footer__middle">
+          <div class="footer__info">
+            <address class="footer__address">
+              ИНН 7604354453, КПП 760401001, ОГРН 1197627006060, Юридический адрес 150000 г. Москва, ул. Некрасова, дом
+              41, офис 332
+            </address>
+          </div>
+          <ul class="footer__soclist" data-da=".footer__right, 1380, 1">
+            <li class="footer__soclist-item">
+              <a class="footer__soclist-link" href="#!">
+                <svg width="24" height="24">
+                  <use xlink:href="./img/svg/sprites.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__soclist-item">
+              <a class="footer__soclist-link" href="#!">
+                <svg width="24" height="24">
+                  <use xlink:href="./img/svg/sprites.svg#odnoklassniki"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__soclist-item">
+              <a class="footer__soclist-link" href="#!">
+                <svg width="24" height="24">
+                  <use xlink:href="./img/svg/sprites.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__soclist-item">
+              <a class="footer__soclist-link" href="#!">
+                <svg width="24" height="24">
+                  <use xlink:href="./img/svg/sprites.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__text" data-da=".footer__middle, 1380, 1">
+            Данный сайт может содержать информацию о сайтах третьих лиц. Лавка Олигарха не несет ответственности за
+            точность информации, данных, взглядов, советов или заявлений, сделанных на этих сайтах.
+          </p>
+          <strong class="footer__rechten">
+            © 2022 Лавка Олигарха. Все права защищены.
+          </strong>
+          <div class="footer__bottom-right">
+            <a class="footer__privacy" href="#!">
+              Политика конфиденциальности
+            </a>
+            <a class="footer__developer" href="#!">
+              Digital
+              <img src="./img/icon/developer.svg" alt="Иконка разработчика">
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="./resources/custom-scroll/simplebar.js"></script>
+  <script src="./resources/tooltip/popper.min.js"></script>
+  <script src="./resources/tooltip/tippy.js"></script>
+  <script src="./resources/smooth-scroll/smooth-scroll.js"></script>
+  <script src="./resources/swiper/swiper.js"></script>
+  <script src="./js/main.min.js"></script>
+</body>
+
+</html>
