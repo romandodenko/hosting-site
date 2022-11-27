@@ -251,13 +251,8 @@ main {
   opacity: .25
 }
 
-.choices[data-type*=select-one] .choices__button:focus,
 .choices[data-type*=select-one] .choices__button:hover {
   opacity: 1
-}
-
-.choices[data-type*=select-one] .choices__button:focus {
-  box-shadow: 0 0 0 2px #00bcd4
 }
 
 .choices[data-type*=select-one] .choices__item[data-value=''] .choices__button {
@@ -301,9 +296,7 @@ main {
   border-radius: 0
 }
 
-.choices[data-type*=select-multiple] .choices__button:focus,
 .choices[data-type*=select-multiple] .choices__button:hover,
-.choices[data-type*=text] .choices__button:focus,
 .choices[data-type*=text] .choices__button:hover {
   opacity: 1
 }
@@ -1685,7 +1678,7 @@ button.swiper-pagination-bullet {
   z-index: 60
 }
 
-.choices2:focus-visible .choices__inner {
+.choices__inner {
   background-color: #f8efff
 }
 
@@ -1765,7 +1758,7 @@ button.swiper-pagination-bullet {
   border-color: #f7f7f7
 }
 
-.choices2.is-open:focus-visible .choices__inner {
+.choices__inner {
   background-color: transparent
 }
 
