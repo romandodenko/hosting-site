@@ -1518,18 +1518,6 @@ button.swiper-pagination-bullet {
   border-color: var(--color-purple-hover)
 }
 
-.choices:focus-visible {
-  background-color: var(--color-purple-hover)
-}
-
-.choices:focus-visible .choices__list--single {
-  color: var(--color-dark-purple)
-}
-
-.choices:focus-visible::before {
-  border-color: var(--color-dark-purple)
-}
-
 .choices:active::before {
   border-color: var(--color-dark-purple)
 }
