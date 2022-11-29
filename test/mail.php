@@ -38,7 +38,7 @@ $message = "<table style='width: 50%;'>$message</table>";
 
 
 // От кого
-$mail->setFrom('adm@' . $_SERVER['HTTP_HOST'], 'Blanchard - художественная галерея');
+$mail->setFrom('adm@' . $_SERVER['HTTP_HOST'], 'Веб-студия Oxem. Тестовое задание.');
  
 // Кому
 foreach ( $admin_email as $key => $value ) {
