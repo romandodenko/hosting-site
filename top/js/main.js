@@ -14,6 +14,16 @@ if (initSwiperBlock2) {
     slidesPerView: 1,
     spaceBetween: 10,
     direction: 'horizontal',
+    speed: 500, // Автовоспроизведение
+    autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+    stopOnLastSlide: true,
+    },
+    pagination: {
+      el: '.block-2-pagination',
+      clickable: true,
+    },
   });
 }
 
@@ -25,6 +35,16 @@ if (initSwiperBlock3) {
     slidesPerView: 1,
     spaceBetween: 10,
     direction: 'horizontal',
+    speed: 500, // Автовоспроизведение
+    autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+    stopOnLastSlide: true,
+    },
+    pagination: {
+      el: '.block-3-pagination',
+      clickable: true,
+    },
   });
 }
 
