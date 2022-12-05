@@ -1,8 +1,4 @@
-"use strict"
-
-window.onload = function () {
-
-  const initSwiperBlock2 = document.querySelector(".block-2-swiper");
+const initSwiperBlock2 = document.querySelector(".block-2-swiper");
 
 const initSwiperBlock3 = document.querySelector(".block-3-swiper");
 
@@ -14,6 +10,12 @@ if (initSwiperBlock2) {
     slidesPerView: 1,
     spaceBetween: 10,
     direction: 'horizontal',
+    speed: 500, // Автовоспроизведение
+    autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+    stopOnLastSlide: true,
+    },
   });
 }
 
@@ -25,6 +27,12 @@ if (initSwiperBlock3) {
     slidesPerView: 1,
     spaceBetween: 10,
     direction: 'horizontal',
+    speed: 500, // Автовоспроизведение
+    autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+    stopOnLastSlide: true,
+    },
   });
 }
 
@@ -66,10 +74,5 @@ if (blockTimer) {
   }
 
   setInterval(timerSeconds, 1000)
-
-}
-
-
-
 
 }
