@@ -208,13 +208,42 @@ document.addEventListener("click", function (e) {
       e.querySelector(".cards-list__content-hidden").style.height = 0;
       e.classList.remove("cards-list-bottom-active");
     })
+
+    function addedClass () {
+      elementTarget.closest(".cards-list__button").classList.add("cards-list-button-active")
+    } 
+
+    if (!elementTarget.closest(".cards-list-button-active")) {
+      setTimeout(addedClass,100)
+    }
+
     elementTarget.closest(".cards-list__bottom").classList.add("cards-list-bottom-active");
+    
     document.querySelector(".cards-list-bottom-active").querySelector(".cards-list__content-hidden").style.height = document.querySelector(".cards-list-bottom-active").querySelector(".cards-list__content-hidden").scrollHeight + 'px';
+
   }
+
+  
+  if (elementTarget.closest(".cards-list-button-active")) {
+
+    if (elementTarget.closest(".cards-list-bottom-active") && elementTarget.closest(".cards-list-button-active")) {
+
+      document.querySelector(".cards-list-bottom-active").querySelector(".cards-list__content-hidden").style.height = 0;
+
+      document.querySelector(".cards-list-bottom-active").classList.remove("cards-list-bottom-active");
+
+      document.querySelectorAll(".cards-list__button").forEach(function (e) {
+        e.classList.remove("cards-list-button-active")
+      })
+    }
+  }
+
 
   if (document.querySelector(".cards-list-bottom-active")) {
     if (!elementTarget.closest(".cards-list-bottom-active")) {
+
       document.querySelector(".cards-list-bottom-active").querySelector(".cards-list__content-hidden").style.height = 0;
+
       document.querySelector(".cards-list-bottom-active").classList.remove("cards-list-bottom-active");
     }
   }
@@ -224,9 +253,7 @@ document.addEventListener("click", function (e) {
 const cardsItem = document.querySelectorAll(".cards-list__item");
 
 cardsItem.forEach(function(s, i) {
-  console.log(i)
   s.querySelector(".cards-list-part__num").innerHTML = i + 1
-
 })
 
 
