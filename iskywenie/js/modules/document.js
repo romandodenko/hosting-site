@@ -1,7 +1,4 @@
-"use strict"
-
-window.onload = function () {
-  document.querySelector(".burger-init").addEventListener("click", function() {
+document.querySelector(".burger-init").addEventListener("click", function() {
   document.querySelector(".menu").classList.add("menu-active")
   document.body.style.overflow = "hidden";
 })
@@ -147,9 +144,3 @@ document.querySelector(".menu__exit").addEventListener("click", function() {
     });
 
     // Капелька
-    var scroll = new SmoothScroll('a[href*="#"]', {
-  speed: 1000,
-  speedAsDuration: true
-});
-
-}    
