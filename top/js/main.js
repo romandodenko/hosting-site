@@ -156,6 +156,20 @@ window.onload = function () {
   const da = new DynamicAdapt("max");
   da.init();
 
+  let popupTimer, timeOut = 4000;
+
+  function displayPopup() {
+    console.log('pop-up');
+    document.querySelector(".popup").classList.add("popup-active")
+  }
+
+  popupTimer = setTimeout(displayPopup, timeOut);
+
+  window.addEventListener("scroll", function (e) {
+    clearTimeout(popupTimer);
+    popupTimer = setTimeout(displayPopup, timeOut);
+  })
+
   // ======================================================================================================================================================
 
   // Слайдер
@@ -236,8 +250,7 @@ window.onload = function () {
     }
 
     if (elementTarget.closest(".popup__close") || elementTarget.closest(".popup__exit")) {
-      i = 2;
-      // window.location.reload(true);
+      clearTimeout(popupTimer);
       document.querySelector(".popup").classList.remove("popup-active")
     }
 
