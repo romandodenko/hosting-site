@@ -826,7 +826,7 @@ main:not(:last-child) {
 
 @media (max-width:600px) {
   .burger span {
-    height: 7px
+    height: 6px
   }
 }
 
