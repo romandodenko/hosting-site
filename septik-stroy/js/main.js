@@ -213,7 +213,7 @@ window.onload = function () {
       );
       var myPlacemark = new ymaps.Placemark(myMap.getCenter(45.035808074596346, 38.97368699999997), {}, {
         iconLayout: 'default#image',
-        iconImageHref: '../../img/baloon.svg',
+        iconImageHref: '../img/baloon.svg',
         iconImageSize: [20, 20],
       });
 
@@ -243,7 +243,7 @@ window.onload = function () {
       // var myPlacemark = new ymaps.Placemark(myMap.getCenter(55.76932, 37.63952), {}, { // Если нужно чтобы точка была всегда по центру
       var myPlacemark = new ymaps.Placemark(myMap.getCenter(45.035808074596346, 38.97368699999997), {}, {
         iconLayout: 'default#image',
-        iconImageHref: '../../img/baloon.svg',
+        iconImageHref: '../img/baloon.svg',
         iconImageSize: [30, 30],
       });
 
