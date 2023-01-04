@@ -19,6 +19,111 @@
   <script defer src="./resources/swiper/swiper.js"></script>
   <script defer src="https://api-maps.yandex.ru/2.1/?apikey=&lang=ru_RU"></script>
   <script defer src="./js/main.js"></script>
+  <script defer>
+    function formSubmitCall() {
+      const popupForm = document.querySelector(".popup-form"); // Форма заказать звонок
+
+      const okay = document.querySelector(".okay"); // Попап который уведомляет пользователя что всё отправлено
+
+      popupForm.classList.remove("popup-form-active"); // Удаляет активный класс у формы заказать  звонок
+
+      popupForm.querySelectorAll("input").forEach(function (e) { // Удаляем значение у инпутов формы заказа
+        e.value = ""
+      })
+
+      okay.classList.add("okay-active"); // Даём попапу который уведомляет пользователя что всё отправлено активный класс
+
+      console.log("Форма отправлена!"); // В консоле показывает что всё отправлено
+    }
+
+    function formSubmitCalculate() {
+
+      const okay = document.querySelector(".okay"); // Попап который уведомляет пользователя что всё отправлено
+
+      const popupCalculate = document.querySelector(".popup-calculate"); // Форма калькулятора
+
+      const popupCalculateFormItems = document.querySelectorAll(".popup-calculate-form__item"); // Элементы формы калькулятора
+
+      const popupCalculateFormItem = document.querySelector(".popup-calculate-form__item"); // Элемент формы калькулятора
+
+      const popupCalculateNumOne = document.querySelector(".popup-calculate__num_one"); // Счётчик формы калькулятора
+
+      const calculateFormInputChoiceActive1 = document.querySelector(".calculate-form-input-choice-active-1"); // Активный выбор
+
+      const calculateFormInputChoiceActive1Value = calculateFormInputChoiceActive1.querySelector(
+        ".popup-calculate-form__choice-value").innerHTML; // Значение активного выбора
+
+      const calculateFormInputChoiceActive2 = document.querySelector(".calculate-form-input-choice-active-2"); // Активный выбор
+
+      const calculateFormInputChoiceActive2Value = calculateFormInputChoiceActive2.querySelector(
+        ".popup-calculate-form__choice-value").innerHTML; // Значение активного выбора
+
+      const calculateFormInputChoiceActive3 = document.querySelector(".calculate-form-input-choice-active-3"); // Активный выбор
+
+      const calculateFormInputChoiceActive3Value = calculateFormInputChoiceActive3.querySelector(
+        ".popup-calculate-form__choice-value").innerHTML; // Значение активного выбора
+
+      const calculateFormInputChoiceActive4 = document.querySelector(".calculate-form-input-choice-active-4"); // Активный выбор
+
+      const calculateFormInputChoiceActive4Value = calculateFormInputChoiceActive4.querySelector(
+        ".popup-calculate-form__choice-value").innerHTML; // Значение активного выбора
+
+      const requestUrl =
+        "https://jsonplaceholder.typicode.com/users"; // Для проверки работает всё или нет, выступает в качестве сервера
+
+      function sendRequest(method, url, body = null) {
+        const headers = {
+          'Content-Type': 'application/json',
+        };
+
+        return fetch(url, {
+          method: method,
+          body: JSON.stringify(body),
+          headers: headers,
+        }).then(response => {
+          return response.json()
+        })
+
+      }
+
+      const body = { // то что передается
+        firstValue: calculateFormInputChoiceActive1Value,
+        twoValue: calculateFormInputChoiceActive2Value,
+        thirdValue: calculateFormInputChoiceActive3Value,
+        fourValue: calculateFormInputChoiceActive4Value,
+      }
+
+      sendRequest("POST", requestUrl, body)
+        .then(data => console.log(data))
+        .catch(err => console.log(err))
+
+        popupCalculate.classList.remove("popup-calculate-active"); // Удаляем активный класс у формы калькулятора
+
+      popupCalculate.querySelectorAll("input").forEach(function (e) { // Удаляем значение у инпутов формы калькулятора
+        e.value = ""
+      })
+
+      okay.classList.add("okay-active"); // Даём попапу который уведомляет пользователя что всё отправлено активный класс
+
+      popupCalculateFormItems.forEach(function (e) {  // Удаляем активные элементы
+        e.classList.remove("calculate-form-item-active")
+      })
+
+      popupCalculateFormItem.classList.add("calculate-form-item-active"); // Делаем первый элемент активным
+
+      popupCalculateNumOne.innerHTML = 1; // Даём счетчику 1
+
+      document.querySelectorAll(".popup-calculate-form__choice").forEach(function (e) { // Удаляем активные выборы
+        e.classList.remove("calculate-form-input-choice-active-1");
+        e.classList.remove("calculate-form-input-choice-active-2");
+        e.classList.remove("calculate-form-input-choice-active-3");
+        e.classList.remove("calculate-form-input-choice-active-4");
+      })
+
+      console.log("Форма отправлена!"); // В консоле показывает что всё отправлено
+    }
+  
+  </script>
   <title>SEPTIK STROY - Купить септики под ключ с бесплатной доставкой</title>
 </head>
 
@@ -26,38 +131,31 @@
   <div class="page">
     <header class="header">
       <div class="header__container container">
-        <a class="header__logo" target="_blank" href="index.html" aria-label="Логотип сайта">
+        <a class="header__logo" href="index.html" aria-label="Логотип сайта">
           <img src="./img/logo.svg" width="182" height="115" loading="lazy" alt="Логотип сайта">
         </a>
         <div class="header__right">
           <div class="header__menu">
             <div class="header__menu-back"></div>
             <div class="header__menu-body">
-              <a class="header__logo header__logo_menu" target="_blank" href="index.html" aria-label="Логотип сайта">
+              <a class="header__logo header__logo_menu" href="index.html" aria-label="Логотип сайта">
                 <img src="./img/logo.svg" width="182" height="115" loading="lazy" alt="Логотип сайта">
               </a>
               <nav class="nav" aria-label="Навигация по сайту">
                 <ul class="nav__list" aria-label="Список навигации">
                   <li class="nav__item">
-                    <a class="nav__link" target="_blank" href="index.html" aria-label="Ссылка на главную страницу">
+                    <a class="nav__link" href="index.html" aria-label="Ссылка на главную страницу">
                       Главная
                     </a>
                   </li>
                   <li class="nav__item">
-                    <a class="nav__link" target="_blank" href="products.html"
-                      aria-label="Ссылка на страницу товары и услуги">
-                      Товары и услуги
-                    </a>
-                  </li>
-                  <li class="nav__item">
-                    <a class="nav__link" target="_blank" href="catalog.html" aria-label="Ссылка на страницу каталог">
+                    <a class="nav__link" href="catalog.html" aria-label="Ссылка на страницу каталог">
                       Каталог
                     </a>
                   </li>
                   <li class="nav__item sublist-init">
                     <div class="nav__top">
-                      <a class="nav__link" target="_blank" href="about-work.html"
-                        aria-label="Ссылка на страницу о нашей работе">
+                      <a class="nav__link" href="about-work.html" aria-label="Ссылка на страницу о нашей работе">
                         О нашей работе
                       </a>
                       <button class="nav__button" type="button" aria-label="Открыть меню">
@@ -69,31 +167,30 @@
                     <div class="header-sublist">
                       <ul class="header-sublist__list" aria-label="Список навигации">
                         <li class="header-sublist__item">
-                          <a class="header-sublist__link" target="_blank" href="about-work.html" aria-label="">
+                          <a class="header-sublist__link" href="about-work.html" aria-label="">
                             Подробнее о компании
                           </a>
                         </li>
                         <li class="header-sublist__item">
-                          <a class="header-sublist__link" target="_blank" href="states.html" aria-label="">
+                          <a class="header-sublist__link" href="states.html" aria-label="">
                             Статьи
                           </a>
                         </li>
                         <li class="header-sublist__item">
-                          <a class="header-sublist__link" target="_blank" href="news.html" aria-label="">
+                          <a class="header-sublist__link" href="news.html" aria-label="">
                             Новости
                           </a>
                         </li>
                         <li class="header-sublist__item">
-                          <a class="header-sublist__link" target="_blank" href="about-work.html" aria-label="">
+                          <a class="header-sublist__link" href="about-work.html" aria-label="">
                             Отзывы
                           </a>
                         </li>
                       </ul>
-                      <!-- <button class="header-sublist__exit"></button> -->
                     </div>
                   </li>
                   <li class="nav__item">
-                    <a class="nav__link" target="_blank" href="contacts.html" aria-label="Ссылка на страницу контакты">
+                    <a class="nav__link" href="contacts.html" aria-label="Ссылка на страницу контакты">
                       Контакты
                     </a>
                   </li>
@@ -104,32 +201,32 @@
           </div>
           <ul class="header__list" aria-label="Список социальных сетей">
             <li class="header__item">
-              <a class="header__link" target="_blank" href="#!" aria-label="Ссылка на наш телеграм">
+              <a class="header__link" href="#!" aria-label="Ссылка на наш телеграм">
                 <svg width="32" height="32">
                   <use xlink:href="./img/svg/sprites.svg#telegram"></use>
                 </svg>
               </a>
             </li>
             <li class="header__item">
-              <a class="header__link" target="_blank" href="#!" aria-label="Ссылка на наш инстаграмм">
+              <a class="header__link" href="#!" aria-label="Ссылка на наш инстаграмм">
                 <svg width="32" height="32">
-                  <use xlink:href="./img/svg/sprites.svg#inst"></use>
+                  <use xlink:href="./img/svg/sprites.svg#inst-2"></use>
                 </svg>
               </a>
             </li>
             <li class="header__item">
-              <a class="header__link" target="_blank" href="#!" aria-label="Ссылка на наш ватс апп">
+              <a class="header__link" href="#!" aria-label="Ссылка на наш ватс апп">
                 <svg width="32" height="32">
-                  <use xlink:href="./img/svg/sprites.svg#whats-app"></use>
+                  <use xlink:href="./img/svg/sprites.svg#whats-app-2"></use>
                 </svg>
               </a>
             </li>
           </ul>
           <div class="header__tels">
-            <a class="header__phone" target="_blank" href="tel:+79284154156" aria-label="Позвоните нам">
+            <a class="header__phone" href="tel:+79284154156" aria-label="Позвоните нам">
               +7 928 415-41-56
             </a>
-            <a class="header__call" target="_blank" href="tel:+79284154156" aria-label="Позвоните нам">
+            <a class="header__call" href="tel:+79284154156" aria-label="Позвоните нам">
               <span>Позвонить</span>
               <svg width="18" height="17">
                 <use xlink:href="./img/svg/sprites.svg#call"></use>
@@ -145,6 +242,177 @@
       </div>
     </header>
     <main>
+      <section class="fixed-fink">
+        <div class="fixed-fink__circle"></div>
+        <a class="fixed-fink__link" href="#!" aria-label="Наш ватс ап">
+          <img src="./img/fixed-icon.svg" loading="lazy" width="30" height="30" alt="Картинка">
+        </a>
+      </section>
+      <section class="popup-calculate">
+        <div class="popup-calculate__close"></div>
+        <div class="popup-calculate__body">
+          <button class="popup-calculate__exit" type="button" aria-label="Закрыть попап">
+            <svg width="30" height="30">
+              <use xlink:href="./img/svg/sprites.svg#exit"></use>
+            </svg>
+          </button>
+          <h3 class="popup-calculate__title">
+            Расчет стоимости септика
+          </h3>
+          <p class="popup-calculate__text">
+            Пройдите короткий опрос, и наши специалисты рассчитают стоимость подходящего вашему участку септика
+          </p>
+          <div class="popup-calculate__wrapper-form">
+            <form onsubmit="formSubmitCalculate();return false" class="popup-calculate__form popup-calculate-form"
+              action="#!" name="Форма расчёта" autocomplete="on" aria-label="Форма расчёта">
+              <div class="popup-calculate-form__item calculate-form-item-active">
+                <h4 class="popup-calculate-form__title-4">
+                  На сколько человек рассчитывать септик?
+                </h4>
+                <div class="popup-calculate-form__choices">
+                  <div class="popup-calculate-form__choice">
+                    <p class="popup-calculate-form__choice-value">1-2 человека</p>
+                  </div>
+                  <div class="popup-calculate-form__choice">
+                    <p class="popup-calculate-form__choice-value">3-4 человека</p>
+                  </div>
+                  <div class="popup-calculate-form__choice">
+                    <p class="popup-calculate-form__choice-value">5-8 человека</p>
+                  </div>
+                  <div class="popup-calculate-form__choice">
+                    <p class="popup-calculate-form__choice-value">от 7 человека</p>
+                  </div>
+                </div>
+              </div>
+              <div class="popup-calculate-form__item">
+                <h4 class="popup-calculate-form__title-4">
+                  Режим проживания на объекте?
+                </h4>
+                <div class="popup-calculate-form__choices">
+                  <div class="popup-calculate-form__choice">
+                    <p class="popup-calculate-form__choice-value">Постоянное проживание</p>
+                  </div>
+                  <div class="popup-calculate-form__choice">
+                    <p class="popup-calculate-form__choice-value">Сезонное проживание</p>
+                  </div>
+                  <div class="popup-calculate-form__choice">
+                    <p class="popup-calculate-form__choice-value">По выходным дням</p>
+                  </div>
+                </div>
+              </div>
+              <div class="popup-calculate-form__item">
+                <h4 class="popup-calculate-form__title-4">
+                  Уровень грунтовых вод на участке?
+                </h4>
+                <div class="popup-calculate-form__choices">
+                  <div class="popup-calculate-form__choice">
+                    <p class="popup-calculate-form__choice-value">Низкий</p>
+                  </div>
+                  <div class="popup-calculate-form__choice">
+                    <p class="popup-calculate-form__choice-value">Высокий</p>
+                  </div>
+                  <div class="popup-calculate-form__choice">
+                    <p class="popup-calculate-form__choice-value">Затрудняюсь ответить</p>
+                  </div>
+                </div>
+              </div>
+              <div class="popup-calculate-form__item">
+                <h4 class="popup-calculate-form__title-4">
+                  Когда планируете установку септика?
+                </h4>
+                <div class="popup-calculate-form__choices">
+                  <div class="popup-calculate-form__choice">
+                    <p class="popup-calculate-form__choice-value">В течение недели</p>
+                  </div>
+                  <div class="popup-calculate-form__choice">
+                    <p class="popup-calculate-form__choice-value">В течение месяца</p>
+                  </div>
+                  <div class="popup-calculate-form__choice">
+                    <p class="popup-calculate-form__choice-value">В течение нескольких месяцев</p>
+                  </div>
+                  <div class="popup-calculate-form__choice">
+                    <p class="popup-calculate-form__choice-value">В следующем году</p>
+                  </div>
+                </div>
+              </div>
+              <div class="popup-calculate-form__item">
+                <h4 class="popup-calculate-form__title-4">
+                  Адрес доставки или установки
+                </h4>
+                <label class="popup-calculate-form__label" for="address">
+                  <input class="popup-calculate-form__input" type="text" name="address" id="address"
+                    placeholder="Адрес доставки или установки" required>
+                </label>
+                <label class="popup-calculate-form__label" for="name">
+                  <input class="popup-calculate-form__input" type="name" name="name" id="name" placeholder="Имя"
+                    required>
+                </label>
+                <label class="popup-calculate-form__label" for="tel">
+                  <input class="popup-calculate-form__input" type="tel" name="tel" id="tel" placeholder="Телефон"
+                    required>
+                </label>
+                <button class="popup-calculate-form__button" type="submit" aria-label="Отправить заявку">Отправить
+                  заявку</button>
+              </div>
+            </form>
+          </div>
+          <div class="popup-calculate__footer">
+            <button class="popup-calculate__back" type="button" aria-label="Вернуться назад">
+              <svg width="9" height="20">
+                <use xlink:href="./img/svg/sprites.svg#arrow-2"></use>
+              </svg>
+            </button>
+            <p class="popup-calculate__nums">
+              <span class="popup-calculate__num popup-calculate__num_one">1</span>
+              <span class="popup-calculate__num-slash">/</span>
+              <span class="popup-calculate__num popup-calculate__num_two">5</span>
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="okay">
+        <div class="okay__close"></div>
+        <div class="okay__body">
+          <button class="okay__exit" type="button" aria-label="Закрыть попап">
+            <svg width="30" height="30">
+              <use xlink:href="./img/svg/sprites.svg#exit"></use>
+            </svg>
+          </button>
+          <span class="okay__icon"></span>
+          <h3 class="okay__title">
+            Спасибо за обращение!
+          </h3>
+          <p class="okay__text">
+            В скором времени с вами свяжется наш специалист!
+          </p>
+        </div>
+      </section>
+      <section class="popup-form">
+        <div class="popup-form__close"></div>
+        <div class="popup-form__body">
+          <button class="popup-form__exit" type="button" aria-label="Закрыть попап">
+            <svg width="30" height="30">
+              <use xlink:href="./img/svg/sprites.svg#exit"></use>
+            </svg>
+          </button>
+          <h3 class="popup-form__title">
+            Заполните форму
+          </h3>
+          <p class="popup-form__text">
+            Заполните форму и наши специалисты с вами свяжутся в кратчайшие сроки.
+          </p>
+          <form onsubmit="formSubmitCall();return false" class="popup-form__form" action="#!" name="call"
+            autocomplete="on" aria-label="Форма заказа звонка">
+            <label class="popup-form__label" for="name">
+              <input class="popup-form__input" type="name" name="name" id="name" placeholder="Имя" required>
+            </label>
+            <label class="popup-form__label" for="tel">
+              <input class="popup-form__input" type="tel" name="tel" id="tel" placeholder="Телефон" required>
+            </label>
+            <button class="popup-form__button" type="submit" aria-label="Заказать звонок">Заказать звонок</button>
+          </form>
+        </div>
+      </section>
       <section class="hero">
         <div class="hero__container container">
           <div class="hero__left">
@@ -166,13 +434,9 @@
                   </a>
                 </li>
                 <li class="hero__item hero__item_2">
-                  <a class="hero__link hero__link_2" target="_blank" href="products.html"
-                    aria-label="Ссылка на страницу товары и услуги">
-                    Товары и услуги
-                    <svg width="9" height="5">
-                      <use xlink:href="./img/svg/sprites.svg#arrow"></use>
-                    </svg>
-                  </a>
+                  <button class="hero__link hero__link_2 popup-form-init" type="button" aria-label="Заказать звонок">
+                    Заказать звонок
+                  </button>
                 </li>
               </ul>
             </div>
@@ -531,12 +795,13 @@
                     Заголовок
                   </a>
                   <p class="news__text text">
-                    Основное направление компании – продажа и монтаж установок биологической очистки (СБО). Начало работы и установка первых станций СБО в Екатеринбурге и близлежащих регионах (Челябинск, Тюмень). 
+                    Основное направление компании – продажа и монтаж установок биологической очистки (СБО). Начало
+                    работы и установка первых станций СБО в Екатеринбурге и близлежащих регионах (Челябинск, Тюмень).
                   </p>
                 </div>
                 <a class="news__link" target="_blank" href="new.html" aria-label="Смотреть новость">
                   <svg width="9" height="5">
-                  <use xlink:href="./img/svg/sprites.svg#arrow-2"></use>
+                    <use xlink:href="./img/svg/sprites.svg#arrow-2"></use>
                   </svg>
                 </a>
               </div>
@@ -554,12 +819,13 @@
                     Заголовок
                   </a>
                   <p class="news__text text">
-                    Основное направление компании – продажа и монтаж установок биологической очистки (СБО). Начало работы и установка первых станций СБО в Екатеринбурге и близлежащих регионах (Челябинск, Тюмень). 
+                    Основное направление компании – продажа и монтаж установок биологической очистки (СБО). Начало
+                    работы и установка первых станций СБО в Екатеринбурге и близлежащих регионах (Челябинск, Тюмень).
                   </p>
                 </div>
                 <a class="news__link" target="_blank" href="new.html" aria-label="Смотреть новость">
                   <svg width="9" height="5">
-                  <use xlink:href="./img/svg/sprites.svg#arrow-2"></use>
+                    <use xlink:href="./img/svg/sprites.svg#arrow-2"></use>
                   </svg>
                 </a>
               </div>
@@ -577,12 +843,13 @@
                     Заголовок
                   </a>
                   <p class="news__text text">
-                    Основное направление компании – продажа и монтаж установок биологической очистки (СБО). Начало работы и установка первых станций СБО в Екатеринбурге и близлежащих регионах (Челябинск, Тюмень). 
+                    Основное направление компании – продажа и монтаж установок биологической очистки (СБО). Начало
+                    работы и установка первых станций СБО в Екатеринбурге и близлежащих регионах (Челябинск, Тюмень).
                   </p>
                 </div>
                 <a class="news__link" target="_blank" href="new.html" aria-label="Смотреть новость">
                   <svg width="9" height="5">
-                  <use xlink:href="./img/svg/sprites.svg#arrow-2"></use>
+                    <use xlink:href="./img/svg/sprites.svg#arrow-2"></use>
                   </svg>
                 </a>
               </div>
@@ -600,12 +867,13 @@
                     Заголовок
                   </a>
                   <p class="news__text text">
-                    Основное направление компании – продажа и монтаж установок биологической очистки (СБО). Начало работы и установка первых станций СБО в Екатеринбурге и близлежащих регионах (Челябинск, Тюмень). 
+                    Основное направление компании – продажа и монтаж установок биологической очистки (СБО). Начало
+                    работы и установка первых станций СБО в Екатеринбурге и близлежащих регионах (Челябинск, Тюмень).
                   </p>
                 </div>
                 <a class="news__link" target="_blank" href="new.html" aria-label="Смотреть новость">
                   <svg width="9" height="5">
-                  <use xlink:href="./img/svg/sprites.svg#arrow-2"></use>
+                    <use xlink:href="./img/svg/sprites.svg#arrow-2"></use>
                   </svg>
                 </a>
               </div>
@@ -614,7 +882,7 @@
           <a class="news__all" target="_blank" href="news.html" aria-label="Все новости">
             Все новости
             <svg width="9" height="5">
-            <use xlink:href="./img/svg/sprites.svg#arrow"></use>
+              <use xlink:href="./img/svg/sprites.svg#arrow"></use>
             </svg>
           </a>
         </div>
@@ -631,127 +899,11 @@
             <p class="calculator__text text">
               Пройдите короткий опрос, и наши специалисты рассчитают стоимость подходящего вашему участку септика
             </p>
-            <button class="calculator__button calculator-init" type="button" aria-label="Расчитать стоимость">Расчитать стоимость</button>
+            <button class="calculator__button calculator-init" type="button" aria-label="Расчитать стоимость">Расчитать
+              стоимость</button>
           </div>
-            <div class="calculator__image">
-              <img src="./img/calc-image.png" loading="lazy" width="300" height="300" alt="Картинка">
-            </div>
-        </div>
-      </section>
-      <section class="popup-calculate">
-        <div class="popup-calculate__close"></div>
-        <div class="popup-calculate__body">
-          <button class="popup-calculate__exit" type="button" aria-label="Закрыть попап">
-            <svg width="30" height="30">
-            <use xlink:href="./img/svg/sprites.svg#exit"></use>
-            </svg>
-          </button>
-          <h3 class="popup-calculate__title">
-            Расчет стоимости септика
-          </h3>
-          <p class="popup-calculate__text">
-            Пройдите короткий опрос, и наши специалисты рассчитают стоимость подходящего вашему участку септика
-          </p>
-          <div class="popup-calculate__wrapper-form">
-            <form class="popup-calculate__form popup-calculate-form" action="#!" name="Форма расчёта" autocomplete="on" aria-label="Форма расчёта">
-              <div class="popup-calculate-form__item calculate-form-item-active">
-                <h4 class="popup-calculate-form__title-4">
-                  На сколько человек рассчитывать септик?
-                </h4>
-                <div class="popup-calculate-form__choices">
-                  <div class="popup-calculate-form__choice">
-                    <p class="popup-calculate-form__choice-value">1-2 человека</p>
-                  </div>
-                  <div class="popup-calculate-form__choice">
-                    <p class="popup-calculate-form__choice-value">3-4 человека</p>
-                  </div>
-                  <div class="popup-calculate-form__choice">
-                    <p class="popup-calculate-form__choice-value">5-8 человека</p>
-                  </div>
-                  <div class="popup-calculate-form__choice">
-                    <p class="popup-calculate-form__choice-value">от 7 человека</p>
-                  </div>
-                </div>
-              </div>
-              <div class="popup-calculate-form__item">
-                <h4 class="popup-calculate-form__title-4">
-                  Режим проживания на объекте?
-                </h4>
-                <div class="popup-calculate-form__choices">
-                  <div class="popup-calculate-form__choice">
-                    <p class="popup-calculate-form__choice-value">Постоянное проживание</p>
-                  </div>
-                  <div class="popup-calculate-form__choice">
-                    <p class="popup-calculate-form__choice-value">Сезонное проживание</p>
-                  </div>
-                  <div class="popup-calculate-form__choice">
-                    <p class="popup-calculate-form__choice-value">По выходным дням</p>
-                  </div>
-                </div>
-              </div>
-              <div class="popup-calculate-form__item">
-                <h4 class="popup-calculate-form__title-4">
-                  Уровень грунтовых вод на участке?
-                </h4>
-                <div class="popup-calculate-form__choices">
-                  <div class="popup-calculate-form__choice">
-                    <p class="popup-calculate-form__choice-value">Низкий</p>
-                  </div>
-                  <div class="popup-calculate-form__choice">
-                    <p class="popup-calculate-form__choice-value">Высокий</p>
-                  </div>
-                  <div class="popup-calculate-form__choice">
-                    <p class="popup-calculate-form__choice-value">Затрудняюсь ответить</p>
-                  </div>
-                </div>
-              </div>
-              <div class="popup-calculate-form__item">
-                <h4 class="popup-calculate-form__title-4">
-                  Когда планируете установку септика?
-                </h4>
-                <div class="popup-calculate-form__choices">
-                  <div class="popup-calculate-form__choice">
-                    <p class="popup-calculate-form__choice-value">В течение недели</p>
-                  </div>
-                  <div class="popup-calculate-form__choice">
-                    <p class="popup-calculate-form__choice-value">В течение месяца</p>
-                  </div>
-                  <div class="popup-calculate-form__choice">
-                    <p class="popup-calculate-form__choice-value">В течение нескольких месяцев</p>
-                  </div>
-                  <div class="popup-calculate-form__choice">
-                    <p class="popup-calculate-form__choice-value">В следующем году</p>
-                  </div>
-                </div>
-              </div>
-              <div class="popup-calculate-form__item">
-                <h4 class="popup-calculate-form__title-4">
-                  Адрес доставки или установки
-                </h4>
-                <label class="popup-calculate-form__label" for="address">
-                  <input class="popup-calculate-form__input" type="text" name="address" id="address" placeholder="Адрес доставки или установки" required>
-                </label>
-                <label class="popup-calculate-form__label" for="name">
-                  <input class="popup-calculate-form__input" type="name" name="name" id="name" placeholder="Имя" required>
-                </label>
-                <label class="popup-calculate-form__label" for="tel">
-                  <input class="popup-calculate-form__input" type="tel" name="tel" id="tel" placeholder="Телефон" required>
-                </label>
-                <button class="popup-calculate-form__button" type="submit" aria-label="Отправить заявку">Отправить заявку</button>
-              </div>
-            </form>
-          </div>
-          <div class="popup-calculate__footer">
-            <button class="popup-calculate__back" type="button" aria-label="Вернуться назад">
-              <svg width="9" height="20">
-              <use xlink:href="./img/svg/sprites.svg#arrow-2"></use>
-              </svg>
-            </button>
-            <p class="popup-calculate__nums">
-              <span class="popup-calculate__num popup-calculate__num_one">1</span>
-              <span class="popup-calculate__num-slash">/</span>
-              <span class="popup-calculate__num popup-calculate__num_two">5</span>
-            </p>
+          <div class="calculator__image">
+            <img src="./img/calc-image.png" loading="lazy" width="300" height="300" alt="Картинка">
           </div>
         </div>
       </section>
@@ -760,78 +912,78 @@
       <div class="footer__container container">
         <div class="footer__left">
           <div class="footer__map" id="footer-map"></div>
-         <div class="footer__lists">
-          <ul class="footer__list footer-list" aria-label="Список телефонов и социальных сетей">
-            <li class="footer-list__item">
-              <a class="footer-list__link" target="_blank" href="tel:+79284154156" aria-label="Позвоните нам">
-                <svg width="32" height="32">
-                  <use xlink:href="./img/svg/sprites.svg#phone"></use>
-                  </svg>
-                <span>7(928)415-41-56</span>
-              </a>
-              <a class="footer-list__button" target="_blank" href="tel:+79284154156" aria-label="Позвоните нам">
-                <span>Позвонить</span>
-                <svg width="10" height="15">
-                <use xlink:href="./img/svg/sprites.svg#call"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-list__item footer-list__item_2">
-            <span class="footer-list__icon">
-              <svg width="14" height="20">
-                <use xlink:href="./img/svg/sprites.svg#geo"></use>
-                </svg>
-            </span>
-              <address class="footer-list__address">
-                Красная ул., 107, Краснодар
-              </address>
-            </li>
-            <li class="footer-list__item">
-              <a class="footer-list__link" target="_blank" href="#!" aria-label="Наш телеграм">
-                <svg width="32" height="32">
-                  <use xlink:href="./img/svg/sprites.svg#telegram"></use>
-                  </svg>
-                 <span>7(928)415-41-56</span>
-              </a>
-            </li>
-          </ul>
-          <ul class="footer__list footer-list">
-            <li class="footer-list__item">
-              <a class="footer-list__link" target="_blank" href="#!" aria-label="Наш инстаграмм">
-                <svg width="32" height="32">
-                  <use xlink:href="./img/svg/sprites.svg#inst"></use>
-                  </svg>
-                  <span>@a2.septic.story</span>
-              </a>
-            </li>
-            <li class="footer-list__item">
-              <a class="footer-list__link" target="_blank" href="#!" aria-label="Наш ватс ап">
-                <svg width="32" height="32">
-                  <use xlink:href="./img/svg/sprites.svg#whats-app"></use>
+          <div class="footer__lists">
+            <ul class="footer__list footer-list" aria-label="Список телефонов и социальных сетей">
+              <li class="footer-list__item">
+                <a class="footer-list__link" href="tel:+79284154156" aria-label="Позвоните нам">
+                  <svg width="32" height="32">
+                    <use xlink:href="./img/svg/sprites.svg#phone"></use>
                   </svg>
                   <span>7(928)415-41-56</span>
-              </a>
-            </li>
-          </ul>
-         </div>
+                </a>
+                <a class="footer-list__button" href="tel:+79284154156" aria-label="Позвоните нам">
+                  <span>Позвонить</span>
+                  <svg width="10" height="15">
+                    <use xlink:href="./img/svg/sprites.svg#call"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-list__item footer-list__item_2">
+                <span class="footer-list__icon">
+                  <svg width="14" height="20">
+                    <use xlink:href="./img/svg/sprites.svg#geo"></use>
+                  </svg>
+                </span>
+                <address class="footer-list__address">
+                  Красная ул., 107, Краснодар
+                </address>
+              </li>
+              <li class="footer-list__item">
+                <a class="footer-list__link" href="#!" aria-label="Наш телеграм">
+                  <svg width="32" height="32">
+                    <use xlink:href="./img/svg/sprites.svg#telegram"></use>
+                  </svg>
+                  <span>7(928)415-41-56</span>
+                </a>
+              </li>
+            </ul>
+            <ul class="footer__list footer-list">
+              <li class="footer-list__item">
+                <a class="footer-list__link" href="#!" aria-label="Наш инстаграмм">
+                  <svg width="32" height="32">
+                    <use xlink:href="./img/svg/sprites.svg#inst"></use>
+                  </svg>
+                  <span>@a2.septic.story</span>
+                </a>
+              </li>
+              <li class="footer-list__item">
+                <a class="footer-list__link" href="#!" aria-label="Наш ватс ап">
+                  <svg width="32" height="32">
+                    <use xlink:href="./img/svg/sprites.svg#whats-app"></use>
+                  </svg>
+                  <span>7(928)415-41-56</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="footer__right">
-          <a class="footer__logo" target="_blank" href="index.html" aria-label="Логотип сайта">
+          <a class="footer__logo" href="index.html" aria-label="Логотип сайта">
             <img src="./img/logo.svg" loading="lazy" width="182" height="115" alt="Логотип">
           </a>
           <ul class="footer__links footer-links">
             <li class="footer-links__item">
-              <a class="footer-links__link" target="_blank" href="#!" aria-label="Политика конфиденциальности">
+              <a class="footer-links__link" href="#!" aria-label="Политика конфиденциальности">
                 Политика конфиденциальности
               </a>
             </li>
             <li class="footer-links__item">
-              <a class="footer-links__link" target="_blank" href="#!" aria-label="Пример договора поставки">
+              <a class="footer-links__link" href="#!" aria-label="Пример договора поставки">
                 Пример договора поставки
               </a>
             </li>
             <li class="footer-links__item">
-              <a class="footer-links__link" target="_blank" href="#!" aria-label="Пример договора монтажа">
+              <a class="footer-links__link" href="#!" aria-label="Пример договора монтажа">
                 Пример договора монтажа
               </a>
             </li>

@@ -19,6 +19,58 @@
   <script defer src="./resources/swiper/swiper.js"></script>
   <script defer src="https://api-maps.yandex.ru/2.1/?apikey=&lang=ru_RU"></script>
   <script defer src="./js/main.js"></script>
+  <script defer>
+    function formSubmitContacts() {
+
+      const contactsForm = document.querySelector(".contacts-form"); // Форма контакты
+
+      const okay = document.querySelector(".okay"); // Попап который уведомляет пользователя что всё отправлено
+
+      const contactsFormTextValue = document.querySelector(".contacts-form-input-text").value; // Значения инпутов
+
+      const contactsFormTelValue = document.querySelector(".contacts-form-input-tel").value; // Значения инпутов
+
+      const contactsFormTextareaValue = document.querySelector(".contacts-form-textarea").value; // Значения текстареа
+
+      const requestUrl =
+        "https://jsonplaceholder.typicode.com/users"; // Для проверки работает всё или нет, выступает в качестве сервера
+
+      function sendRequest(method, url, body = null) {
+        const headers = {
+          'Content-Type': 'application/json',
+        };
+
+        return fetch(url, {
+          method: method,
+          body: JSON.stringify(body),
+          headers: headers,
+        }).then(response => {
+          return response.json()
+        })
+
+      }
+
+      const body = { // то что передается
+        firstValue: contactsFormTextValue,
+        twoValue: contactsFormTelValue,
+        thirdValue: contactsFormTextareaValue,
+      }
+
+      sendRequest("POST", requestUrl, body)
+        .then(data => console.log(data))
+        .catch(err => console.log(err))
+
+        contactsForm.querySelectorAll("input").forEach(function(e) { // Удаляем значения из инпутов
+          e.value = "";
+        })
+
+        contactsForm.querySelector("textarea").value = ""; // Удаляем значения из текстареи
+
+      okay.classList.add("okay-active"); // Даём попапу который уведомляет пользователя что всё отправлено активный класс
+
+      console.log("Форма отправлена!"); // В консоле показывает что всё отправлено
+    }
+  </script>
   <title>SEPTIK STROY - Контакты</title>
 </head>
 
@@ -26,37 +78,31 @@
   <div class="page">
     <header class="header">
       <div class="header__container container">
-        <a class="header__logo" target="_blank" href="index.html" aria-label="Логотип сайта">
+        <a class="header__logo" href="index.html" aria-label="Логотип сайта">
           <img src="./img/logo.svg" width="182" height="115" loading="lazy" alt="Логотип сайта">
         </a>
         <div class="header__right">
           <div class="header__menu">
             <div class="header__menu-back"></div>
             <div class="header__menu-body">
-              <a class="header__logo header__logo_menu" target="_blank" href="index.html" aria-label="Логотип сайта">
+              <a class="header__logo header__logo_menu" href="index.html" aria-label="Логотип сайта">
                 <img src="./img/logo.svg" width="182" height="115" loading="lazy" alt="Логотип сайта">
               </a>
               <nav class="nav" aria-label="Навигация по сайту">
                 <ul class="nav__list" aria-label="Список навигации">
                   <li class="nav__item">
-                    <a class="nav__link" target="_blank" href="index.html" aria-label="Ссылка на главную страницу">
+                    <a class="nav__link" href="index.html" aria-label="Ссылка на главную страницу">
                       Главная
                     </a>
                   </li>
                   <li class="nav__item">
-                    <a class="nav__link" target="_blank" href="products.html"
-                      aria-label="Ссылка на страницу товары и услуги">
-                      Товары и услуги
-                    </a>
-                  </li>
-                  <li class="nav__item">
-                    <a class="nav__link" target="_blank" href="catalog.html" aria-label="Ссылка на страницу каталог">
+                    <a class="nav__link" href="catalog.html" aria-label="Ссылка на страницу каталог">
                       Каталог
                     </a>
                   </li>
                   <li class="nav__item sublist-init">
                     <div class="nav__top">
-                      <a class="nav__link" target="_blank" href="about-work.html"
+                      <a class="nav__link" href="about-work.html"
                         aria-label="Ссылка на страницу о нашей работе">
                         О нашей работе
                       </a>
@@ -69,31 +115,30 @@
                     <div class="header-sublist">
                       <ul class="header-sublist__list" aria-label="Список навигации">
                         <li class="header-sublist__item">
-                          <a class="header-sublist__link" target="_blank" href="about-work.html" aria-label="">
+                          <a class="header-sublist__link" href="about-work.html" aria-label="">
                             Подробнее о компании
                           </a>
                         </li>
                         <li class="header-sublist__item">
-                          <a class="header-sublist__link" target="_blank" href="states.html" aria-label="">
+                          <a class="header-sublist__link" href="states.html" aria-label="">
                             Статьи
                           </a>
                         </li>
                         <li class="header-sublist__item">
-                          <a class="header-sublist__link" target="_blank" href="news.html" aria-label="">
+                          <a class="header-sublist__link" href="news.html" aria-label="">
                             Новости
                           </a>
                         </li>
                         <li class="header-sublist__item">
-                          <a class="header-sublist__link" target="_blank" href="about-work.html" aria-label="">
+                          <a class="header-sublist__link" href="about-work.html" aria-label="">
                             Отзывы
                           </a>
                         </li>
                       </ul>
-                      <!-- <button class="header-sublist__exit"></button> -->
                     </div>
                   </li>
                   <li class="nav__item">
-                    <a class="nav__link" target="_blank" href="contacts.html" aria-label="Ссылка на страницу контакты">
+                    <a class="nav__link" href="contacts.html" aria-label="Ссылка на страницу контакты">
                       Контакты
                     </a>
                   </li>
@@ -104,32 +149,32 @@
           </div>
           <ul class="header__list" aria-label="Список социальных сетей">
             <li class="header__item">
-              <a class="header__link" target="_blank" href="#!" aria-label="Ссылка на наш телеграм">
+              <a class="header__link" href="#!" aria-label="Ссылка на наш телеграм">
                 <svg width="32" height="32">
                   <use xlink:href="./img/svg/sprites.svg#telegram"></use>
                 </svg>
               </a>
             </li>
             <li class="header__item">
-              <a class="header__link" target="_blank" href="#!" aria-label="Ссылка на наш инстаграмм">
+              <a class="header__link" href="#!" aria-label="Ссылка на наш инстаграмм">
                 <svg width="32" height="32">
-                  <use xlink:href="./img/svg/sprites.svg#inst"></use>
+                  <use xlink:href="./img/svg/sprites.svg#inst-2"></use>
                 </svg>
               </a>
             </li>
             <li class="header__item">
-              <a class="header__link" target="_blank" href="#!" aria-label="Ссылка на наш ватс апп">
+              <a class="header__link" href="#!" aria-label="Ссылка на наш ватс апп">
                 <svg width="32" height="32">
-                  <use xlink:href="./img/svg/sprites.svg#whats-app"></use>
+                  <use xlink:href="./img/svg/sprites.svg#whats-app-2"></use>
                 </svg>
               </a>
             </li>
           </ul>
           <div class="header__tels">
-            <a class="header__phone" target="_blank" href="tel:+79284154156" aria-label="Позвоните нам">
+            <a class="header__phone" href="tel:+79284154156" aria-label="Позвоните нам">
               +7 928 415-41-56
             </a>
-            <a class="header__call" target="_blank" href="tel:+79284154156" aria-label="Позвоните нам">
+            <a class="header__call" href="tel:+79284154156" aria-label="Позвоните нам">
               <span>Позвонить</span>
               <svg width="18" height="17">
                 <use xlink:href="./img/svg/sprites.svg#call"></use>
@@ -145,6 +190,29 @@
       </div>
     </header>
     <main>
+      <section class="fixed-fink">
+        <div class="fixed-fink__circle"></div>
+        <a class="fixed-fink__link" href="#!" aria-label="Наш ватс ап">
+          <img src="./img/fixed-icon.svg" loading="lazy" width="30" height="30" alt="Картинка">
+        </a>
+      </section>
+      <section class="okay">
+        <div class="okay__close"></div>
+        <div class="okay__body">
+          <button class="okay__exit" type="button" aria-label="Закрыть попап">
+            <svg width="30" height="30">
+              <use xlink:href="./img/svg/sprites.svg#exit"></use>
+            </svg>
+          </button>
+          <span class="okay__icon"></span>
+          <h3 class="okay__title">
+            Спасибо за обращение!
+          </h3>
+          <p class="okay__text">
+            В скором времени с вами свяжется наш специалист!
+          </p>
+        </div>
+      </section>
       <section class="contacts">
         <div class="contacts__container container">
           <div class="contacts__top">
@@ -155,17 +223,17 @@
               <div class="contacts__map" id="contacts-map"></div>
               <ul class="contacts__list footer-list footer-list_2" aria-label="Список телефонов и социальных сетей">
                 <li class="footer-list__item footer-list__item_contacts">
-                  <span class="footer-list__icon">
+                  <span class="footer-list__icon footer-list__icon_2">
                     <svg width="14" height="20">
                       <use xlink:href="./img/svg/sprites.svg#geo"></use>
                     </svg>
                   </span>
-                  <address class="footer-list__address">
+                  <address class="footer-list__address footer-list__address_2">
                     Красная ул., 107, Краснодар
                   </address>
                 </li>
                 <li class="footer-list__item footer-list__item_contacts">
-                  <a class="footer-list__link" target="_blank" href="#!" aria-label="Наш телеграм">
+                  <a class="footer-list__link footer-list__link_2" href="#!" aria-label="Наш телеграм">
                     <svg width="32" height="32">
                       <use xlink:href="./img/svg/sprites.svg#telegram"></use>
                     </svg>
@@ -173,31 +241,31 @@
                   </a>
                 </li>
                 <li class="footer-list__item footer-list__item_contacts">
-                  <a class="footer-list__link" target="_blank" href="#!" aria-label="Наш инстаграмм">
+                  <a class="footer-list__link footer-list__link_2" href="#!" aria-label="Наш инстаграмм">
                     <svg width="32" height="32">
-                      <use xlink:href="./img/svg/sprites.svg#inst"></use>
+                      <use xlink:href="./img/svg/sprites.svg#inst-2"></use>
                     </svg>
                     <span>@a2.septic.story</span>
                   </a>
                 </li>
                 <li class="footer-list__item footer-list__item_contacts">
-                  <a class="footer-list__link" target="_blank" href="#!" aria-label="Наш ватс ап">
+                  <a class="footer-list__link footer-list__link_2" href="#!" aria-label="Наш ватс ап">
                     <svg width="32" height="32">
-                      <use xlink:href="./img/svg/sprites.svg#whats-app"></use>
+                      <use xlink:href="./img/svg/sprites.svg#whats-app-2"></use>
                     </svg>
                     <span>7(928)415-41-56</span>
                   </a>
                 </li>
                 <li class="footer-list__item footer-list__item_contacts">
-                  <a class="footer-list__link" target="_blank" href="tel:+79284154156" aria-label="Позвоните нам">
+                  <a class="footer-list__link footer-list__link_2" href="tel:+79284154156" aria-label="Позвоните нам">
                     <svg width="32" height="32">
-                      <use xlink:href="./img/svg/sprites.svg#phone"></use>
+                      <use xlink:href="./img/svg/sprites.svg#phone-2"></use>
                     </svg>
                     <span>7(928)415-41-56</span>
                   </a>
                 </li>
                 <li class="footer-list__item footer-list__item_contacts">
-                  <a class="footer-list__button footer-list__button_2" target="_blank" href="tel:+79284154156"
+                  <a class="footer-list__button footer-list__button_2" href="tel:+79284154156"
                     aria-label="Позвоните нам">
                     <span>Позвонить</span>
                     <svg width="10" height="15">
@@ -214,7 +282,7 @@
             </h2>
             <div class="contacts__footer">
               <div class="contacts__wrapper-form">
-                <form class="contacts__form contacts-form" action="#!" name="Контакты" autocomplete="on"
+                <form onsubmit="formSubmitContacts();return false" class="contacts__form contacts-form" action="#!" name="Контакты" autocomplete="on"
                   aria-label="Форма контакты">
                   <h3 class="contacts-form__title">
                     Заполните форму и мы с вами свяжемся
@@ -222,18 +290,16 @@
                   <div class="contacts-form__labels">
                     <label class="contacts-form__label" for="text">
                       <span class="contacts-form__span">Имя</span>
-                      <input class="contacts-form__input" type="text" id="text" placeholder="Ваше имя..." name="name"
+                      <input class="contacts-form__input contacts-form-input-text" type="text" id="text" placeholder="Ваше имя..." name="name"
                         required>
                     </label>
                     <label class="contacts-form__label" for="tel">
                       <span class="contacts-form__span">Телефон</span>
-                      <input class="contacts-form__input" type="tel" id="tel" placeholder="Ваш телефон..." name="tel"
+                      <input class="contacts-form__input contacts-form-input-tel" type="tel" id="tel" placeholder="Ваш телефон..." name="tel"
                         required>
                     </label>
-                    <label class="contacts-form__label contacts-form__label_email" for="email">
-                      <span class="contacts-form__span">E-mail</span>
-                      <input class="contacts-form__input" type="email" id="email" placeholder="Ваш e-mail..."
-                        name="email" required>
+                    <label class="contacts-form__label contacts-form__label_textarea" for="commentary">
+                     <textarea class="contacts-form__textarea contacts-form-textarea" name="Commentary" placeholder="Сообщение..." id="commentary"></textarea>
                     </label>
                   </div>
                   <button class="contacts-form__button" type="submit" aria-label="Отправить форму">
@@ -259,13 +325,13 @@
           <div class="footer__lists">
             <ul class="footer__list footer-list" aria-label="Список телефонов и социальных сетей">
               <li class="footer-list__item">
-                <a class="footer-list__link" target="_blank" href="tel:+79284154156" aria-label="Позвоните нам">
+                <a class="footer-list__link" href="tel:+79284154156" aria-label="Позвоните нам">
                   <svg width="32" height="32">
                     <use xlink:href="./img/svg/sprites.svg#phone"></use>
                   </svg>
                   <span>7(928)415-41-56</span>
                 </a>
-                <a class="footer-list__button" target="_blank" href="tel:+79284154156" aria-label="Позвоните нам">
+                <a class="footer-list__button" href="tel:+79284154156" aria-label="Позвоните нам">
                   <span>Позвонить</span>
                   <svg width="10" height="15">
                     <use xlink:href="./img/svg/sprites.svg#call"></use>
@@ -283,7 +349,7 @@
                 </address>
               </li>
               <li class="footer-list__item">
-                <a class="footer-list__link" target="_blank" href="#!" aria-label="Наш телеграм">
+                <a class="footer-list__link" href="#!" aria-label="Наш телеграм">
                   <svg width="32" height="32">
                     <use xlink:href="./img/svg/sprites.svg#telegram"></use>
                   </svg>
@@ -293,7 +359,7 @@
             </ul>
             <ul class="footer__list footer-list">
               <li class="footer-list__item">
-                <a class="footer-list__link" target="_blank" href="#!" aria-label="Наш инстаграмм">
+                <a class="footer-list__link" href="#!" aria-label="Наш инстаграмм">
                   <svg width="32" height="32">
                     <use xlink:href="./img/svg/sprites.svg#inst"></use>
                   </svg>
@@ -301,7 +367,7 @@
                 </a>
               </li>
               <li class="footer-list__item">
-                <a class="footer-list__link" target="_blank" href="#!" aria-label="Наш ватс ап">
+                <a class="footer-list__link" href="#!" aria-label="Наш ватс ап">
                   <svg width="32" height="32">
                     <use xlink:href="./img/svg/sprites.svg#whats-app"></use>
                   </svg>
@@ -312,22 +378,22 @@
           </div>
         </div>
         <div class="footer__right">
-          <a class="footer__logo" target="_blank" href="index.html" aria-label="Логотип сайта">
+          <a class="footer__logo" href="index.html" aria-label="Логотип сайта">
             <img src="./img/logo.svg" loading="lazy" width="182" height="115" alt="Логотип">
           </a>
           <ul class="footer__links footer-links">
             <li class="footer-links__item">
-              <a class="footer-links__link" target="_blank" href="#!" aria-label="Политика конфиденциальности">
+              <a class="footer-links__link" href="#!" aria-label="Политика конфиденциальности">
                 Политика конфиденциальности
               </a>
             </li>
             <li class="footer-links__item">
-              <a class="footer-links__link" target="_blank" href="#!" aria-label="Пример договора поставки">
+              <a class="footer-links__link" href="#!" aria-label="Пример договора поставки">
                 Пример договора поставки
               </a>
             </li>
             <li class="footer-links__item">
-              <a class="footer-links__link" target="_blank" href="#!" aria-label="Пример договора монтажа">
+              <a class="footer-links__link" href="#!" aria-label="Пример договора монтажа">
                 Пример договора монтажа
               </a>
             </li>

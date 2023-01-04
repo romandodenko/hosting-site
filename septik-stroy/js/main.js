@@ -20,6 +20,10 @@ const popupCalculateNumTwo = document.querySelector(".popup-calculate__num_two")
 
 const popupCalculateFormChoices = document.querySelectorAll(".popup-calculate-form__choice");
 
+const popupForm = document.querySelector(".popup-form");
+
+const okay = document.querySelector(".okay");
+
 if (popupCalculate) {
   popupCalculateNumTwo.innerHTML = popupCalculateFormItemLength;
   popupCalculateFormItems.forEach(function (e, i) {
@@ -52,9 +56,9 @@ document.addEventListener("click", function (e) {
     elementInteractive.closest(".sublist-init").classList.toggle("nav-item-active")
   }
   if (!elementInteractive.closest(".sublist-init")) {
-     document.querySelectorAll(".sublist-init").forEach(function (q) {
-       q.classList.remove("nav-item-active")
-     })
+    document.querySelectorAll(".sublist-init").forEach(function (q) {
+      q.classList.remove("nav-item-active")
+    })
   }
   if (elementInteractive.closest(".header-sublist__exit")) {
     document.querySelectorAll(".sublist-init").forEach(function (q) {
@@ -66,7 +70,7 @@ document.addEventListener("click", function (e) {
     document.body.style.overflow = "";
   }
   if (elementInteractive.closest(".popup-calculate-form__choice")) {
-    elementInteractive.classList.add("calculate-form-input-choice-active")
+    elementInteractive.closest(".popup-calculate-form__choice").classList.add(`calculate-form-input-choice-active-${popupCalculateNumOne.innerHTML}`)
     if (elementInteractive.closest(".calculate-form-item-active").nextElementSibling) {
       elementInteractive.closest(".calculate-form-item-active").nextElementSibling.classList.add("calculate-form-item-active")
       elementInteractive.closest(".calculate-form-item-active").classList.remove("calculate-form-item-active")
@@ -80,14 +84,18 @@ document.addEventListener("click", function (e) {
     }
   }
   if (elementInteractive.closest(".popup-calculate__back")) {
-    popupCalculateFormItems.forEach(function(e) {
-      e.classList.remove("calculate-form-item-active");
+    popupCalculateFormItems.forEach(function (e) {
+      e.classList.remove("calculate-form-item-active")
     })
     popupCalculateFormItem.classList.add("calculate-form-item-active");
     popupCalculateNumOne.innerHTML = 1;
-    popupCalculateFormChoices.forEach(function(e) {
-      e.classList.remove("calculate-form-input-choice-active")
+    document.querySelectorAll(".popup-calculate-form__choice").forEach(function (e) {
+      e.classList.remove("calculate-form-input-choice-active-1");
+      e.classList.remove("calculate-form-input-choice-active-2");
+      e.classList.remove("calculate-form-input-choice-active-3");
+      e.classList.remove("calculate-form-input-choice-active-4");
     })
+
   }
   if (elementInteractive.closest(".calculator-init")) {
     popupCalculate.classList.add("popup-calculate-active")
@@ -101,30 +109,48 @@ document.addEventListener("click", function (e) {
     popupCalculate.classList.remove("popup-calculate-active")
     document.body.style.overflow = "";
   }
+  if (elementInteractive.closest(".popup-form-init")) {
+    popupForm.classList.add("popup-form-active")
+    document.body.style.overflow = "hidden";
+  }
+  if (elementInteractive.closest(".popup-form__close")) {
+    popupForm.classList.remove("popup-form-active")
+    document.body.style.overflow = "";
+  }
+  if (elementInteractive.closest(".popup-form__exit")) {
+    popupForm.classList.remove("popup-form-active")
+    document.body.style.overflow = "";
+  }
+  if (elementInteractive.closest(".okay__close")) {
+    okay.classList.remove("okay-active")
+    document.body.style.overflow = "";
+  }
+  if (elementInteractive.closest(".okay__exit")) {
+    okay.classList.remove("okay-active")
+    document.body.style.overflow = "";
+  }
 })
 
 
-  document.addEventListener("mouseover", function (e) {
+document.addEventListener("mouseover", function (e) {
 
-    const elementInteractive = e.target;
-    
-    if (document.body.clientWidth > 992) {
-      if (elementInteractive.closest(".sublist-init")) {
-        document.querySelectorAll(".sublist-init").forEach(function (q) {
-          q.classList.remove("nav-item-active")
-        })
-        elementInteractive.closest(".sublist-init").classList.add("nav-item-active")
-      }
-      if (!elementInteractive.closest(".sublist-init")) {
-        document.querySelectorAll(".sublist-init").forEach(function (q) {
-          q.classList.remove("nav-item-active")
-        })
-      }
+  const elementInteractive = e.target;
+
+  if (document.body.clientWidth > 992) {
+    if (elementInteractive.closest(".sublist-init")) {
+      document.querySelectorAll(".sublist-init").forEach(function (q) {
+        q.classList.remove("nav-item-active")
+      })
+      elementInteractive.closest(".sublist-init").classList.add("nav-item-active")
     }
+    if (!elementInteractive.closest(".sublist-init")) {
+      document.querySelectorAll(".sublist-init").forEach(function (q) {
+        q.classList.remove("nav-item-active")
+      })
+    }
+  }
 
-  })
-
-
+})
 
   const productsSliderInit = document.querySelector(".products-slider");
 
@@ -230,7 +256,7 @@ if (footerMap) {
     // var myPlacemark = new ymaps.Placemark(myMap.getCenter(55.76932, 37.63952), {}, { // Если нужно чтобы точка была всегда по центру
     var myPlacemark = new ymaps.Placemark(myMap.getCenter(45.035808074596346,38.97368699999997), {}, {
       iconLayout: 'default#image',
-      iconImageHref: '../img/baloon.png',
+      iconImageHref: '../../img/baloon.png',
       iconImageSize: [20, 20],
     });
 
@@ -243,6 +269,44 @@ if (footerMap) {
     myMap.controls.remove('zoomControl'); // удаляем контрол зуммирования
     myMap.controls.remove('rulerControl'); // удаляем контрол правил
   }
+
+
+  // для позднего появления карты 
+
+  // let flag = 0; 
+
+  // window.addEventListener("scroll", function () { 
+  //   let scrollY = window.scrollY;
+  //   let mapOffset = this.document.querySelector("#map").offsetTop;
+  //   if (scrollY >= mapOffset - 1000 && flag == 0) {
+  //     ymaps.ready(init);
+
+  //     function init() {
+  //       const myMap = new ymaps.Map(
+  //         "map", {
+  //           center: [59.94, 30.31],
+  //           zoom: 14,
+  //         },
+  //       );
+  //       // var myPlacemark = new ymaps.Placemark(myMap.getCenter(55.76932, 37.63952), {}, { // Если нужно чтобы точка была всегда по центру
+  //       var myPlacemark = new ymaps.Placemark([59.9431223132132, 30.321231321], {}, { // Если нужно чтобы точка была слегка смещена
+  //         iconLayout: 'default#image',
+  //         iconImageHref: '../../img/baloon.png',
+  //         iconImageSize: [20, 20],
+  //       });
+
+  //       myMap.geoObjects.add(myPlacemark);
+  //       myMap.controls.remove('geolocationControl'); // удаляем геолокацию
+  //       myMap.controls.remove('searchControl'); // удаляем поиск
+  //       myMap.controls.remove('trafficControl'); // удаляем контроль трафика
+  //       myMap.controls.remove('typeSelector'); // удаляем тип
+  //       myMap.controls.remove('fullscreenControl'); // удаляем кнопку перехода в полноэкранный режим
+  //       myMap.controls.remove('zoomControl'); // удаляем контрол зуммирования
+  //       myMap.controls.remove('rulerControl'); // удаляем контрол правил
+  //     }
+  //   }
+
+  // })
 }
 
 const coontactsMap = document.querySelector(".contacts__map");
@@ -259,7 +323,7 @@ if (coontactsMap) {
     );
     var myPlacemark = new ymaps.Placemark(myMap.getCenter(45.035808074596346,38.97368699999997), {}, {
       iconLayout: 'default#image',
-      iconImageHref: '../img/baloon.png',
+      iconImageHref: '../../img/baloon.png',
       iconImageSize: [30, 30],
     });
 
@@ -427,59 +491,4 @@ DynamicAdapt.prototype.arraySort = function (arr) {
 
 const da = new DynamicAdapt("max");
 da.init();
-
-  const showInit = document.querySelector(".show-init");
-
-if(showInit) {
-  function showCode(showBtn, itemsNum, collapseBtn, listItem, lists) {
-    const show = document.querySelector(`.${showBtn}`); // кнопка показать ещё
-    const collapse = document.querySelector(`.${collapseBtn}`); // кнопка скрывает показанные элементы
-    const itemsList = document.querySelectorAll(`.${listItem}`);
-    const list = document.querySelector(`.${lists}`);
-    const productsLength = itemsList.length; // получаем количество карточек
-    let items = itemsNum; // элементы которые изначально показаны на странице, у меня в примере 6 , если меняем здесь чисто то и меняем число в items ниже, где вешаем событие на collapse
-    console.log(productsLength)
-    if (productsLength > items) { // проверка, если элементов больше чем показано, то кнопка показать ещё появляется
-      show.classList.add("is-visible")
-      show.addEventListener("click", function () {
-        items += 4; // число элементов которые будут добавляться при клике на кнопку показать ещё
-  
-        const array = Array.from(list.children); // собираем массив элементов в списке
-  
-        const visibleItems = array.slice(0, items) // видимые элементы
-  
-        visibleItems.forEach(function (visibleItems) {
-          visibleItems.classList.add("is-visible")
-        })
-  
-        if (items === productsLength) { // если элементов больше нет которые нужно показать кнопка скрывается
-          show.classList.remove("is-visible")
-          collapse.classList.add("is-visible")
-        } else if (items > productsLength) {
-          show.classList.remove("is-visible")
-          collapse.classList.add("is-visible")
-        }
-      })
-    }
-  
-    collapse.addEventListener("click", function () {
-      itemsList.forEach(function (it) {
-        it.classList.remove("is-visible")
-      })
-      items = itemsNum;
-      show.classList.remove("is-hidden")
-      collapse.classList.remove("is-visible")
-      if (productsLength > items) {
-        show.classList.add("is-visible")
-      }
-    })
-  }
-  showCode("button-show-italbio", 4, "button-collapse-italbio", "italbio-item", "italbio-list")
-  showCode("button-show-biodevicepro", 4, "button-collapse-biodevicepro", "biodevicepro-item", "biodevicepro-list")
-  showCode("button-show-biodeviceeco", 4, "button-collapse-biodeviceeco", "biodeviceeco-item", "biodeviceeco-list")
-  showCode("button-show-biodevicegorizont", 4, "button-collapse-biodevicegorizont", "biodevicegorizont-item", "biodevicegorizont-list")
-}
-
-// showCode("класс кнопки которая показывает элементы", "число элементов которое показывается", "класс кнопки которая скрывает элементы", "класс элементов списка", "класс списка")
-
 }
