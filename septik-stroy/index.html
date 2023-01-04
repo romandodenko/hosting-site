@@ -21,7 +21,12 @@
   <script defer src="./js/main.js"></script>
   <script defer>
     function formSubmitCall() {
+      
       const popupForm = document.querySelector(".popup-form"); // Форма заказать звонок
+
+      const popupFormInputText = document.querySelector(".popup-form-input-text").value;
+
+      const popupFormInputTel = document.querySelector(".popup-form-input-tel").value;
 
       const okay = document.querySelector(".okay"); // Попап который уведомляет пользователя что всё отправлено
 
@@ -30,6 +35,35 @@
       popupForm.querySelectorAll("input").forEach(function (e) { // Удаляем значение у инпутов формы заказа
         e.value = ""
       })
+
+      const requestUrl =
+        "https://jsonplaceholder.typicode.com/users"; // Для проверки работает всё или нет, выступает в качестве сервера
+
+      function sendRequest(method, url, body = null) {
+        const headers = {
+          'Content-Type': 'application/json',
+        };
+
+        return fetch(url, {
+          method: method,
+          body: JSON.stringify(body),
+          headers: headers,
+        }).then(response => {
+          return response.json()
+        })
+
+      }
+
+      const body = { // то что передается
+        firstValue: popupFormInputText,
+        twoValue: popupFormInputTel,
+      }
+
+      sendRequest("POST", requestUrl, body)
+        .then(data => console.log(data))
+        .catch(err => console.log(err))
+
+
 
       okay.classList.add("okay-active"); // Даём попапу который уведомляет пользователя что всё отправлено активный класс
 
@@ -404,10 +438,10 @@
           <form onsubmit="formSubmitCall();return false" class="popup-form__form" action="#!" name="call"
             autocomplete="on" aria-label="Форма заказа звонка">
             <label class="popup-form__label" for="name">
-              <input class="popup-form__input" type="name" name="name" id="name" placeholder="Имя" required>
+              <input class="popup-form__input popup-form-input-text" type="name" name="name" id="name" placeholder="Имя" required>
             </label>
             <label class="popup-form__label" for="tel">
-              <input class="popup-form__input" type="tel" name="tel" id="tel" placeholder="Телефон" required>
+              <input class="popup-form__input popup-form-input-tel" type="tel" name="tel" id="tel" placeholder="Телефон" required>
             </label>
             <button class="popup-form__button" type="submit" aria-label="Заказать звонок">Заказать звонок</button>
           </form>
